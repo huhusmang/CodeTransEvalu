@@ -1,0 +1,1189 @@
+2023-12-07 19:47:44 INFO Running task: 1_0...
+2023-12-07 19:47:45 INFO Test Passed!
+
+
+2023-12-07 19:47:45 INFO Running task: 2_0...
+2023-12-07 19:47:46 INFO Test Passed!
+
+
+2023-12-07 19:47:46 INFO Running task: 3_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:47:46 INFO Test Passed!
+
+
+2023-12-07 19:47:46 INFO Running task: 4_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: bad operand types for binary operator '+'
+        ans += s.charAt(i) != s.charAt(i + 1);
+            ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-07 19:47:47 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:47:47 INFO Compilation Failed!
+2023-12-07 19:47:47 INFO run_output: b''
+
+
+2023-12-07 19:47:47 INFO Running task: 5_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: illegal start of expression
+    int k = Collections.min(cnt.values(), (a, b) -> ***pare(a, b)).intValue();
+                                                    ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: illegal start of expression
+    int k = Collections.min(cnt.values(), (a, b) -> ***pare(a, b)).intValue();
+                                                     ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: illegal start of expression
+    int k = Collections.min(cnt.values(), (a, b) -> ***pare(a, b)).intValue();
+                                                      ^
+3 errors
+error: compilation failed
+2023-12-07 19:47:48 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:47:48 INFO Compilation Failed!
+2023-12-07 19:47:48 INFO run_output: b''
+
+
+2023-12-07 19:47:48 INFO Running task: 6_0...
+2023-12-07 19:47:48 INFO Test Passed!
+
+
+2023-12-07 19:47:48 INFO Running task: 7_0...
+2023-12-07 19:47:49 INFO Test Passed!
+
+
+2023-12-07 19:47:49 INFO Running task: 8_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: incompatible types: possible lossy conversion from long to int
+    int cnt1 = s.chars().filter(c -> c == '1').count();
+                                                    ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:221: error: no suitable method found for join(String,List<String>,List<String>,String)
+    return String.join("", Collections.nCopies(cnt1 - 1, "1"), Collections.nCopies(s.length() - cnt1, "0"), "1");
+                 ^
+    method String.join(CharSequence,CharSequence...) is not applicable
+      (varargs mismatch; no instance(s) of type variable(s) T exist so that List<T> conforms to CharSequence)
+    method String.join(String,String,String,String[],int) is not applicable
+      (actual and formal argument lists differ in length)
+    method String.join(CharSequence,Iterable<? extends CharSequence>) is not applicable
+      (actual and formal argument lists differ in length)
+  where T is a type-variable:
+    T extends Object declared in method <T>nCopies(int,T)
+2 errors
+error: compilation failed
+2023-12-07 19:47:50 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:47:50 INFO Compilation Failed!
+2023-12-07 19:47:50 INFO run_output: b''
+
+
+2023-12-07 19:47:50 INFO Running task: 9_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression
+                if (t.length() < ans.length() || t.length() == ans.length() && ***pareTo(ans) < 0) {
+                                                                               ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression
+                if (t.length() < ans.length() || t.length() == ans.length() && ***pareTo(ans) < 0) {
+                                                                                ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression
+                if (t.length() < ans.length() || t.length() == ans.length() && ***pareTo(ans) < 0) {
+                                                                                 ^
+3 errors
+error: compilation failed
+2023-12-07 19:47:50 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:47:50 INFO Compilation Failed!
+2023-12-07 19:47:50 INFO run_output: b''
+
+
+2023-12-07 19:47:50 INFO Running task: 10_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: bad operand types for binary operator '+'
+        t += s.charAt(i - 1) >= s.charAt(i);
+          ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-07 19:47:51 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:47:51 INFO Compilation Failed!
+2023-12-07 19:47:51 INFO run_output: b''
+
+
+2023-12-07 19:47:51 INFO Running task: 11_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:47:52 INFO Test Passed!
+
+
+2023-12-07 19:47:52 INFO Running task: 12_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:47:53 INFO Test Passed!
+
+
+2023-12-07 19:47:53 INFO Running task: 13_0...
+2023-12-07 19:47:54 INFO Test Passed!
+
+
+2023-12-07 19:47:54 INFO Running task: 14_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:47:55 INFO Test Passed!
+
+
+2023-12-07 19:47:55 INFO Running task: 15_0...
+2023-12-07 19:47:56 INFO Test Passed!
+
+
+2023-12-07 19:47:56 INFO Running task: 16_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:237: error: incompatible types: possible lossy conversion from long to int
+    return ans == Integer.MAX_VALUE ? -1 : ans + target / total * n;
+                                    ^
+1 error
+error: compilation failed
+2023-12-07 19:47:57 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:47:57 INFO Compilation Failed!
+2023-12-07 19:47:57 INFO run_output: b''
+
+
+2023-12-07 19:47:57 INFO Running task: 17_0...
+2023-12-07 19:47:58 INFO Test Passed!
+
+
+2023-12-07 19:47:58 INFO Running task: 18_0...
+2023-12-07 19:47:59 INFO Test Passed!
+
+
+2023-12-07 19:47:59 INFO Running task: 19_0...
+2023-12-07 19:47:59 INFO Test Passed!
+
+
+2023-12-07 19:47:59 INFO Running task: 20_0...
+2023-12-07 19:48:00 INFO Test Passed!
+
+
+2023-12-07 19:48:00 INFO Running task: 21_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:01 INFO Test Passed!
+
+
+2023-12-07 19:48:01 INFO Running task: 22_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: cannot find symbol
+        Predicate<Long> check = num -> {
+        ^
+  symbol:   class Predicate
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:238: error: unexpected type
+            (check.test(mid) ? left : right) = mid;
+                             ^
+  required: variable
+  found:    value
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-07 19:48:02 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:02 INFO Compilation Failed!
+2023-12-07 19:48:02 INFO run_output: b''
+
+
+2023-12-07 19:48:02 INFO Running task: 23_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:03 INFO Test Passed!
+
+
+2023-12-07 19:48:03 INFO Running task: 24_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:04 INFO Test Passed!
+
+
+2023-12-07 19:48:04 INFO Running task: 25_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:05 INFO Test Failed!
+2023-12-07 19:48:05 INFO run_output: b'2 2\n0 10\nTestcase No.2 Failed!\n3 5\nTestcase No.3 Failed!\n0 1249975000\nTestcase No.4 Failed!\n0 33230\nTestcase No.5 Failed!\n1 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:48:05 INFO Running task: 26_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:06 INFO Test Passed!
+
+
+2023-12-07 19:48:06 INFO Running task: 27_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:07 INFO Test Passed!
+
+
+2023-12-07 19:48:07 INFO Running task: 28_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:08 INFO Test Passed!
+
+
+2023-12-07 19:48:08 INFO Running task: 29_0...
+2023-12-07 19:48:09 INFO Test Passed!
+
+
+2023-12-07 19:48:09 INFO Running task: 30_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:10 INFO Test Passed!
+
+
+2023-12-07 19:48:10 INFO Running task: 31_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: no suitable method found for min(int,int,int,int,int)
+        return Math.min(f("00", num), f("25", num), f("50", num), f("75", num), zero);
+                   ^
+    method Math.min(int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(long,long) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(double,double) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+error: compilation failed
+2023-12-07 19:48:11 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:11 INFO Compilation Failed!
+2023-12-07 19:48:11 INFO run_output: b''
+
+
+2023-12-07 19:48:11 INFO Running task: 32_0...
+2023-12-07 19:48:11 INFO Test Passed!
+
+
+2023-12-07 19:48:11 INFO Running task: 33_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:12 INFO Test Passed!
+
+
+2023-12-07 19:48:12 INFO Running task: 34_0...
+2023-12-07 19:48:13 INFO Test Failed!
+2023-12-07 19:48:13 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse true\nTestcase No.3 Failed!\nfalse true\nTestcase No.4 Failed!\nfalse false\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:48:13 INFO Running task: 35_0...
+2023-12-07 19:48:14 INFO Test Failed!
+2023-12-07 19:48:14 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse false\nfalse true\nTestcase No.4 Failed!\nfalse true\nTestcase No.5 Failed!\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:48:14 INFO Running task: 36_0...
+2023-12-07 19:48:15 INFO Test Passed!
+
+
+2023-12-07 19:48:15 INFO Running task: 37_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:279)
+	at Test.main(test.java:300)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:279)
+	at Test.main(test.java:300)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:279)
+	at Test.main(test.java:300)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:279)
+	at Test.main(test.java:300)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 11294 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:279)
+	at Test.main(test.java:300)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 19:48:16 INFO Test Failed!
+2023-12-07 19:48:16 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:48:16 INFO Running task: 38_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:17 INFO Test Passed!
+
+
+2023-12-07 19:48:17 INFO Running task: 39_0...
+2023-12-07 19:48:17 INFO Test Passed!
+
+
+2023-12-07 19:48:17 INFO Running task: 40_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:18 INFO Test Passed!
+
+
+2023-12-07 19:48:18 INFO Running task: 41_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:19 INFO Test Passed!
+
+
+2023-12-07 19:48:19 INFO Running task: 42_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 19:48:20 INFO Test Failed!
+2023-12-07 19:48:20 INFO run_output: b'-3 3\nTestcase No.3 Failed!\n0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:48:20 INFO Running task: 43_0...
+2023-12-07 19:48:21 INFO Test Passed!
+
+
+2023-12-07 19:48:21 INFO Running task: 44_0...
+2023-12-07 19:48:22 INFO Test Passed!
+
+
+2023-12-07 19:48:22 INFO Running task: 45_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:227: error: cannot find symbol
+        return tail ? q.stream().map(Object::toString).collect(Collectors.joining()) : q.descendingIterator().asString();
+                                                                                                             ^
+  symbol:   method asString()
+  location: interface Iterator<Character>
+1 error
+error: compilation failed
+2023-12-07 19:48:22 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:23 INFO Compilation Failed!
+2023-12-07 19:48:23 INFO run_output: b''
+
+
+2023-12-07 19:48:23 INFO Running task: 46_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:23 INFO Test Passed!
+
+
+2023-12-07 19:48:23 INFO Running task: 47_0...
+2023-12-07 19:48:24 INFO Test Passed!
+
+
+2023-12-07 19:48:24 INFO Running task: 48_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression
+        ***puteIfAbsent(nums.get(i), k -> new ArrayList<>()).add(i);
+        ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression
+        ***puteIfAbsent(nums.get(i), k -> new ArrayList<>()).add(i);
+         ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression
+        ***puteIfAbsent(nums.get(i), k -> new ArrayList<>()).add(i);
+          ^
+3 errors
+error: compilation failed
+2023-12-07 19:48:25 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:25 INFO Compilation Failed!
+2023-12-07 19:48:25 INFO run_output: b''
+
+
+2023-12-07 19:48:25 INFO Running task: 49_0...
+2023-12-07 19:48:25 INFO Test Passed!
+
+
+2023-12-07 19:48:25 INFO Running task: 50_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:221: error: cannot find symbol
+    Function<String, Void> func = str -> {
+    ^
+  symbol:   class Function
+  location: class Test
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 19:48:26 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:26 INFO Compilation Failed!
+2023-12-07 19:48:26 INFO run_output: b''
+
+
+2023-12-07 19:48:26 INFO Running task: 51_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:27 INFO Test Passed!
+
+
+2023-12-07 19:48:27 INFO Running task: 52_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:28 INFO Test Passed!
+
+
+2023-12-07 19:48:28 INFO Running task: 53_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                     ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                      ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                       ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                        ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                 ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                  ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                   ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                    ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                         ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                          ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                           ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression
+  return (int) ((n % ***) * (n % ***)) % ***;
+                                            ^
+12 errors
+error: compilation failed
+2023-12-07 19:48:28 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:28 INFO Compilation Failed!
+2023-12-07 19:48:28 INFO run_output: b''
+
+
+2023-12-07 19:48:28 INFO Running task: 54_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:29 INFO Test Passed!
+
+
+2023-12-07 19:48:29 INFO Running task: 55_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:31 INFO Test Passed!
+
+
+2023-12-07 19:48:31 INFO Running task: 56_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:32 INFO Test Passed!
+
+
+2023-12-07 19:48:32 INFO Running task: 57_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:225: error: cannot find symbol
+        delete llist; 
+        ^
+  symbol:   class delete
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:225: error: variable llist is already defined in method testfunc(ListNode,int)
+        delete llist; 
+               ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:237: error: cannot find symbol
+    delete nodeToDelete; 
+    ^
+  symbol:   class delete
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:237: error: variable nodeToDelete is already defined in method testfunc(ListNode,int)
+    delete nodeToDelete; 
+           ^
+4 errors
+error: compilation failed
+2023-12-07 19:48:33 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:33 INFO Compilation Failed!
+2023-12-07 19:48:33 INFO run_output: b''
+
+
+2023-12-07 19:48:33 INFO Running task: 58_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:221: error: incompatible types: int cannot be converted to boolean
+        return root.val;
+                   ^
+1 error
+error: compilation failed
+2023-12-07 19:48:34 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:34 INFO Compilation Failed!
+2023-12-07 19:48:34 INFO run_output: b''
+
+
+2023-12-07 19:48:34 INFO Running task: 59_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:35 INFO Test Passed!
+
+
+2023-12-07 19:48:35 INFO Running task: 60_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:36 INFO Test Passed!
+
+
+2023-12-07 19:48:36 INFO Running task: 61_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:225: error: cannot find symbol
+            Long b = s.ceiling(sum);
+                      ^
+  symbol:   method ceiling(long)
+  location: variable s of type Set<Long>
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 19:48:37 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:37 INFO Compilation Failed!
+2023-12-07 19:48:37 INFO run_output: b''
+
+
+2023-12-07 19:48:37 INFO Running task: 62_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:248: error: illegal start of expression
+    public static void start() {
+    ^
+1 error
+error: compilation failed
+2023-12-07 19:48:37 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:37 INFO Compilation Failed!
+2023-12-07 19:48:37 INFO run_output: b''
+
+
+2023-12-07 19:48:37 INFO Running task: 63_0...
+2023-12-07 19:48:38 INFO Test Passed!
+
+
+2023-12-07 19:48:38 INFO Running task: 64_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: method add in interface Deque<E> cannot be applied to given types;
+    for (int i = 0; i < 10; ++i) q.add(i);
+                                  ^
+  required: Long
+  found:    int
+  reason: argument mismatch; int cannot be converted to Long
+  where E is a type-variable:
+    E extends Object declared in interface Deque
+1 error
+error: compilation failed
+2023-12-07 19:48:39 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:39 INFO Compilation Failed!
+2023-12-07 19:48:39 INFO run_output: b''
+
+
+2023-12-07 19:48:39 INFO Running task: 65_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: method set in interface List<E> cannot be applied to given types;
+                grid.set(k, j, 'X');
+                    ^
+  required: int,String
+  found:    int,int,char
+  reason: actual and formal argument lists differ in length
+  where E is a type-variable:
+    E extends Object declared in interface List
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 19:48:40 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:40 INFO Compilation Failed!
+2023-12-07 19:48:40 INFO run_output: b''
+
+
+2023-12-07 19:48:40 INFO Running task: 66_0...
+2023-12-07 19:48:41 INFO Test Passed!
+
+
+2023-12-07 19:48:41 INFO Running task: 67_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:42 INFO Test Passed!
+
+
+2023-12-07 19:48:42 INFO Running task: 68_0...
+2023-12-07 19:48:43 INFO Test Passed!
+
+
+2023-12-07 19:48:43 INFO Running task: 69_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:45 INFO Test Passed!
+
+
+2023-12-07 19:48:45 INFO Running task: 70_0...
+2023-12-07 19:48:46 INFO Test Passed!
+
+
+2023-12-07 19:48:46 INFO Running task: 71_0...
+2023-12-07 19:48:47 INFO Test Passed!
+
+
+2023-12-07 19:48:47 INFO Running task: 72_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: variable i is already defined in method testfunc(List<List<Integer>>,int)
+            for (int i = l; i < br - l - 1; ++i) {
+                     ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:236: error: variable i is already defined in method testfunc(List<List<Integer>>,int)
+            for (int i = br - l - 1; i > l + 1; --i) {
+                     ^
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-07 19:48:48 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:48 INFO Compilation Failed!
+2023-12-07 19:48:48 INFO run_output: b''
+
+
+2023-12-07 19:48:48 INFO Running task: 73_0...
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:678)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:270)
+	at Test.main(test.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:678)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:270)
+	at Test.main(test.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 19:48:48 INFO Test Failed!
+2023-12-07 19:48:48 INFO run_output: b'2 2\n0 0\n0 1\nTestcase No.5 Failed!\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:48:48 INFO Running task: 74_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:49 INFO Test Passed!
+
+
+2023-12-07 19:48:49 INFO Running task: 75_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:50 INFO Test Passed!
+
+
+2023-12-07 19:48:50 INFO Running task: 76_0...
+2023-12-07 19:48:51 INFO Test Passed!
+
+
+2023-12-07 19:48:51 INFO Running task: 77_0...
+2023-12-07 19:48:52 INFO Test Passed!
+
+
+2023-12-07 19:48:52 INFO Running task: 78_0...
+2023-12-07 19:48:53 INFO Test Passed!
+
+
+2023-12-07 19:48:53 INFO Running task: 79_0...
+2023-12-07 19:48:54 INFO Test Passed!
+
+
+2023-12-07 19:48:54 INFO Running task: 80_0...
+2023-12-07 19:48:55 INFO Test Passed!
+
+
+2023-12-07 19:48:55 INFO Running task: 81_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:228: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, -1}, {-1, -1}, {-1, 0}));
+                                             ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:228: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, -1}, {-1, -1}, {-1, 0}));
+                                              ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:228: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, -1}, {-1, -1}, {-1, 0}));
+                                                ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:228: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, -1}, {-1, -1}, {-1, 0}));
+                                                     ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:228: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, -1}, {-1, -1}, {-1, 0}));
+                                                        ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:228: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, -1}, {-1, -1}, {-1, 0}));
+                                                          ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:228: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, -1}, {-1, -1}, {-1, 0}));
+                                                              ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, 1}, {-1, 0}, {-1, 1}));
+                                            ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, 1}, {-1, 0}, {-1, 1}));
+                                             ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, 1}, {-1, 0}, {-1, 1}));
+                                               ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, 1}, {-1, 0}, {-1, 1}));
+                                                   ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, 1}, {-1, 0}, {-1, 1}));
+                                                      ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, 1}, {-1, 0}, {-1, 1}));
+                                                        ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, 1}, {-1, 0}, {-1, 1}));
+                                                            ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, -1}, {1, 0}, {1, -1}));
+                                             ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, -1}, {1, 0}, {1, -1}));
+                                              ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, -1}, {1, 0}, {1, -1}));
+                                               ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, -1}, {1, 0}, {1, -1}));
+                                                   ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, -1}, {1, 0}, {1, -1}));
+                                                      ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, -1}, {1, 0}, {1, -1}));
+                                                       ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, -1}, {1, 0}, {1, -1}));
+                                                            ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:231: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, 1}, {1, 0}, {1, 1}));
+                                            ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:231: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, 1}, {1, 0}, {1, 1}));
+                                             ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:231: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, 1}, {1, 0}, {1, 1}));
+                                              ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:231: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, 1}, {1, 0}, {1, 1}));
+                                                  ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:231: error: not a statement
+    arr.add(Arrays.asList(new int[] {0, 1}, {1, 0}, {1, 1}));
+                                                     ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:231: error: ';' expected
+    arr.add(Arrays.asList(new int[] {0, 1}, {1, 0}, {1, 1}));
+                                                      ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:231: error: illegal start of expression
+    arr.add(Arrays.asList(new int[] {0, 1}, {1, 0}, {1, 1}));
+                                                          ^
+28 errors
+error: compilation failed
+2023-12-07 19:48:55 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:55 INFO Compilation Failed!
+2023-12-07 19:48:55 INFO run_output: b''
+
+
+2023-12-07 19:48:55 INFO Running task: 82_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression
+    Arrays.fill(f, ***);
+                   ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression
+    Arrays.fill(f, ***);
+                    ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression
+    Arrays.fill(f, ***);
+                     ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression
+    Arrays.fill(f, ***);
+                      ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression
+    if (f[n] == ***) return -1;
+                ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression
+    if (f[n] == ***) return -1;
+                 ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression
+    if (f[n] == ***) return -1;
+                  ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression
+    if (f[n] == ***) return -1;
+                   ^
+8 errors
+error: compilation failed
+2023-12-07 19:48:56 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:56 INFO Compilation Failed!
+2023-12-07 19:48:56 INFO run_output: b''
+
+
+2023-12-07 19:48:56 INFO Running task: 83_0...
+2023-12-07 19:48:56 INFO Test Passed!
+
+
+2023-12-07 19:48:56 INFO Running task: 84_0...
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 19:48:57 INFO Test Passed!
+
+
+2023-12-07 19:48:57 INFO Running task: 85_0...
+2023-12-07 19:48:58 INFO Test Passed!
+
+
+2023-12-07 19:48:58 INFO Running task: 86_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: cannot find symbol
+            if (cnt[y] > 0 && gcd(x % 10, y) == 1)
+                              ^
+  symbol:   method gcd(int,int)
+  location: class Test
+1 error
+error: compilation failed
+2023-12-07 19:48:59 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:48:59 INFO Compilation Failed!
+2023-12-07 19:48:59 INFO run_output: b''
+
+
+2023-12-07 19:48:59 INFO Running task: 87_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: cannot find symbol
+    IntStream.range(0, nq).forEach(i -> id[i] = i);
+    ^
+  symbol:   variable IntStream
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: no suitable method found for sort(int[],(i,j)->que[...]0 : 1)
+    Arrays.sort(id, (i, j) -> queries[i] < queries[j] ? -1 : queries[i] == queries[j] ? 0 : 1);
+          ^
+    method Arrays.sort(int[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(int[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(long[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(long[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(short[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(short[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(char[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(char[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(byte[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(byte[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(float[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(float[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(double[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(double[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(Object[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(Object[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable
+      (inference variable T#1 has incompatible bounds
+        equality constraints: int
+        lower bounds: Object)
+    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)
+    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)
+2 errors
+error: compilation failed
+2023-12-07 19:49:00 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:49:00 INFO Compilation Failed!
+2023-12-07 19:49:00 INFO run_output: b''
+
+
+2023-12-07 19:49:00 INFO Running task: 88_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:255: error: ';' expected
+                    !g
+                      ^
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:258: error: illegal start of expression
+    public static void start() {
+    ^
+2 errors
+error: compilation failed
+2023-12-07 19:49:00 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:49:00 INFO Compilation Failed!
+2023-12-07 19:49:00 INFO run_output: b''
+
+
+2023-12-07 19:49:00 INFO Running task: 89_0...
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 9
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 13
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 16
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 50
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 50
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 19:49:01 INFO Test Failed!
+2023-12-07 19:49:01 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:49:01 INFO Running task: 90_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: cannot find symbol
+        g[x] = ArrayUtils.add(g[x], y);
+               ^
+  symbol:   variable ArrayUtils
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: cannot find symbol
+        g[y] = ArrayUtils.add(g[y], x);
+               ^
+  symbol:   variable ArrayUtils
+  location: class Test
+2 errors
+error: compilation failed
+2023-12-07 19:49:02 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:49:02 INFO Compilation Failed!
+2023-12-07 19:49:02 INFO run_output: b''
+
+
+2023-12-07 19:49:02 INFO Running task: 91_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:235: error: bad operand types for binary operator '+'
+            ans += e == v * (v - 1);
+                ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-07 19:49:02 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:49:02 INFO Compilation Failed!
+2023-12-07 19:49:02 INFO run_output: b''
+
+
+2023-12-07 19:49:02 INFO Running task: 92_0...
+2023-12-07 19:49:03 INFO Test Passed!
+
+
+2023-12-07 19:49:03 INFO Running task: 93_0...
+2023-12-07 19:49:04 INFO Test Passed!
+
+
+2023-12-07 19:49:04 INFO Running task: 94_0...
+2023-12-07 19:49:05 INFO Test Passed!
+
+
+2023-12-07 19:49:05 INFO Running task: 95_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: no suitable method found for addAll(Iterator<Integer>)
+            merged.addAll(p2);
+                  ^
+    method List.addAll(Collection<? extends Integer>) is not applicable
+      (argument mismatch; Iterator<Integer> cannot be converted to Collection<? extends Integer>)
+    method List.addAll(int,Collection<? extends Integer>) is not applicable
+      (actual and formal argument lists differ in length)
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:233: error: no suitable method found for addAll(Iterator<Integer>)
+            merged.addAll(p1);
+                  ^
+    method List.addAll(Collection<? extends Integer>) is not applicable
+      (argument mismatch; Iterator<Integer> cannot be converted to Collection<? extends Integer>)
+    method List.addAll(int,Collection<? extends Integer>) is not applicable
+      (actual and formal argument lists differ in length)
+Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-07 19:49:06 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:49:06 INFO Compilation Failed!
+2023-12-07 19:49:06 INFO run_output: b''
+
+
+2023-12-07 19:49:06 INFO Running task: 96_0...
+2023-12-07 19:49:07 INFO Test Failed!
+2023-12-07 19:49:07 INFO run_output: b'7 2\nTestcase No.1 Failed!\n9262 2\nTestcase No.2 Failed!\n107350 3\nTestcase No.3 Failed!\n273220 9\nTestcase No.4 Failed!\n1497681 22\nTestcase No.5 Failed!\n0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 19:49:07 INFO Running task: 97_0...
+2023-12-07 19:49:08 INFO Test Passed!
+
+
+2023-12-07 19:49:08 INFO Running task: 98_0...
+2023-12-07 19:49:09 INFO Test Passed!
+
+
+2023-12-07 19:49:09 INFO Running task: 99_0...
+/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:221: error: incompatible types: cannot infer type arguments for HashSet<>
+    Set<Integer> s = new HashSet<>(Arrays.asList(nums));
+                                ^
+    reason: inference variable E has incompatible bounds
+      equality constraints: Integer
+      lower bounds: T,int[]
+  where E,T are type-variables:
+    E extends Object declared in class HashSet
+    T extends Object declared in method <T>asList(T...)
+1 error
+error: compilation failed
+2023-12-07 19:49:09 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 19:49:09 INFO Compilation Failed!
+2023-12-07 19:49:09 INFO run_output: b''
+
+
+2023-12-07 19:49:09 INFO Running task: 100_0...
+2023-12-07 19:49:10 INFO Test Passed!
+
+
+2023-12-07 19:49:10 INFO [[1], [1], [1], [3], [3], [1], [1], [3], [3], [3], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [3], [1], [1], [2], [1], [1], [1], [1], [1], [3], [1], [1], [2], [2], [1], [2], [1], [1], [1], [1], [2], [1], [1], [3], [1], [1], [3], [1], [3], [1], [1], [3], [1], [1], [1], [3], [3], [1], [1], [3], [3], [1], [3], [3], [1], [1], [1], [1], [1], [1], [3], [2], [1], [1], [1], [1], [1], [1], [1], [3], [3], [1], [1], [1], [3], [3], [3], [2], [3], [3], [1], [1], [1], [3], [2], [1], [1], [3], [1]]

@@ -1,0 +1,876 @@
+2023-12-06 20:52:44 INFO Running task: 1_0...
+2023-12-06 20:52:45 INFO Test Passed!
+
+
+2023-12-06 20:52:45 INFO Running task: 2_0...
+2023-12-06 20:52:46 INFO Test Passed!
+
+
+2023-12-06 20:52:46 INFO Running task: 3_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:52:47 INFO Test Passed!
+
+
+2023-12-06 20:52:47 INFO Running task: 4_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:222: error: bad operand types for binary operator '+'
+        ans += s.charAt(i) != s.charAt(i + 1);
+            ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-06 20:52:48 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:52:48 INFO Compilation Failed!
+2023-12-06 20:52:48 INFO run_output: b''
+
+
+2023-12-06 20:52:48 INFO Running task: 5_0...
+2023-12-06 20:52:49 INFO Test Passed!
+
+
+2023-12-06 20:52:49 INFO Running task: 6_0...
+2023-12-06 20:52:50 INFO Test Passed!
+
+
+2023-12-06 20:52:50 INFO Running task: 7_0...
+2023-12-06 20:52:51 INFO Test Passed!
+
+
+2023-12-06 20:52:51 INFO Running task: 8_0...
+2023-12-06 20:52:51 INFO Test Passed!
+
+
+2023-12-06 20:52:51 INFO Running task: 9_0...
+2023-12-06 20:52:52 INFO Test Passed!
+
+
+2023-12-06 20:52:52 INFO Running task: 10_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:222: error: bad operand types for binary operator '+'
+        t += s.charAt(i - 1) >= s.charAt(i);
+          ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-06 20:52:53 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:52:53 INFO Compilation Failed!
+2023-12-06 20:52:53 INFO run_output: b''
+
+
+2023-12-06 20:52:53 INFO Running task: 11_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:52:54 INFO Test Passed!
+
+
+2023-12-06 20:52:54 INFO Running task: 12_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:52:55 INFO Test Passed!
+
+
+2023-12-06 20:52:55 INFO Running task: 13_0...
+2023-12-06 20:52:56 INFO Test Passed!
+
+
+2023-12-06 20:52:56 INFO Running task: 14_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:52:57 INFO Test Passed!
+
+
+2023-12-06 20:52:57 INFO Running task: 15_0...
+2023-12-06 20:52:58 INFO Test Passed!
+
+
+2023-12-06 20:52:58 INFO Running task: 16_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:237: error: incompatible types: possible lossy conversion from long to int
+    return ans == Integer.MAX_VALUE ? -1 : ans + target / total * n;
+                                    ^
+1 error
+error: compilation failed
+2023-12-06 20:52:58 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:52:58 INFO Compilation Failed!
+2023-12-06 20:52:58 INFO run_output: b''
+
+
+2023-12-06 20:52:58 INFO Running task: 17_0...
+2023-12-06 20:52:59 INFO Test Passed!
+
+
+2023-12-06 20:52:59 INFO Running task: 18_0...
+2023-12-06 20:53:00 INFO Test Passed!
+
+
+2023-12-06 20:53:00 INFO Running task: 19_0...
+2023-12-06 20:53:01 INFO Test Passed!
+
+
+2023-12-06 20:53:01 INFO Running task: 20_0...
+2023-12-06 20:53:02 INFO Test Passed!
+
+
+2023-12-06 20:53:02 INFO Running task: 21_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:03 INFO Test Passed!
+
+
+2023-12-06 20:53:03 INFO Running task: 22_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:223: error: cannot find symbol
+        BiFunction<Long, Long, Boolean> check = (num) -> {
+        ^
+  symbol:   class BiFunction
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:238: error: unexpected type
+            (check.apply(mid) ? left : right) = mid;
+                              ^
+  required: variable
+  found:    value
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-06 20:53:04 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:04 INFO Compilation Failed!
+2023-12-06 20:53:04 INFO run_output: b''
+
+
+2023-12-06 20:53:04 INFO Running task: 23_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:05 INFO Test Passed!
+
+
+2023-12-06 20:53:05 INFO Running task: 24_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:06 INFO Test Passed!
+
+
+2023-12-06 20:53:06 INFO Running task: 25_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:07 INFO Test Passed!
+
+
+2023-12-06 20:53:07 INFO Running task: 26_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:08 INFO Test Passed!
+
+
+2023-12-06 20:53:08 INFO Running task: 27_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:09 INFO Test Passed!
+
+
+2023-12-06 20:53:09 INFO Running task: 28_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:228: error: bad operand types for binary operator '+'
+        ans += s > 0;
+            ^
+  first type:  int
+  second type: boolean
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-06 20:53:09 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:09 INFO Compilation Failed!
+2023-12-06 20:53:09 INFO run_output: b''
+
+
+2023-12-06 20:53:09 INFO Running task: 29_0...
+2023-12-06 20:53:10 INFO Test Passed!
+
+
+2023-12-06 20:53:10 INFO Running task: 30_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:276)
+	at Test.main(test.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:276)
+	at Test.main(test.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:276)
+	at Test.main(test.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:276)
+	at Test.main(test.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:276)
+	at Test.main(test.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-06 20:53:11 INFO Test Failed!
+2023-12-06 20:53:11 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-06 20:53:11 INFO Running task: 31_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:222: error: no suitable method found for min(int,int,int,int,int)
+    return Math.min(f("00", num), f("25", num), f("50", num), f("75", num), zero);
+               ^
+    method Math.min(int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(long,long) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(double,double) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+error: compilation failed
+2023-12-06 20:53:12 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:12 INFO Compilation Failed!
+2023-12-06 20:53:12 INFO run_output: b''
+
+
+2023-12-06 20:53:12 INFO Running task: 32_0...
+2023-12-06 20:53:13 INFO Test Passed!
+
+
+2023-12-06 20:53:13 INFO Running task: 33_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:14 INFO Test Passed!
+
+
+2023-12-06 20:53:14 INFO Running task: 34_0...
+2023-12-06 20:53:15 INFO Test Passed!
+
+
+2023-12-06 20:53:15 INFO Running task: 35_0...
+2023-12-06 20:53:16 INFO Test Passed!
+
+
+2023-12-06 20:53:16 INFO Running task: 36_0...
+2023-12-06 20:53:17 INFO Test Passed!
+
+
+2023-12-06 20:53:17 INFO Running task: 37_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:18 INFO Test Passed!
+
+
+2023-12-06 20:53:18 INFO Running task: 38_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:18 INFO Test Passed!
+
+
+2023-12-06 20:53:18 INFO Running task: 39_0...
+2023-12-06 20:53:19 INFO Test Passed!
+
+
+2023-12-06 20:53:19 INFO Running task: 40_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:20 INFO Test Passed!
+
+
+2023-12-06 20:53:20 INFO Running task: 41_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:21 INFO Test Passed!
+
+
+2023-12-06 20:53:21 INFO Running task: 42_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:226: error: cannot find symbol
+            Integer it = s.lower(y);
+                          ^
+  symbol:   method lower(int)
+  location: variable s of type Set<Integer>
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:228: error: cannot find symbol
+                ans = Math.min(ans, Math.min(Math.abs(y - it), Math.abs(y - s.higher(it))));
+                                                                             ^
+  symbol:   method higher(Integer)
+  location: variable s of type Set<Integer>
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-06 20:53:22 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:22 INFO Compilation Failed!
+2023-12-06 20:53:22 INFO run_output: b''
+
+
+2023-12-06 20:53:22 INFO Running task: 43_0...
+2023-12-06 20:53:22 INFO Test Passed!
+
+
+2023-12-06 20:53:22 INFO Running task: 44_0...
+2023-12-06 20:53:23 INFO Test Failed!
+2023-12-06 20:53:23 INFO run_output: b'0 88\nTestcase No.1 Failed!\n0 -1\nTestcase No.2 Failed!\n0 19904\nTestcase No.3 Failed!\n0 19800\nTestcase No.4 Failed!\n0 16961\nTestcase No.5 Failed!\n0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-06 20:53:23 INFO Running task: 45_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:227: error: no suitable constructor found for String(Deque<Character>)
+        return tail ? new String(q) : new StringBuilder(q).reverse().toString();
+                      ^
+    constructor String.String() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(String) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to String)
+    constructor String.String(char[]) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to char[])
+    constructor String.String(char[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(int[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[]) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to byte[])
+    constructor String.String(StringBuffer) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to StringBuffer)
+    constructor String.String(StringBuilder) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to StringBuilder)
+    constructor String.String(char[],int,int,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(AbstractStringBuilder,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],byte) is not applicable
+      (actual and formal argument lists differ in length)
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:227: error: no suitable constructor found for StringBuilder(Deque<Character>)
+        return tail ? new String(q) : new StringBuilder(q).reverse().toString();
+                                      ^
+    constructor StringBuilder.StringBuilder() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor StringBuilder.StringBuilder(int) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to int)
+    constructor StringBuilder.StringBuilder(String) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to String)
+    constructor StringBuilder.StringBuilder(CharSequence) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to CharSequence)
+2 errors
+error: compilation failed
+2023-12-06 20:53:24 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:24 INFO Compilation Failed!
+2023-12-06 20:53:24 INFO run_output: b''
+
+
+2023-12-06 20:53:24 INFO Running task: 46_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:25 INFO Test Passed!
+
+
+2023-12-06 20:53:25 INFO Running task: 47_0...
+2023-12-06 20:53:26 INFO Test Passed!
+
+
+2023-12-06 20:53:26 INFO Running task: 48_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:27 INFO Test Passed!
+
+
+2023-12-06 20:53:27 INFO Running task: 49_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:222: error: bad operand types for binary operator '+'
+        ans += h >= target;
+            ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-06 20:53:28 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:28 INFO Compilation Failed!
+2023-12-06 20:53:28 INFO run_output: b''
+
+
+2023-12-06 20:53:28 INFO Running task: 50_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:221: error: cannot find symbol
+        Consumer<String> func = str -> {
+        ^
+  symbol:   class Consumer
+  location: class Test
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-06 20:53:28 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:28 INFO Compilation Failed!
+2023-12-06 20:53:28 INFO run_output: b''
+
+
+2023-12-06 20:53:28 INFO Running task: 51_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:29 INFO Test Passed!
+
+
+2023-12-06 20:53:29 INFO Running task: 52_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:30 INFO Test Passed!
+
+
+2023-12-06 20:53:30 INFO Running task: 53_0...
+2023-12-06 20:53:31 INFO Test Failed!
+2023-12-06 20:53:31 INFO run_output: b'4 4\n85264 85264\n78818884 78818884\n752253184 20752136\nTestcase No.4 Failed!\n660384893 136582381\nTestcase No.5 Failed!\n3 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-06 20:53:31 INFO Running task: 54_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:32 INFO Test Passed!
+
+
+2023-12-06 20:53:32 INFO Running task: 55_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:33 INFO Test Passed!
+
+
+2023-12-06 20:53:33 INFO Running task: 56_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:35 INFO Test Passed!
+
+
+2023-12-06 20:53:35 INFO Running task: 57_0...
+2023-12-06 20:53:36 INFO Test Passed!
+
+
+2023-12-06 20:53:36 INFO Running task: 58_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:221: error: incompatible types: int cannot be converted to boolean
+        return root.val;
+                   ^
+1 error
+error: compilation failed
+2023-12-06 20:53:36 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:36 INFO Compilation Failed!
+2023-12-06 20:53:36 INFO run_output: b''
+
+
+2023-12-06 20:53:36 INFO Running task: 59_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:38 INFO Test Passed!
+
+
+2023-12-06 20:53:38 INFO Running task: 60_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:39 INFO Test Passed!
+
+
+2023-12-06 20:53:39 INFO Running task: 61_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:40 INFO Test Passed!
+
+
+2023-12-06 20:53:40 INFO Running task: 62_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:41 INFO Test Failed!
+2023-12-06 20:53:41 INFO run_output: b'11 1\nTestcase No.1 Failed!\n14 4\nTestcase No.2 Failed!\n12 0\nTestcase No.3 Failed!\n24 21\nTestcase No.4 Failed!\n20 16\nTestcase No.5 Failed!\n0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-06 20:53:41 INFO Running task: 63_0...
+2023-12-06 20:53:42 INFO Test Passed!
+
+
+2023-12-06 20:53:42 INFO Running task: 64_0...
+2023-12-06 20:53:43 INFO Test Passed!
+
+
+2023-12-06 20:53:43 INFO Running task: 65_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:44 INFO Test Passed!
+
+
+2023-12-06 20:53:44 INFO Running task: 66_0...
+2023-12-06 20:53:45 INFO Test Passed!
+
+
+2023-12-06 20:53:45 INFO Running task: 67_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:46 INFO Test Passed!
+
+
+2023-12-06 20:53:46 INFO Running task: 68_0...
+2023-12-06 20:53:47 INFO Test Passed!
+
+
+2023-12-06 20:53:47 INFO Running task: 69_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:49 INFO Test Passed!
+
+
+2023-12-06 20:53:49 INFO Running task: 70_0...
+2023-12-06 20:53:49 INFO Test Passed!
+
+
+2023-12-06 20:53:49 INFO Running task: 71_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:250: error: bad operand types for binary operator '&&'
+            if (deg[i] == 1 && coins[i]) {
+                            ^
+  first type:  boolean
+  second type: int
+1 error
+error: compilation failed
+2023-12-06 20:53:50 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:50 INFO Compilation Failed!
+2023-12-06 20:53:50 INFO run_output: b''
+
+
+2023-12-06 20:53:50 INFO Running task: 72_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:51 INFO Test Passed!
+
+
+2023-12-06 20:53:51 INFO Running task: 73_0...
+2023-12-06 20:53:52 INFO Test Passed!
+
+
+2023-12-06 20:53:52 INFO Running task: 74_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:53 INFO Test Passed!
+
+
+2023-12-06 20:53:53 INFO Running task: 75_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:53:54 INFO Test Passed!
+
+
+2023-12-06 20:53:54 INFO Running task: 76_0...
+2023-12-06 20:53:55 INFO Test Passed!
+
+
+2023-12-06 20:53:55 INFO Running task: 77_0...
+2023-12-06 20:53:56 INFO Test Passed!
+
+
+2023-12-06 20:53:56 INFO Running task: 78_0...
+2023-12-06 20:53:57 INFO Test Failed!
+2023-12-06 20:53:57 INFO run_output: b'3 4\nTestcase No.1 Failed!\n10 11\nTestcase No.2 Failed!\n10 11\nTestcase No.3 Failed!\n99999 100000\nTestcase No.4 Failed!\n50000 50000\n1 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-06 20:53:57 INFO Running task: 79_0...
+2023-12-06 20:53:58 INFO Test Passed!
+
+
+2023-12-06 20:53:58 INFO Running task: 80_0...
+2023-12-06 20:53:58 INFO Test Passed!
+
+
+2023-12-06 20:53:58 INFO Running task: 81_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:252: error: invalid method declaration; return type required
+public static Pair(K key, V value) {
+              ^
+1 error
+error: compilation failed
+2023-12-06 20:53:59 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:53:59 INFO Compilation Failed!
+2023-12-06 20:53:59 INFO run_output: b''
+
+
+2023-12-06 20:53:59 INFO Running task: 82_0...
+2023-12-06 20:54:00 INFO Test Passed!
+
+
+2023-12-06 20:54:00 INFO Running task: 83_0...
+2023-12-06 20:54:01 INFO Test Passed!
+
+
+2023-12-06 20:54:01 INFO Running task: 84_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:54:01 INFO Test Passed!
+
+
+2023-12-06 20:54:01 INFO Running task: 85_0...
+2023-12-06 20:54:02 INFO Test Passed!
+
+
+2023-12-06 20:54:02 INFO Running task: 86_0...
+2023-12-06 20:54:03 INFO Test Passed!
+
+
+2023-12-06 20:54:03 INFO Running task: 87_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:231: error: cannot find symbol
+                if (cnt[logs[right][0]]++ == 0) {
+                    ^
+  symbol:   variable cnt
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:237: error: cannot find symbol
+                if (--cnt[logs[left][0]] == 0) {
+                      ^
+  symbol:   variable cnt
+  location: class Test
+2 errors
+error: compilation failed
+2023-12-06 20:54:04 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:54:04 INFO Compilation Failed!
+2023-12-06 20:54:04 INFO run_output: b''
+
+
+2023-12-06 20:54:04 INFO Running task: 88_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:230: error: incompatible types: int cannot be converted to boolean
+            if (g.get(i).size() % 2) odd.add(i);
+                                ^
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-06 20:54:05 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:54:05 INFO Compilation Failed!
+2023-12-06 20:54:05 INFO run_output: b''
+
+
+2023-12-06 20:54:05 INFO Running task: 89_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:272: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: String,List<String>
+  found:    String,String[]
+  reason: argument mismatch; String[] cannot be converted to List<String>
+1 error
+error: compilation failed
+2023-12-06 20:54:05 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:54:05 INFO Compilation Failed!
+2023-12-06 20:54:05 INFO run_output: b''
+
+
+2023-12-06 20:54:05 INFO Running task: 90_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:220: error: non-static variable this cannot be referenced from a static context
+        this.coins = coins;
+        ^
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:220: error: cannot find symbol
+        this.coins = coins;
+            ^
+  symbol: variable coins
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:221: error: cannot find symbol
+        g = new int[coins.length][];
+        ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:224: error: cannot find symbol
+            g[x] = Arrays.copyOf(g[x], g[x].length + 1);
+            ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:224: error: cannot find symbol
+            g[x] = Arrays.copyOf(g[x], g[x].length + 1);
+                                 ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:224: error: cannot find symbol
+            g[x] = Arrays.copyOf(g[x], g[x].length + 1);
+                                       ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:225: error: cannot find symbol
+            g[x][g[x].length - 1] = y;
+            ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:225: error: cannot find symbol
+            g[x][g[x].length - 1] = y;
+                 ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:226: error: cannot find symbol
+            g[y] = Arrays.copyOf(g[y], g[y].length + 1);
+            ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:226: error: cannot find symbol
+            g[y] = Arrays.copyOf(g[y], g[y].length + 1);
+                                 ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:226: error: cannot find symbol
+            g[y] = Arrays.copyOf(g[y], g[y].length + 1);
+                                       ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:227: error: cannot find symbol
+            g[y][g[y].length - 1] = x;
+            ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:227: error: cannot find symbol
+            g[y][g[y].length - 1] = x;
+                 ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:234: error: cannot find symbol
+        for (int y : g[x]) {
+                     ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:245: error: cannot find symbol
+            res1[j] = Math.max(res1[j] + (coins[x] >> j) - k, res2[j] + (coins[x] >> (j + 1)));
+                                          ^
+  symbol:   variable coins
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:245: error: cannot find symbol
+            res1[j] = Math.max(res1[j] + (coins[x] >> j) - k, res2[j] + (coins[x] >> (j + 1)));
+                                                           ^
+  symbol:   variable k
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:245: error: cannot find symbol
+            res1[j] = Math.max(res1[j] + (coins[x] >> j) - k, res2[j] + (coins[x] >> (j + 1)));
+                                                                         ^
+  symbol:   variable coins
+  location: class Test
+17 errors
+error: compilation failed
+2023-12-06 20:54:06 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:54:06 INFO Compilation Failed!
+2023-12-06 20:54:06 INFO run_output: b''
+
+
+2023-12-06 20:54:06 INFO Running task: 91_0...
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:235: error: bad operand type Integer for unary operator '!'
+            if (!vis.get(i)) {
+                ^
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:239: error: bad operand types for binary operator '+'
+                ans += e == v * (v - 1);
+                    ^
+  first type:  int
+  second type: boolean
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:250: error: bad operand type Integer for unary operator '!'
+            if (!vis.get(y)) {
+                ^
+/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java:294: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: int,List<List<Integer>>
+  found:    int,int[][]
+  reason: argument mismatch; int[][] cannot be converted to List<List<Integer>>
+4 errors
+error: compilation failed
+2023-12-06 20:54:07 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-06 20:54:07 INFO Compilation Failed!
+2023-12-06 20:54:07 INFO run_output: b''
+
+
+2023-12-06 20:54:07 INFO Running task: 92_0...
+2023-12-06 20:54:08 INFO Test Passed!
+
+
+2023-12-06 20:54:08 INFO Running task: 93_0...
+2023-12-06 20:54:09 INFO Test Passed!
+
+
+2023-12-06 20:54:09 INFO Running task: 94_0...
+2023-12-06 20:54:10 INFO Test Passed!
+
+
+2023-12-06 20:54:10 INFO Running task: 95_0...
+Note: /home/ubuntu/test_codellm/unit_tests/spark/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-06 20:54:10 INFO Test Passed!
+
+
+2023-12-06 20:54:10 INFO Running task: 96_0...
+2023-12-06 20:54:11 INFO Test Passed!
+
+
+2023-12-06 20:54:11 INFO Running task: 97_0...
+2023-12-06 20:54:12 INFO Test Passed!
+
+
+2023-12-06 20:54:12 INFO Running task: 98_0...
+2023-12-06 20:54:13 INFO Test Passed!
+
+
+2023-12-06 20:54:13 INFO Running task: 99_0...
+2023-12-06 20:54:14 INFO Test Passed!
+
+
+2023-12-06 20:54:14 INFO Running task: 100_0...
+2023-12-06 20:54:15 INFO Test Passed!
+
+
+2023-12-06 20:54:15 INFO [[1], [1], [1], [3], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [3], [1], [2], [3], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [3], [1], [2], [3], [1], [1], [1], [3], [3], [1], [1], [2], [1], [1], [1], [1], [3], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [1], [2], [1], [1], [3], [1], [1], [1], [1], [1], [3], [3], [3], [3], [3], [1], [1], [1], [1], [1], [1], [1], [1], [1]]

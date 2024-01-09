@@ -1,0 +1,2147 @@
+2023-12-07 17:45:24 INFO Running task: 1_0...
+2023-12-07 17:45:25 INFO Test Passed!
+
+
+2023-12-07 17:45:25 INFO Running task: 2_0...
+2023-12-07 17:45:26 INFO Test Passed!
+
+
+2023-12-07 17:45:26 INFO Running task: 3_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:273: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: int[],int
+  found:    List<Integer>,int
+  reason: argument mismatch; List<Integer> cannot be converted to int[]
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:27 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:27 INFO Compilation Failed!
+2023-12-07 17:45:27 INFO run_output: b''
+
+
+2023-12-07 17:45:27 INFO Running task: 4_0...
+2023-12-07 17:45:28 INFO Test Passed!
+
+
+2023-12-07 17:45:28 INFO Running task: 5_0...
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:231)
+	at Test.start(test.java:280)
+	at Test.main(test.java:301)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 6
+	at Test.testfunc(test.java:222)
+	at Test.start(test.java:280)
+	at Test.main(test.java:301)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:231)
+	at Test.start(test.java:280)
+	at Test.main(test.java:301)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:231)
+	at Test.start(test.java:280)
+	at Test.main(test.java:301)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:231)
+	at Test.start(test.java:280)
+	at Test.main(test.java:301)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 17:45:29 INFO Test Failed!
+2023-12-07 17:45:29 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:45:29 INFO Running task: 6_0...
+2023-12-07 17:45:30 INFO Test Failed!
+2023-12-07 17:45:30 INFO run_output: b'9 9\n13 13\n2147483647 -1\nTestcase No.3 Failed!\n2147483647 -1\nTestcase No.4 Failed!\n299999998 299999998\n3 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:45:30 INFO Running task: 7_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:228: error: cannot find symbol
+                suf = suf * grid[i][j] % MOD;
+                                         ^
+  symbol:   variable MOD
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:235: error: cannot find symbol
+                p[i][j] = p[i][j] * pre % MOD;
+                                          ^
+  symbol:   variable MOD
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:236: error: cannot find symbol
+                pre = pre * grid[i][j] % MOD;
+                                         ^
+  symbol:   variable MOD
+  location: class Test
+3 errors
+error: compilation failed
+2023-12-07 17:45:30 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:30 INFO Compilation Failed!
+2023-12-07 17:45:30 INFO run_output: b''
+
+
+2023-12-07 17:45:30 INFO Running task: 8_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: cannot find symbol
+        int cnt1 = s.count('1');
+                    ^
+  symbol:   method count(char)
+  location: variable s of type String
+1 error
+error: compilation failed
+2023-12-07 17:45:31 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:31 INFO Compilation Failed!
+2023-12-07 17:45:31 INFO run_output: b''
+
+
+2023-12-07 17:45:31 INFO Running task: 9_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: illegal character: '\'
+    if (s.count(\"1\") < k) {
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: unclosed string literal
+    if (s.count(\"1\") < k) {
+                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: illegal character: '\'
+        return \"\";
+               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: unclosed string literal
+        return \"\";
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: illegal start of type
+    for (int right = 0; right < s.length(); right++) {
+    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: > expected
+    for (int right = 0; right < s.length(); right++) {
+                                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: <identifier> expected
+    for (int right = 0; right < s.length(); right++) {
+                                                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:239: error: illegal start of type
+    return ans;
+    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:239: error: <identifier> expected
+    return ans;
+              ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:243: error: class, interface, enum, or record expected
+    public static void start() {
+                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:245: error: class, interface, enum, or record expected
+        int count = 0;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:248: error: class, interface, enum, or record expected
+        String[] input_type = {"String", "int"};
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:249: error: class, interface, enum, or record expected
+        String output_type = "String";
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:251: error: class, interface, enum, or record expected
+        String data1;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:252: error: class, interface, enum, or record expected
+		int data2;
+		^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:253: error: class, interface, enum, or record expected
+        String return_data;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:254: error: class, interface, enum, or record expected
+        String gold_ans;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:256: error: class, interface, enum, or record expected
+        String basePath = "/home/ubuntu/test_codellm/datas/testcases/9";
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:257: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:257: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+                             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:257: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+                                          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:260: error: class, interface, enum, or record expected
+            String[] inputDatas;
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:261: error: class, interface, enum, or record expected
+            try (BufferedReader br = new BufferedReader(new FileReader(Paths.get(basePath, folder + "i.txt").toString()))) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:263: error: class, interface, enum, or record expected
+            } catch (FileNotFoundException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:265: error: class, interface, enum, or record expected
+            } catch (IOException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:267: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:269: error: class, interface, enum, or record expected
+		data2 = (int)convertToType(inputDatas[1].trim(), input_type[1]);
+		^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:271: error: class, interface, enum, or record expected
+            String returnDatas = null;
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:272: error: class, interface, enum, or record expected
+            try (BufferedReader br = new BufferedReader(new FileReader(Paths.get(basePath, folder + "o.txt").toString()))) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:274: error: class, interface, enum, or record expected
+            } catch (IOException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:276: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:279: error: class, interface, enum, or record expected
+            try {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:281: error: class, interface, enum, or record expected
+                if (areEquivalent(return_data, gold_ans)){
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:283: error: class, interface, enum, or record expected
+                }else{
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:285: error: class, interface, enum, or record expected
+                }
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:288: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:294: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:296: error: class, interface, enum, or record expected
+            System.out.println("Test Failed!");
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:297: error: class, interface, enum, or record expected
+        }
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:300: error: class, interface, enum, or record expected
+    public static void main(String[] args) {
+                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:302: error: class, interface, enum, or record expected
+    }
+    ^
+41 errors
+error: compilation failed
+2023-12-07 17:45:32 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:32 INFO Compilation Failed!
+2023-12-07 17:45:32 INFO run_output: b''
+
+
+2023-12-07 17:45:32 INFO Running task: 10_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: bad operand types for binary operator '+'
+        t += s.charAt(i - 1) >= s.charAt(i);
+          ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-07 17:45:32 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:32 INFO Compilation Failed!
+2023-12-07 17:45:32 INFO run_output: b''
+
+
+2023-12-07 17:45:32 INFO Running task: 11_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:224: error: for-each not applicable to expression type
+    for (int num : ul) {
+                   ^
+  required: array or java.lang.Iterable
+  found:    int
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:33 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:33 INFO Compilation Failed!
+2023-12-07 17:45:33 INFO run_output: b''
+
+
+2023-12-07 17:45:33 INFO Running task: 12_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: ')' expected
+                ans.add(-1 if k > nums.size() else nums.get(k - 1));
+                          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: '(' expected
+                ans.add(-1 if k > nums.size() else nums.get(k - 1));
+                             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: ')' expected
+                ans.add(-1 if k > nums.size() else nums.get(k - 1));
+                                             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: ';' expected
+                ans.add(-1 if k > nums.size() else nums.get(k - 1));
+                                                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: 'else' without 'if'
+                ans.add(-1 if k > nums.size() else nums.get(k - 1));
+                                              ^
+5 errors
+error: compilation failed
+2023-12-07 17:45:33 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:33 INFO Compilation Failed!
+2023-12-07 17:45:33 INFO run_output: b''
+
+
+2023-12-07 17:45:33 INFO Running task: 13_0...
+2023-12-07 17:45:34 INFO Test Failed!
+2023-12-07 17:45:34 INFO run_output: b'5 4\nTestcase No.1 Failed!\n-1 -1\n250 -1\nTestcase No.3 Failed!\n250 254\nTestcase No.4 Failed!\n-1 254\nTestcase No.5 Failed!\n1 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:45:34 INFO Running task: 14_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: method sort in interface List<E> cannot be applied to given types;
+    processorTime.sort();
+                 ^
+  required: Comparator<? super Integer>
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+  where E is a type-variable:
+    E extends Object declared in interface List
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:35 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:35 INFO Compilation Failed!
+2023-12-07 17:45:35 INFO run_output: b''
+
+
+2023-12-07 17:45:35 INFO Running task: 15_0...
+2023-12-07 17:45:36 INFO Test Passed!
+
+
+2023-12-07 17:45:36 INFO Running task: 16_0...
+2023-12-07 17:45:37 INFO Test Failed!
+2023-12-07 17:45:37 INFO run_output: b'-1 2\nTestcase No.1 Failed!\n-1 2\nTestcase No.2 Failed!\n-1 -1\n-1 2\nTestcase No.4 Failed!\n-1 18424\nTestcase No.5 Failed!\n1 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:45:37 INFO Running task: 17_0...
+2023-12-07 17:45:38 INFO Test Passed!
+
+
+2023-12-07 17:45:38 INFO Running task: 18_0...
+2023-12-07 17:45:39 INFO Test Passed!
+
+
+2023-12-07 17:45:39 INFO Running task: 19_0...
+2023-12-07 17:45:40 INFO Test Passed!
+
+
+2023-12-07 17:45:40 INFO Running task: 20_0...
+2023-12-07 17:45:41 INFO Test Passed!
+
+
+2023-12-07 17:45:41 INFO Running task: 21_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:270: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: int[],int
+  found:    List<Integer>,int
+  reason: argument mismatch; List<Integer> cannot be converted to int[]
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:41 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:41 INFO Compilation Failed!
+2023-12-07 17:45:41 INFO run_output: b''
+
+
+2023-12-07 17:45:41 INFO Running task: 22_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: no suitable method found for stream(List<Integer>)
+    int mx = Arrays.stream(stock).min() + budget;
+                   ^
+    method Arrays.<T#1>stream(T#1[]) is not applicable
+      (cannot infer type-variable(s) T#1
+        (argument mismatch; List<Integer> cannot be converted to T#1[]))
+    method Arrays.<T#2>stream(T#2[],int,int) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+    method Arrays.stream(int[]) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to int[])
+    method Arrays.stream(int[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.stream(long[]) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to long[])
+    method Arrays.stream(long[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.stream(double[]) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to double[])
+    method Arrays.stream(double[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>stream(T#1[])
+    T#2 extends Object declared in method <T#2>stream(T#2[],int,int)
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:239: error: cannot find symbol
+    for (int[] s : stock) {
+                   ^
+  symbol:   variable stock
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:240: error: method get in interface List<E> cannot be applied to given types;
+        int base = com.get(s);
+                      ^
+  required: int
+  found:    int[]
+  reason: argument mismatch; int[] cannot be converted to int
+  where E is a type-variable:
+    E extends Object declared in interface List
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:241: error: bad operand types for binary operator '<'
+        if (s < base * mid) {
+              ^
+  first type:  int[]
+  second type: int
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:242: error: bad operand types for binary operator '-'
+            money += (base * mid - s) * cost.get(s);
+                                 ^
+  first type:  int
+  second type: int[]
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:242: error: cannot find symbol
+            money += (base * mid - s) * cost.get(s);
+                                        ^
+  symbol:   variable cost
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:243: error: cannot find symbol
+            if (money > budget) {
+                        ^
+  symbol:   variable budget
+  location: class Test
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+7 errors
+error: compilation failed
+2023-12-07 17:45:42 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:42 INFO Compilation Failed!
+2023-12-07 17:45:42 INFO run_output: b''
+
+
+2023-12-07 17:45:42 INFO Running task: 23_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:45:43 INFO Test Failed!
+2023-12-07 17:45:43 INFO run_output: b'2 2\n3 3\n12 4\nTestcase No.3 Failed!\n100000 1\nTestcase No.4 Failed!\n27954 92\nTestcase No.5 Failed!\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:45:43 INFO Running task: 24_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:267: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: int[],int
+  found:    List<Integer>,int
+  reason: argument mismatch; List<Integer> cannot be converted to int[]
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:44 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:44 INFO Compilation Failed!
+2023-12-07 17:45:44 INFO run_output: b''
+
+
+2023-12-07 17:45:44 INFO Running task: 25_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: incompatible types: List<Integer> cannot be converted to int[]
+        for (int[] xy : coordinates) {
+                        ^
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:45 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:45 INFO Compilation Failed!
+2023-12-07 17:45:45 INFO run_output: b''
+
+
+2023-12-07 17:45:45 INFO Running task: 26_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:45:45 INFO Test Passed!
+
+
+2023-12-07 17:45:45 INFO Running task: 27_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:45:46 INFO Test Passed!
+
+
+2023-12-07 17:45:46 INFO Running task: 28_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: incompatible types: List<Integer> cannot be converted to int[]
+    for (int[] p : nums) {
+                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:228: error: bad operand types for binary operator '+'
+        ans += s > 0;
+            ^
+  first type:  int
+  second type: boolean
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-07 17:45:47 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:47 INFO Compilation Failed!
+2023-12-07 17:45:47 INFO run_output: b''
+
+
+2023-12-07 17:45:47 INFO Running task: 29_0...
+2023-12-07 17:45:48 INFO Test Passed!
+
+
+2023-12-07 17:45:48 INFO Running task: 30_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:235: error: method getOrDefault in interface Map<K,V> cannot be applied to given types;
+            countMap.put(preSum[i] % modulo, countMap.getOrDefault(preSum[i] % modulo, 0) + 1);
+                                                     ^
+  required: Object,Long
+  found:    int,int
+  reason: argument mismatch; int cannot be converted to Long
+  where K,V are type-variables:
+    K extends Object declared in interface Map
+    V extends Object declared in interface Map
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:281: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2, data3);
+                              ^
+  required: int[],int,int
+  found:    List<Integer>,int,int
+  reason: argument mismatch; List<Integer> cannot be converted to int[]
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-07 17:45:49 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:49 INFO Compilation Failed!
+2023-12-07 17:45:49 INFO run_output: b''
+
+
+2023-12-07 17:45:49 INFO Running task: 31_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: illegal character: '\'
+    if (\"0\" == num.charAt(0)) {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: unclosed string literal
+    if (\"0\" == num.charAt(0)) {
+         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: illegal start of type
+    return Math.min(f(\"00\", num), f(\"25\", num), f(\"50\", num), f(\"75\", num), zero);
+    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: <identifier> expected
+    return Math.min(f(\"00\", num), f(\"25\", num), f(\"50\", num), f(\"75\", num), zero);
+                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: <identifier> expected
+    return Math.min(f(\"00\", num), f(\"25\", num), f(\"50\", num), f(\"75\", num), zero);
+                     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: illegal character: '\'
+    return Math.min(f(\"00\", num), f(\"25\", num), f(\"50\", num), f(\"75\", num), zero);
+                      ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: unclosed string literal
+    return Math.min(f(\"00\", num), f(\"25\", num), f(\"50\", num), f(\"75\", num), zero);
+                       ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:244: error: class, interface, enum, or record expected
+public static int f(String target, String num) {
+              ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:247: error: class, interface, enum, or record expected
+            if (i < 0) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:249: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:251: error: class, interface, enum, or record expected
+            if (i < 0) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:253: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:255: error: class, interface, enum, or record expected
+        } catch (StringIndexOutOfBoundsException e) {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:257: error: class, interface, enum, or record expected
+        }
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:261: error: class, interface, enum, or record expected
+    public static void start() {
+                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:263: error: class, interface, enum, or record expected
+        int count = 0;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:266: error: class, interface, enum, or record expected
+        String[] input_type = {"String"};
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:267: error: class, interface, enum, or record expected
+        String output_type = "int";
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:269: error: class, interface, enum, or record expected
+        String data1;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:270: error: class, interface, enum, or record expected
+        int return_data;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:271: error: class, interface, enum, or record expected
+        int gold_ans;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:273: error: class, interface, enum, or record expected
+        String basePath = "/home/ubuntu/test_codellm/datas/testcases/31";
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:274: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:274: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+                             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:274: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+                                          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:277: error: class, interface, enum, or record expected
+            String[] inputDatas;
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:278: error: class, interface, enum, or record expected
+            try (BufferedReader br = new BufferedReader(new FileReader(Paths.get(basePath, folder + "i.txt").toString()))) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:280: error: class, interface, enum, or record expected
+            } catch (FileNotFoundException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:282: error: class, interface, enum, or record expected
+            } catch (IOException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:284: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:287: error: class, interface, enum, or record expected
+            String returnDatas = null;
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:288: error: class, interface, enum, or record expected
+            try (BufferedReader br = new BufferedReader(new FileReader(Paths.get(basePath, folder + "o.txt").toString()))) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:290: error: class, interface, enum, or record expected
+            } catch (IOException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:292: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:295: error: class, interface, enum, or record expected
+            try {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:297: error: class, interface, enum, or record expected
+                if (areEquivalent(return_data, gold_ans)){
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:299: error: class, interface, enum, or record expected
+                }else{
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:301: error: class, interface, enum, or record expected
+                }
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:304: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:310: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:312: error: class, interface, enum, or record expected
+            System.out.println("Test Failed!");
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:313: error: class, interface, enum, or record expected
+        }
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:316: error: class, interface, enum, or record expected
+    public static void main(String[] args) {
+                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:318: error: class, interface, enum, or record expected
+    }
+    ^
+44 errors
+error: compilation failed
+2023-12-07 17:45:49 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:49 INFO Compilation Failed!
+2023-12-07 17:45:49 INFO run_output: b''
+
+
+2023-12-07 17:45:49 INFO Running task: 32_0...
+2023-12-07 17:45:50 INFO Test Passed!
+
+
+2023-12-07 17:45:50 INFO Running task: 33_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:45:51 INFO Test Failed!
+2023-12-07 17:45:51 INFO run_output: b'18 18\n23 23\n0 0\n0 19999800010000\nTestcase No.4 Failed!\n2144241121 5507542627046\nTestcase No.5 Failed!\n3 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:45:51 INFO Running task: 34_0...
+2023-12-07 17:45:52 INFO Test Failed!
+2023-12-07 17:45:52 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse true\nTestcase No.3 Failed!\nfalse true\nTestcase No.4 Failed!\nfalse false\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:45:52 INFO Running task: 35_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: cannot find symbol
+        cnt1[i % 2][ord(s1.charAt(i)) - ord('a')]++;
+                    ^
+  symbol:   method ord(char)
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: cannot find symbol
+        cnt1[i % 2][ord(s1.charAt(i)) - ord('a')]++;
+                                        ^
+  symbol:   method ord(char)
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:224: error: cannot find symbol
+        cnt2[i % 2][ord(s2.charAt(i)) - ord('a')]++;
+                    ^
+  symbol:   method ord(char)
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:224: error: cannot find symbol
+        cnt2[i % 2][ord(s2.charAt(i)) - ord('a')]++;
+                                        ^
+  symbol:   method ord(char)
+  location: class Test
+4 errors
+error: compilation failed
+2023-12-07 17:45:53 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:53 INFO Compilation Failed!
+2023-12-07 17:45:53 INFO run_output: b''
+
+
+2023-12-07 17:45:53 INFO Running task: 36_0...
+2023-12-07 17:45:53 INFO Test Passed!
+
+
+2023-12-07 17:45:53 INFO Running task: 37_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:45:54 INFO Test Passed!
+
+
+2023-12-07 17:45:54 INFO Running task: 38_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:269: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: String[],String
+  found:    List<String>,String
+  reason: argument mismatch; List<String> cannot be converted to String[]
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:55 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:55 INFO Compilation Failed!
+2023-12-07 17:45:55 INFO run_output: b''
+
+
+2023-12-07 17:45:55 INFO Running task: 39_0...
+2023-12-07 17:45:56 INFO Test Passed!
+
+
+2023-12-07 17:45:56 INFO Running task: 40_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:45:57 INFO Test Passed!
+
+
+2023-12-07 17:45:57 INFO Running task: 41_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:271: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: int[],int
+  found:    List<Integer>,int
+  reason: argument mismatch; List<Integer> cannot be converted to int[]
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:58 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:58 INFO Compilation Failed!
+2023-12-07 17:45:58 INFO run_output: b''
+
+
+2023-12-07 17:45:58 INFO Running task: 42_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: no suitable method found for binarySearch(List<Integer>,int,int,Integer)
+            int index = Arrays.binarySearch(pre, 0, pre.size() - 1, nums.get(i + x));
+                              ^
+    method Arrays.binarySearch(long[],long) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(long[],int,int,long) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to long[])
+    method Arrays.binarySearch(int[],int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(int[],int,int,int) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to int[])
+    method Arrays.binarySearch(short[],short) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(short[],int,int,short) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to short[])
+    method Arrays.binarySearch(char[],char) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(char[],int,int,char) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to char[])
+    method Arrays.binarySearch(byte[],byte) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(byte[],int,int,byte) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to byte[])
+    method Arrays.binarySearch(double[],double) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(double[],int,int,double) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to double[])
+    method Arrays.binarySearch(float[],float) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(float[],int,int,float) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to float[])
+    method Arrays.binarySearch(Object[],Object) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(Object[],int,int,Object) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to Object[])
+    method Arrays.<T#1>binarySearch(T#1[],T#1,Comparator<? super T#1>) is not applicable
+      (cannot infer type-variable(s) T#1
+        (actual and formal argument lists differ in length))
+    method Arrays.<T#2>binarySearch(T#2[],int,int,T#2,Comparator<? super T#2>) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>binarySearch(T#1[],T#1,Comparator<? super T#1>)
+    T#2 extends Object declared in method <T#2>binarySearch(T#2[],int,int,T#2,Comparator<? super T#2>)
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:45:59 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:59 INFO Compilation Failed!
+2023-12-07 17:45:59 INFO run_output: b''
+
+
+2023-12-07 17:45:59 INFO Running task: 43_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: incompatible types: ListNode cannot be converted to Optional<ListNode>
+        head = new ListNode(0, head.get());
+               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: incompatible types: ListNode cannot be converted to Optional<ListNode>
+    return head.orElse(null);
+                      ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:270: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1);
+                              ^
+  required: Optional<ListNode>
+  found:    ListNode
+  reason: argument mismatch; ListNode cannot be converted to Optional<ListNode>
+3 errors
+error: compilation failed
+2023-12-07 17:45:59 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:45:59 INFO Compilation Failed!
+2023-12-07 17:45:59 INFO run_output: b''
+
+
+2023-12-07 17:45:59 INFO Running task: 44_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:226: error: illegal character: '\'
+        for (int d : Arrays.map(v + \"\", Integer::parseInt)) {
+                                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:226: error: unclosed string literal
+        for (int d : Arrays.map(v + \"\", Integer::parseInt)) {
+                                     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:233: error: illegal start of type
+    return ans;
+    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:233: error: <identifier> expected
+    return ans;
+              ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:237: error: class, interface, enum, or record expected
+    public static void start() {
+                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:239: error: class, interface, enum, or record expected
+        int count = 0;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:242: error: class, interface, enum, or record expected
+        String[] input_type = {"int[]"};
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:243: error: class, interface, enum, or record expected
+        String output_type = "int";
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:245: error: class, interface, enum, or record expected
+        int[] data1;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:246: error: class, interface, enum, or record expected
+        int return_data;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:247: error: class, interface, enum, or record expected
+        int gold_ans;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:249: error: class, interface, enum, or record expected
+        String basePath = "/home/ubuntu/test_codellm/datas/testcases/44";
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:250: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:250: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+                             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:250: error: class, interface, enum, or record expected
+        for (int folder = 1; folder <= 5; folder++) {
+                                          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:253: error: class, interface, enum, or record expected
+            String[] inputDatas;
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:254: error: class, interface, enum, or record expected
+            try (BufferedReader br = new BufferedReader(new FileReader(Paths.get(basePath, folder + "i.txt").toString()))) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:256: error: class, interface, enum, or record expected
+            } catch (FileNotFoundException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:258: error: class, interface, enum, or record expected
+            } catch (IOException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:260: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:263: error: class, interface, enum, or record expected
+            String returnDatas = null;
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:264: error: class, interface, enum, or record expected
+            try (BufferedReader br = new BufferedReader(new FileReader(Paths.get(basePath, folder + "o.txt").toString()))) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:266: error: class, interface, enum, or record expected
+            } catch (IOException e) {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:268: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:271: error: class, interface, enum, or record expected
+            try {
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:273: error: class, interface, enum, or record expected
+                if (areEquivalent(return_data, gold_ans)){
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:275: error: class, interface, enum, or record expected
+                }else{
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:277: error: class, interface, enum, or record expected
+                }
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:280: error: class, interface, enum, or record expected
+            }
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:286: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:288: error: class, interface, enum, or record expected
+            System.out.println("Test Failed!");
+            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:289: error: class, interface, enum, or record expected
+        }
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:292: error: class, interface, enum, or record expected
+    public static void main(String[] args) {
+                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:294: error: class, interface, enum, or record expected
+    }
+    ^
+34 errors
+error: compilation failed
+2023-12-07 17:46:00 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:00 INFO Compilation Failed!
+2023-12-07 17:46:00 INFO run_output: b''
+
+
+2023-12-07 17:46:00 INFO Running task: 45_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: no suitable constructor found for String(Object[])
+        return new String(q.toArray());
+               ^
+    constructor String.String() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(String) is not applicable
+      (argument mismatch; Object[] cannot be converted to String)
+    constructor String.String(char[]) is not applicable
+      (argument mismatch; Object[] cannot be converted to char[])
+    constructor String.String(char[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(int[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[]) is not applicable
+      (argument mismatch; Object[] cannot be converted to byte[])
+    constructor String.String(StringBuffer) is not applicable
+      (argument mismatch; Object[] cannot be converted to StringBuffer)
+    constructor String.String(StringBuilder) is not applicable
+      (argument mismatch; Object[] cannot be converted to StringBuilder)
+    constructor String.String(char[],int,int,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(AbstractStringBuilder,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],byte) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+error: compilation failed
+2023-12-07 17:46:00 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:00 INFO Compilation Failed!
+2023-12-07 17:46:00 INFO run_output: b''
+
+
+2023-12-07 17:46:00 INFO Running task: 46_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:01 INFO Test Passed!
+
+
+2023-12-07 17:46:01 INFO Running task: 47_0...
+2023-12-07 17:46:02 INFO Test Failed!
+2023-12-07 17:46:02 INFO run_output: b'4 3\nTestcase No.1 Failed!\n2 1\nTestcase No.2 Failed!\n2 3\nTestcase No.3 Failed!\n1 1\n4 4\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:46:02 INFO Running task: 48_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:03 INFO Test Passed!
+
+
+2023-12-07 17:46:03 INFO Running task: 49_0...
+2023-12-07 17:46:04 INFO Test Passed!
+
+
+2023-12-07 17:46:04 INFO Running task: 50_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:05 INFO Test Passed!
+
+
+2023-12-07 17:46:05 INFO Running task: 51_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:06 INFO Test Passed!
+
+
+2023-12-07 17:46:06 INFO Running task: 52_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:267)
+	at Test.main(test.java:288)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:267)
+	at Test.main(test.java:288)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:267)
+	at Test.main(test.java:288)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:267)
+	at Test.main(test.java:288)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:267)
+	at Test.main(test.java:288)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 17:46:07 INFO Test Failed!
+2023-12-07 17:46:07 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:46:07 INFO Running task: 53_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: incompatible types: possible lossy conversion from long to int
+    return (n * n) % 1000000007;
+                   ^
+1 error
+error: compilation failed
+2023-12-07 17:46:08 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:08 INFO Compilation Failed!
+2023-12-07 17:46:08 INFO run_output: b''
+
+
+2023-12-07 17:46:08 INFO Running task: 54_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:08 INFO Test Passed!
+
+
+2023-12-07 17:46:08 INFO Running task: 55_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: no suitable method found for toMap(List::get,(i)->i)
+        Map<Integer, Integer> rankMap = ranked.stream().collect(Collectors.toMap(List::get, i -> i));
+                                                                          ^
+    method Collectors.<T#1,K#1,U#1>toMap(Function<? super T#1,? extends K#1>,Function<? super T#1,? extends U#1>) is not applicable
+      (cannot infer type-variable(s) T#1,K#1,U#1
+        (argument mismatch; unexpected instance method get(int) found in unbound lookup))
+    method Collectors.<T#2,K#2,U#2>toMap(Function<? super T#2,? extends K#2>,Function<? super T#2,? extends U#2>,BinaryOperator<U#2>) is not applicable
+      (cannot infer type-variable(s) T#2,K#2,U#2
+        (actual and formal argument lists differ in length))
+    method Collectors.<T#3,K#3,U#3,M>toMap(Function<? super T#3,? extends K#3>,Function<? super T#3,? extends U#3>,BinaryOperator<U#3>,Supplier<M>) is not applicable
+      (cannot infer type-variable(s) T#3,K#3,U#3,M
+        (actual and formal argument lists differ in length))
+  where T#1,K#1,U#1,E,T#2,K#2,U#2,T#3,K#3,U#3,M are type-variables:
+    T#1 extends Object declared in method <T#1,K#1,U#1>toMap(Function<? super T#1,? extends K#1>,Function<? super T#1,? extends U#1>)
+    K#1 extends Object declared in method <T#1,K#1,U#1>toMap(Function<? super T#1,? extends K#1>,Function<? super T#1,? extends U#1>)
+    U#1 extends Object declared in method <T#1,K#1,U#1>toMap(Function<? super T#1,? extends K#1>,Function<? super T#1,? extends U#1>)
+    E extends Object declared in interface List
+    T#2 extends Object declared in method <T#2,K#2,U#2>toMap(Function<? super T#2,? extends K#2>,Function<? super T#2,? extends U#2>,BinaryOperator<U#2>)
+    K#2 extends Object declared in method <T#2,K#2,U#2>toMap(Function<? super T#2,? extends K#2>,Function<? super T#2,? extends U#2>,BinaryOperator<U#2>)
+    U#2 extends Object declared in method <T#2,K#2,U#2>toMap(Function<? super T#2,? extends K#2>,Function<? super T#2,? extends U#2>,BinaryOperator<U#2>)
+    T#3 extends Object declared in method <T#3,K#3,U#3,M>toMap(Function<? super T#3,? extends K#3>,Function<? super T#3,? extends U#3>,BinaryOperator<U#3>,Supplier<M>)
+    K#3 extends Object declared in method <T#3,K#3,U#3,M>toMap(Function<? super T#3,? extends K#3>,Function<? super T#3,? extends U#3>,BinaryOperator<U#3>,Supplier<M>)
+    U#3 extends Object declared in method <T#3,K#3,U#3,M>toMap(Function<? super T#3,? extends K#3>,Function<? super T#3,? extends U#3>,BinaryOperator<U#3>,Supplier<M>)
+    M extends Map<K#3,U#3> declared in method <T#3,K#3,U#3,M>toMap(Function<? super T#3,? extends K#3>,Function<? super T#3,? extends U#3>,BinaryOperator<U#3>,Supplier<M>)
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: method bsearch in class Test cannot be applied to given types;
+            int rank = bsearch(rankNums, score);
+                       ^
+  required: List<Integer>,List<Integer>
+  found:    List<Integer>,Integer
+  reason: argument mismatch; Integer cannot be converted to List<Integer>
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:241: error: incompatible types: int cannot be converted to List<Integer>
+                return mid + 1;
+                           ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:244: error: incompatible types: int cannot be converted to List<Integer>
+        return low + 1;
+                   ^
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 errors
+error: compilation failed
+2023-12-07 17:46:09 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:09 INFO Compilation Failed!
+2023-12-07 17:46:09 INFO run_output: b''
+
+
+2023-12-07 17:46:09 INFO Running task: 56_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:11 INFO Test Passed!
+
+
+2023-12-07 17:46:11 INFO Running task: 57_0...
+2023-12-07 17:46:12 INFO Test Passed!
+
+
+2023-12-07 17:46:12 INFO Running task: 58_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: cannot find symbol
+        if (node.left.isPresent()) {
+                     ^
+  symbol:   method isPresent()
+  location: variable left of type TreeNode
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: method testfunc in class Test cannot be applied to given types;
+            boolean left = testfunc(node.left);
+                           ^
+  required: Optional<TreeNode>
+  found:    TreeNode
+  reason: argument mismatch; TreeNode cannot be converted to Optional<TreeNode>
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:224: error: method testfunc in class Test cannot be applied to given types;
+            boolean right = testfunc(node.right);
+                            ^
+  required: Optional<TreeNode>
+  found:    TreeNode
+  reason: argument mismatch; TreeNode cannot be converted to Optional<TreeNode>
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: no suitable method found for valueOf(int)
+            return Boolean.valueOf(node.val);
+                          ^
+    method Boolean.valueOf(boolean) is not applicable
+      (argument mismatch; int cannot be converted to boolean)
+    method Boolean.valueOf(String) is not applicable
+      (argument mismatch; int cannot be converted to String)
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:270: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1);
+                              ^
+  required: Optional<TreeNode>
+  found:    TreeNode
+  reason: argument mismatch; TreeNode cannot be converted to Optional<TreeNode>
+5 errors
+error: compilation failed
+2023-12-07 17:46:13 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:13 INFO Compilation Failed!
+2023-12-07 17:46:13 INFO run_output: b''
+
+
+2023-12-07 17:46:13 INFO Running task: 59_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:14 INFO Test Passed!
+
+
+2023-12-07 17:46:14 INFO Running task: 60_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:15 INFO Test Passed!
+
+
+2023-12-07 17:46:15 INFO Running task: 61_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:228: error: no suitable method found for binarySearch(List<Long>,long)
+            int idx = Arrays.binarySearch(sortedSums, currentSum);
+                            ^
+    method Arrays.binarySearch(long[],long) is not applicable
+      (argument mismatch; List<Long> cannot be converted to long[])
+    method Arrays.binarySearch(long[],int,int,long) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(int[],int) is not applicable
+      (argument mismatch; List<Long> cannot be converted to int[])
+    method Arrays.binarySearch(int[],int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(short[],short) is not applicable
+      (argument mismatch; List<Long> cannot be converted to short[])
+    method Arrays.binarySearch(short[],int,int,short) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(char[],char) is not applicable
+      (argument mismatch; List<Long> cannot be converted to char[])
+    method Arrays.binarySearch(char[],int,int,char) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(byte[],byte) is not applicable
+      (argument mismatch; List<Long> cannot be converted to byte[])
+    method Arrays.binarySearch(byte[],int,int,byte) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(double[],double) is not applicable
+      (argument mismatch; List<Long> cannot be converted to double[])
+    method Arrays.binarySearch(double[],int,int,double) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(float[],float) is not applicable
+      (argument mismatch; List<Long> cannot be converted to float[])
+    method Arrays.binarySearch(float[],int,int,float) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.binarySearch(Object[],Object) is not applicable
+      (argument mismatch; List<Long> cannot be converted to Object[])
+    method Arrays.binarySearch(Object[],int,int,Object) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.<T#1>binarySearch(T#1[],T#1,Comparator<? super T#1>) is not applicable
+      (cannot infer type-variable(s) T#1
+        (actual and formal argument lists differ in length))
+    method Arrays.<T#2>binarySearch(T#2[],int,int,T#2,Comparator<? super T#2>) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>binarySearch(T#1[],T#1,Comparator<? super T#1>)
+    T#2 extends Object declared in method <T#2>binarySearch(T#2[],int,int,T#2,Comparator<? super T#2>)
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:46:16 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:16 INFO Compilation Failed!
+2023-12-07 17:46:16 INFO run_output: b''
+
+
+2023-12-07 17:46:16 INFO Running task: 62_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: incompatible types: inference variable T has incompatible bounds
+    List<List<List<Integer>>> magicSquares = Arrays.asList(
+                                                          ^
+    equality constraints: List<Integer>
+    lower bounds: int[]
+  where T is a type-variable:
+    T extends Object declared in method <T>asList(T...)
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:46:17 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:17 INFO Compilation Failed!
+2023-12-07 17:46:17 INFO run_output: b''
+
+
+2023-12-07 17:46:17 INFO Running task: 63_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: illegal character: '\'
+                return \"IsFibo\";
+                       ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: unclosed string literal
+                return \"IsFibo\";
+                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: illegal character: '\'
+        return \"IsNotFibo\";
+               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: unclosed string literal
+        return \"IsNotFibo\";
+                ^
+4 errors
+error: compilation failed
+2023-12-07 17:46:17 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:17 INFO Compilation Failed!
+2023-12-07 17:46:17 INFO run_output: b''
+
+
+2023-12-07 17:46:17 INFO Running task: 64_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:241: error: '_' used as an identifier
+        return seen.stream().filter(l <= _ -> true).filter(s -> s <= r).count();
+                                         ^
+  (use of '_' as an identifier is forbidden for lambda parameters)
+1 error
+error: compilation failed
+2023-12-07 17:46:18 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:18 INFO Compilation Failed!
+2023-12-07 17:46:18 INFO run_output: b''
+
+
+2023-12-07 17:46:18 INFO Running task: 65_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: bad operand types for binary operator '>'
+                if (i.charAt(j - 1) < i.charAt(j) > i.charAt(j + 1) && d.charAt(j) < i.charAt(j) > u.charAt(j)) {
+                                                  ^
+  first type:  boolean
+  second type: char
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: bad operand types for binary operator '>'
+                if (i.charAt(j - 1) < i.charAt(j) > i.charAt(j + 1) && d.charAt(j) < i.charAt(j) > u.charAt(j)) {
+                                                                                                 ^
+  first type:  boolean
+  second type: char
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: no suitable constructor found for String(List<Character>)
+                    grid.set(k, new String(x));
+                                ^
+    constructor String.String() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(String) is not applicable
+      (argument mismatch; List<Character> cannot be converted to String)
+    constructor String.String(char[]) is not applicable
+      (argument mismatch; List<Character> cannot be converted to char[])
+    constructor String.String(char[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(int[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[]) is not applicable
+      (argument mismatch; List<Character> cannot be converted to byte[])
+    constructor String.String(StringBuffer) is not applicable
+      (argument mismatch; List<Character> cannot be converted to StringBuffer)
+    constructor String.String(StringBuilder) is not applicable
+      (argument mismatch; List<Character> cannot be converted to StringBuilder)
+    constructor String.String(char[],int,int,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(AbstractStringBuilder,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],byte) is not applicable
+      (actual and formal argument lists differ in length)
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors
+error: compilation failed
+2023-12-07 17:46:18 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:18 INFO Compilation Failed!
+2023-12-07 17:46:18 INFO run_output: b''
+
+
+2023-12-07 17:46:18 INFO Running task: 66_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: ';' expected
+    long ans = Math.min(Math.max(m - 1, n - 1) * n + Math.min(m, n) - 1, Math.max(n - 1, m - 1) * m + Math.min(m, n) - 1));
+                                                                                                                         ^
+1 error
+error: compilation failed
+2023-12-07 17:46:19 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:19 INFO Compilation Failed!
+2023-12-07 17:46:19 INFO run_output: b''
+
+
+2023-12-07 17:46:19 INFO Running task: 67_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:224: error: method sort in interface List<E> cannot be applied to given types;
+    price.sort((p1, p2) -> p1 - p2);
+              ^
+  required: Comparator<? super Long>
+  found:    (p1,p2)->p1 - p2
+  reason: argument mismatch; bad return type in lambda expression
+      possible lossy conversion from long to int
+  where E is a type-variable:
+    E extends Object declared in interface List
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:46:19 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:19 INFO Compilation Failed!
+2023-12-07 17:46:19 INFO run_output: b''
+
+
+2023-12-07 17:46:19 INFO Running task: 68_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: illegal character: '\'
+        return \"26.09.1918\";
+               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: unclosed string literal
+        return \"26.09.1918\";
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: illegal character: '\'
+    return \".join([\"12\" if leapYear else \"13\", \"09\", String.valueOf(year)]));
+           ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: unclosed string literal
+    return \".join([\"12\" if leapYear else \"13\", \"09\", String.valueOf(year)]));
+            ^
+4 errors
+error: compilation failed
+2023-12-07 17:46:20 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:20 INFO Compilation Failed!
+2023-12-07 17:46:20 INFO run_output: b''
+
+
+2023-12-07 17:46:20 INFO Running task: 69_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:22 INFO Test Passed!
+
+
+2023-12-07 17:46:22 INFO Running task: 70_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: illegal character: '\'
+            return hour.get(h - 1) + \" o' clock\";
+                                     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: unclosed string literal
+            return hour.get(h - 1) + \" o' clock\";
+                                      ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: illegal character: '\'
+            return \"quarter past \" + hour.get(h - 1);
+                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: unclosed string literal
+            return \"quarter past \" + hour.get(h - 1);
+                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: illegal character: '\'
+            return \"half past \" + hour.get(h - 1);
+                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: unclosed string literal
+            return \"half past \" + hour.get(h - 1);
+                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: illegal character: '\'
+            return \"quarter to \" + hour.get((h % 12));
+                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: unclosed string literal
+            return \"quarter to \" + hour.get((h % 12));
+                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: illegal character: '\'
+            return minutes.get(m - 1) + \" minute past \" + hour.get(h - 1);
+                                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: unclosed string literal
+            return minutes.get(m - 1) + \" minute past \" + hour.get(h - 1);
+                                         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: illegal character: '\'
+            return minutes.get(m - 1) + \" minutes past \" + hour.get(h - 1);
+                                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: unclosed string literal
+            return minutes.get(m - 1) + \" minutes past \" + hour.get(h - 1);
+                                         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:233: error: illegal character: '\'
+            return minutes.get(60 - m - 1) + \" minutes to \" + hour.get(h % 12);
+                                             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:233: error: unclosed string literal
+            return minutes.get(60 - m - 1) + \" minutes to \" + hour.get(h % 12);
+                                              ^
+14 errors
+error: compilation failed
+2023-12-07 17:46:22 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:22 INFO Compilation Failed!
+2023-12-07 17:46:22 INFO run_output: b''
+
+
+2023-12-07 17:46:22 INFO Running task: 71_0...
+2023-12-07 17:46:24 INFO Test Passed!
+
+
+2023-12-07 17:46:24 INFO Running task: 72_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:233)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:233)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:233)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:233)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 35
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:233)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 17:46:24 INFO Test Failed!
+2023-12-07 17:46:24 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:46:24 INFO Running task: 73_0...
+2023-12-07 17:46:25 INFO Test Passed!
+
+
+2023-12-07 17:46:25 INFO Running task: 74_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:229)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:229)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:229)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArithmeticException: / by zero
+	at Test.testfunc(test.java:229)
+	at Test.start(test.java:283)
+	at Test.main(test.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.ArithmeticException
+2023-12-07 17:46:26 INFO Test Failed!
+2023-12-07 17:46:26 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:46:26 INFO Running task: 75_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:271: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2);
+                              ^
+  required: int[],int
+  found:    List<Integer>,int
+  reason: argument mismatch; List<Integer> cannot be converted to int[]
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 17:46:27 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:27 INFO Compilation Failed!
+2023-12-07 17:46:27 INFO run_output: b''
+
+
+2023-12-07 17:46:27 INFO Running task: 76_0...
+2023-12-07 17:46:28 INFO Test Passed!
+
+
+2023-12-07 17:46:28 INFO Running task: 77_0...
+2023-12-07 17:46:29 INFO Test Passed!
+
+
+2023-12-07 17:46:29 INFO Running task: 78_0...
+2023-12-07 17:46:30 INFO Test Passed!
+
+
+2023-12-07 17:46:30 INFO Running task: 79_0...
+2023-12-07 17:46:31 INFO Test Passed!
+
+
+2023-12-07 17:46:31 INFO Running task: 80_0...
+2023-12-07 17:46:31 INFO Test Passed!
+
+
+2023-12-07 17:46:31 INFO Running task: 81_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: incompatible types: long[] cannot be converted to int[]
+        int ans[] = new long[5];
+                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: illegal initializer for int
+                {{0, -1}, {-1, -1}, {-1, 0}},
+                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: illegal initializer for int
+                {{0, -1}, {-1, -1}, {-1, 0}},
+                          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:227: error: illegal initializer for int
+                {{0, -1}, {-1, -1}, {-1, 0}},
+                                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:228: error: illegal initializer for int
+                {{0, 1}, {-1, 0}, {-1, 1}},
+                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:228: error: illegal initializer for int
+                {{0, 1}, {-1, 0}, {-1, 1}},
+                         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:228: error: illegal initializer for int
+                {{0, 1}, {-1, 0}, {-1, 1}},
+                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: illegal initializer for int
+                {{0, -1}, {1, 0}, {1, -1}},
+                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: illegal initializer for int
+                {{0, -1}, {1, 0}, {1, -1}},
+                          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: illegal initializer for int
+                {{0, -1}, {1, 0}, {1, -1}},
+                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: illegal initializer for int
+                {{0, 1}, {1, 0}, {1, 1}}
+                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: illegal initializer for int
+                {{0, 1}, {1, 0}, {1, 1}}
+                         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: illegal initializer for int
+                {{0, 1}, {1, 0}, {1, 1}}
+                                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:236: error: incompatible types: int cannot be converted to int[]
+                for (int[] d : dir) {
+                               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:254: error: cannot find symbol
+        ans[0] = sumBlocks - sum(ans[1]);
+                             ^
+  symbol:   method sum(int)
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:255: error: incompatible types: int[] cannot be converted to long[]
+        return ans;
+               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:298: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2, data3);
+                              ^
+  required: int[][],int[][],int[][]
+  found:    int,int,int[][]
+  reason: argument mismatch; int cannot be converted to int[][]
+17 errors
+error: compilation failed
+2023-12-07 17:46:32 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:32 INFO Compilation Failed!
+2023-12-07 17:46:32 INFO run_output: b''
+
+
+2023-12-07 17:46:32 INFO Running task: 82_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: illegal character: '\'
+    Set<String> beautifulStrings = {\"1\", \"101\", \"11001\", \"1111101\", \"1001110001\", \"110000110101\", \"11110100001001\"};
+                                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: unclosed string literal
+    Set<String> beautifulStrings = {\"1\", \"101\", \"11001\", \"1111101\", \"1001110001\", \"110000110101\", \"11110100001001\"};
+                                     ^
+2 errors
+error: compilation failed
+2023-12-07 17:46:33 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:33 INFO Compilation Failed!
+2023-12-07 17:46:33 INFO run_output: b''
+
+
+2023-12-07 17:46:33 INFO Running task: 83_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:232: error: not a statement
+        x, y = y, x;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:232: error: ';' expected
+        x, y = y, x;
+         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:232: error: ';' expected
+        x, y = y, x;
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:232: error: not a statement
+        x, y = y, x;
+                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:245: error: not a statement
+        x, y = y, x;
+        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:245: error: ';' expected
+        x, y = y, x;
+         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:245: error: ';' expected
+        x, y = y, x;
+                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:245: error: not a statement
+        x, y = y, x;
+                  ^
+8 errors
+error: compilation failed
+2023-12-07 17:46:33 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:33 INFO Compilation Failed!
+2023-12-07 17:46:33 INFO run_output: b''
+
+
+2023-12-07 17:46:33 INFO Running task: 84_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:34 INFO Test Failed!
+2023-12-07 17:46:34 INFO run_output: b'2 3\nTestcase No.1 Failed!\n3 4\nTestcase No.2 Failed!\n2 3\nTestcase No.3 Failed!\n3 4\nTestcase No.4 Failed!\n3 4\nTestcase No.5 Failed!\n0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:46:34 INFO Running task: 85_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: no suitable method found for stream(char[])
+        boolean isDigits = Arrays.stream(s.toCharArray()).allMatch(c -> c >= '0' && c <= '9');
+                                 ^
+    method Arrays.<T#1>stream(T#1[]) is not applicable
+      (inference variable T#1 has incompatible bounds
+        equality constraints: char
+        lower bounds: Object)
+    method Arrays.<T#2>stream(T#2[],int,int) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+    method Arrays.stream(int[]) is not applicable
+      (argument mismatch; char[] cannot be converted to int[])
+    method Arrays.stream(int[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.stream(long[]) is not applicable
+      (argument mismatch; char[] cannot be converted to long[])
+    method Arrays.stream(long[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.stream(double[]) is not applicable
+      (argument mismatch; char[] cannot be converted to double[])
+    method Arrays.stream(double[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>stream(T#1[])
+    T#2 extends Object declared in method <T#2>stream(T#2[],int,int)
+1 error
+error: compilation failed
+2023-12-07 17:46:35 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:35 INFO Compilation Failed!
+2023-12-07 17:46:35 INFO run_output: b''
+
+
+2023-12-07 17:46:35 INFO Running task: 86_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: incompatible types: cannot infer type arguments for ArrayList<>
+        int ans, cnt = new ArrayList<>();
+                                    ^
+    reason: no instance(s) of type variable(s) E exist so that ArrayList<E> conforms to int
+  where E is a type-variable:
+    E extends Object declared in class ArrayList
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: int cannot be dereferenced
+                if (cnt.get(y) != null && gcd(x % 10, y) == 1) {
+                       ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: cannot find symbol
+                if (cnt.get(y) != null && gcd(x % 10, y) == 1) {
+                                          ^
+  symbol:   method gcd(int,int)
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:224: error: int cannot be dereferenced
+                    ans += cnt.get(y);
+                              ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: int cannot be dereferenced
+            cnt.add(x, 1);
+               ^
+5 errors
+error: compilation failed
+2023-12-07 17:46:35 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:35 INFO Compilation Failed!
+2023-12-07 17:46:35 INFO run_output: b''
+
+
+2023-12-07 17:46:35 INFO Running task: 87_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:302: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2, data3, data4);
+                              ^
+  required: int,List<List<Integer>>,int,List<Integer>
+  found:    int,int[][],int,int[]
+  reason: argument mismatch; int[][] cannot be converted to List<List<Integer>>
+1 error
+error: compilation failed
+2023-12-07 17:46:36 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:36 INFO Compilation Failed!
+2023-12-07 17:46:36 INFO run_output: b''
+
+
+2023-12-07 17:46:36 INFO Running task: 88_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:243: error: bad operand types for binary operator '!='
+            return x != g.get(y) || any(x, y, g, odd);
+                     ^
+  first type:  int
+  second type: Set<Integer>
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:255: error: cannot find symbol
+        for (int i = 1; i <= n; i++) {
+                             ^
+  symbol:   variable n
+  location: class Test
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-07 17:46:37 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:37 INFO Compilation Failed!
+2023-12-07 17:46:37 INFO run_output: b''
+
+
+2023-12-07 17:46:37 INFO Running task: 89_0...
+java.lang.StringIndexOutOfBoundsException: begin 8, end 7, length 9
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:227)
+	at Test.start(test.java:274)
+	at Test.main(test.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 12, end 11, length 13
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:227)
+	at Test.start(test.java:274)
+	at Test.main(test.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 15, end 14, length 16
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:227)
+	at Test.start(test.java:274)
+	at Test.main(test.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 49, end 48, length 50
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:227)
+	at Test.start(test.java:274)
+	at Test.main(test.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 49, end 48, length 50
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:227)
+	at Test.start(test.java:274)
+	at Test.main(test.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 17:46:38 INFO Test Failed!
+2023-12-07 17:46:38 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 17:46:38 INFO Running task: 90_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: incompatible types: int[] cannot be converted to int
+        return dfs(0, -1, g, coins, k);
+                  ^
+1 error
+error: compilation failed
+2023-12-07 17:46:39 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:39 INFO Compilation Failed!
+2023-12-07 17:46:39 INFO run_output: b''
+
+
+2023-12-07 17:46:39 INFO Running task: 91_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: cannot find symbol
+        g = new int[n][n];
+        ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: cannot find symbol
+            g[x][y] = g[y][x] = 1;
+            ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:223: error: cannot find symbol
+            g[x][y] = g[y][x] = 1;
+                      ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:225: error: cannot find symbol
+        vis = new boolean[n];
+        ^
+  symbol:   variable vis
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:228: error: cannot find symbol
+            if (!vis[i]) {
+                 ^
+  symbol:   variable vis
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:229: error: cannot find symbol
+                counts = new int[] {0, 0};
+                ^
+  symbol:   variable counts
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: cannot find symbol
+                dfs(i, g, vis, counts);
+                       ^
+  symbol:   variable g
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: cannot find symbol
+                dfs(i, g, vis, counts);
+                          ^
+  symbol:   variable vis
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:230: error: cannot find symbol
+                dfs(i, g, vis, counts);
+                               ^
+  symbol:   variable counts
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: cannot find symbol
+                int v = counts[0], e = counts[1];
+                        ^
+  symbol:   variable counts
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: cannot find symbol
+                int v = counts[0], e = counts[1];
+                                       ^
+  symbol:   variable counts
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:232: error: bad operand types for binary operator '+'
+                ans += e == v * (v - 1);
+                    ^
+  first type:  int
+  second type: boolean
+12 errors
+error: compilation failed
+2023-12-07 17:46:39 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:39 INFO Compilation Failed!
+2023-12-07 17:46:39 INFO run_output: b''
+
+
+2023-12-07 17:46:39 INFO Running task: 92_0...
+2023-12-07 17:46:40 INFO Test Passed!
+
+
+2023-12-07 17:46:40 INFO Running task: 93_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: cannot find symbol
+        visited = new boolean[n];
+        ^
+  symbol:   variable visited
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:220: error: cannot find symbol
+        visited = new boolean[n];
+                              ^
+  symbol:   variable n
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: cannot find symbol
+        return dfs(source, destination, adj, visited);
+                                        ^
+  symbol:   variable adj
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:221: error: cannot find symbol
+        return dfs(source, destination, adj, visited);
+                                             ^
+  symbol:   variable visited
+  location: class Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:279: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1, data2, data3, data4);
+                              ^
+  required: int,int
+  found:    int,int[][],int,int
+  reason: actual and formal argument lists differ in length
+5 errors
+error: compilation failed
+2023-12-07 17:46:41 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:41 INFO Compilation Failed!
+2023-12-07 17:46:41 INFO run_output: b''
+
+
+2023-12-07 17:46:41 INFO Running task: 94_0...
+2023-12-07 17:46:42 INFO Test Passed!
+
+
+2023-12-07 17:46:42 INFO Running task: 95_0...
+Note: /home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 17:46:43 INFO Test Passed!
+
+
+2023-12-07 17:46:43 INFO Running task: 96_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:222: error: no suitable method found for max(List<Integer>)
+        return sums.index(Math.max(sums)) + 1;
+                              ^
+    method Math.max(int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.max(long,long) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.max(float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.max(double,double) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+error: compilation failed
+2023-12-07 17:46:44 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:44 INFO Compilation Failed!
+2023-12-07 17:46:44 INFO run_output: b''
+
+
+2023-12-07 17:46:44 INFO Running task: 97_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: cannot find symbol
+    return dfs(node.left.orElse(null), val) + dfs(node.right.orElse(null), val);
+                        ^
+  symbol:   method orElse(<null>)
+  location: variable left of type TreeNode
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:231: error: cannot find symbol
+    return dfs(node.left.orElse(null), val) + dfs(node.right.orElse(null), val);
+                                                            ^
+  symbol:   method orElse(<null>)
+  location: variable right of type TreeNode
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:270: error: method testfunc in class Test cannot be applied to given types;
+                return_data = testfunc(data1);
+                              ^
+  required: Optional<TreeNode>
+  found:    TreeNode
+  reason: argument mismatch; TreeNode cannot be converted to Optional<TreeNode>
+3 errors
+error: compilation failed
+2023-12-07 17:46:44 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:44 INFO Compilation Failed!
+2023-12-07 17:46:44 INFO run_output: b''
+
+
+2023-12-07 17:46:44 INFO Running task: 98_0...
+2023-12-07 17:46:45 INFO Test Passed!
+
+
+2023-12-07 17:46:45 INFO Running task: 99_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java:224: error: bad operand types for binary operator '=='
+        while (x == s) {
+                 ^
+  first type:  int
+  second type: Set<Integer>
+1 error
+error: compilation failed
+2023-12-07 17:46:46 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/zhipu/python_java/test.java']' returned non-zero exit status 1.
+2023-12-07 17:46:46 INFO Compilation Failed!
+2023-12-07 17:46:46 INFO run_output: b''
+
+
+2023-12-07 17:46:46 INFO Running task: 100_0...
+2023-12-07 17:46:47 INFO Test Passed!
+
+
+2023-12-07 17:46:47 INFO [[1], [1], [3], [1], [2], [2], [3], [3], [3], [3], [3], [3], [2], [3], [1], [2], [1], [1], [1], [1], [3], [3], [2], [3], [3], [1], [1], [3], [1], [3], [3], [1], [2], [2], [3], [1], [1], [3], [1], [1], [3], [3], [3], [3], [3], [1], [2], [1], [1], [1], [1], [2], [3], [1], [3], [1], [1], [3], [1], [1], [3], [3], [3], [3], [3], [3], [3], [3], [1], [3], [1], [2], [1], [2], [3], [1], [1], [1], [1], [1], [3], [3], [3], [2], [3], [3], [3], [3], [2], [3], [3], [1], [3], [1], [1], [3], [3], [1], [3], [1]]

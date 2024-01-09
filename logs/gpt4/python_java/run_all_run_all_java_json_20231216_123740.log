@@ -1,0 +1,408 @@
+2023-12-16 12:37:40 INFO Running task: 1_0...
+2023-12-16 12:37:40 INFO Test Passed!
+
+
+2023-12-16 12:37:40 INFO Running task: 2_0...
+2023-12-16 12:37:41 INFO Test Passed!
+
+
+2023-12-16 12:37:41 INFO Running task: 3_0...
+2023-12-16 12:37:42 INFO Test Passed!
+
+
+2023-12-16 12:37:42 INFO Running task: 4_0...
+2023-12-16 12:37:43 INFO Test Passed!
+
+
+2023-12-16 12:37:43 INFO Running task: 5_0...
+2023-12-16 12:37:44 INFO Test Passed!
+
+
+2023-12-16 12:37:44 INFO Running task: 6_0...
+2023-12-16 12:37:45 INFO Test Passed!
+
+
+2023-12-16 12:37:45 INFO Running task: 7_0...
+2023-12-16 12:37:46 INFO Test Passed!
+
+
+2023-12-16 12:37:46 INFO Running task: 8_0...
+2023-12-16 12:37:47 INFO Test Passed!
+
+
+2023-12-16 12:37:47 INFO Running task: 9_0...
+2023-12-16 12:37:48 INFO Test Passed!
+
+
+2023-12-16 12:37:48 INFO Running task: 10_0...
+2023-12-16 12:37:48 INFO Test Passed!
+
+
+2023-12-16 12:37:48 INFO Running task: 11_0...
+2023-12-16 12:37:49 INFO Test Passed!
+
+
+2023-12-16 12:37:49 INFO Running task: 12_0...
+2023-12-16 12:37:50 INFO Test Passed!
+
+
+2023-12-16 12:37:50 INFO Running task: 13_0...
+2023-12-16 12:37:51 INFO Test Passed!
+
+
+2023-12-16 12:37:51 INFO Running task: 14_0...
+2023-12-16 12:37:52 INFO Test Passed!
+
+
+2023-12-16 12:37:52 INFO Running task: 15_0...
+2023-12-16 12:37:53 INFO Test Failed!
+2023-12-16 12:37:53 INFO run_output: b'37 19\nTestcase No.1 Failed!\n15 15\n0 -15\nTestcase No.3 Failed!\n250000 -500\nTestcase No.4 Failed!\n354789 352143\nTestcase No.5 Failed!\nPassed 1 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 12:37:53 INFO Running task: 16_0...
+2023-12-16 12:37:54 INFO Test Passed!
+
+
+2023-12-16 12:37:54 INFO Running task: 17_0...
+2023-12-16 12:37:55 INFO Test Passed!
+
+
+2023-12-16 12:37:55 INFO Running task: 18_0...
+2023-12-16 12:37:56 INFO Test Passed!
+
+
+2023-12-16 12:37:56 INFO Running task: 19_0...
+2023-12-16 12:37:57 INFO Test Passed!
+
+
+2023-12-16 12:37:57 INFO Running task: 20_0...
+2023-12-16 12:37:58 INFO Test Passed!
+
+
+2023-12-16 12:37:58 INFO Running task: 21_0...
+2023-12-16 12:37:59 INFO Test Passed!
+
+
+2023-12-16 12:37:59 INFO Running task: 22_0...
+2023-12-16 12:38:00 INFO Test Passed!
+
+
+2023-12-16 12:38:00 INFO Running task: 23_0...
+2023-12-16 12:38:01 INFO Test Passed!
+
+
+2023-12-16 12:38:01 INFO Running task: 24_0...
+2023-12-16 12:38:01 INFO Test Passed!
+
+
+2023-12-16 12:38:01 INFO Running task: 25_0...
+2023-12-16 12:38:03 INFO Test Passed!
+
+
+2023-12-16 12:38:03 INFO Running task: 26_0...
+2023-12-16 12:38:04 INFO Test Passed!
+
+
+2023-12-16 12:38:04 INFO Running task: 27_0...
+2023-12-16 12:38:05 INFO Test Passed!
+
+
+2023-12-16 12:38:05 INFO Running task: 28_0...
+2023-12-16 12:38:05 INFO Test Passed!
+
+
+2023-12-16 12:38:05 INFO Running task: 29_0...
+2023-12-16 12:38:06 INFO Test Passed!
+
+
+2023-12-16 12:38:06 INFO Running task: 30_0...
+2023-12-16 12:38:07 INFO Test Passed!
+
+
+2023-12-16 12:38:07 INFO Running task: 31_0...
+2023-12-16 12:38:08 INFO Test Passed!
+
+
+2023-12-16 12:38:08 INFO Running task: 32_0...
+2023-12-16 12:38:09 INFO Test Passed!
+
+
+2023-12-16 12:38:09 INFO Running task: 33_0...
+2023-12-16 12:38:10 INFO Test Passed!
+
+
+2023-12-16 12:38:10 INFO Running task: 34_0...
+2023-12-16 12:38:11 INFO Test Passed!
+
+
+2023-12-16 12:38:11 INFO Running task: 35_0...
+2023-12-16 12:38:12 INFO Test Passed!
+
+
+2023-12-16 12:38:12 INFO Running task: 36_0...
+2023-12-16 12:38:12 INFO Test Passed!
+
+
+2023-12-16 12:38:12 INFO Running task: 37_0...
+2023-12-16 12:38:13 INFO Test Passed!
+
+
+2023-12-16 12:38:14 INFO Running task: 38_0...
+2023-12-16 12:38:14 INFO Test Passed!
+
+
+2023-12-16 12:38:14 INFO Running task: 39_0...
+2023-12-16 12:38:15 INFO Test Passed!
+
+
+2023-12-16 12:38:15 INFO Running task: 40_0...
+2023-12-16 12:38:16 INFO Test Passed!
+
+
+2023-12-16 12:38:16 INFO Running task: 41_0...
+2023-12-16 12:38:17 INFO Test Passed!
+
+
+2023-12-16 12:38:17 INFO Running task: 42_0...
+2023-12-16 12:38:18 INFO Test Passed!
+
+
+2023-12-16 12:38:18 INFO Running task: 43_0...
+2023-12-16 12:38:19 INFO Test Passed!
+
+
+2023-12-16 12:38:19 INFO Running task: 44_0...
+2023-12-16 12:38:20 INFO Test Passed!
+
+
+2023-12-16 12:38:20 INFO Running task: 45_0...
+2023-12-16 12:38:20 INFO Test Passed!
+
+
+2023-12-16 12:38:20 INFO Running task: 46_0...
+2023-12-16 12:38:21 INFO Test Passed!
+
+
+2023-12-16 12:38:21 INFO Running task: 47_0...
+2023-12-16 12:38:22 INFO Test Passed!
+
+
+2023-12-16 12:38:22 INFO Running task: 48_0...
+2023-12-16 12:38:23 INFO Test Passed!
+
+
+2023-12-16 12:38:23 INFO Running task: 49_0...
+2023-12-16 12:38:24 INFO Test Passed!
+
+
+2023-12-16 12:38:24 INFO Running task: 50_0...
+2023-12-16 12:38:25 INFO Test Passed!
+
+
+2023-12-16 12:38:25 INFO Running task: 51_0...
+2023-12-16 12:38:26 INFO Test Passed!
+
+
+2023-12-16 12:38:26 INFO Running task: 52_0...
+2023-12-16 12:38:27 INFO Test Passed!
+
+
+2023-12-16 12:38:27 INFO Running task: 53_0...
+2023-12-16 12:38:27 INFO Test Failed!
+2023-12-16 12:38:27 INFO run_output: b'4 4\n85264 85264\n78818884 78818884\n-727320015 20752136\nTestcase No.4 Failed!\n-295396676 136582381\nTestcase No.5 Failed!\nPassed 3 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 12:38:27 INFO Running task: 54_0...
+2023-12-16 12:38:28 INFO Test Passed!
+
+
+2023-12-16 12:38:28 INFO Running task: 55_0...
+2023-12-16 12:38:30 INFO Test Passed!
+
+
+2023-12-16 12:38:30 INFO Running task: 56_0...
+2023-12-16 12:38:31 INFO Test Passed!
+
+
+2023-12-16 12:38:31 INFO Running task: 57_0...
+2023-12-16 12:38:32 INFO Test Passed!
+
+
+2023-12-16 12:38:32 INFO Running task: 58_0...
+2023-12-16 12:38:33 INFO Test Passed!
+
+
+2023-12-16 12:38:33 INFO Running task: 59_0...
+2023-12-16 12:38:35 INFO Test Passed!
+
+
+2023-12-16 12:38:35 INFO Running task: 60_0...
+2023-12-16 12:38:36 INFO Test Passed!
+
+
+2023-12-16 12:38:36 INFO Running task: 61_0...
+2023-12-16 12:38:47 INFO Test Failed!
+2023-12-16 12:38:47 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/gpt4/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n6 6\n1 1\n1 4\nTestcase No.3 Failed!\n238898107 238898107\n10002143548514 10002143548514\nPassed 4 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 12:38:47 INFO Running task: 62_0...
+2023-12-16 12:38:48 INFO Test Passed!
+
+
+2023-12-16 12:38:48 INFO Running task: 63_0...
+2023-12-16 12:38:49 INFO Test Passed!
+
+
+2023-12-16 12:38:49 INFO Running task: 64_0...
+2023-12-16 12:38:49 INFO Test Passed!
+
+
+2023-12-16 12:38:49 INFO Running task: 65_0...
+2023-12-16 12:38:50 INFO Test Passed!
+
+
+2023-12-16 12:38:50 INFO Running task: 66_0...
+2023-12-16 12:38:51 INFO Test Passed!
+
+
+2023-12-16 12:38:51 INFO Running task: 67_0...
+2023-12-16 12:38:52 INFO Test Passed!
+
+
+2023-12-16 12:38:52 INFO Running task: 68_0...
+2023-12-16 12:38:53 INFO Test Passed!
+
+
+2023-12-16 12:38:53 INFO Running task: 69_0...
+2023-12-16 12:38:55 INFO Test Passed!
+
+
+2023-12-16 12:38:55 INFO Running task: 70_0...
+2023-12-16 12:38:56 INFO Test Passed!
+
+
+2023-12-16 12:38:56 INFO Running task: 71_0...
+2023-12-16 12:38:57 INFO Test Passed!
+
+
+2023-12-16 12:38:57 INFO Running task: 72_0...
+2023-12-16 12:38:58 INFO Test Passed!
+
+
+2023-12-16 12:38:58 INFO Running task: 73_0...
+2023-12-16 12:38:59 INFO Test Passed!
+
+
+2023-12-16 12:38:59 INFO Running task: 74_0...
+2023-12-16 12:39:00 INFO Test Passed!
+
+
+2023-12-16 12:39:00 INFO Running task: 75_0...
+2023-12-16 12:39:01 INFO Test Passed!
+
+
+2023-12-16 12:39:01 INFO Running task: 76_0...
+2023-12-16 12:39:02 INFO Test Passed!
+
+
+2023-12-16 12:39:02 INFO Running task: 77_0...
+2023-12-16 12:39:03 INFO Test Passed!
+
+
+2023-12-16 12:39:03 INFO Running task: 78_0...
+2023-12-16 12:39:04 INFO Test Passed!
+
+
+2023-12-16 12:39:04 INFO Running task: 79_0...
+2023-12-16 12:39:05 INFO Test Passed!
+
+
+2023-12-16 12:39:05 INFO Running task: 80_0...
+2023-12-16 12:39:06 INFO Test Passed!
+
+
+2023-12-16 12:39:06 INFO Running task: 81_0...
+2023-12-16 12:39:06 INFO Test Passed!
+
+
+2023-12-16 12:39:07 INFO Running task: 82_0...
+2023-12-16 12:39:07 INFO Test Failed!
+2023-12-16 12:39:07 INFO run_output: b'-2147483647 2\nTestcase No.1 Failed!\n3 3\n-1 -1\n-2147483646 4\nTestcase No.4 Failed!\n-1 -1\nPassed 3 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 12:39:07 INFO Running task: 83_0...
+2023-12-16 12:39:08 INFO Test Passed!
+
+
+2023-12-16 12:39:08 INFO Running task: 84_0...
+2023-12-16 12:39:09 INFO Test Passed!
+
+
+2023-12-16 12:39:09 INFO Running task: 85_0...
+2023-12-16 12:39:10 INFO Test Passed!
+
+
+2023-12-16 12:39:10 INFO Running task: 86_0...
+2023-12-16 12:39:11 INFO Compilation Failed!
+2023-12-16 12:39:11 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/gpt4/python_java/test.java:224: error: cannot find symbol\n                if (cnt[y] > 0 && BigInteger.valueOf(x % 10).gcd(BigInteger.valueOf(y)).intValue() == 1) {\n                                  ^\n  symbol:   variable BigInteger\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/gpt4/python_java/test.java:224: error: cannot find symbol\n                if (cnt[y] > 0 && BigInteger.valueOf(x % 10).gcd(BigInteger.valueOf(y)).intValue() == 1) {\n                                                                 ^\n  symbol:   variable BigInteger\n  location: class Test\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-16 12:39:11 INFO Running task: 87_0...
+2023-12-16 12:39:11 INFO Compilation Failed!
+2023-12-16 12:39:11 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/gpt4/python_java/test.java:226: error: cannot find symbol\n        int[] sortedQueryIndices = IntStream.range(0, queries.length)\n                                   ^\n  symbol:   variable IntStream\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/gpt4/python_java/test.java:228: error: incompatible types: Object cannot be converted to int\n                .sorted(Comparator.comparingInt(i -> queries[i]))\n                                                             ^\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-16 12:39:11 INFO Running task: 88_0...
+2023-12-16 12:39:13 INFO Test Passed!
+
+
+2023-12-16 12:39:13 INFO Running task: 89_0...
+2023-12-16 12:39:14 INFO Test Passed!
+
+
+2023-12-16 12:39:14 INFO Running task: 90_0...
+2023-12-16 12:39:15 INFO Test Passed!
+
+
+2023-12-16 12:39:15 INFO Running task: 91_0...
+2023-12-16 12:39:15 INFO Compilation Failed!
+2023-12-16 12:39:15 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/gpt4/python_java/test.java:236: error: bad operand types for binary operator '+'\n                ans += e == v * (v - 1);\n                    ^\n  first type:  int\n  second type: boolean\n1 error\nerror: compilation failed\n"
+
+
+2023-12-16 12:39:15 INFO Running task: 92_0...
+2023-12-16 12:39:16 INFO Test Passed!
+
+
+2023-12-16 12:39:16 INFO Running task: 93_0...
+2023-12-16 12:39:17 INFO Test Passed!
+
+
+2023-12-16 12:39:17 INFO Running task: 94_0...
+2023-12-16 12:39:18 INFO Test Passed!
+
+
+2023-12-16 12:39:18 INFO Running task: 95_0...
+2023-12-16 12:39:19 INFO Test Passed!
+
+
+2023-12-16 12:39:19 INFO Running task: 96_0...
+2023-12-16 12:39:20 INFO Test Passed!
+
+
+2023-12-16 12:39:20 INFO Running task: 97_0...
+2023-12-16 12:39:21 INFO Test Passed!
+
+
+2023-12-16 12:39:21 INFO Running task: 98_0...
+2023-12-16 12:39:22 INFO Test Passed!
+
+
+2023-12-16 12:39:22 INFO Running task: 99_0...
+2023-12-16 12:39:23 INFO Test Passed!
+
+
+2023-12-16 12:39:23 INFO Running task: 100_0...
+2023-12-16 12:39:23 INFO Test Passed!
+
+
+2023-12-16 12:39:23 INFO [[1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [4], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [4], [1], [1], [1], [1], [1], [1], [1], [4], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [4], [1], [1], [1], [2], [2], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [1], [1]]

@@ -1,0 +1,374 @@
+2023-12-16 12:32:40 INFO Running task: 1_0...
+2023-12-16 12:32:41 INFO Test Passed!
+
+
+2023-12-16 12:32:41 INFO Running task: 2_0...
+2023-12-16 12:32:43 INFO Test Passed!
+
+
+2023-12-16 12:32:43 INFO Running task: 3_0...
+2023-12-16 12:32:45 INFO Test Passed!
+
+
+2023-12-16 12:32:45 INFO Running task: 4_0...
+2023-12-16 12:32:46 INFO Test Passed!
+
+
+2023-12-16 12:32:46 INFO Running task: 5_0...
+2023-12-16 12:32:48 INFO Test Passed!
+
+
+2023-12-16 12:32:48 INFO Running task: 6_0...
+2023-12-16 12:32:50 INFO Test Passed!
+
+
+2023-12-16 12:32:50 INFO Running task: 7_0...
+2023-12-16 12:32:51 INFO Compilation Failed!
+2023-12-16 12:32:51 INFO Running task: 8_0...
+2023-12-16 12:32:53 INFO Test Passed!
+
+
+2023-12-16 12:32:53 INFO Running task: 9_0...
+2023-12-16 12:32:55 INFO Test Passed!
+
+
+2023-12-16 12:32:55 INFO Running task: 10_0...
+2023-12-16 12:32:56 INFO Test Passed!
+
+
+2023-12-16 12:32:56 INFO Running task: 11_0...
+2023-12-16 12:32:58 INFO Test Passed!
+
+
+2023-12-16 12:32:58 INFO Running task: 12_0...
+2023-12-16 12:33:00 INFO Test Passed!
+
+
+2023-12-16 12:33:00 INFO Running task: 13_0...
+2023-12-16 12:33:01 INFO Test Passed!
+
+
+2023-12-16 12:33:01 INFO Running task: 14_0...
+2023-12-16 12:33:03 INFO Test Passed!
+
+
+2023-12-16 12:33:03 INFO Running task: 15_0...
+2023-12-16 12:33:05 INFO Test Failed!
+2023-12-16 12:33:05 INFO run_output: b'37 19\nTestcase No.1 Failed!\n15 15\n0 -15\nTestcase No.3 Failed!\n250000 -500\nTestcase No.4 Failed!\n354789 352143\nTestcase No.5 Failed!\nPassed 1/5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 12:33:05 INFO Running task: 16_0...
+2023-12-16 12:33:06 INFO Compilation Failed!
+2023-12-16 12:33:06 INFO Running task: 17_0...
+2023-12-16 12:33:07 INFO Compilation Failed!
+2023-12-16 12:33:07 INFO Running task: 18_0...
+2023-12-16 12:33:08 INFO Compilation Failed!
+2023-12-16 12:33:08 INFO Running task: 19_0...
+2023-12-16 12:33:10 INFO Test Passed!
+
+
+2023-12-16 12:33:10 INFO Running task: 20_0...
+2023-12-16 12:33:12 INFO Test Passed!
+
+
+2023-12-16 12:33:12 INFO Running task: 21_0...
+2023-12-16 12:33:14 INFO Test Passed!
+
+
+2023-12-16 12:33:14 INFO Running task: 22_0...
+2023-12-16 12:33:15 INFO Compilation Failed!
+2023-12-16 12:33:15 INFO Running task: 23_0...
+2023-12-16 12:33:17 INFO Test Passed!
+
+
+2023-12-16 12:33:17 INFO Running task: 24_0...
+2023-12-16 12:33:18 INFO Test Passed!
+
+
+2023-12-16 12:33:18 INFO Running task: 25_0...
+2023-12-16 12:33:20 INFO Test Passed!
+
+
+2023-12-16 12:33:20 INFO Running task: 26_0...
+2023-12-16 12:33:22 INFO Test Passed!
+
+
+2023-12-16 12:33:22 INFO Running task: 27_0...
+2023-12-16 12:33:24 INFO Test Passed!
+
+
+2023-12-16 12:33:24 INFO Running task: 28_0...
+2023-12-16 12:33:26 INFO Test Passed!
+
+
+2023-12-16 12:33:26 INFO Running task: 29_0...
+2023-12-16 12:33:27 INFO Test Passed!
+
+
+2023-12-16 12:33:27 INFO Running task: 30_0...
+2023-12-16 12:33:29 INFO Test Passed!
+
+
+2023-12-16 12:33:29 INFO Running task: 31_0...
+2023-12-16 12:33:31 INFO Test Passed!
+
+
+2023-12-16 12:33:31 INFO Running task: 32_0...
+2023-12-16 12:33:32 INFO Test Passed!
+
+
+2023-12-16 12:33:32 INFO Running task: 33_0...
+2023-12-16 12:33:34 INFO Compilation Failed!
+2023-12-16 12:33:34 INFO Running task: 34_0...
+2023-12-16 12:33:35 INFO Test Passed!
+
+
+2023-12-16 12:33:35 INFO Running task: 35_0...
+2023-12-16 12:33:37 INFO Test Passed!
+
+
+2023-12-16 12:33:37 INFO Running task: 36_0...
+2023-12-16 12:33:39 INFO Test Passed!
+
+
+2023-12-16 12:33:39 INFO Running task: 37_0...
+2023-12-16 12:33:40 INFO Compilation Failed!
+2023-12-16 12:33:40 INFO Running task: 38_0...
+2023-12-16 12:33:41 INFO Test Passed!
+
+
+2023-12-16 12:33:41 INFO Running task: 39_0...
+2023-12-16 12:33:43 INFO Test Passed!
+
+
+2023-12-16 12:33:43 INFO Running task: 40_0...
+2023-12-16 12:33:45 INFO Test Passed!
+
+
+2023-12-16 12:33:45 INFO Running task: 41_0...
+2023-12-16 12:33:46 INFO Test Passed!
+
+
+2023-12-16 12:33:46 INFO Running task: 42_0...
+2023-12-16 12:33:48 INFO Test Passed!
+
+
+2023-12-16 12:33:48 INFO Running task: 43_0...
+2023-12-16 12:33:50 INFO Test Passed!
+
+
+2023-12-16 12:33:50 INFO Running task: 44_0...
+2023-12-16 12:33:52 INFO Test Passed!
+
+
+2023-12-16 12:33:52 INFO Running task: 45_0...
+2023-12-16 12:33:53 INFO Test Passed!
+
+
+2023-12-16 12:33:53 INFO Running task: 46_0...
+2023-12-16 12:33:55 INFO Test Passed!
+
+
+2023-12-16 12:33:55 INFO Running task: 47_0...
+2023-12-16 12:33:57 INFO Test Passed!
+
+
+2023-12-16 12:33:57 INFO Running task: 48_0...
+2023-12-16 12:33:59 INFO Test Passed!
+
+
+2023-12-16 12:33:59 INFO Running task: 49_0...
+2023-12-16 12:34:00 INFO Test Passed!
+
+
+2023-12-16 12:34:00 INFO Running task: 50_0...
+2023-12-16 12:34:02 INFO Test Passed!
+
+
+2023-12-16 12:34:02 INFO Running task: 51_0...
+2023-12-16 12:34:04 INFO Test Passed!
+
+
+2023-12-16 12:34:04 INFO Running task: 52_0...
+2023-12-16 12:34:05 INFO Test Passed!
+
+
+2023-12-16 12:34:05 INFO Running task: 53_0...
+2023-12-16 12:34:07 INFO Compilation Failed!
+2023-12-16 12:34:07 INFO Running task: 54_0...
+2023-12-16 12:34:08 INFO Test Passed!
+
+
+2023-12-16 12:34:08 INFO Running task: 55_0...
+2023-12-16 12:34:09 INFO Compilation Failed!
+2023-12-16 12:34:09 INFO Running task: 56_0...
+2023-12-16 12:34:13 INFO Test Passed!
+
+
+2023-12-16 12:34:13 INFO Running task: 57_0...
+2023-12-16 12:34:15 INFO Test Passed!
+
+
+2023-12-16 12:34:15 INFO Running task: 58_0...
+2023-12-16 12:34:17 INFO Test Passed!
+
+
+2023-12-16 12:34:17 INFO Running task: 59_0...
+2023-12-16 12:34:19 INFO Test Passed!
+
+
+2023-12-16 12:34:19 INFO Running task: 60_0...
+2023-12-16 12:34:21 INFO Test Failed!
+2023-12-16 12:34:21 INFO run_output: b'[206,205,204] [204,205,206]\nTestcase No.1 Failed!\n[12,8,10,3,7] [3,7,8,10,12]\nTestcase No.2 Failed!\n[3714,3677,3684,3674,3695,3685,3720,3670] [3670,3674,3677,3684,3685,3695,3714,3720]\nTestcase No.3 Failed!\n[8609,8587] [8587,8609]\nTestcase No.4 Failed!\n[2479,2518,2517,2489,2458,2442,2444,2515,2457,2473,2466,2438,2447,2451,2510,2483,2488,2437] [2437,2438,2442,2444,2447,2451,2457,2458,2466,2473,2479,2483,2488,2489,2510,2515,2517,2518]\nTestcase No.5 Failed!\nPassed 0/5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 12:34:21 INFO Running task: 61_0...
+2023-12-16 12:34:23 INFO Test Passed!
+
+
+2023-12-16 12:34:23 INFO Running task: 62_0...
+2023-12-16 12:34:25 INFO Test Passed!
+
+
+2023-12-16 12:34:25 INFO Running task: 63_0...
+2023-12-16 12:34:27 INFO Test Passed!
+
+
+2023-12-16 12:34:27 INFO Running task: 64_0...
+2023-12-16 12:34:28 INFO Compilation Failed!
+2023-12-16 12:34:28 INFO Running task: 65_0...
+2023-12-16 12:34:29 INFO Test Passed!
+
+
+2023-12-16 12:34:29 INFO Running task: 66_0...
+2023-12-16 12:34:31 INFO Test Passed!
+
+
+2023-12-16 12:34:31 INFO Running task: 67_0...
+2023-12-16 12:34:32 INFO Compilation Failed!
+2023-12-16 12:34:32 INFO Running task: 68_0...
+2023-12-16 12:34:33 INFO Compilation Failed!
+2023-12-16 12:34:33 INFO Running task: 69_0...
+2023-12-16 12:34:38 INFO Test Passed!
+
+
+2023-12-16 12:34:38 INFO Running task: 70_0...
+2023-12-16 12:34:39 INFO Test Passed!
+
+
+2023-12-16 12:34:39 INFO Running task: 71_0...
+2023-12-16 12:34:41 INFO Test Passed!
+
+
+2023-12-16 12:34:41 INFO Running task: 72_0...
+2023-12-16 12:34:43 INFO Test Passed!
+
+
+2023-12-16 12:34:43 INFO Running task: 73_0...
+2023-12-16 12:34:45 INFO Test Passed!
+
+
+2023-12-16 12:34:45 INFO Running task: 74_0...
+2023-12-16 12:34:46 INFO Test Failed!
+2023-12-16 12:34:46 INFO run_output: b'[3,4] [3,4,6,12]\nTestcase No.1 Failed!\n[1,2] [1,2,4]\nTestcase No.2 Failed!\n[7] [7,14]\nTestcase No.3 Failed!\n[1232,2464,3696,4928,7392,8624,9856,13552,14784,17248,25872,27104,29568,34496,40656,51744,54208,60368,68992,81312,94864,103488,108416,120736,162624,181104,189728,206976,241472,284592,325248,362208,379456,482944,569184,664048,724416,758912,1138368,1328096,1448832,1992144,2276736,2656192,3984288,5312384,7968576] [1232,2464,3696,4928,7392,8624,9856,13552,14784,17248,25872,27104,29568,34496,40656,51744,54208,60368,68992,81312,94864,103488,108416,120736,162624,181104,189728,206976,241472,284592,325248,362208,379456,482944,569184,664048,724416,758912,1138368,1328096,1448832,1992144,2276736,2656192,3984288,5312384,7968576,15937152]\nTestcase No.4 Failed!\n[10000,20000,40000,50000,80000,100000,160000,200000,250000,320000,400000,500000,800000,1000000,1250000,1600000,2000000,2500000,4000000,5000000,6250000,8000000,10000000,12500000,20000000,25000000,31250000,40000000,50000000,62500000,100000000,125000000,200000000,250000000,500000000] [10000,20000,40000,50000,80000,100000,160000,200000,250000,320000,400000,500000,800000,1000000,1250000,1600000,2000000,2500000,4000000,5000000,6250000,8000000,10000000,12500000,20000000,25000000,31250000,40000000,50000000,62500000,100000000,125000000,200000000,250000000,500000000,1000000000]\nTestcase No.5 Failed!\nPassed 0/5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 12:34:46 INFO Running task: 75_0...
+2023-12-16 12:34:48 INFO Test Passed!
+
+
+2023-12-16 12:34:48 INFO Running task: 76_0...
+2023-12-16 12:34:50 INFO Test Passed!
+
+
+2023-12-16 12:34:50 INFO Running task: 77_0...
+2023-12-16 12:34:52 INFO Test Passed!
+
+
+2023-12-16 12:34:52 INFO Running task: 78_0...
+2023-12-16 12:34:54 INFO Test Passed!
+
+
+2023-12-16 12:34:54 INFO Running task: 79_0...
+2023-12-16 12:34:55 INFO Test Passed!
+
+
+2023-12-16 12:34:55 INFO Running task: 80_0...
+2023-12-16 12:34:57 INFO Test Passed!
+
+
+2023-12-16 12:34:57 INFO Running task: 81_0...
+2023-12-16 12:34:58 INFO Compilation Failed!
+2023-12-16 12:34:58 INFO Running task: 82_0...
+2023-12-16 12:35:00 INFO Test Passed!
+
+
+2023-12-16 12:35:00 INFO Running task: 83_0...
+2023-12-16 12:35:02 INFO Test Passed!
+
+
+2023-12-16 12:35:02 INFO Running task: 84_0...
+2023-12-16 12:35:03 INFO Test Passed!
+
+
+2023-12-16 12:35:03 INFO Running task: 85_0...
+2023-12-16 12:35:05 INFO Test Passed!
+
+
+2023-12-16 12:35:05 INFO Running task: 86_0...
+2023-12-16 12:35:07 INFO Test Passed!
+
+
+2023-12-16 12:35:07 INFO Running task: 87_0...
+2023-12-16 12:36:08 INFO Timeout!
+2023-12-16 12:36:08 INFO Running task: 88_0...
+2023-12-16 12:36:11 INFO Test Passed!
+
+
+2023-12-16 12:36:11 INFO Running task: 89_0...
+2023-12-16 12:36:13 INFO Test Passed!
+
+
+2023-12-16 12:36:13 INFO Running task: 90_0...
+2023-12-16 12:36:14 INFO Compilation Failed!
+2023-12-16 12:36:14 INFO Running task: 91_0...
+2023-12-16 12:36:16 INFO Test Passed!
+
+
+2023-12-16 12:36:16 INFO Running task: 92_0...
+2023-12-16 12:36:17 INFO Test Passed!
+
+
+2023-12-16 12:36:17 INFO Running task: 93_0...
+2023-12-16 12:36:19 INFO Test Passed!
+
+
+2023-12-16 12:36:19 INFO Running task: 94_0...
+2023-12-16 12:36:21 INFO Test Passed!
+
+
+2023-12-16 12:36:21 INFO Running task: 95_0...
+2023-12-16 12:36:23 INFO Test Passed!
+
+
+2023-12-16 12:36:23 INFO Running task: 96_0...
+2023-12-16 12:36:24 INFO Test Passed!
+
+
+2023-12-16 12:36:24 INFO Running task: 97_0...
+2023-12-16 12:36:26 INFO Test Passed!
+
+
+2023-12-16 12:36:26 INFO Running task: 98_0...
+2023-12-16 12:36:28 INFO Test Passed!
+
+
+2023-12-16 12:36:28 INFO Running task: 99_0...
+2023-12-16 12:36:30 INFO Test Passed!
+
+
+2023-12-16 12:36:30 INFO Running task: 100_0...
+2023-12-16 12:36:31 INFO Test Passed!
+
+
+2023-12-16 12:36:31 INFO [[1], [1], [1], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [4], [2], [2], [2], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [2], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [2], [1], [2], [1], [1], [1], [1], [4], [1], [1], [1], [2], [1], [1], [2], [2], [1], [1], [1], [1], [1], [4], [1], [1], [1], [1], [1], [1], [2], [1], [1], [1], [1], [1], [5], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1]]

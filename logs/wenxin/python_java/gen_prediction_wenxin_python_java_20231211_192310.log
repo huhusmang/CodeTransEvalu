@@ -1,0 +1,4604 @@
+raw_prediction: ```java
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4, 5};
+        int k = 3;
+        System.out.println(findKOr(nums, k));
+    }
+
+    public static int findKOr(int[] nums, int k) {
+        int ans = 0;
+        for (int i = 0; i < 31; i++) {
+            int cnt1 = 0;
+            for (int x : nums) {
+                cnt1 += (x >> i) & 1;
+            }
+            if (cnt1 >= k) {
+                ans |= 1 << i;
+            }
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static int findKOr(int[] nums, int k) {
+        int ans = 0;
+        for (int i = 0; i < 31; i++) {
+            int cnt1 = 0;
+            for (int x : nums) {
+                cnt1 += (x >> i) & 1;
+            }
+            if (cnt1 >= k) {
+                ans |= 1 << i;
+            }
+        }
+        return ans;
+    }
+
+
+Task_id: 1_0    done
+raw_prediction: ```java
+public long minSum(int[] nums1, int[] nums2) {
+    long s1 = 0;
+    boolean zero1 = false;
+    for (int x : nums1) {
+        if (x == 0) {
+            zero1 = true;
+            s1 += 1;
+        } else {
+            s1 += x;
+        }
+    }
+    long s2 = 0;
+    boolean zero2 = false;
+    for (int x : nums2) {
+        if (x == 0) {
+            zero2 = true;
+            s2 += 1;
+        } else {
+            s2 += x;
+        }
+    }
+    if ((!zero1 && s1 < s2) || (!zero2 && s2 < s1)) {
+        return -1;
+    }
+    return Math.max(s1, s2);
+}
+```
+
+
+result: public static long minSum(int[] nums1, int[] nums2) {
+    long s1 = 0;
+    boolean zero1 = false;
+    for (int x : nums1) {
+        if (x == 0) {
+            zero1 = true;
+            s1 += 1;
+        } else {
+            s1 += x;
+        }
+    }
+    long s2 = 0;
+    boolean zero2 = false;
+    for (int x : nums2) {
+        if (x == 0) {
+            zero2 = true;
+            s2 += 1;
+        } else {
+            s2 += x;
+        }
+    }
+    if ((!zero1 && s1 < s2) || (!zero2 && s2 < s1)) {
+        return -1;
+    }
+    return Math.max(s1, s2);
+}
+
+
+Task_id: 2_0    done
+raw_prediction: ```java
+import java.util.List;
+
+public class Main {
+    public static int lengthOfLongestSubsequence(List<Integer> nums, int target) {
+        int[] f = new int[target + 1];
+        f[0] = 0;
+        for (int i = 1; i <= target; i++) {
+            f[i] = Integer.MIN_VALUE;
+        }
+        int s = 0;
+        for (int x : nums) {
+            s = Math.min(s + x, target);
+            for (int j = s; j >= x; j--) {
+                if (f[j] < f[j - x] + 1) {
+                    f[j] = f[j - x] + 1;
+                }
+            }
+        }
+        return f[target] > 0 ? f[target] : -1;
+    }
+}
+```
+
+
+result: public static int lengthOfLongestSubsequence(List<Integer> nums, int target) {
+        int[] f = new int[target + 1];
+        f[0] = 0;
+        for (int i = 1; i <= target; i++) {
+            f[i] = Integer.MIN_VALUE;
+        }
+        int s = 0;
+        for (int x : nums) {
+            s = Math.min(s + x, target);
+            for (int j = s; j >= x; j--) {
+                if (f[j] < f[j - x] + 1) {
+                    f[j] = f[j - x] + 1;
+                }
+            }
+        }
+        return f[target] > 0 ? f[target] : -1;
+    }
+
+
+Task_id: 3_0    done
+raw_prediction: ```java
+public static int minChanges(String s) {
+    int ans = 0;
+    for (int i = 0; i < s.length(); i += 2) {
+        ans += s.charAt(i) != s.charAt(i + 1) ? 1 : 0;
+    }
+    return ans;
+}
+```
+
+
+result: public static int minChanges(String s) {
+    int ans = 0;
+    for (int i = 0; i < s.length(); i += 2) {
+        ans += s.charAt(i) != s.charAt(i + 1) ? 1 : 0;
+    }
+    return ans;
+}
+
+
+Task_id: 4_0    done
+raw_prediction: ```java
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4, 5, 6};
+        System.out.println(minGroupsForValidAssignment(nums));
+    }
+
+    public static int minGroupsForValidAssignment(int[] nums) {
+        HashMap<Integer, Integer> cnt = new HashMap<>();
+        for (int x : nums) {
+            cnt.put(x, cnt.getOrDefault(x, 0) + 1);
+        }
+        int k = nums.length;
+        for (int c : cnt.values()) {
+            k = Math.min(k, c);
+        }
+        while (true) {
+            int ans = 0;
+            for (int c : cnt.values()) {
+                if (c / k < c % k) {
+                    ans = 0;
+                    break;
+                }
+                ans += (c + k) / (k + 1);
+            }
+            if (ans > 0) {
+                return ans;
+            }
+            k -= 1;
+        }
+    }
+}
+```
+
+
+result: public static int minGroupsForValidAssignment(int[] nums) {
+        HashMap<Integer, Integer> cnt = new HashMap<>();
+        for (int x : nums) {
+            cnt.put(x, cnt.getOrDefault(x, 0) + 1);
+        }
+        int k = nums.length;
+        for (int c : cnt.values()) {
+            k = Math.min(k, c);
+        }
+        while (true) {
+            int ans = 0;
+            for (int c : cnt.values()) {
+                if (c / k < c % k) {
+                    ans = 0;
+                    break;
+                }
+                ans += (c + k) / (k + 1);
+            }
+            if (ans > 0) {
+                return ans;
+            }
+            k -= 1;
+        }
+    }
+
+
+Task_id: 5_0    done
+raw_prediction: ```java
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4, 5};
+        System.out.println(minimumSum(nums));
+    }
+
+    public static int minimumSum(int[] nums) {
+        int n = nums.length;
+        int[] suf = new int[n];
+        suf[n - 1] = nums[n - 1];
+        for (int i = n - 2; i > 0; i--) {
+            suf[i] = Math.min(suf[i + 1], nums[i]);
+        }
+        int ans = Integer.MAX_VALUE;
+        int pre = nums[0];
+        for (int j = 1; j < n - 1; j++) {
+            if (pre < nums[j] && nums[j] > suf[j + 1]) {
+                ans = Math.min(ans, pre + nums[j] + suf[j + 1]);
+            }
+            pre = Math.min(pre, nums[j]);
+        }
+        return ans == Integer.MAX_VALUE ? -1 : ans;
+    }
+}
+```
+
+
+result: public static int minimumSum(int[] nums) {
+        int n = nums.length;
+        int[] suf = new int[n];
+        suf[n - 1] = nums[n - 1];
+        for (int i = n - 2; i > 0; i--) {
+            suf[i] = Math.min(suf[i + 1], nums[i]);
+        }
+        int ans = Integer.MAX_VALUE;
+        int pre = nums[0];
+        for (int j = 1; j < n - 1; j++) {
+            if (pre < nums[j] && nums[j] > suf[j + 1]) {
+                ans = Math.min(ans, pre + nums[j] + suf[j + 1]);
+            }
+            pre = Math.min(pre, nums[j]);
+        }
+        return ans == Integer.MAX_VALUE ? -1 : ans;
+    }
+
+
+Task_id: 6_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static int[][] constructProductMatrix(int[][] grid) {
+        final int MOD = 12345;
+        int n = grid.length, m = grid[0].length;
+        int[][] p = new int[n][m];
+        int suf = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = m - 1; j >= 0; j--) {
+                p[i][j] = suf;
+                suf = (suf * grid[i][j]) % MOD;
+            }
+        }
+        int pre = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                p[i][j] = (p[i][j] * pre) % MOD;
+                pre = (pre * grid[i][j]) % MOD;
+            }
+        }
+        return p;
+    }
+}
+```
+
+
+result: public static int[][] constructProductMatrix(int[][] grid) {
+        final int MOD = 12345;
+        int n = grid.length, m = grid[0].length;
+        int[][] p = new int[n][m];
+        int suf = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = m - 1; j >= 0; j--) {
+                p[i][j] = suf;
+                suf = (suf * grid[i][j]) % MOD;
+            }
+        }
+        int pre = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                p[i][j] = (p[i][j] * pre) % MOD;
+                pre = (pre * grid[i][j]) % MOD;
+            }
+        }
+        return p;
+    }
+
+
+Task_id: 7_0    done
+raw_prediction: ```java
+public String maximumOddBinaryNumber(String s) {
+    int cnt1 = 0;
+    for (int i = 0; i < s.length(); i++) {
+        if (s.charAt(i) == '1') {
+            cnt1++;
+        }
+    }
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < cnt1 - 1; i++) {
+        sb.append('1');
+    }
+    for (int i = 0; i < s.length() - cnt1; i++) {
+        sb.append('0');
+    }
+    sb.append('1');
+    return sb.toString();
+}
+```
+
+
+result: public static String maximumOddBinaryNumber(String s) {
+    int cnt1 = 0;
+    for (int i = 0; i < s.length(); i++) {
+        if (s.charAt(i) == '1') {
+            cnt1++;
+        }
+    }
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < cnt1 - 1; i++) {
+        sb.append('1');
+    }
+    for (int i = 0; i < s.length() - cnt1; i++) {
+        sb.append('0');
+    }
+    sb.append('1');
+    return sb.toString();
+}
+
+
+Task_id: 8_0    done
+raw_prediction: ```java
+public String shortestBeautifulSubstring(String s, int k) {
+    if (countOnes(s) < k) {
+        return "";
+    }
+    String ans = s;
+    int cnt1 = 0, left = 0;
+    for (int right = 0; right < s.length(); right++) {
+        char c = s.charAt(right);
+        cnt1 += c == '1' ? 1 : 0;
+        while (cnt1 > k || s.charAt(left) == '0') {
+            cnt1 -= s.charAt(left) == '1' ? 1 : 0;
+            left++;
+        }
+        if (cnt1 == k) {
+            String t = s.substring(left, right + 1);
+            if (t.length() < ans.length() || t.length() == ans.length() && t.compareTo(ans) < 0) {
+                ans = t;
+            }
+        }
+    }
+    return ans;
+}
+
+private int countOnes(String s) {
+    int count = 0;
+    for (char c : s.toCharArray()) {
+        if (c == '1') {
+            count++;
+        }
+    }
+    return count;
+}
+```
+
+
+result: public static String shortestBeautifulSubstring(String s, int k) {
+    if (countOnes(s) < k) {
+        return "";
+    }
+    String ans = s;
+    int cnt1 = 0, left = 0;
+    for (int right = 0; right < s.length(); right++) {
+        char c = s.charAt(right);
+        cnt1 += c == '1' ? 1 : 0;
+        while (cnt1 > k || s.charAt(left) == '0') {
+            cnt1 -= s.charAt(left) == '1' ? 1 : 0;
+            left++;
+        }
+        if (cnt1 == k) {
+            String t = s.substring(left, right + 1);
+            if (t.length() < ans.length() || t.length() == ans.length() && t.compareTo(ans) < 0) {
+                ans = t;
+            }
+        }
+    }
+    return ans;
+}
+
+public static int countOnes(String s) {
+    int count = 0;
+    for (char c : s.toCharArray()) {
+        if (c == '1') {
+            count++;
+        }
+    }
+    return count;
+}
+
+
+Task_id: 9_0    done
+raw_prediction: ```java
+public static int addMinimum(String s) {
+    int t = 1;
+    for (int i = 1; i < s.length(); i++) {
+        t += s.charAt(i - 1) >= s.charAt(i) ? 1 : 0;
+    }
+    return t * 3 - s.length();
+}
+```
+
+
+result: public static int addMinimum(String s) {
+    int t = 1;
+    for (int i = 1; i < s.length(); i++) {
+        t += s.charAt(i - 1) >= s.charAt(i) ? 1 : 0;
+    }
+    return t * 3 - s.length();
+}
+
+
+Task_id: 10_0    done
+raw_prediction: ```java
+import java.util.List;
+import java.util.Collections;
+
+public class Main {
+    public static int maxIncreasingGroups(List<Integer> usageLimits) {
+        List<Integer> ul = new ArrayList<>(usageLimits);
+        Collections.sort(ul);
+        int remain = 0;
+        int require = 1;
+        for (int num : ul) {
+            remain += num;
+            if (remain >= require) {
+                remain -= require;
+                require += 1;
+            }
+        }
+        return require - 1;
+    }
+}
+```
+
+
+result: public static int maxIncreasingGroups(List<Integer> usageLimits) {
+        List<Integer> ul = new ArrayList<>(usageLimits);
+        Collections.sort(ul);
+        int remain = 0;
+        int require = 1;
+        for (int num : ul) {
+            remain += num;
+            if (remain >= require) {
+                remain -= require;
+                require += 1;
+            }
+        }
+        return require - 1;
+    }
+
+
+Task_id: 11_0    done
+raw_prediction: ```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static List<Integer> lastVisitedIntegers(List<String> words) {
+        List<Integer> ans = new ArrayList<>();
+        List<Integer> nums = new ArrayList<>();
+        int k = 0;
+        for (String s : words) {
+            if (s.charAt(0) != 'p') {
+                nums.add(Integer.parseInt(s));
+                k = 0;
+            } else {
+                k++;
+                ans.add(k > nums.size() ? -1 : nums.get(nums.size() - k));
+            }
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static List<Integer> lastVisitedIntegers(List<String> words) {
+        List<Integer> ans = new ArrayList<>();
+        List<Integer> nums = new ArrayList<>();
+        int k = 0;
+        for (String s : words) {
+            if (s.charAt(0) != 'p') {
+                nums.add(Integer.parseInt(s));
+                k = 0;
+            } else {
+                k++;
+                ans.add(k > nums.size() ? -1 : nums.get(nums.size() - k));
+            }
+        }
+        return ans;
+    }
+
+
+Task_id: 12_0    done
+raw_prediction: ```java
+public static int minOperations(String s1, String s2, int x) {
+    if (s1.equals(s2)) {
+        return 0;
+    }
+    List<Integer> p = new ArrayList<>();
+    for (int i = 0; i < s1.length(); i++) {
+        if (s1.charAt(i) != s2.charAt(i)) {
+            p.add(i);
+        }
+    }
+    if (p.size() % 2 != 0) {
+        return -1;
+    }
+    int f0 = 0, f1 = x;
+    for (int i = 1; i < p.size(); i++) {
+        int new_f = Math.min(f1 + x, f0 + (p.get(i) - p.get(i - 1)) * 2);
+        f0 = f1;
+        f1 = new_f;
+    }
+    return f1 / 2;
+}
+```
+
+
+result: public static int minOperations(String s1, String s2, int x) {
+    if (s1.equals(s2)) {
+        return 0;
+    }
+    List<Integer> p = new ArrayList<>();
+    for (int i = 0; i < s1.length(); i++) {
+        if (s1.charAt(i) != s2.charAt(i)) {
+            p.add(i);
+        }
+    }
+    if (p.size() % 2 != 0) {
+        return -1;
+    }
+    int f0 = 0, f1 = x;
+    for (int i = 1; i < p.size(); i++) {
+        int new_f = Math.min(f1 + x, f0 + (p.get(i) - p.get(i - 1)) * 2);
+        f0 = f1;
+        f1 = new_f;
+    }
+    return f1 / 2;
+}
+
+
+Task_id: 13_0    done
+raw_prediction: ```java
+import java.util.List;
+import java.util.stream.IntStream;
+
+public class Main {
+    public static int minProcessingTime(List<Integer> processorTime, List<Integer> tasks) {
+        processorTime.sort(null);
+        tasks.sort((a, b) -> b - a);
+        return IntStream.range(0, Math.min(processorTime.size(), tasks.size()))
+                .map(i -> processorTime.get(i) + tasks.get(i * 4 < tasks.size() ? i * 4 : tasks.size() - 1))
+                .max()
+                .orElse(0);
+    }
+}
+```
+Note: In Java, we don't have a direct equivalent of Python's list slicing with a step, so we have to manually calculate the index for every 4th element in the `tasks` list. Also, Java's `List.sort()` method requires a `Comparator` object, so we pass `null` for natural ordering (ascending) in the case of `processorTime`, and a lambda function to sort `tasks` in descending order.
+
+
+result: public static int minProcessingTime(List<Integer> processorTime, List<Integer> tasks) {
+        processorTime.sort(null);
+        tasks.sort((a, b) -> b - a);
+        return IntStream.range(0, Math.min(processorTime.size(), tasks.size()))
+                .map(i -> processorTime.get(i) + tasks.get(i * 4 < tasks.size() ? i * 4 : tasks.size() - 1))
+                .max()
+                .orElse(0);
+    }
+
+
+Task_id: 14_0    done
+raw_prediction: ```java
+public static int differenceOfSums(int n, int m) {
+    return n * (n + 1) / 2 - n / m * (n / m + 1) * m;
+}
+```
+
+
+result: public static int differenceOfSums(int n, int m) {
+    return n * (n + 1) / 2 - n / m * (n / m + 1) * m;
+}
+
+
+Task_id: 15_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4, 5};
+        int target = 7;
+        System.out.println(minSizeSubarray(nums, target));
+    }
+
+    public static int minSizeSubarray(int[] nums, int target) {
+        int total = Arrays.stream(nums).sum();
+        int n = nums.length;
+        int ans = Integer.MAX_VALUE;
+        int left = 0, s = 0;
+        for (int right = 0; right < n * 2; right++) {
+            s += nums[right % n];
+            while (s > target % total) {
+                s -= nums[left % n];
+                left++;
+            }
+            if (s == target % total) {
+                ans = Math.min(ans, right - left + 1);
+            }
+        }
+        return ans + target / total * n < Integer.MAX_VALUE ? ans + target / total * n : -1;
+    }
+}
+```
+
+
+result: public static int minSizeSubarray(int[] nums, int target) {
+        int total = Arrays.stream(nums).sum();
+        int n = nums.length;
+        int ans = Integer.MAX_VALUE;
+        int left = 0, s = 0;
+        for (int right = 0; right < n * 2; right++) {
+            s += nums[right % n];
+            while (s > target % total) {
+                s -= nums[left % n];
+                left++;
+            }
+            if (s == target % total) {
+                ans = Math.min(ans, right - left + 1);
+            }
+        }
+        return ans + target / total * n < Integer.MAX_VALUE ? ans + target / total * n : -1;
+    }
+
+
+Task_id: 16_0    done
+raw_prediction: ```java
+public long maximumTripletValue(int[] nums) {
+    int n = nums.length;
+    int[] sufMax = new int[n + 1];
+    for (int i = n - 1; i > 0; i--) {
+        sufMax[i] = Math.max(sufMax[i + 1], nums[i]);
+    }
+    long ans = 0;
+    long preMax = 0;
+    for (int j = 0; j < nums.length; j++) {
+        ans = Math.max(ans, (preMax - nums[j]) * sufMax[j + 1]);
+        preMax = Math.max(preMax, nums[j]);
+    }
+    return ans;
+}
+```
+
+
+result: public static long maximumTripletValue(int[] nums) {
+    int n = nums.length;
+    int[] sufMax = new int[n + 1];
+    for (int i = n - 1; i > 0; i--) {
+        sufMax[i] = Math.max(sufMax[i + 1], nums[i]);
+    }
+    long ans = 0;
+    long preMax = 0;
+    for (int j = 0; j < nums.length; j++) {
+        ans = Math.max(ans, (preMax - nums[j]) * sufMax[j + 1]);
+        preMax = Math.max(preMax, nums[j]);
+    }
+    return ans;
+}
+
+
+Task_id: 17_0    done
+raw_prediction: ```java
+public long maximumTripletValue(int[] nums) {
+    int n = nums.length;
+    int[] sufMax = new int[n + 1];
+    for (int i = n - 1; i > 0; i--) {
+        sufMax[i] = Math.max(sufMax[i + 1], nums[i]);
+    }
+    long ans = 0;
+    long preMax = 0;
+    for (int j = 0; j < nums.length; j++) {
+        ans = Math.max(ans, (preMax - nums[j]) * sufMax[j + 1]);
+        preMax = Math.max(preMax, nums[j]);
+    }
+    return ans;
+}
+```
+
+
+result: public static long maximumTripletValue(int[] nums) {
+    int n = nums.length;
+    int[] sufMax = new int[n + 1];
+    for (int i = n - 1; i > 0; i--) {
+        sufMax[i] = Math.max(sufMax[i + 1], nums[i]);
+    }
+    long ans = 0;
+    long preMax = 0;
+    for (int j = 0; j < nums.length; j++) {
+        ans = Math.max(ans, (preMax - nums[j]) * sufMax[j + 1]);
+        preMax = Math.max(preMax, nums[j]);
+    }
+    return ans;
+}
+
+
+Task_id: 18_0    done
+raw_prediction: ```java
+public int maxSubarrays(int[] nums) {
+    int ans = 0;
+    int a = -1;
+    for (int x : nums) {
+        a &= x;
+        if (a == 0) {
+            ans += 1;
+            a = -1;
+        }
+    }
+    return Math.max(ans, 1);
+}
+```
+
+
+result: public static int maxSubarrays(int[] nums) {
+    int ans = 0;
+    int a = -1;
+    for (int x : nums) {
+        a &= x;
+        if (a == 0) {
+            ans += 1;
+            a = -1;
+        }
+    }
+    return Math.max(ans, 1);
+}
+
+
+Task_id: 19_0    done
+raw_prediction: ```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static int minOperations(int[] nums) {
+        Map<Integer, Integer> cnt = new HashMap<>();
+        for (int x : nums) {
+            cnt.put(x, cnt.getOrDefault(x, 0) + 1);
+        }
+        int ans = 0;
+        for (int c : cnt.values()) {
+            if (c == 1) {
+                return -1;
+            }
+            ans += (c + 2) / 3;
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static int minOperations(int[] nums) {
+        Map<Integer, Integer> cnt = new HashMap<>();
+        for (int x : nums) {
+            cnt.put(x, cnt.getOrDefault(x, 0) + 1);
+        }
+        int ans = 0;
+        for (int c : cnt.values()) {
+            if (c == 1) {
+                return -1;
+            }
+            ans += (c + 2) / 3;
+        }
+        return ans;
+    }
+
+
+Task_id: 20_0    done
+raw_prediction: ```java
+public int minOperations(List<Integer> nums, int k) {
+    int u = (2 << k) - 2;
+    int s = 0, n = nums.size();
+    for (int i = n - 1; i >= 0; i--) {
+        s |= 1 << nums.get(i);
+        if ((s & u) == u) {
+            return n - i;
+        }
+    }
+    return -1;
+}
+```
+Note: The translated code assumes that the input list `nums` is not empty, and that the value of `k` is non-negative. If these assumptions do not hold, additional input validation may be required.
+
+
+result: public static int minOperations(List<Integer> nums, int k) {
+    int u = (2 << k) - 2;
+    int s = 0, n = nums.size();
+    for (int i = n - 1; i >= 0; i--) {
+        s |= 1 << nums.get(i);
+        if ((s & u) == u) {
+            return n - i;
+        }
+    }
+    return -1;
+}
+
+
+Task_id: 21_0    done
+raw_prediction: ```java
+import java.util.List;
+
+public class Main {
+    public static int maxNumberOfAlloys(int n, int k, int budget, List<List<Integer>> composition, List<Integer> stock, List<Integer> cost) {
+        int ans = 0;
+        int mx = Math.min(stock) + budget;
+        for (List<Integer> com : composition) {
+            int left = 0, right = mx + 1;
+            while (left + 1 < right) {
+                int mid = (left + right) / 2;
+                if (check(mid, com, stock, cost)) {
+                    left = mid;
+                } else {
+                    right = mid;
+                }
+            }
+            ans = Math.max(ans, left);
+        }
+        return ans;
+    }
+
+    private static boolean check(int num, List<Integer> com, List<Integer> stock, List<Integer> cost) {
+        int money = 0;
+        for (int i = 0; i < com.size(); i++) {
+            if (stock.get(i) < com.get(i) * num) {
+                money += (com.get(i) * num - stock.get(i)) * cost.get(i);
+                if (money > budget) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+}
+```
+
+
+result: public static int maxNumberOfAlloys(int n, int k, int budget, List<List<Integer>> composition, List<Integer> stock, List<Integer> cost) {
+        int ans = 0;
+        int mx = Math.min(stock) + budget;
+        for (List<Integer> com : composition) {
+            int left = 0, right = mx + 1;
+            while (left + 1 < right) {
+                int mid = (left + right) / 2;
+                if (check(mid, com, stock, cost)) {
+                    left = mid;
+                } else {
+                    right = mid;
+                }
+            }
+            ans = Math.max(ans, left);
+        }
+        return ans;
+    }
+
+public static boolean check(int num, List<Integer> com, List<Integer> stock, List<Integer> cost) {
+        int money = 0;
+        for (int i = 0; i < com.size(); i++) {
+            if (stock.get(i) < com.get(i) * num) {
+                money += (com.get(i) * num - stock.get(i)) * cost.get(i);
+                if (money > budget) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+
+Task_id: 22_0    done
+raw_prediction: ```java
+import java.util.List;
+import java.util.stream.IntStream;
+
+public class Main {
+    public static int countWays(List<Integer> nums) {
+        nums.sort(null);
+        int n = nums.size();
+        int ans = nums.get(0) > 0 ? 1 : 0;
+        for (int i = 0; i < n - 1; i++) {
+            int x = nums.get(i);
+            int y = nums.get(i + 1);
+            if (x < i + 1 && i + 1 < y) {
+                ans += 1;
+            }
+        }
+        return ans + 1;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> nums = Arrays.asList(1, 2, 2, 3, 4);
+        System.out.println(countWays(nums));
+    }
+}
+```
+Note: In Java, we don't have a built-in pairwise function like Python, so we use a regular for loop to iterate through the list. Also, array indexing starts from 0 in Java, so we use `i + 1` instead of `i` to check if `i` is between `x` and `y`.
+
+
+result: public static int countWays(List<Integer> nums) {
+        nums.sort(null);
+        int n = nums.size();
+        int ans = nums.get(0) > 0 ? 1 : 0;
+        for (int i = 0; i < n - 1; i++) {
+            int x = nums.get(i);
+            int y = nums.get(i + 1);
+            if (x < i + 1 && i + 1 < y) {
+                ans += 1;
+            }
+        }
+        return ans + 1;
+    }
+
+
+Task_id: 23_0    done
+raw_prediction: ```java
+public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
+    int ans = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        if (Integer.bitCount(i) == k) {
+            ans += nums.get(i);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
+    int ans = 0;
+    for (int i = 0; i < nums.size(); i++) {
+        if (Integer.bitCount(i) == k) {
+            ans += nums.get(i);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 24_0    done
+raw_prediction: ```java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main {
+    public static int countPairs(List<List<Integer>> coordinates, int k) {
+        int ans = 0;
+        Map<List<Integer>, Integer> cnt = new HashMap<>();
+        for (List<Integer> coordinate : coordinates) {
+            int x = coordinate.get(0);
+            int y = coordinate.get(1);
+            for (int i = 0; i <= k; i++) {
+                int keyX = x ^ i;
+                int keyY = y ^ (k - i);
+                List<Integer> key = Arrays.asList(keyX, keyY);
+                ans += cnt.getOrDefault(key, 0);
+            }
+            cnt.put(coordinate, cnt.getOrDefault(coordinate, 0) + 1);
+        }
+        return ans;
+    }
+}
+```
+Note: In Java, we don't have a built-in Counter like Python, so we use a HashMap to count the occurrences of the coordinates. Also, since Java is a statically typed language, we need to explicitly declare the types of variables.
+
+
+result: public static int countPairs(List<List<Integer>> coordinates, int k) {
+        int ans = 0;
+        Map<List<Integer>, Integer> cnt = new HashMap<>();
+        for (List<Integer> coordinate : coordinates) {
+            int x = coordinate.get(0);
+            int y = coordinate.get(1);
+            for (int i = 0; i <= k; i++) {
+                int keyX = x ^ i;
+                int keyY = y ^ (k - i);
+                List<Integer> key = Arrays.asList(keyX, keyY);
+                ans += cnt.getOrDefault(key, 0);
+            }
+            cnt.put(coordinate, cnt.getOrDefault(coordinate, 0) + 1);
+        }
+        return ans;
+    }
+
+
+Task_id: 25_0    done
+raw_prediction: ```java
+public int minimumRightShifts(List<Integer> nums) {
+    int i = 1, n = nums.size();
+    while (i < n && nums.get(i - 1) < nums.get(i)) {
+        i++;
+    }
+    if (i == n) {
+        return 0;
+    }
+    if (nums.get(0) < nums.get(n - 1)) {
+        return -1;
+    }
+    int mid = i;
+    i++;
+    while (i < n && nums.get(i - 1) < nums.get(i)) {
+        i++;
+    }
+    if (i < n) {
+        return -1;
+    }
+    return n - mid;
+}
+```
+
+
+result: public static int minimumRightShifts(List<Integer> nums) {
+    int i = 1, n = nums.size();
+    while (i < n && nums.get(i - 1) < nums.get(i)) {
+        i++;
+    }
+    if (i == n) {
+        return 0;
+    }
+    if (nums.get(0) < nums.get(n - 1)) {
+        return -1;
+    }
+    int mid = i;
+    i++;
+    while (i < n && nums.get(i - 1) < nums.get(i)) {
+        i++;
+    }
+    if (i < n) {
+        return -1;
+    }
+    return n - mid;
+}
+
+
+Task_id: 26_0    done
+raw_prediction: ```java
+public static int minLengthAfterRemovals(List<Integer> nums) {
+    int maxCnt = 1;
+    int cnt = 1;
+    int pre = nums.get(0);
+    int n = nums.size();
+    for (int i = 1; i < n; i++) {
+        if (pre == nums.get(i)) {
+            cnt++;
+        } else {
+            maxCnt = Math.max(maxCnt, cnt);
+            pre = nums.get(i);
+            cnt = 1;
+        }
+    }
+    maxCnt = Math.max(maxCnt, cnt);
+    if (maxCnt * 2 > n) {
+        return maxCnt - (n - maxCnt);
+    } else {
+        return n % 2 == 0 ? 0 : 1;
+    }
+}
+```
+
+
+result: public static int minLengthAfterRemovals(List<Integer> nums) {
+    int maxCnt = 1;
+    int cnt = 1;
+    int pre = nums.get(0);
+    int n = nums.size();
+    for (int i = 1; i < n; i++) {
+        if (pre == nums.get(i)) {
+            cnt++;
+        } else {
+            maxCnt = Math.max(maxCnt, cnt);
+            pre = nums.get(i);
+            cnt = 1;
+        }
+    }
+    maxCnt = Math.max(maxCnt, cnt);
+    if (maxCnt * 2 > n) {
+        return maxCnt - (n - maxCnt);
+    } else {
+        return n % 2 == 0 ? 0 : 1;
+    }
+}
+
+
+Task_id: 27_0    done
+raw_prediction: ```java
+public int numberOfPoints(List<List<Integer>> nums) {
+    int[] diff = new int[102];
+    for (List<Integer> p : nums) {
+        diff[p.get(0)] += 1;
+        diff[p.get(1) + 1] -= 1;
+    }
+    int ans = 0;
+    int s = 0;
+    for (int d : diff) {
+        s += d;
+        ans += s > 0 ? 1 : 0;
+    }
+    return ans;
+}
+```
+
+
+result: public static int numberOfPoints(List<List<Integer>> nums) {
+    int[] diff = new int[102];
+    for (List<Integer> p : nums) {
+        diff[p.get(0)] += 1;
+        diff[p.get(1) + 1] -= 1;
+    }
+    int ans = 0;
+    int s = 0;
+    for (int d : diff) {
+        s += d;
+        ans += s > 0 ? 1 : 0;
+    }
+    return ans;
+}
+
+
+Task_id: 28_0    done
+raw_prediction: ```java
+public static boolean isReachableAtTime(int sx, int sy, int fx, int fy, int t) {
+    if (sx == fx && sy == fy) {
+        return t != 1;
+    }
+    return Math.max(Math.abs(sx - fx), Math.abs(sy - fy)) <= t;
+}
+```
+
+
+result: public static boolean isReachableAtTime(int sx, int sy, int fx, int fy, int t) {
+    if (sx == fx && sy == fy) {
+        return t != 1;
+    }
+    return Math.max(Math.abs(sx - fx), Math.abs(sy - fy)) <= t;
+}
+
+
+Task_id: 29_0    done
+raw_prediction: ```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static long countInterestingSubarrays(int[] nums, int modulo, int k) {
+        int n = nums.length;
+        long ans = 0;
+        int[] preSum = new int[n + 1];
+        for (int i = 0; i < n; i++) {
+            preSum[i + 1] = preSum[i] + ((nums[i] % modulo == k) ? 1 : 0);
+        }
+        Map<Integer, Integer> countMap = new HashMap<>();
+        for (int i = 0; i <= n; i++) {
+            int key = (preSum[i] % modulo - k + modulo) % modulo;
+            if (countMap.containsKey(key)) {
+                ans += countMap.get(key);
+            }
+            countMap.put(preSum[i] % modulo, countMap.getOrDefault(preSum[i] % modulo, 0) + 1);
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static long countInterestingSubarrays(int[] nums, int modulo, int k) {
+        int n = nums.length;
+        long ans = 0;
+        int[] preSum = new int[n + 1];
+        for (int i = 0; i < n; i++) {
+            preSum[i + 1] = preSum[i] + ((nums[i] % modulo == k) ? 1 : 0);
+        }
+        Map<Integer, Integer> countMap = new HashMap<>();
+        for (int i = 0; i <= n; i++) {
+            int key = (preSum[i] % modulo - k + modulo) % modulo;
+            if (countMap.containsKey(key)) {
+                ans += countMap.get(key);
+            }
+            countMap.put(preSum[i] % modulo, countMap.getOrDefault(preSum[i] % modulo, 0) + 1);
+        }
+        return ans;
+    }
+
+
+Task_id: 30_0    done
+raw_prediction: ```java
+public static int minimumOperations(String num) {
+    int lenNum = num.length();
+    int zero = lenNum - (num.contains("0") ? 1 : 0);
+    return Math.min(Math.min(f("00", num), f("25", num)), Math.min(f("50", num), Math.min(f("75", num), zero)));
+}
+
+public static int f(String target, String num) {
+    try {
+        int i = num.lastIndexOf(target.charAt(1));
+        if (i < 0) {
+            return num.length();
+        }
+        i = num.substring(0, i).lastIndexOf(target.charAt(0));
+        if (i < 0) {
+            return num.length();
+        }
+        return num.length() - i - 2;
+    } catch (IndexOutOfBoundsException e) {
+        return num.length();
+    }
+}
+```
+
+
+result: public static int minimumOperations(String num) {
+    int lenNum = num.length();
+    int zero = lenNum - (num.contains("0") ? 1 : 0);
+    return Math.min(Math.min(f("00", num), f("25", num)), Math.min(f("50", num), Math.min(f("75", num), zero)));
+}
+
+public static int f(String target, String num) {
+    try {
+        int i = num.lastIndexOf(target.charAt(1));
+        if (i < 0) {
+            return num.length();
+        }
+        i = num.substring(0, i).lastIndexOf(target.charAt(0));
+        if (i < 0) {
+            return num.length();
+        }
+        return num.length() - i - 2;
+    } catch (IndexOutOfBoundsException e) {
+        return num.length();
+    }
+}
+
+
+Task_id: 31_0    done
+raw_prediction: ```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(countSymmetricIntegers(10, 20));
+    }
+
+    public static int countSymmetricIntegers(int low, int high) {
+        int ans = 0;
+        for (int i = low; i <= high; i++) {
+            String s = Integer.toString(i);
+            int n = s.length();
+            if (n % 2 > 0) {
+                continue;
+            }
+            int sum = 0;
+            for (int j = 0; j < n / 2; j++) {
+                sum += s.charAt(j) - '0';
+            }
+            for (int j = n / 2; j < n; j++) {
+                sum -= s.charAt(j) - '0';
+            }
+            if (sum == 0) {
+                ans++;
+            }
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static int countSymmetricIntegers(int low, int high) {
+        int ans = 0;
+        for (int i = low; i <= high; i++) {
+            String s = Integer.toString(i);
+            int n = s.length();
+            if (n % 2 > 0) {
+                continue;
+            }
+            int sum = 0;
+            for (int j = 0; j < n / 2; j++) {
+                sum += s.charAt(j) - '0';
+            }
+            for (int j = n / 2; j < n; j++) {
+                sum -= s.charAt(j) - '0';
+            }
+            if (sum == 0) {
+                ans++;
+            }
+        }
+        return ans;
+    }
+
+
+Task_id: 32_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static long maxSum(List<Integer> nums, int m, int k) {
+        long ans = 0;
+        long s = nums.stream().limit(k - 1).mapToLong(Integer::longValue).sum();
+        Map<Integer, Integer> cnt = new HashMap<>();
+        for (int i = 0; i < k - 1; i++) {
+            cnt.put(nums.get(i), cnt.getOrDefault(nums.get(i), 0) + 1);
+        }
+        for (int i = 0; i < nums.size() - k + 1; i++) {
+            int out = nums.get(i);
+            int in_ = nums.get(i + k - 1);
+            s += in_;
+            cnt.put(in_, cnt.get(in_) + 1);
+            if (cnt.size() >= m) {
+                ans = Math.max(ans, s);
+            }
+            s -= out;
+            cnt.put(out, cnt.get(out) - 1);
+            if (cnt.get(out) == 0) {
+                cnt.remove(out);
+            }
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static long maxSum(List<Integer> nums, int m, int k) {
+        long ans = 0;
+        long s = nums.stream().limit(k - 1).mapToLong(Integer::longValue).sum();
+        Map<Integer, Integer> cnt = new HashMap<>();
+        for (int i = 0; i < k - 1; i++) {
+            cnt.put(nums.get(i), cnt.getOrDefault(nums.get(i), 0) + 1);
+        }
+        for (int i = 0; i < nums.size() - k + 1; i++) {
+            int out = nums.get(i);
+            int in_ = nums.get(i + k - 1);
+            s += in_;
+            cnt.put(in_, cnt.get(in_) + 1);
+            if (cnt.size() >= m) {
+                ans = Math.max(ans, s);
+            }
+            s -= out;
+            cnt.put(out, cnt.get(out) - 1);
+            if (cnt.get(out) == 0) {
+                cnt.remove(out);
+            }
+        }
+        return ans;
+    }
+
+
+Task_id: 33_0    done
+raw_prediction: ```java
+public static boolean checkStrings(String s1, String s2) {
+    int[][] cnt1 = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+    int[][] cnt2 = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1.charAt(i) - 'a']++;
+        cnt2[i % 2][s2.charAt(i) - 'a']++;
+    }
+    return Arrays.deepEquals(cnt1, cnt2);
+}
+```
+
+
+result: public static boolean checkStrings(String s1, String s2) {
+    int[][] cnt1 = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+    int[][] cnt2 = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1.charAt(i) - 'a']++;
+        cnt2[i % 2][s2.charAt(i) - 'a']++;
+    }
+    return Arrays.deepEquals(cnt1, cnt2);
+}
+
+
+Task_id: 34_0    done
+raw_prediction: ```java
+public static boolean canBeEqual(String s1, String s2) {
+    int[][] cnt1 = new int[2][26];
+    int[][] cnt2 = new int[2][26];
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1.charAt(i) - 'a']++;
+        cnt2[i % 2][s2.charAt(i) - 'a']++;
+    }
+    return Arrays.deepEquals(cnt1, cnt2);
+}
+```
+
+
+result: public static boolean canBeEqual(String s1, String s2) {
+    int[][] cnt1 = new int[2][26];
+    int[][] cnt2 = new int[2][26];
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1.charAt(i) - 'a']++;
+        cnt2[i % 2][s2.charAt(i) - 'a']++;
+    }
+    return Arrays.deepEquals(cnt1, cnt2);
+}
+
+
+Task_id: 35_0    done
+raw_prediction: ```java
+public int furthestDistanceFromOrigin(String moves) {
+    int cn = 0;
+    int ans = 0;
+    for (int i = 0; i < moves.length(); i++) {
+        char move = moves.charAt(i);
+        if (move == 'L') {
+            ans -= 1;
+        } else if (move == 'R') {
+            ans += 1;
+        } else {
+            cn += 1;
+        }
+    }
+    return Math.abs(ans) + cn;
+}
+```
+
+
+result: public static int furthestDistanceFromOrigin(String moves) {
+    int cn = 0;
+    int ans = 0;
+    for (int i = 0; i < moves.length(); i++) {
+        char move = moves.charAt(i);
+        if (move == 'L') {
+            ans -= 1;
+        } else if (move == 'R') {
+            ans += 1;
+        } else {
+            cn += 1;
+        }
+    }
+    return Math.abs(ans) + cn;
+}
+
+
+Task_id: 36_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static int longestEqualSubarray(List<Integer> nums, int k) {
+        List<List<Integer>> pos = new ArrayList<>();
+        for (int i = 0; i <= nums.size(); i++) {
+            pos.add(new ArrayList<>());
+        }
+        for (int i = 0; i < nums.size(); i++) {
+            int x = nums.get(i);
+            pos.get(x).add(i - pos.get(x).size());
+        }
+        int ans = 0;
+        for (List<Integer> ps : pos) {
+            if (ps.size() <= ans) continue;
+            int left = 0;
+            for (int right = 0; right < ps.size(); right++) {
+                int p = ps.get(right);
+                while (p - ps.get(left) > k) {
+                    left += 1;
+                }
+                ans = Math.max(ans, right - left + 1);
+            }
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static int longestEqualSubarray(List<Integer> nums, int k) {
+        List<List<Integer>> pos = new ArrayList<>();
+        for (int i = 0; i <= nums.size(); i++) {
+            pos.add(new ArrayList<>());
+        }
+        for (int i = 0; i < nums.size(); i++) {
+            int x = nums.get(i);
+            pos.get(x).add(i - pos.get(x).size());
+        }
+        int ans = 0;
+        for (List<Integer> ps : pos) {
+            if (ps.size() <= ans) continue;
+            int left = 0;
+            for (int right = 0; right < ps.size(); right++) {
+                int p = ps.get(right);
+                while (p - ps.get(left) > k) {
+                    left += 1;
+                }
+                ans = Math.max(ans, right - left + 1);
+            }
+        }
+        return ans;
+    }
+
+
+Task_id: 37_0    done
+raw_prediction: ```java
+public static boolean isAcronym(List<String> words, String s) {
+    if (words.size() != s.length()) {
+        return false;
+    }
+    for (int i = 0; i < words.size(); i++) {
+        if (words.get(i).charAt(0) != s.charAt(i)) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+
+result: public static boolean isAcronym(List<String> words, String s) {
+    if (words.size() != s.length()) {
+        return false;
+    }
+    for (int i = 0; i < words.size(); i++) {
+        if (words.get(i).charAt(0) != s.charAt(i)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+Task_id: 38_0    done
+raw_prediction: ```java
+public static int minimumSum(int n, int k) {
+    int m = Math.min(k / 2, n);
+    return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) / 2;
+}
+```
+
+
+result: public static int minimumSum(int n, int k) {
+    int m = Math.min(k / 2, n);
+    return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) / 2;
+}
+
+
+Task_id: 39_0    done
+raw_prediction: ```java
+import java.util.List;
+
+public class Main {
+    public static int minimumOperations(List<Integer> nums) {
+        List<Integer> g = new ArrayList<>();
+        for (int x : nums) {
+            int j = upperBound(g, x);
+            if (j == g.size()) {
+                g.add(x);
+            } else {
+                g.set(j, x);
+            }
+        }
+        return nums.size() - g.size();
+    }
+
+    public static int upperBound(List<Integer> g, int target) {
+        int left = -1, right = g.size();
+        while (left + 1 < right) {
+            int mid = (left + right) / 2;
+            if (g.get(mid) <= target) {
+                left = mid;
+            } else {
+                right = mid;
+            }
+        }
+        return right;
+    }
+}
+```
+
+
+result: public static int minimumOperations(List<Integer> nums) {
+        List<Integer> g = new ArrayList<>();
+        for (int x : nums) {
+            int j = upperBound(g, x);
+            if (j == g.size()) {
+                g.add(x);
+            } else {
+                g.set(j, x);
+            }
+        }
+        return nums.size() - g.size();
+    }
+
+public static int upperBound(List<Integer> g, int target) {
+        int left = -1, right = g.size();
+        while (left + 1 < right) {
+            int mid = (left + right) / 2;
+            if (g.get(mid) <= target) {
+                left = mid;
+            } else {
+                right = mid;
+            }
+        }
+        return right;
+    }
+
+
+Task_id: 40_0    done
+raw_prediction: ```java
+public static int countPairs(List<Integer> nums, int target) {
+    Collections.sort(nums);
+    int ans = 0, left = 0, right = nums.size() - 1;
+    while (left < right) {
+        if (nums.get(left) + nums.get(right) < target) {
+            ans += right - left;
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return ans;
+}
+```
+
+
+result: public static int countPairs(List<Integer> nums, int target) {
+    Collections.sort(nums);
+    int ans = 0, left = 0, right = nums.size() - 1;
+    while (left < right) {
+        if (nums.get(left) + nums.get(right) < target) {
+            ans += right - left;
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 41_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static int minAbsoluteDifference(List<Integer> nums, int x) {
+        int ans = Integer.MAX_VALUE;
+        List<Integer> pre = new ArrayList<>();
+        pre.add(Integer.MAX_VALUE);
+
+        for (int i = 0; i < nums.size() - x; i++) {
+            int insertIndex = Collections.binarySearch(pre, nums.get(i)) < 0 ? -(Collections.binarySearch(pre, nums.get(i))) - 1 : Collections.binarySearch(pre, nums.get(i));
+            pre.add(insertIndex, nums.get(i));
+
+            int index = Collections.binarySearch(pre, nums.get(i + x)) < 0 ? -(Collections.binarySearch(pre, nums.get(i + x))) - 1 : Collections.binarySearch(pre, nums.get(i + x));
+            int tmp = Math.min(Math.abs(pre.get(index) - nums.get(i + x)), index > 0 ? Math.abs(pre.get(index - 1) - nums.get(i + x)) : Integer.MAX_VALUE);
+            ans = Math.min(ans, tmp);
+        }
+        return ans;
+    }
+}
+```
+Note: The `bisect_left` function in Python is equivalent to `Collections.binarySearch` in Java, but the handling of the insertion index is slightly different between the two, so we use `Collections.binarySearch` and adjust the index accordingly. Also, Java's `ArrayList` doesn't have an equivalent `insort_left` method, so we use `Collections.binarySearch` to find the insertion index and then use `List.add` to insert the element at the appropriate position.
+
+
+result: public static int minAbsoluteDifference(List<Integer> nums, int x) {
+        int ans = Integer.MAX_VALUE;
+        List<Integer> pre = new ArrayList<>();
+        pre.add(Integer.MAX_VALUE);
+
+        for (int i = 0; i < nums.size() - x; i++) {
+            int insertIndex = Collections.binarySearch(pre, nums.get(i)) < 0 ? -(Collections.binarySearch(pre, nums.get(i))) - 1 : Collections.binarySearch(pre, nums.get(i));
+            pre.add(insertIndex, nums.get(i));
+
+            int index = Collections.binarySearch(pre, nums.get(i + x)) < 0 ? -(Collections.binarySearch(pre, nums.get(i + x))) - 1 : Collections.binarySearch(pre, nums.get(i + x));
+            int tmp = Math.min(Math.abs(pre.get(index) - nums.get(i + x)), index > 0 ? Math.abs(pre.get(index - 1) - nums.get(i + x)) : Integer.MAX_VALUE);
+            ans = Math.min(ans, tmp);
+        }
+        return ans;
+    }
+
+
+Task_id: 42_0    done
+raw_prediction: ```java
+public ListNode doubleIt(ListNode head) {
+    if (head.val > 4) {
+        head = new ListNode(0, head);
+    }
+    ListNode cur = head;
+    while (cur != null) {
+        cur.val = cur.val * 2 % 10;
+        if (cur.next != null && cur.next.val > 4) {
+            cur.val += 1;
+        }
+        cur = cur.next;
+    }
+    return head;
+}
+```
+Note: In Java, we don't have Optional for primitive types like int, so I removed Optional from the method signature. Also, in Java, we don't have to specify the type of the parameter in the method signature if it's already specified in the method declaration, so I removed `ListNode` from the parameter type in the method signature.
+
+
+result: public static ListNode doubleIt(ListNode head) {
+    if (head.val > 4) {
+        head = new ListNode(0, head);
+    }
+    ListNode cur = head;
+    while (cur != null) {
+        cur.val = cur.val * 2 % 10;
+        if (cur.next != null && cur.next.val > 4) {
+            cur.val += 1;
+        }
+        cur = cur.next;
+    }
+    return head;
+}
+
+
+Task_id: 43_0    done
+raw_prediction: ```java
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {123, 456, 789};
+        System.out.println(maxSum(nums));
+    }
+
+    public static int maxSum(int[] nums) {
+        int ans = -1;
+        int[] maxVal = new int[10];
+        Arrays.fill(maxVal, Integer.MIN_VALUE);
+
+        for (int v : nums) {
+            int maxD = Integer.toString(v).chars().map(a->a-'0').max().orElse(0);
+            ans = Math.max(ans, v + maxVal[maxD]);
+            maxVal[maxD] = Math.max(maxVal[maxD], v);
+        }
+        return ans;
+    }
+}
+```
+This Java code snippet is equivalent to the provided Python function. It initializes an array `maxVal` with the smallest possible integer values and then iterates over the input array `nums`. For each number in `nums`, it finds the maximum digit (`maxD`), updates the answer (`ans`) if necessary, and updates the maximum value found so far for that digit in `maxVal`. Finally, it returns the maximum sum found (`ans`).
+
+
+result: public static int maxSum(int[] nums) {
+        int ans = -1;
+        int[] maxVal = new int[10];
+        Arrays.fill(maxVal, Integer.MIN_VALUE);
+
+        for (int v : nums) {
+            int maxD = Integer.toString(v).chars().map(a->a-'0').max().orElse(0);
+            ans = Math.max(ans, v + maxVal[maxD]);
+            maxVal[maxD] = Math.max(maxVal[maxD], v);
+        }
+        return ans;
+    }
+
+
+Task_id: 44_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static String finalString(String s) {
+        Deque<Character> q = new ArrayDeque<>();
+        boolean tail = true;
+        for (char c : s.toCharArray()) {
+            if (c == 'i') {
+                tail = !tail;
+            } else if (tail) {
+                q.offerLast(c);
+            } else {
+                q.offerFirst(c);
+            }
+        }
+        StringBuilder sb = new StringBuilder(q.size());
+        if (tail) {
+            for (Character ch : q) {
+                sb.append(ch);
+            }
+        } else {
+            for (Deque<Character>.DescendingIterator it = q.descendingIterator(); it.hasNext(); ) {
+                sb.append(it.next());
+            }
+        }
+        return sb.toString();
+    }
+}
+```
+
+
+result: public static String finalString(String s) {
+        Deque<Character> q = new ArrayDeque<>();
+        boolean tail = true;
+        for (char c : s.toCharArray()) {
+            if (c == 'i') {
+                tail = !tail;
+            } else if (tail) {
+                q.offerLast(c);
+            } else {
+                q.offerFirst(c);
+            }
+        }
+        StringBuilder sb = new StringBuilder(q.size());
+        if (tail) {
+            for (Character ch : q) {
+                sb.append(ch);
+            }
+        } else {
+            for (Deque<Character>.DescendingIterator it = q.descendingIterator(); it.hasNext(); ) {
+                sb.append(it.next());
+            }
+        }
+        return sb.toString();
+    }
+
+
+Task_id: 45_0    done
+raw_prediction: ```java
+public static boolean canSplitArray(List<Integer> nums, int m) {
+    int n = nums.size();
+    if (n <= 2) {
+        return true;
+    }
+    for (int i = 1; i < n; i++) {
+        if (nums.get(i - 1) + nums.get(i) >= m) {
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+
+result: public static boolean canSplitArray(List<Integer> nums, int m) {
+    int n = nums.size();
+    if (n <= 2) {
+        return true;
+    }
+    for (int i = 1; i < n; i++) {
+        if (nums.get(i - 1) + nums.get(i) >= m) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+Task_id: 46_0    done
+raw_prediction: ```java
+public static int longestAlternatingSubarray(int[] a, int threshold) {
+    int ans = 0, i = 0, n = a.length;
+    while (i < n) {
+        if (a[i] % 2 != 0 || a[i] > threshold) {
+            i++;
+        } else {
+            int i0 = i;
+            i++;
+            while (i < n && a[i] <= threshold && a[i] % 2 != a[i - 1] % 2) {
+                i++;
+            }
+            ans = Math.max(ans, i - i0);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: public static int longestAlternatingSubarray(int[] a, int threshold) {
+    int ans = 0, i = 0, n = a.length;
+    while (i < n) {
+        if (a[i] % 2 != 0 || a[i] > threshold) {
+            i++;
+        } else {
+            int i0 = i;
+            i++;
+            while (i < n && a[i] <= threshold && a[i] % 2 != a[i - 1] % 2) {
+                i++;
+            }
+            ans = Math.max(ans, i - i0);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 47_0    done
+raw_prediction: ```java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main {
+    public static int minimumSeconds(List<Integer> nums) {
+        Map<Integer, List<Integer>> pos = new HashMap<>();
+        for (int i = 0; i < nums.size(); i++) {
+            int x = nums.get(i);
+            if (!pos.containsKey(x)) {
+                pos.put(x, new ArrayList<>());
+            }
+            pos.get(x).append(i);
+        }
+        int ans = nums.size();
+        for (List<Integer> a : pos.values()) {
+            a.add(a.get(0) + ans);
+            int mx = a.stream().mapToInt(i -> i).boxed()
+                    .pairwise()
+                    .mapToInt(pair -> (pair.getRight() - pair.getLeft()) / 2)
+                    .max()
+                    .orElse(0);
+            ans = Math.min(ans, mx);
+        }
+        return ans;
+    }
+}
+```
+Note: Java does not have a built-in pairwise function like Python, so we use `IntStream.boxed().pairwise()` to achieve similar functionality. Also, since Java is a statically typed language, we need to specify types explicitly and use appropriate collections and streams API to manipulate data.
+
+
+result: public static int minimumSeconds(List<Integer> nums) {
+        Map<Integer, List<Integer>> pos = new HashMap<>();
+        for (int i = 0; i < nums.size(); i++) {
+            int x = nums.get(i);
+            if (!pos.containsKey(x)) {
+                pos.put(x, new ArrayList<>());
+            }
+            pos.get(x).append(i);
+        }
+        int ans = nums.size();
+        for (List<Integer> a : pos.values()) {
+            a.add(a.get(0) + ans);
+            int mx = a.stream().mapToInt(i -> i).boxed()
+                    .pairwise()
+                    .mapToInt(pair -> (pair.getRight() - pair.getLeft()) / 2)
+                    .max()
+                    .orElse(0);
+            ans = Math.min(ans, mx);
+        }
+        return ans;
+    }
+
+
+Task_id: 48_0    done
+raw_prediction: ```java
+public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
+    int ans = 0;
+    for (int h : hours) {
+        if (h >= target) {
+            ans += 1;
+        }
+    }
+    return ans;
+}
+```
+
+
+result: public static int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
+    int ans = 0;
+    for (int h : hours) {
+        if (h >= target) {
+            ans += 1;
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 49_0    done
+raw_prediction: ```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> words = new ArrayList<>();
+        words.add("Hello,world");
+        words.add("Java,is,awesome");
+        char separator = ',';
+        List<String> result = splitWordsBySeparator(words, separator);
+        System.out.println(result);
+    }
+
+    public static List<String> splitWordsBySeparator(List<String> words, char separator) {
+        List<String> ans = new ArrayList<>();
+        for (String str : words) {
+            StringBuilder t = new StringBuilder();
+            for (int i = 0; i < str.length(); i++) {
+                char c = str.charAt(i);
+                if (c == ' ') {
+                    continue;
+                }
+                if (c == separator) {
+                    if (t.length() > 0) {
+                        ans.append(t.toString());
+                    }
+                    t = new StringBuilder();
+                } else {
+                    t.append(c);
+                }
+            }
+            if (t.length() > 0) {
+                ans.append(t.toString());
+            }
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static List<String> splitWordsBySeparator(List<String> words, char separator) {
+        List<String> ans = new ArrayList<>();
+        for (String str : words) {
+            StringBuilder t = new StringBuilder();
+            for (int i = 0; i < str.length(); i++) {
+                char c = str.charAt(i);
+                if (c == ' ') {
+                    continue;
+                }
+                if (c == separator) {
+                    if (t.length() > 0) {
+                        ans.append(t.toString());
+                    }
+                    t = new StringBuilder();
+                } else {
+                    t.append(c);
+                }
+            }
+            if (t.length() > 0) {
+                ans.append(t.toString());
+            }
+        }
+        return ans;
+    }
+
+
+Task_id: 50_0    done
+raw_prediction: ```java
+import java.util.List;
+import java.util.Arrays;
+
+public class Main {
+    public static List<Long> miniMaxSum(List<Integer> a) {
+        int s = a.stream().mapToInt(i->i).sum();
+        int max_ = a.stream().max(Integer::compareTo).orElse(0);
+        int min_ = a.stream().min(Integer::compareTo).orElse(0);
+        return Arrays.asList((long) (s - max_), (long) (s - min_));
+    }
+}
+```
+Note: In Java, we need to use `stream()` function to calculate the sum, max and min of the list. Also, type casting is required when returning the result in a `List<Long>`.
+
+
+result: public static List<Long> miniMaxSum(List<Integer> a) {
+        int s = a.stream().mapToInt(i->i).sum();
+        int max_ = a.stream().max(Integer::compareTo).orElse(0);
+        int min_ = a.stream().min(Integer::compareTo).orElse(0);
+        return Arrays.asList((long) (s - max_), (long) (s - min_));
+    }
+
+
+Task_id: 51_0    done
+raw_prediction: ```java
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Main {
+    public static int pickingNumbers(List<Integer> a) {
+        Map<Integer, Integer> d = new HashMap<>();
+        for (int num : a) {
+            d.put(num, d.getOrDefault(num, 0) + 1);
+        }
+        int best = 0;
+        for (int i = 0; i < 99; i++) {
+            best = Math.max(d.getOrDefault(i, 0) + d.getOrDefault(i + 1, 0), best);
+        }
+        return best;
+    }
+}
+```
+
+
+result: public static int pickingNumbers(List<Integer> a) {
+        Map<Integer, Integer> d = new HashMap<>();
+        for (int num : a) {
+            d.put(num, d.getOrDefault(num, 0) + 1);
+        }
+        int best = 0;
+        for (int i = 0; i < 99; i++) {
+            best = Math.max(d.getOrDefault(i, 0) + d.getOrDefault(i + 1, 0), best);
+        }
+        return best;
+    }
+
+
+Task_id: 52_0    done
+raw_prediction: ```java
+public static int summingSeries(long n) {
+    return (int) ((n * n) % 1000000007);
+}
+```
+
+
+result: public static int summingSeries(long n) {
+    return (int) ((n * n) % 1000000007);
+}
+
+
+Task_id: 53_0    done
+raw_prediction: ```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
+        int k = 0;
+        List<Integer> arr = new ArrayList<>();
+        for (String i : queries) {
+            for (String j : stringList) {
+                if (i.equals(j)) {
+                    k++;
+                }
+            }
+            arr.append(k);
+            k = 0;
+        }
+        return arr;
+    }
+}
+```
+
+
+result: public static List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
+        int k = 0;
+        List<Integer> arr = new ArrayList<>();
+        for (String i : queries) {
+            for (String j : stringList) {
+                if (i.equals(j)) {
+                    k++;
+                }
+            }
+            arr.append(k);
+            k = 0;
+        }
+        return arr;
+    }
+
+
+Task_id: 54_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> ranked = Arrays.asList(100, 200, 500, 600, 600, 1000);
+        List<Integer> player = Arrays.asList(550, 100, 390, 575, 665, 900, 1010);
+        System.out.println(climbingLeaderboard(ranked, player));
+    }
+
+    public static int bsearch(List<Integer> arr, int x) {
+        int low = 0;
+        int high = arr.size() - 1;
+        int mid = 0; // ranking
+        while (low <= high) {
+            mid = (high + low) / 2;
+            if (arr.get(mid) > x) {
+                low = mid + 1;
+            } else if (arr.get(mid) < x) {
+                high = mid - 1;
+            } else {
+                return mid + 1;
+            }
+        }
+        return low + 1;
+    }
+
+    public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
+        Set<Integer> rankNumsSet = new LinkedHashSet<>(ranked);
+        List<Integer> rankNums = new ArrayList<>(rankNumsSet);
+        List<Integer> result = new ArrayList<>();
+        for (int score : player) {
+            int rank = bsearch(rankNums, score);
+            result.add(rank);
+        }
+        return result;
+    }
+}
+```
+
+
+result: public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
+        Set<Integer> rankNumsSet = new LinkedHashSet<>(ranked);
+        List<Integer> rankNums = new ArrayList<>(rankNumsSet);
+        List<Integer> result = new ArrayList<>();
+        for (int score : player) {
+            int rank = bsearch(rankNums, score);
+            result.add(rank);
+        }
+        return result;
+    }
+
+public static int bsearch(List<Integer> arr, int x) {
+        int low = 0;
+        int high = arr.size() - 1;
+        int mid = 0; // ranking
+        while (low <= high) {
+            mid = (high + low) / 2;
+            if (arr.get(mid) > x) {
+                low = mid + 1;
+            } else if (arr.get(mid) < x) {
+                high = mid - 1;
+            } else {
+                return mid + 1;
+            }
+        }
+        return low + 1;
+    }
+
+
+Task_id: 55_0    done
+raw_prediction: ```java
+public long arrayManipulation(int n, List<List<Integer>> queries) {
+    long[] arr = new long[n + 2];
+    long maxVal = 0;
+    long sumVal = 0;
+
+    for (List<Integer> query : queries) {
+        arr[query.get(0)] += query.get(2);
+        arr[query.get(1) + 1] -= query.get(2);
+    }
+
+    for (long val : arr) {
+        sumVal += val;
+        maxVal = Math.max(maxVal, sumVal);
+    }
+
+    return maxVal;
+}
+```
+
+
+result: public static long arrayManipulation(int n, List<List<Integer>> queries) {
+    long[] arr = new long[n + 2];
+    long maxVal = 0;
+    long sumVal = 0;
+
+    for (List<Integer> query : queries) {
+        arr[query.get(0)] += query.get(2);
+        arr[query.get(1) + 1] -= query.get(2);
+    }
+
+    for (long val : arr) {
+        sumVal += val;
+        maxVal = Math.max(maxVal, sumVal);
+    }
+
+    return maxVal;
+}
+
+
+Task_id: 56_0    done
+raw_prediction: ```java
+public ListNode deleteNode(ListNode llist, int position) {
+    if (llist == null) {
+        return null;
+    }
+    if (position == 0) {
+        return llist.next;
+    }
+    ListNode current = llist;
+    ListNode previous = null;
+    int pointer = 1;
+    while (pointer < position + 1) {
+        previous = current;
+        current = current.next;
+        pointer += 1;
+    }
+    previous.next = current.next;
+    return llist;
+}
+```
+
+
+result: public static ListNode deleteNode(ListNode llist, int position) {
+    if (llist == null) {
+        return null;
+    }
+    if (position == 0) {
+        return llist.next;
+    }
+    ListNode current = llist;
+    ListNode previous = null;
+    int pointer = 1;
+    while (pointer < position + 1) {
+        previous = current;
+        current = current.next;
+        pointer += 1;
+    }
+    previous.next = current.next;
+    return llist;
+}
+
+
+Task_id: 57_0    done
+raw_prediction: ```java
+public boolean evaluateTree(TreeNode root) {
+    if (root.left == null) {
+        return root.val != 0;
+    }
+    boolean l = evaluateTree(root.left);
+    boolean r = evaluateTree(root.right);
+    return root.val == 2 ? l || r : l && r;
+}
+```
+Note: In Java, `bool` is represented as `boolean` and it can only have two values: `true` or `false`. Also, in Java, `null` is used to represent the absence of an object, similar to `None` in Python.
+
+
+result: public static boolean evaluateTree(TreeNode root) {
+    if (root.left == null) {
+        return root.val != 0;
+    }
+    boolean l = evaluateTree(root.left);
+    boolean r = evaluateTree(root.right);
+    return root.val == 2 ? l || r : l && r;
+}
+
+
+Task_id: 58_0    done
+raw_prediction: ```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> a = new ArrayList<>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        System.out.println(andXorOr(a));
+    }
+
+    public static int andXorOr(List<Integer> a) {
+        int m = 0;
+        List<Integer> s = new ArrayList<>();
+        for (int i : a) {
+            while (!s.isEmpty() && s.get(s.size() - 1) >= i) {
+                m = Math.max(m, i ^ s.remove(s.size() - 1));
+            }
+            if (!s.isEmpty()) {
+                m = Math.max(m, i ^ s.get(s.size() - 1));
+            }
+            s.add(i);
+        }
+        return m;
+    }
+}
+```
+
+
+result: public static int andXorOr(List<Integer> a) {
+        int m = 0;
+        List<Integer> s = new ArrayList<>();
+        for (int i : a) {
+            while (!s.isEmpty() && s.get(s.size() - 1) >= i) {
+                m = Math.max(m, i ^ s.remove(s.size() - 1));
+            }
+            if (!s.isEmpty()) {
+                m = Math.max(m, i ^ s.get(s.size() - 1));
+            }
+            s.add(i);
+        }
+        return m;
+    }
+
+
+Task_id: 59_0    done
+raw_prediction: Here's the translation of the given Python function to Java:
+
+
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> arr = Arrays.asList(1, 2, 3);
+        List<Integer> brr = Arrays.asList(1, 2, 3, 4, 5);
+        System.out.println(missingNumbers(arr, brr));
+    }
+
+    public static List<Integer> missingNumbers(List<Integer> arr, List<Integer> brr) {
+        Map<Integer, Integer> mp = new HashMap<>();
+        for (int num : brr) {
+            mp.put(num, mp.getOrDefault(num, 0) + 1);
+        }
+        for (int num : arr) {
+            mp.put(num, mp.get(num) - 1);
+        }
+        List<Integer> result = mp.entrySet().stream()
+                .filter(entry -> entry.getValue() > 0)
+                .map(entry -> entry.getKey())
+                .sorted()
+                .collect(Collectors.toList());
+        return result;
+    }
+}
+```
+In the translated Java code:
+
+* We use a `HashMap` named `mp` to count the occurrences of numbers in `brr`.
+* We then iterate over `arr` and decrement the counts in `mp` for each number found in `arr`.
+* Finally, we use Java streams to filter out the numbers with positive counts, sort them, and collect them into a list named `result`. This list is then returned as the output of the function.
+
+
+result: public static List<Integer> missingNumbers(List<Integer> arr, List<Integer> brr) {
+        Map<Integer, Integer> mp = new HashMap<>();
+        for (int num : brr) {
+            mp.put(num, mp.getOrDefault(num, 0) + 1);
+        }
+        for (int num : arr) {
+            mp.put(num, mp.get(num) - 1);
+        }
+        List<Integer> result = mp.entrySet().stream()
+                .filter(entry -> entry.getValue() > 0)
+                .map(entry -> entry.getKey())
+                .sorted()
+                .collect(Collectors.toList());
+        return result;
+    }
+
+
+Task_id: 60_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static long maximumSum(List<Long> a, long m) {
+        long maxSum = 0;
+        long currentSum = 0;
+        List<Long> sortedSums = new ArrayList<>();
+        sortedSums.add(0L);
+        for (long value : a) {
+            currentSum = (currentSum + value) % m;
+            maxSum = Math.max(maxSum, currentSum);
+            int idx = Collections.binarySearch(sortedSums, currentSum);
+            if (idx < 0) {
+                idx = -idx - 1;
+            }
+            if (idx < sortedSums.size()) {
+                long possibleMax = (currentSum - sortedSums.get(idx) + m) % m;
+                maxSum = Math.max(maxSum, possibleMax);
+            }
+            Collections.binarySearch(sortedSums, currentSum);
+            int insertIdx = idx >= 0 ? idx : -idx - 1;
+            sortedSums.add(insertIdx, currentSum);
+        }
+        return maxSum;
+    }
+}
+```
+Note: The `bisect_right` function in Python is equivalent to `Collections.binarySearch` in Java but Java's binary search returns the index of the search key, if it is contained in the list; otherwise, it returns -(insertion point) - 1. That's why we have some additional lines of code to handle the index properly.
+
+
+result: public static long maximumSum(List<Long> a, long m) {
+        long maxSum = 0;
+        long currentSum = 0;
+        List<Long> sortedSums = new ArrayList<>();
+        sortedSums.add(0L);
+        for (long value : a) {
+            currentSum = (currentSum + value) % m;
+            maxSum = Math.max(maxSum, currentSum);
+            int idx = Collections.binarySearch(sortedSums, currentSum);
+            if (idx < 0) {
+                idx = -idx - 1;
+            }
+            if (idx < sortedSums.size()) {
+                long possibleMax = (currentSum - sortedSums.get(idx) + m) % m;
+                maxSum = Math.max(maxSum, possibleMax);
+            }
+            Collections.binarySearch(sortedSums, currentSum);
+            int insertIdx = idx >= 0 ? idx : -idx - 1;
+            sortedSums.add(insertIdx, currentSum);
+        }
+        return maxSum;
+    }
+
+
+Task_id: 61_0    done
+raw_prediction: ```java
+public static int formingMagicSquare(List<List<Integer>> s) {
+    int[][][] magicSquares = {
+        {{8, 1, 6}, {3, 5, 7}, {4, 9, 2}},
+        {{6, 1, 8}, {7, 5, 3}, {2, 9, 4}},
+        {{4, 9, 2}, {3, 5, 7}, {8, 1, 6}},
+        {{2, 9, 4}, {7, 5, 3}, {6, 1, 8}},
+        {{8, 3, 4}, {1, 5, 9}, {6, 7, 2}},
+        {{4, 3, 8}, {9, 5, 1}, {2, 7, 6}},
+        {{6, 7, 2}, {1, 5, 9}, {8, 3, 4}},
+        {{2, 7, 6}, {9, 5, 1}, {4, 3, 8}}
+    };
+    int minCost = 8 * 3;
+    for (int[][] magicSquare : magicSquares) {
+        int cost = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                cost += Math.abs(s.get(i).get(j) - magicSquare[i][j]);
+            }
+        }
+        minCost = Math.min(cost, minCost);
+    }
+    return minCost;
+}
+```
+
+
+result: public static int formingMagicSquare(List<List<Integer>> s) {
+    int[][][] magicSquares = {
+        {{8, 1, 6}, {3, 5, 7}, {4, 9, 2}},
+        {{6, 1, 8}, {7, 5, 3}, {2, 9, 4}},
+        {{4, 9, 2}, {3, 5, 7}, {8, 1, 6}},
+        {{2, 9, 4}, {7, 5, 3}, {6, 1, 8}},
+        {{8, 3, 4}, {1, 5, 9}, {6, 7, 2}},
+        {{4, 3, 8}, {9, 5, 1}, {2, 7, 6}},
+        {{6, 7, 2}, {1, 5, 9}, {8, 3, 4}},
+        {{2, 7, 6}, {9, 5, 1}, {4, 3, 8}}
+    };
+    int minCost = 8 * 3;
+    for (int[][] magicSquare : magicSquares) {
+        int cost = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                cost += Math.abs(s.get(i).get(j) - magicSquare[i][j]);
+            }
+        }
+        minCost = Math.min(cost, minCost);
+    }
+    return minCost;
+}
+
+
+Task_id: 62_0    done
+raw_prediction: ```java
+public static String isFibo(long n) {
+    long start = 0;
+    long last = 1;
+    while (last <= n) {
+        long tmp = last + start;
+        start = last;
+        last = tmp;
+        if (last == n) {
+            return "IsFibo";
+        }
+    }
+    return "IsNotFibo";
+}
+```
+
+
+result: public static String isFibo(long n) {
+    long start = 0;
+    long last = 1;
+    while (last <= n) {
+        long tmp = last + start;
+        start = last;
+        last = tmp;
+        if (last == n) {
+            return "IsFibo";
+        }
+    }
+    return "IsNotFibo";
+}
+
+
+Task_id: 63_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static int solve(long l, long r) {
+        Set<Long> seen = new HashSet<>();
+        Deque<Long> q = new ArrayDeque<>(Arrays.asList(0,1,2,3,4,5,6,7,8,9));
+        while (!q.isEmpty()) {
+            long u = q.pollLast();
+            if (String.valueOf(u).length() >= 20) {
+                continue;
+            }
+            if (seen.contains(u)) {
+                continue;
+            }
+            seen.add(u);
+            int length = String.valueOf(u).length();
+            for (int k = length; k < length + 5; k++) {
+                if (String.valueOf(u * k).length() == k) {
+                    q.offer(u * k);
+                }
+            }
+        }
+        int count = 0;
+        for (long s : seen) {
+            if (s >= l && s <= r) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+```
+
+
+result: public static int solve(long l, long r) {
+        Set<Long> seen = new HashSet<>();
+        Deque<Long> q = new ArrayDeque<>(Arrays.asList(0,1,2,3,4,5,6,7,8,9));
+        while (!q.isEmpty()) {
+            long u = q.pollLast();
+            if (String.valueOf(u).length() >= 20) {
+                continue;
+            }
+            if (seen.contains(u)) {
+                continue;
+            }
+            seen.add(u);
+            int length = String.valueOf(u).length();
+            for (int k = length; k < length + 5; k++) {
+                if (String.valueOf(u * k).length() == k) {
+                    q.offer(u * k);
+                }
+            }
+        }
+        int count = 0;
+        for (long s : seen) {
+            if (s >= l && s <= r) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+Task_id: 64_0    done
+raw_prediction: ```java
+import java.util.List;
+
+public class Main {
+    public static List<String> cavityMap(List<String> grid) {
+        for (int k = 1; k < grid.size() - 1; k++) {
+            String i = grid.get(k);
+            String d = grid.get(k + 1);
+            String u = grid.get(k - 1);
+            char[] iChars = i.toCharArray();
+            for (int j = 1; j < i.length() - 1; j++) {
+                if ((iChars[j - 1] < iChars[j] && iChars[j] > iChars[j + 1]) && (d.charAt(j) < iChars[j] && iChars[j] > u.charAt(j))) {
+                    iChars[j] = 'X';
+                }
+            }
+            grid.set(k, new String(iChars));
+        }
+        return grid;
+    }
+}
+```
+
+
+result: public static List<String> cavityMap(List<String> grid) {
+        for (int k = 1; k < grid.size() - 1; k++) {
+            String i = grid.get(k);
+            String d = grid.get(k + 1);
+            String u = grid.get(k - 1);
+            char[] iChars = i.toCharArray();
+            for (int j = 1; j < i.length() - 1; j++) {
+                if ((iChars[j - 1] < iChars[j] && iChars[j] > iChars[j + 1]) && (d.charAt(j) < iChars[j] && iChars[j] > u.charAt(j))) {
+                    iChars[j] = 'X';
+                }
+            }
+            grid.set(k, new String(iChars));
+        }
+        return grid;
+    }
+
+
+Task_id: 65_0    done
+raw_prediction: ```java
+public static long solve(int a, int b) {
+    int m = a;
+    int n = b;
+    long ans = Math.min((long)(m-1)*n+(n-1), (long)(n-1)*m+(m-1));
+    return m*n - 1;
+}
+```
+
+
+result: public static long solve(int a, int b) {
+    int m = a;
+    int n = b;
+    long ans = Math.min((long)(m-1)*n+(n-1), (long)(n-1)*m+(m-1));
+    return m*n - 1;
+}
+
+
+Task_id: 66_0    done
+raw_prediction: ```java
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static int minimumLoss(List<Long> price) {
+        Map<Long, Integer> mapIndex = new HashMap<>();
+        for (int i = 0; i < price.size(); i++) {
+            mapIndex.put(price.get(i), i);
+        }
+        List<Long> sortedPrice = price.stream().sorted().collect(Collectors.toList());
+        int minLoss = Integer.MAX_VALUE;
+        for (int i = 0; i < sortedPrice.size() - 1; i++) {
+            long currentLoss = sortedPrice.get(i + 1) - sortedPrice.get(i);
+            if (currentLoss < minLoss && mapIndex.get(sortedPrice.get(i)) > mapIndex.get(sortedPrice.get(i + 1))) {
+                minLoss = (int) currentLoss;
+            }
+        }
+        return minLoss;
+    }
+}
+```
+
+
+result: public static int minimumLoss(List<Long> price) {
+        Map<Long, Integer> mapIndex = new HashMap<>();
+        for (int i = 0; i < price.size(); i++) {
+            mapIndex.put(price.get(i), i);
+        }
+        List<Long> sortedPrice = price.stream().sorted().collect(Collectors.toList());
+        int minLoss = Integer.MAX_VALUE;
+        for (int i = 0; i < sortedPrice.size() - 1; i++) {
+            long currentLoss = sortedPrice.get(i + 1) - sortedPrice.get(i);
+            if (currentLoss < minLoss && mapIndex.get(sortedPrice.get(i)) > mapIndex.get(sortedPrice.get(i + 1))) {
+                minLoss = (int) currentLoss;
+            }
+        }
+        return minLoss;
+    }
+
+
+Task_id: 67_0    done
+raw_prediction: ```java
+public static String dayOfProgrammer(int year) {
+    if (1918 == year) {
+        return "26.09.1918";
+    }
+    boolean leapYear = true;
+    if (year % 4 != 0 || (year > 1918 && year % 100 == 0 && year % 400 != 0)) {
+        leapYear = false;
+    }
+    return leapYear ? "12.09." + year : "13.09." + year;
+}
+```
+
+
+result: public static String dayOfProgrammer(int year) {
+    if (1918 == year) {
+        return "26.09.1918";
+    }
+    boolean leapYear = true;
+    if (year % 4 != 0 || (year > 1918 && year % 100 == 0 && year % 400 != 0)) {
+        leapYear = false;
+    }
+    return leapYear ? "12.09." + year : "13.09." + year;
+}
+
+
+Task_id: 68_0    done
+raw_prediction: ```java
+import java.util.List;
+import java.util.ArrayList;
+
+public class Main {
+    public static List<Integer> acmTeam(List<String> topic) {
+        int teamLen = topic.size();
+        int topicLen = topic.get(0).length();
+        int maxKnown = 0;
+        int maxTeams = 0;
+        for (int i = 0; i < teamLen; i++) {
+            String t1 = topic.get(i);
+            for (int j = i + 1; j < teamLen; j++) {
+                int know = 0;
+                String t2 = topic.get(j);
+                for (int k = 0; k < topicLen; k++) {
+                    if (t1.charAt(k) == '1' || t2.charAt(k) == '1') {
+                        know++;
+                    }
+                }
+                if (know == maxKnown) {
+                    maxTeams++;
+                } else if (know > maxKnown) {
+                    maxKnown = know;
+                    maxTeams = 1;
+                }
+            }
+        }
+        List<Integer> result = new ArrayList<>();
+        result.add(maxKnown);
+        result.add(maxTeams);
+        return result;
+    }
+}
+```
+
+
+result: public static List<Integer> acmTeam(List<String> topic) {
+        int teamLen = topic.size();
+        int topicLen = topic.get(0).length();
+        int maxKnown = 0;
+        int maxTeams = 0;
+        for (int i = 0; i < teamLen; i++) {
+            String t1 = topic.get(i);
+            for (int j = i + 1; j < teamLen; j++) {
+                int know = 0;
+                String t2 = topic.get(j);
+                for (int k = 0; k < topicLen; k++) {
+                    if (t1.charAt(k) == '1' || t2.charAt(k) == '1') {
+                        know++;
+                    }
+                }
+                if (know == maxKnown) {
+                    maxTeams++;
+                } else if (know > maxKnown) {
+                    maxKnown = know;
+                    maxTeams = 1;
+                }
+            }
+        }
+        List<Integer> result = new ArrayList<>();
+        result.add(maxKnown);
+        result.add(maxTeams);
+        return result;
+    }
+
+
+Task_id: 69_0    done
+raw_prediction: ```java
+public String timeInWords(int h, int m) {
+    String[] hour = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"};
+    String[] minutes = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen",
+                        "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", 
+                        "twenty one", "twenty two", "twenty three", "twenty four", "twenty five", 
+                        "twenty six", "twenty seven", "twenty eight", "twenty nine"};
+    if (m == 0) {
+        return hour[h - 1] + " o' clock";
+    } else if (m == 15) {
+        return "quarter past " + hour[h - 1];
+    } else if (m == 30) {
+        return "half past " + hour[h - 1];
+    } else if (m == 45) {
+        return "quarter to " + hour[(h % 12)];
+    } else if (m == 1) {
+        return minutes[m - 1] + " minute past " + hour[h - 1];
+    } else if (0 < m && m < 30) {
+        return minutes[m - 1] + " minutes past " + hour[h - 1];
+    } else {
+        return minutes[60 - m - 1] + " minutes to " + hour[h % 12];
+    }
+}
+```
+
+
+result: public static String timeInWords(int h, int m) {
+    String[] hour = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"};
+    String[] minutes = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen",
+                        "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", 
+                        "twenty one", "twenty two", "twenty three", "twenty four", "twenty five", 
+                        "twenty six", "twenty seven", "twenty eight", "twenty nine"};
+    if (m == 0) {
+        return hour[h - 1] + " o' clock";
+    } else if (m == 15) {
+        return "quarter past " + hour[h - 1];
+    } else if (m == 30) {
+        return "half past " + hour[h - 1];
+    } else if (m == 45) {
+        return "quarter to " + hour[(h % 12)];
+    } else if (m == 1) {
+        return minutes[m - 1] + " minute past " + hour[h - 1];
+    } else if (0 < m && m < 30) {
+        return minutes[m - 1] + " minutes past " + hour[h - 1];
+    } else {
+        return minutes[60 - m - 1] + " minutes to " + hour[h % 12];
+    }
+}
+
+
+Task_id: 70_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] coins = {0, 1, 0, 0};
+        int[][] edges = {{0, 1}, {1, 2}, {2, 3}, {3, 0}};
+        System.out.println(collectTheCoins(coins, edges));
+    }
+
+    public static int collectTheCoins(int[] coins, int[][] edges) {
+        int n = coins.length;
+        List<List<Integer>> g = new ArrayList<>();
+        int[] deg = new int[n];
+        for (int i = 0; i < n; i++) {
+            g.add(new ArrayList<>());
+        }
+        for (int[] edge : edges) {
+            int x = edge[0], y = edge[1];
+            g.get(x).add(y);
+            g.get(y).add(x);
+            deg[x]++;
+            deg[y]++;
+        }
+        int leftEdges = n - 1;
+        Queue<Integer> q = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
+            if (deg[i] == 1 && coins[i] == 0) {
+                q.offer(i);
+            }
+        }
+        while (!q.isEmpty()) {
+            leftEdges--;
+            int node = q.poll();
+            for (int neighbor : g.get(node)) {
+                deg[neighbor]--;
+                if (deg[neighbor] == 1 && coins[neighbor] == 0) {
+                    q.offer(neighbor);
+                }
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (deg[i] == 1 && coins[i] == 1) {
+                q.offer(i);
+            }
+        }
+        leftEdges -= q.size();
+        while (!q.isEmpty()) {
+            int node = q.poll();
+            for (int neighbor : g.get(node)) {
+                deg[neighbor]--;
+                if (deg[neighbor] == 1) {
+                    leftEdges--;
+                }
+            }
+        }
+        return Math.max(leftEdges * 2, 0);
+    }
+}
+```
+
+
+result: public static int collectTheCoins(int[] coins, int[][] edges) {
+        int n = coins.length;
+        List<List<Integer>> g = new ArrayList<>();
+        int[] deg = new int[n];
+        for (int i = 0; i < n; i++) {
+            g.add(new ArrayList<>());
+        }
+        for (int[] edge : edges) {
+            int x = edge[0], y = edge[1];
+            g.get(x).add(y);
+            g.get(y).add(x);
+            deg[x]++;
+            deg[y]++;
+        }
+        int leftEdges = n - 1;
+        Queue<Integer> q = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
+            if (deg[i] == 1 && coins[i] == 0) {
+                q.offer(i);
+            }
+        }
+        while (!q.isEmpty()) {
+            leftEdges--;
+            int node = q.poll();
+            for (int neighbor : g.get(node)) {
+                deg[neighbor]--;
+                if (deg[neighbor] == 1 && coins[neighbor] == 0) {
+                    q.offer(neighbor);
+                }
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (deg[i] == 1 && coins[i] == 1) {
+                q.offer(i);
+            }
+        }
+        leftEdges -= q.size();
+        while (!q.isEmpty()) {
+            int node = q.poll();
+            for (int neighbor : g.get(node)) {
+                deg[neighbor]--;
+                if (deg[neighbor] == 1) {
+                    leftEdges--;
+                }
+            }
+        }
+        return Math.max(leftEdges * 2, 0);
+    }
+
+
+Task_id: 71_0    done
+raw_prediction: ```java
+public static List<List<Integer>> matrixRotation(List<List<Integer>> matrix, int r) {
+    int l = 0, br = matrix.size(), bc = matrix.get(0).size();
+    while (l < Math.min(br, bc) / 2) {
+        int rr = r % (2 * (br + bc - l * 4 - 2));
+        while (rr != 0) {
+            rr -= 1;
+            int buf = matrix.get(l).get(l);
+            for (int j = l; j < bc - l - 1; j++) {
+                matrix.get(l).set(j, matrix.get(l).get(j + 1));
+            }
+            for (int i = l; i < br - l - 1; i++) {
+                matrix.get(i).set(bc - l - 1, matrix.get(i + 1).get(bc - l - 1));
+            }
+            for (int j = bc - l - 1; j > l; j--) {
+                matrix.get(br - l - 1).set(j, matrix.get(br - l - 1).get(j - 1));
+            }
+            for (int i = br - l - 1; i > l; i--) {
+                matrix.get(i).set(l, matrix.get(i - 1).get(l));
+            }
+            matrix.get(l + 1).set(l, buf);
+        }
+        l += 1;
+    }
+    return matrix;
+}
+```
+
+
+result: public static List<List<Integer>> matrixRotation(List<List<Integer>> matrix, int r) {
+    int l = 0, br = matrix.size(), bc = matrix.get(0).size();
+    while (l < Math.min(br, bc) / 2) {
+        int rr = r % (2 * (br + bc - l * 4 - 2));
+        while (rr != 0) {
+            rr -= 1;
+            int buf = matrix.get(l).get(l);
+            for (int j = l; j < bc - l - 1; j++) {
+                matrix.get(l).set(j, matrix.get(l).get(j + 1));
+            }
+            for (int i = l; i < br - l - 1; i++) {
+                matrix.get(i).set(bc - l - 1, matrix.get(i + 1).get(bc - l - 1));
+            }
+            for (int j = bc - l - 1; j > l; j--) {
+                matrix.get(br - l - 1).set(j, matrix.get(br - l - 1).get(j - 1));
+            }
+            for (int i = br - l - 1; i > l; i--) {
+                matrix.get(i).set(l, matrix.get(i - 1).get(l));
+            }
+            matrix.get(l + 1).set(l, buf);
+        }
+        l += 1;
+    }
+    return matrix;
+}
+
+
+Task_id: 72_0    done
+raw_prediction: ```java
+public int divisorSubstrings(int num, int k) {
+    String s = Integer.toString(num);
+    int n = s.length();
+    int res = 0;
+    for (int i = 0; i <= n - k; i++) {
+        int tmp = Integer.parseInt(s.substring(i, i + k));
+        if (tmp != 0 && num % tmp == 0) {
+            res++;
+        }
+    }
+    return res;
+}
+```
+
+
+result: public static int divisorSubstrings(int num, int k) {
+    String s = Integer.toString(num);
+    int n = s.length();
+    int res = 0;
+    for (int i = 0; i <= n - k; i++) {
+        int tmp = Integer.parseInt(s.substring(i, i + k));
+        if (tmp != 0 && num % tmp == 0) {
+            res++;
+        }
+    }
+    return res;
+}
+
+
+Task_id: 73_0    done
+raw_prediction: ```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static List<Integer> solve(List<Integer> a) {
+        List<Integer> result = new ArrayList<>();
+        int[] cum = new int[a.size()];
+        cum[0] = a.get(0);
+        for (int i = 1; i < a.size(); i++) {
+            cum[i] = cum[i - 1] + a.get(i);
+        }
+        int total = cum[cum.length - 1];
+        for (int i = 0; i < cum.length; i++) {
+            if (total % cum[i] == 0) {
+                int j = i + 1;
+                int segmentSum = 0;
+                while (j < a.size() && segmentSum < cum[i]) {
+                    segmentSum += a.get(j);
+                    if (segmentSum == cum[i]) {
+                        segmentSum = 0;
+                    }
+                    j++;
+                }
+                if (segmentSum == 0 && (j == a.size() || cum[i] == total)) {
+                    result.add(cum[i]);
+                }
+            }
+        }
+        return result;
+    }
+}
+```
+
+
+result: public static List<Integer> solve(List<Integer> a) {
+        List<Integer> result = new ArrayList<>();
+        int[] cum = new int[a.size()];
+        cum[0] = a.get(0);
+        for (int i = 1; i < a.size(); i++) {
+            cum[i] = cum[i - 1] + a.get(i);
+        }
+        int total = cum[cum.length - 1];
+        for (int i = 0; i < cum.length; i++) {
+            if (total % cum[i] == 0) {
+                int j = i + 1;
+                int segmentSum = 0;
+                while (j < a.size() && segmentSum < cum[i]) {
+                    segmentSum += a.get(j);
+                    if (segmentSum == cum[i]) {
+                        segmentSum = 0;
+                    }
+                    j++;
+                }
+                if (segmentSum == 0 && (j == a.size() || cum[i] == total)) {
+                    result.add(cum[i]);
+                }
+            }
+        }
+        return result;
+    }
+
+
+Task_id: 74_0    done
+raw_prediction: ```java
+public static int maximumToys(List<Integer> prices, int k) {
+    Collections.sort(prices);
+    int toys = 0;
+    for (int i : prices) {
+        if (i <= k) {
+            k = k - i;
+            toys = toys + 1;
+        } else {
+            break;
+        }
+    }
+    return toys;
+}
+```
+
+
+result: public static int maximumToys(List<Integer> prices, int k) {
+    Collections.sort(prices);
+    int toys = 0;
+    for (int i : prices) {
+        if (i <= k) {
+            k = k - i;
+            toys = toys + 1;
+        } else {
+            break;
+        }
+    }
+    return toys;
+}
+
+
+Task_id: 75_0    done
+raw_prediction: ```java
+public int sumOfSquares(int[] nums) {
+    int ans = 0;
+    int n = nums.length;
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            ans += Math.pow(nums[i - 1], 2);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: public static int sumOfSquares(int[] nums) {
+    int ans = 0;
+    int n = nums.length;
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            ans += Math.pow(nums[i - 1], 2);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 76_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static boolean checkArray(int[] nums, int k) {
+        int n = nums.length;
+        int[] d = new int[n + 1];
+        int sum_d = 0;
+        for (int i = 0; i < n; i++) {
+            sum_d += d[i];
+            nums[i] += sum_d;
+            if (nums[i] == 0) continue;
+            if (nums[i] < 0 || i + k > n) return false;
+            sum_d -= nums[i];
+            d[i + k] += nums[i];
+        }
+        return true;
+    }
+}
+```
+
+
+result: public static boolean checkArray(int[] nums, int k) {
+        int n = nums.length;
+        int[] d = new int[n + 1];
+        int sum_d = 0;
+        for (int i = 0; i < n; i++) {
+            sum_d += d[i];
+            nums[i] += sum_d;
+            if (nums[i] == 0) continue;
+            if (nums[i] < 0 || i + k > n) return false;
+            sum_d -= nums[i];
+            d[i + k] += nums[i];
+        }
+        return true;
+    }
+
+
+Task_id: 77_0    done
+raw_prediction: ```java
+public int maxNonDecreasingLength(int[] nums1, int[] nums2) {
+    int n = nums1.length;
+    if (n == 1) {
+        return 1;
+    }
+    int[][] dp = new int[n][2];
+    for (int i = 0; i < n; i++) {
+        dp[i][0] = 1;
+        dp[i][1] = 1;
+    }
+    int ans = 0;
+    for (int i = 1; i < n; i++) {
+        dp[i][0] = Math.max(dp[i][0], dp[i - 1][0] + (nums1[i] >= nums1[i - 1] ? 1 : 0));
+        dp[i][0] = Math.max(dp[i][0], dp[i - 1][1] + (nums1[i] >= nums2[i - 1] ? 1 : 0));
+        dp[i][1] = Math.max(dp[i][1], dp[i - 1][0] + (nums2[i] >= nums1[i - 1] ? 1 : 0));
+        dp[i][1] = Math.max(dp[i][1], dp[i - 1][1] + (nums2[i] >= nums2[i - 1] ? 1 : 0));
+        ans = Math.max(ans, Math.max(dp[i][0], dp[i][1]));
+    }
+    return ans;
+}
+```
+
+
+result: public static int maxNonDecreasingLength(int[] nums1, int[] nums2) {
+    int n = nums1.length;
+    if (n == 1) {
+        return 1;
+    }
+    int[][] dp = new int[n][2];
+    for (int i = 0; i < n; i++) {
+        dp[i][0] = 1;
+        dp[i][1] = 1;
+    }
+    int ans = 0;
+    for (int i = 1; i < n; i++) {
+        dp[i][0] = Math.max(dp[i][0], dp[i - 1][0] + (nums1[i] >= nums1[i - 1] ? 1 : 0));
+        dp[i][0] = Math.max(dp[i][0], dp[i - 1][1] + (nums1[i] >= nums2[i - 1] ? 1 : 0));
+        dp[i][1] = Math.max(dp[i][1], dp[i - 1][0] + (nums2[i] >= nums1[i - 1] ? 1 : 0));
+        dp[i][1] = Math.max(dp[i][1], dp[i - 1][1] + (nums2[i] >= nums2[i - 1] ? 1 : 0));
+        ans = Math.max(ans, Math.max(dp[i][0], dp[i][1]));
+    }
+    return ans;
+}
+
+
+Task_id: 78_0    done
+raw_prediction: ```java
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {1, 3, 6, 4, 1, 2};
+        int target = 2;
+        System.out.println(maximumJumps(nums, target));
+    }
+
+    public static int maximumJumps(int[] nums, int target) {
+        int n = nums.length;
+        int[] f = new int[n];
+        Arrays.fill(f, Integer.MIN_VALUE);
+        f[0] = 0;
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (Math.abs(nums[i] - nums[j]) <= target) {
+                    f[i] = Math.max(f[i], f[j] + 1);
+                }
+            }
+        }
+        return f[n - 1] < 0 ? -1 : f[n - 1];
+    }
+}
+```
+
+
+result: public static int maximumJumps(int[] nums, int target) {
+        int n = nums.length;
+        int[] f = new int[n];
+        Arrays.fill(f, Integer.MIN_VALUE);
+        f[0] = 0;
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (Math.abs(nums[i] - nums[j]) <= target) {
+                    f[i] = Math.max(f[i], f[j] + 1);
+                }
+            }
+        }
+        return f[n - 1] < 0 ? -1 : f[n - 1];
+    }
+
+
+Task_id: 79_0    done
+raw_prediction: ```java
+public static int theMaximumAchievableX(int num, int t) {
+    return num + t * 2;
+}
+```
+
+
+result: public static int theMaximumAchievableX(int num, int t) {
+    return num + t * 2;
+}
+
+
+Task_id: 80_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static long[] countBlackBlocks(int m, int n, int[][] coordinates) {
+        long[] ans = new long[5];
+        long sum_blocks = (m - 1) * (n - 1);
+        Set<Integer> st = new HashSet<>();
+        for (int[] coordinate : coordinates) {
+            int x = coordinate[0];
+            int y = coordinate[1];
+            st.add(x * n + y);
+        }
+        int[][] arr = {
+            {{0, -1}, {-1, -1}, {-1, 0}},
+            {{0, 1}, {-1, 0}, {-1, 1}},
+            {{0, -1}, {1, 0}, {1, -1}},
+            {{0, 1}, {1, 0}, {1, 1}}
+        };
+        for (int[] coordinate : coordinates) {
+            int x = coordinate[0];
+            int y = coordinate[1];
+            for (int[] a : arr) {
+                int cnt = 1;
+                for (int[] direction : a) {
+                    int dx = direction[0];
+                    int dy = direction[1];
+                    int nx = x + dx;
+                    int ny = y + dy;
+                    if (nx < 0 || ny < 0 || nx >= m || ny >= n) {
+                        cnt = 0;
+                        break;
+                    }
+                    if (st.contains(nx * n + ny)) {
+                        cnt += 1;
+                    }
+                }
+                ans[cnt] += 1;
+            }
+        }
+        for (int i = 2; i < 5; i++) {
+            ans[i] /= i;
+        }
+        ans[0] = sum_blocks - Arrays.stream(ans, 1, ans.length).sum();
+        return ans;
+    }
+}
+```
+
+
+result: public static long[] countBlackBlocks(int m, int n, int[][] coordinates) {
+        long[] ans = new long[5];
+        long sum_blocks = (m - 1) * (n - 1);
+        Set<Integer> st = new HashSet<>();
+        for (int[] coordinate : coordinates) {
+            int x = coordinate[0];
+            int y = coordinate[1];
+            st.add(x * n + y);
+        }
+        int[][] arr = {
+            {{0, -1}, {-1, -1}, {-1, 0}},
+            {{0, 1}, {-1, 0}, {-1, 1}},
+            {{0, -1}, {1, 0}, {1, -1}},
+            {{0, 1}, {1, 0}, {1, 1}}
+        };
+        for (int[] coordinate : coordinates) {
+            int x = coordinate[0];
+            int y = coordinate[1];
+            for (int[] a : arr) {
+                int cnt = 1;
+                for (int[] direction : a) {
+                    int dx = direction[0];
+                    int dy = direction[1];
+                    int nx = x + dx;
+                    int ny = y + dy;
+                    if (nx < 0 || ny < 0 || nx >= m || ny >= n) {
+                        cnt = 0;
+                        break;
+                    }
+                    if (st.contains(nx * n + ny)) {
+                        cnt += 1;
+                    }
+                }
+                ans[cnt] += 1;
+            }
+        }
+        for (int i = 2; i < 5; i++) {
+            ans[i] /= i;
+        }
+        ans[0] = sum_blocks - Arrays.stream(ans, 1, ans.length).sum();
+        return ans;
+    }
+
+
+Task_id: 81_0    done
+raw_prediction: ```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(minimumBeautifulSubstrings("10110"));
+    }
+
+    public static int minimumBeautifulSubstrings(String s) {
+        if (s.charAt(0) == '0') {
+            return -1;
+        }
+        Set<String> beautifulStrings = new HashSet<>(Arrays.asList("1", "101", "11001", "1111101", "1001110001", "110000110101", "11110100001001"));
+        int n = s.length();
+        int[] f = new int[n + 10];
+        Arrays.fill(f, Integer.MAX_VALUE);
+        f[0] = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                String currentSubstring = s.substring(i, j + 1);
+                if (beautifulStrings.contains(currentSubstring)) {
+                    f[j + 1] = Math.min(f[j + 1], f[i] + 1);
+                }
+            }
+        }
+        return f[n] == Integer.MAX_VALUE ? -1 : f[n];
+    }
+}
+```
+
+
+result: public static int minimumBeautifulSubstrings(String s) {
+        if (s.charAt(0) == '0') {
+            return -1;
+        }
+        Set<String> beautifulStrings = new HashSet<>(Arrays.asList("1", "101", "11001", "1111101", "1001110001", "110000110101", "11110100001001"));
+        int n = s.length();
+        int[] f = new int[n + 10];
+        Arrays.fill(f, Integer.MAX_VALUE);
+        f[0] = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                String currentSubstring = s.substring(i, j + 1);
+                if (beautifulStrings.contains(currentSubstring)) {
+                    f[j + 1] = Math.min(f[j + 1], f[i] + 1);
+                }
+            }
+        }
+        return f[n] == Integer.MAX_VALUE ? -1 : f[n];
+    }
+
+
+Task_id: 82_0    done
+raw_prediction: ```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(gcdAndLcm(15, 20));
+    }
+
+    public static int gcdAndLcm(int x, int y) {
+        int n = x * y;
+        int ans = 0;
+        for (int i = x; i <= y; i++) {
+            if (n % i == 0 && gcd(i, n / i) == x && lcm(i, n / i) == y) {
+                ans++;
+            }
+        }
+        return ans;
+    }
+
+    public static int gcd(int x, int y) {
+        if (x < y) {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+        int r = x % y;
+        while (r != 0) {
+            x = y;
+            y = r;
+            r = x % y;
+        }
+        return y;
+    }
+
+    public static int lcm(int x, int y) {
+        if (x < y) {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+        int m = x;
+        while (x % y != 0) {
+            x += m;
+        }
+        return x;
+    }
+}
+```
+
+
+result: public static int gcdAndLcm(int x, int y) {
+        int n = x * y;
+        int ans = 0;
+        for (int i = x; i <= y; i++) {
+            if (n % i == 0 && gcd(i, n / i) == x && lcm(i, n / i) == y) {
+                ans++;
+            }
+        }
+        return ans;
+    }
+
+public static int gcd(int x, int y) {
+        if (x < y) {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+        int r = x % y;
+        while (r != 0) {
+            x = y;
+            y = r;
+            r = x % y;
+        }
+        return y;
+    }
+
+public static int lcm(int x, int y) {
+        if (x < y) {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+        int m = x;
+        while (x % y != 0) {
+            x += m;
+        }
+        return x;
+    }
+
+
+Task_id: 83_0    done
+raw_prediction: ```java
+public int findFirstPairExceedingSum(List<List<Integer>> pairs) {
+    int maxSum = 0;
+    int dayIndex = 0;
+    for (int i = 0; i < pairs.size(); i++) {
+        int a = pairs.get(i).get(0);
+        int b = pairs.get(i).get(1);
+        int sum = a + b;
+        if (sum > 8 && sum > maxSum) {
+            maxSum = sum;
+            dayIndex = i + 1;
+        }
+    }
+    return dayIndex;
+}
+```
+
+
+result: public static int findFirstPairExceedingSum(List<List<Integer>> pairs) {
+    int maxSum = 0;
+    int dayIndex = 0;
+    for (int i = 0; i < pairs.size(); i++) {
+        int a = pairs.get(i).get(0);
+        int b = pairs.get(i).get(1);
+        int sum = a + b;
+        if (sum > 8 && sum > maxSum) {
+            maxSum = sum;
+            dayIndex = i + 1;
+        }
+    }
+    return dayIndex;
+}
+
+
+Task_id: 84_0    done
+raw_prediction: ```java
+public static int maximumValue(String[] strs) {
+    int res = 0;
+    for (String s : strs) {
+        boolean isDigits = s.chars().allMatch(Character::isDigit);
+        res = Math.max(res, isDigits ? Integer.parseInt(s) : s.length());
+    }
+    return res;
+}
+```
+
+
+result: public static int maximumValue(String[] strs) {
+    int res = 0;
+    for (String s : strs) {
+        boolean isDigits = s.chars().allMatch(Character::isDigit);
+        res = Math.max(res, isDigits ? Integer.parseInt(s) : s.length());
+    }
+    return res;
+}
+
+
+Task_id: 85_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static int countBeautifulPairs(int[] nums) {
+        int ans = 0;
+        int[] cnt = new int[10];
+        for (int x : nums) {
+            for (int y = 1; y < 10; y++) {
+                if (cnt[y] > 0 && gcd(x % 10, y) == 1) {
+                    ans += cnt[y];
+                }
+            }
+            while (x >= 10) {
+                x /= 10;
+            }
+            cnt[x]++;
+        }
+        return ans;
+    }
+
+    private static int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
+}
+```
+Note: The `gcd` function is used to calculate the greatest common divisor of two numbers. It is a recursive function that repeatedly applies the modulo operation until the second argument becomes zero. At that point, the first argument is the gcd of the original two numbers.
+
+
+result: public static int countBeautifulPairs(int[] nums) {
+        int ans = 0;
+        int[] cnt = new int[10];
+        for (int x : nums) {
+            for (int y = 1; y < 10; y++) {
+                if (cnt[y] > 0 && gcd(x % 10, y) == 1) {
+                    ans += cnt[y];
+                }
+            }
+            while (x >= 10) {
+                x /= 10;
+            }
+            cnt[x]++;
+        }
+        return ans;
+    }
+
+public static int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
+
+
+Task_id: 86_0    done
+raw_prediction: ```java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main {
+    public static int[] countServers(int n, int[][] logs, int x, int[] queries) {
+        Arrays.sort(logs, Comparator.comparingInt(a -> a[1]));
+        int[] ans = new int[queries.length];
+        int[] cnt = new int[n + 1];
+        int outOfRange = n;
+        int left = 0, right = 0;
+        Integer[] queryIndices = Arrays.stream(queries).boxed().mapToInt(i -> i).toArray(Integer[]::new);
+        Arrays.sort(queryIndices, Comparator.comparingInt(a -> queries[a]));
+        for (int qi : queryIndices) {
+            int q = queries[qi];
+            while (right < logs.length && logs[right][1] <= q) {
+                int i = logs[right][0];
+                if (cnt[i] == 0) outOfRange--;
+                cnt[i]++;
+                right++;
+            }
+            while (left < logs.length && logs[left][1] < q - x) {
+                int i = logs[left][0];
+                cnt[i]--;
+                if (cnt[i] == 0) outOfRange++;
+                left++;
+            }
+            ans[qi] = outOfRange;
+        }
+        return ans;
+    }
+}
+```
+Note: In Java, we need to use `Arrays.sort()` with a custom comparator to sort arrays based on a specific key. Also, since Java doesn't support lambda expressions with multiple statements like Python, we need to use a traditional for-loop for iteration. Additionally, Java doesn't support list comprehension or equivalent, so we use Java Stream API to convert the `queries` array to an `Integer` array of indices for sorting purposes.
+
+
+result: public static int[] countServers(int n, int[][] logs, int x, int[] queries) {
+        Arrays.sort(logs, Comparator.comparingInt(a -> a[1]));
+        int[] ans = new int[queries.length];
+        int[] cnt = new int[n + 1];
+        int outOfRange = n;
+        int left = 0, right = 0;
+        Integer[] queryIndices = Arrays.stream(queries).boxed().mapToInt(i -> i).toArray(Integer[]::new);
+        Arrays.sort(queryIndices, Comparator.comparingInt(a -> queries[a]));
+        for (int qi : queryIndices) {
+            int q = queries[qi];
+            while (right < logs.length && logs[right][1] <= q) {
+                int i = logs[right][0];
+                if (cnt[i] == 0) outOfRange--;
+                cnt[i]++;
+                right++;
+            }
+            while (left < logs.length && logs[left][1] < q - x) {
+                int i = logs[left][0];
+                cnt[i]--;
+                if (cnt[i] == 0) outOfRange++;
+                left++;
+            }
+            ans[qi] = outOfRange;
+        }
+        return ans;
+    }
+
+
+Task_id: 87_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static boolean isPossible(int n, List<List<Integer>> edges) {
+        Map<Integer, Set<Integer>> g = new HashMap<>();
+        for (List<Integer> edge : edges) {
+            int x = edge.get(0);
+            int y = edge.get(1);
+            g.putIfAbsent(x, new HashSet<>());
+            g.putIfAbsent(y, new HashSet<>());
+            g.get(x).add(y);
+            g.get(y).add(x);
+        }
+        List<Integer> odd = new ArrayList<>();
+        for (Map.Entry<Integer, Set<Integer>> entry : g.entrySet()) {
+            if (entry.getValue().size() % 2 != 0) {
+                odd.add(entry.getKey());
+            }
+        }
+        int m = odd.size();
+        if (m == 0) {
+            return true;
+        }
+        if (m == 2) {
+            int x = odd.get(0);
+            int y = odd.get(1);
+            if (!g.get(x).contains(y)) {
+                for (int i = 1; i <= n; i++) {
+                    if (i != x && i != y && !g.get(i).contains(x) && !g.get(i).contains(y)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        if (m == 4) {
+            int a = odd.get(0);
+            int b = odd.get(1);
+            int c = odd.get(2);
+            int d = odd.get(3);
+            if ((!g.get(a).contains(b) && !g.get(c).contains(d)) || 
+                (!g.get(a).contains(c) && !g.get(b).contains(d)) || 
+                (!g.get(a).contains(d) && !g.get(b).contains(c))) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
+
+result: public static boolean isPossible(int n, List<List<Integer>> edges) {
+        Map<Integer, Set<Integer>> g = new HashMap<>();
+        for (List<Integer> edge : edges) {
+            int x = edge.get(0);
+            int y = edge.get(1);
+            g.putIfAbsent(x, new HashSet<>());
+            g.putIfAbsent(y, new HashSet<>());
+            g.get(x).add(y);
+            g.get(y).add(x);
+        }
+        List<Integer> odd = new ArrayList<>();
+        for (Map.Entry<Integer, Set<Integer>> entry : g.entrySet()) {
+            if (entry.getValue().size() % 2 != 0) {
+                odd.add(entry.getKey());
+            }
+        }
+        int m = odd.size();
+        if (m == 0) {
+            return true;
+        }
+        if (m == 2) {
+            int x = odd.get(0);
+            int y = odd.get(1);
+            if (!g.get(x).contains(y)) {
+                for (int i = 1; i <= n; i++) {
+                    if (i != x && i != y && !g.get(i).contains(x) && !g.get(i).contains(y)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        if (m == 4) {
+            int a = odd.get(0);
+            int b = odd.get(1);
+            int c = odd.get(2);
+            int d = odd.get(3);
+            if ((!g.get(a).contains(b) && !g.get(c).contains(d)) || 
+                (!g.get(a).contains(c) && !g.get(b).contains(d)) || 
+                (!g.get(a).contains(d) && !g.get(b).contains(c))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+Task_id: 88_0    done
+raw_prediction: ```java
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+    public static int minExtraChar(String s, String[] dictionary) {
+        Set<String> d = new HashSet<>(java.util.Arrays.asList(dictionary));
+        int n = s.length();
+        int[] f = new int[n + 1];
+        for (int i = 0; i < n; i++) {
+            f[i + 1] = f[i] + 1;
+            for (int j = 0; j <= i; j++) {
+                if (d.contains(s.substring(j, i + 1))) {
+                    f[i + 1] = Math.min(f[i + 1], f[j]);
+                }
+            }
+        }
+        return f[n];
+    }
+}
+```
+
+
+result: public static int minExtraChar(String s, String[] dictionary) {
+        Set<String> d = new HashSet<>(java.util.Arrays.asList(dictionary));
+        int n = s.length();
+        int[] f = new int[n + 1];
+        for (int i = 0; i < n; i++) {
+            f[i + 1] = f[i] + 1;
+            for (int j = 0; j <= i; j++) {
+                if (d.contains(s.substring(j, i + 1))) {
+                    f[i + 1] = Math.min(f[i + 1], f[j]);
+                }
+            }
+        }
+        return f[n];
+    }
+
+
+Task_id: 89_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] edges = {{0, 1}, {1, 2}, {2, 3}, {3, 4}, {4, 0}};
+        int[] coins = {1, 2, 4, 8, 16};
+        int k = 3;
+        System.out.println(maximumPoints(edges, coins, k));
+    }
+
+    public static int maximumPoints(int[][] edges, int[] coins, int k) {
+        List<List<Integer>> g = new ArrayList<>();
+        for (int i = 0; i < coins.length; i++) {
+            g.add(new ArrayList<>());
+        }
+        for (int[] edge : edges) {
+            int x = edge[0], y = edge[1];
+            g.get(x).add(y);
+            g.get(y).add(x);
+        }
+        return dfs(0, -1, g, coins, k)[0];
+    }
+
+    public static int[] dfs(int x, int fa, List<List<Integer>> g, int[] coins, int k) {
+        int[] res1 = new int[14];
+        int[] res2 = new int[14];
+        for (int y : g.get(x)) {
+            if (y == fa) continue;
+            int[] r = dfs(y, x, g, coins, k);
+            for (int j = 0; j < r.length; j++) {
+                res1[j] += r[j];
+                if (j < 13) {
+                    res2[j] += r[j + 1];
+                }
+            }
+        }
+        for (int j = 0; j < res1.length; j++) {
+            res1[j] = Math.max(res1[j] + (coins[x] >> j) - k, res2[j] + (coins[x] >> (j + 1)));
+        }
+        return res1;
+    }
+}
+```
+
+
+result: public static int maximumPoints(int[][] edges, int[] coins, int k) {
+        List<List<Integer>> g = new ArrayList<>();
+        for (int i = 0; i < coins.length; i++) {
+            g.add(new ArrayList<>());
+        }
+        for (int[] edge : edges) {
+            int x = edge[0], y = edge[1];
+            g.get(x).add(y);
+            g.get(y).add(x);
+        }
+        return dfs(0, -1, g, coins, k)[0];
+    }
+
+public static int[] dfs(int x, int fa, List<List<Integer>> g, int[] coins, int k) {
+        int[] res1 = new int[14];
+        int[] res2 = new int[14];
+        for (int y : g.get(x)) {
+            if (y == fa) continue;
+            int[] r = dfs(y, x, g, coins, k);
+            for (int j = 0; j < r.length; j++) {
+                res1[j] += r[j];
+                if (j < 13) {
+                    res2[j] += r[j + 1];
+                }
+            }
+        }
+        for (int j = 0; j < res1.length; j++) {
+            res1[j] = Math.max(res1[j] + (coins[x] >> j) - k, res2[j] + (coins[x] >> (j + 1)));
+        }
+        return res1;
+    }
+
+
+Task_id: 90_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static void dfs(int x, ArrayList<ArrayList<Integer>> g, boolean[] vis, int[] counts) {
+        vis[x] = true;
+        counts[0] += 1;
+        counts[1] += g.get(x).size();
+        for (int y : g.get(x)) {
+            if (!vis[y]) {
+                dfs(y, g, vis, counts);
+            }
+        }
+    }
+
+    public static int countCompleteComponents(int n, int[][] edges) {
+        ArrayList<ArrayList<Integer>> g = new ArrayList<>(Collections.nCopies(n, new ArrayList<>()));
+        for (int[] edge : edges) {
+            int x = edge[0], y = edge[1];
+            g.get(x).add(y);
+            g.get(y).add(x);
+        }
+        boolean[] vis = new boolean[n];
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            if (!vis[i]) {
+                int[] counts = new int[2];
+                dfs(i, g, vis, counts);
+                int v = counts[0], e = counts[1];
+                ans += e == v * (v - 1) ? 1 : 0;
+            }
+        }
+        return ans;
+    }
+}
+```
+
+
+result: public static int countCompleteComponents(int n, int[][] edges) {
+        ArrayList<ArrayList<Integer>> g = new ArrayList<>(Collections.nCopies(n, new ArrayList<>()));
+        for (int[] edge : edges) {
+            int x = edge[0], y = edge[1];
+            g.get(x).add(y);
+            g.get(y).add(x);
+        }
+        boolean[] vis = new boolean[n];
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            if (!vis[i]) {
+                int[] counts = new int[2];
+                dfs(i, g, vis, counts);
+                int v = counts[0], e = counts[1];
+                ans += e == v * (v - 1) ? 1 : 0;
+            }
+        }
+        return ans;
+    }
+
+public static void dfs(int x, ArrayList<ArrayList<Integer>> g, boolean[] vis, int[] counts) {
+        vis[x] = true;
+        counts[0] += 1;
+        counts[1] += g.get(x).size();
+        for (int y : g.get(x)) {
+            if (!vis[y]) {
+                dfs(y, g, vis, counts);
+            }
+        }
+    }
+
+
+Task_id: 91_0    done
+raw_prediction: ```java
+public boolean reach(int x, int y, int[][] grid) {
+    int n = grid.length;
+    int m = grid[0].length;
+    if (x == n - 1 && y == m - 1) {
+        return true;
+    }
+    grid[x][y] = 0;
+    int x1 = x, y1 = y + 1;
+    if (y1 < m && grid[x1][y1] == 1) {
+        boolean ret = reach(x1, y1, grid);
+        if (ret) {
+            return ret;
+        }
+    }
+    int x2 = x + 1, y2 = y;
+    if (x2 < n && grid[x2][y2] == 1) {
+        return reach(x2, y2, grid);
+    }
+    return false;
+}
+
+public boolean isPossibleToCutPath(int[][] grid) {
+    int n = grid.length;
+    int m = grid[0].length;
+    if (!reach(0, 0, grid)) {
+        return true;
+    }
+    grid[0][0] = grid[n - 1][m - 1] = 1;
+    if (!reach(0, 0, grid)) {
+        return true;
+    }
+    return false;
+}
+```
+
+
+result: public static boolean isPossibleToCutPath(int[][] grid) {
+    int n = grid.length;
+    int m = grid[0].length;
+    if (!reach(0, 0, grid)) {
+        return true;
+    }
+    grid[0][0] = grid[n - 1][m - 1] = 1;
+    if (!reach(0, 0, grid)) {
+        return true;
+    }
+    return false;
+}
+
+public static boolean reach(int x, int y, int[][] grid) {
+    int n = grid.length;
+    int m = grid[0].length;
+    if (x == n - 1 && y == m - 1) {
+        return true;
+    }
+    grid[x][y] = 0;
+    int x1 = x, y1 = y + 1;
+    if (y1 < m && grid[x1][y1] == 1) {
+        boolean ret = reach(x1, y1, grid);
+        if (ret) {
+            return ret;
+        }
+    }
+    int x2 = x + 1, y2 = y;
+    if (x2 < n && grid[x2][y2] == 1) {
+        return reach(x2, y2, grid);
+    }
+    return false;
+}
+
+
+Task_id: 92_0    done
+raw_prediction: ```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(validPath(4, new int[][]{{0,1},{1,2},{2,3}}, 0, 3));
+    }
+
+    public static boolean validPath(int n, int[][] edges, int source, int destination) {
+        Map<Integer, List<Integer>> adj = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            adj.put(i, new ArrayList<>());
+        }
+        for (int[] edge : edges) {
+            adj.get(edge[0]).add(edge[1]);
+            adj.get(edge[1]).add(edge[0]);
+        }
+        boolean[] visited = new boolean[n];
+        return dfs(source, destination, adj, visited);
+    }
+
+    public static boolean dfs(int source, int destination, Map<Integer, List<Integer>> adj, boolean[] visited) {
+        if (source == destination) {
+            return true;
+        }
+        visited[source] = true;
+        for (int next : adj.get(source)) {
+            if (!visited[next] && dfs(next, destination, adj, visited)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
+
+result: public static boolean validPath(int n, int[][] edges, int source, int destination) {
+        Map<Integer, List<Integer>> adj = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            adj.put(i, new ArrayList<>());
+        }
+        for (int[] edge : edges) {
+            adj.get(edge[0]).add(edge[1]);
+            adj.get(edge[1]).add(edge[0]);
+        }
+        boolean[] visited = new boolean[n];
+        return dfs(source, destination, adj, visited);
+    }
+
+public static boolean dfs(int source, int destination, Map<Integer, List<Integer>> adj, boolean[] visited) {
+        if (source == destination) {
+            return true;
+        }
+        visited[source] = true;
+        for (int next : adj.get(source)) {
+            if (!visited[next] && dfs(next, destination, adj, visited)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+Task_id: 93_0    done
+raw_prediction: ```java
+public class Solution {
+    public boolean dfs(ListNode head, TreeNode rt) {
+        if (head == null) {
+            return true;
+        }
+        if (rt == null) {
+            return false;
+        }
+        if (rt.val != head.val) {
+            return false;
+        }
+        return dfs(head.next, rt.left) || dfs(head.next, rt.right);
+    }
+
+    public boolean isSubPath(ListNode head, TreeNode root) {
+        if (root == null) {
+            return false;
+        }
+        return dfs(head, root) || isSubPath(head, root.left) || isSubPath(head, root.right);
+    }
+}
+```
+Note: In the Java version, we use `null` instead of `None` to represent the absence of a value, and we use `||` instead of `or` for logical OR operations. Also, method signatures in Java include the access modifier `public`, and the return type comes before the method name.
+
+
+result: public static boolean isSubPath(ListNode head, TreeNode root) {
+        if (root == null) {
+            return false;
+        }
+        return dfs(head, root) || isSubPath(head, root.left) || isSubPath(head, root.right);
+    }
+
+public static boolean dfs(ListNode head, TreeNode rt) {
+        if (head == null) {
+            return true;
+        }
+        if (rt == null) {
+            return false;
+        }
+        if (rt.val != head.val) {
+            return false;
+        }
+        return dfs(head.next, rt.left) || dfs(head.next, rt.right);
+    }
+
+
+Task_id: 94_0    done
+raw_prediction: ```java
+import java.util.*;
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
+
+public class Main {
+    public static void inorder(TreeNode node, List<Integer> res) {
+        if (node != null) {
+            inorder(node.left, res);
+            res.add(node.val);
+            inorder(node.right, res);
+        }
+    }
+    public static List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
+        List<Integer> nums1 = new ArrayList<>();
+        List<Integer> nums2 = new ArrayList<>();
+        inorder(root1, nums1);
+        inorder(root2, nums2);
+        List<Integer> merged = new ArrayList<>();
+        int p1 = 0, p2 = 0;
+        while (true) {
+            if (p1 == nums1.size()) {
+                merged.addAll(nums2.subList(p2, nums2.size()));
+                break;
+            }
+            if (p2 == nums2.size()) {
+                merged.addAll(nums1.subList(p1, nums1.size()));
+                break;
+            }
+            if (nums1.get(p1) < nums2.get(p2)) {
+                merged.add(nums1.get(p1));
+                p1++;
+            } else {
+                merged.add(nums2.get(p2));
+                p2++;
+            }
+        }
+        return merged;
+    }
+}
+```
+
+
+result: public static List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
+        List<Integer> nums1 = new ArrayList<>();
+        List<Integer> nums2 = new ArrayList<>();
+        inorder(root1, nums1);
+        inorder(root2, nums2);
+        List<Integer> merged = new ArrayList<>();
+        int p1 = 0, p2 = 0;
+        while (true) {
+            if (p1 == nums1.size()) {
+                merged.addAll(nums2.subList(p2, nums2.size()));
+                break;
+            }
+            if (p2 == nums2.size()) {
+                merged.addAll(nums1.subList(p1, nums1.size()));
+                break;
+            }
+            if (nums1.get(p1) < nums2.get(p2)) {
+                merged.add(nums1.get(p1));
+                p1++;
+            } else {
+                merged.add(nums2.get(p2));
+                p2++;
+            }
+        }
+        return merged;
+    }
+
+public static void inorder(TreeNode node, List<Integer> res) {
+        if (node != null) {
+            inorder(node.left, res);
+            res.add(node.val);
+            inorder(node.right, res);
+        }
+    }
+
+
+Task_id: 95_0    done
+raw_prediction: ```java
+public int maxLevelSum(TreeNode root) {
+    List<Integer> sums = new ArrayList<>();
+    dfs(root, 0, sums);
+    int maxSumIndex = 0;
+    for (int i = 1; i < sums.size(); i++) {
+        if (sums.get(i) > sums.get(maxSumIndex)) {
+            maxSumIndex = i;
+        }
+    }
+    return maxSumIndex + 1;
+}
+
+private void dfs(TreeNode node, int level, List<Integer> sums) {
+    if (level == sums.size()) {
+        sums.add(node.val);
+    } else {
+        sums.set(level, sums.get(level) + node.val);
+    }
+    if (node.left != null) {
+        dfs(node.left, level + 1, sums);
+    }
+    if (node.right != null) {
+        dfs(node.right, level + 1, sums);
+    }
+}
+```
+
+
+result: public static int maxLevelSum(TreeNode root) {
+    List<Integer> sums = new ArrayList<>();
+    dfs(root, 0, sums);
+    int maxSumIndex = 0;
+    for (int i = 1; i < sums.size(); i++) {
+        if (sums.get(i) > sums.get(maxSumIndex)) {
+            maxSumIndex = i;
+        }
+    }
+    return maxSumIndex + 1;
+}
+
+public static void dfs(TreeNode node, int level, List<Integer> sums) {
+    if (level == sums.size()) {
+        sums.add(node.val);
+    } else {
+        sums.set(level, sums.get(level) + node.val);
+    }
+    if (node.left != null) {
+        dfs(node.left, level + 1, sums);
+    }
+    if (node.right != null) {
+        dfs(node.right, level + 1, sums);
+    }
+}
+
+
+Task_id: 96_0    done
+raw_prediction: ```java
+public int sumRootToLeaf(TreeNode root) {
+    return dfs(root, 0);
+}
+
+private int dfs(TreeNode node, int val) {
+    if (node == null) {
+        return 0;
+    }
+    val = (val << 1) | node.val;
+    if (node.left == null && node.right == null) {
+        return val;
+    }
+    return dfs(node.left, val) + dfs(node.right, val);
+}
+```
+Note: In Java, we don't have Optional types for method parameters like in Python. So, we can use null check for the TreeNode object. Also, Java doesn't support returning multiple types from a method, so we use a single return type 'int' for both methods.
+
+
+result: public static int sumRootToLeaf(TreeNode root) {
+    return dfs(root, 0);
+}
+
+public static int dfs(TreeNode node, int val) {
+    if (node == null) {
+        return 0;
+    }
+    val = (val << 1) | node.val;
+    if (node.left == null && node.right == null) {
+        return val;
+    }
+    return dfs(node.left, val) + dfs(node.right, val);
+}
+
+
+Task_id: 97_0    done
+raw_prediction: ```java
+class Solution {
+    public boolean isCousins(TreeNode root, int x, int y) {
+        int[] xi = dfs(root, null, 0, x);
+        int[] yi = dfs(root, null, 0, y);
+        return xi[1] == yi[1] && xi[0] != yi[0];
+    }
+
+    private int[] dfs(TreeNode root, TreeNode fa, int depth, int t) {
+        if (root == null) {
+            return new int[]{-1, -1};
+        }
+        if (root.val == t) {
+            return new int[]{fa == null ? -1 : fa.val, depth};
+        }
+        int[] l = dfs(root.left, root, depth + 1, t);
+        if (l[0] != -1) {
+            return l;
+        }
+        return dfs(root.right, root, depth + 1, t);
+    }
+}
+```
+Note: In Java, we need to explicitly declare the type of the array when we return it. Also, Java does not support returning multiple values directly from a function like Python does. Therefore, we use an int array to return multiple values.
+
+
+result: public static boolean isCousins(TreeNode root, int x, int y) {
+        int[] xi = dfs(root, null, 0, x);
+        int[] yi = dfs(root, null, 0, y);
+        return xi[1] == yi[1] && xi[0] != yi[0];
+    }
+
+public static int[] dfs(TreeNode root, TreeNode fa, int depth, int t) {
+        if (root == null) {
+            return new int[]{-1, -1};
+        }
+        if (root.val == t) {
+            return new int[]{fa == null ? -1 : fa.val, depth};
+        }
+        int[] l = dfs(root.left, root, depth + 1, t);
+        if (l[0] != -1) {
+            return l;
+        }
+        return dfs(root.right, root, depth + 1, t);
+    }
+
+
+Task_id: 98_0    done
+raw_prediction: ```java
+import java.util.HashSet;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {2, 3, 4, 5};
+        System.out.println(longestSquareStreak(nums));
+    }
+
+    public static int longestSquareStreak(int[] nums) {
+        int ans = 0;
+        HashSet<Integer> s = new HashSet<>();
+        for (int num : nums) {
+            s.add(num);
+        }
+        for (int x : s) {
+            int cnt = 0;
+            while (s.contains(x)) {
+                cnt++;
+                x *= x;
+            }
+            ans = Math.max(ans, cnt);
+        }
+        return ans > 1 ? ans : -1;
+    }
+}
+```
+
+
+result: public static int longestSquareStreak(int[] nums) {
+        int ans = 0;
+        HashSet<Integer> s = new HashSet<>();
+        for (int num : nums) {
+            s.add(num);
+        }
+        for (int x : s) {
+            int cnt = 0;
+            while (s.contains(x)) {
+                cnt++;
+                x *= x;
+            }
+            ans = Math.max(ans, cnt);
+        }
+        return ans > 1 ? ans : -1;
+    }
+
+
+Task_id: 99_0    done
+raw_prediction: ```java
+public static int appendCharacters(String s, String t) {
+    int j = 0, m = t.length();
+    for (char c : s.toCharArray()) {
+        if (c == t.charAt(j)) {
+            j++;
+            if (j == m) return 0;
+        }
+    }
+    return m - j;
+}
+```
+
+
+result: public static int appendCharacters(String s, String t) {
+    int j = 0, m = t.length();
+    for (char c : s.toCharArray()) {
+        if (c == t.charAt(j)) {
+            j++;
+            if (j == m) return 0;
+        }
+    }
+    return m - j;
+}
+
+
+Task_id: 100_0    done

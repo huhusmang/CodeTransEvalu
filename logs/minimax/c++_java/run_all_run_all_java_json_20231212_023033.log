@@ -1,0 +1,438 @@
+2023-12-12 02:30:33 INFO Running task: 1_0...
+2023-12-12 02:30:34 INFO Test Passed!
+
+
+2023-12-12 02:30:34 INFO Running task: 2_0...
+2023-12-12 02:30:35 INFO Test Passed!
+
+
+2023-12-12 02:30:35 INFO Running task: 3_0...
+2023-12-12 02:30:36 INFO Test Passed!
+
+
+2023-12-12 02:30:36 INFO Running task: 4_0...
+2023-12-12 02:30:36 INFO Compilation Failed!
+2023-12-12 02:30:36 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: bad operand types for binary operator '+'\n        ans += s.charAt(i) != s.charAt(i + 1);\n            ^\n  first type:  int\n  second type: boolean\n1 error\nerror: compilation failed\n"
+
+
+2023-12-12 02:30:36 INFO Running task: 5_0...
+2023-12-12 02:30:37 INFO Compilation Failed!
+2023-12-12 02:30:37 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: cannot find symbol\n        int k = IntStream.of(cnt.values()).min().getAsInt();\n                ^\n  symbol:   variable IntStream\n  location: class Test\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:30:37 INFO Running task: 6_0...
+2023-12-12 02:30:38 INFO Test Passed!
+
+
+2023-12-12 02:30:38 INFO Running task: 7_0...
+2023-12-12 02:30:39 INFO Test Passed!
+
+
+2023-12-12 02:30:39 INFO Running task: 8_0...
+2023-12-12 02:30:40 INFO Compilation Failed!
+2023-12-12 02:30:40 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: incompatible types: possible lossy conversion from long to int\n    int cnt1 = s.chars().filter(ch -> ch == '1').count();\n                                                      ^\n1 error\nerror: compilation failed\n"
+
+
+2023-12-12 02:30:40 INFO Running task: 9_0...
+2023-12-12 02:30:40 INFO Compilation Failed!
+2023-12-12 02:30:40 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression\n            if (t.length() < ans.length() || t.length() == ans.length() && ***pareTo(ans) < 0) {\n                                                                           ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression\n            if (t.length() < ans.length() || t.length() == ans.length() && ***pareTo(ans) < 0) {\n                                                                            ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression\n            if (t.length() < ans.length() || t.length() == ans.length() && ***pareTo(ans) < 0) {\n                                                                             ^\n3 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:30:40 INFO Running task: 10_0...
+2023-12-12 02:30:41 INFO Compilation Failed!
+2023-12-12 02:30:41 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: bad operand types for binary operator '+'\n        t += s.charAt(i - 1) >= s.charAt(i);\n          ^\n  first type:  int\n  second type: boolean\n1 error\nerror: compilation failed\n"
+
+
+2023-12-12 02:30:41 INFO Running task: 11_0...
+2023-12-12 02:30:42 INFO Test Passed!
+
+
+2023-12-12 02:30:42 INFO Running task: 12_0...
+2023-12-12 02:30:43 INFO Test Passed!
+
+
+2023-12-12 02:30:43 INFO Running task: 13_0...
+2023-12-12 02:30:44 INFO Test Passed!
+
+
+2023-12-12 02:30:44 INFO Running task: 14_0...
+2023-12-12 02:30:45 INFO Test Passed!
+
+
+2023-12-12 02:30:45 INFO Running task: 15_0...
+2023-12-12 02:30:46 INFO Test Passed!
+
+
+2023-12-12 02:30:46 INFO Running task: 16_0...
+2023-12-12 02:30:46 INFO Compilation Failed!
+2023-12-12 02:30:46 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:237: error: incompatible types: possible lossy conversion from long to int\n    return ans == Integer.MAX_VALUE ? -1 : ans + target / total * n;\n                                    ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:30:46 INFO Running task: 17_0...
+2023-12-12 02:30:47 INFO Test Passed!
+
+
+2023-12-12 02:30:47 INFO Running task: 18_0...
+2023-12-12 02:30:48 INFO Test Passed!
+
+
+2023-12-12 02:30:48 INFO Running task: 19_0...
+2023-12-12 02:30:49 INFO Test Passed!
+
+
+2023-12-12 02:30:49 INFO Running task: 20_0...
+2023-12-12 02:30:50 INFO Test Passed!
+
+
+2023-12-12 02:30:50 INFO Running task: 21_0...
+2023-12-12 02:30:51 INFO Test Passed!
+
+
+2023-12-12 02:30:51 INFO Running task: 22_0...
+2023-12-12 02:30:52 INFO Compilation Failed!
+2023-12-12 02:30:52 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: cannot find symbol\n        Predicate<Long> check = num -> {\n        ^\n  symbol:   class Predicate\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:238: error: unexpected type\n            (check.test(mid) ? left : right) = mid;\n                             ^\n  required: variable\n  found:    value\nNote: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:30:52 INFO Running task: 23_0...
+2023-12-12 02:30:53 INFO Test Passed!
+
+
+2023-12-12 02:30:53 INFO Running task: 24_0...
+2023-12-12 02:30:54 INFO Test Passed!
+
+
+2023-12-12 02:30:54 INFO Running task: 25_0...
+2023-12-12 02:30:55 INFO Test Passed!
+
+
+2023-12-12 02:30:55 INFO Running task: 26_0...
+2023-12-12 02:30:56 INFO Test Passed!
+
+
+2023-12-12 02:30:56 INFO Running task: 27_0...
+2023-12-12 02:30:57 INFO Test Passed!
+
+
+2023-12-12 02:30:57 INFO Running task: 28_0...
+2023-12-12 02:30:57 INFO Test Passed!
+
+
+2023-12-12 02:30:57 INFO Running task: 29_0...
+2023-12-12 02:30:58 INFO Test Passed!
+
+
+2023-12-12 02:30:58 INFO Running task: 30_0...
+2023-12-12 02:30:59 INFO Test Passed!
+
+
+2023-12-12 02:30:59 INFO Running task: 31_0...
+2023-12-12 02:31:00 INFO Compilation Failed!
+2023-12-12 02:31:00 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: no suitable method found for min(int,int,int,int,int)\n    return Math.min(f("00", num), f("25", num), f("50", num), f("75", num), zero);\n               ^\n    method Math.min(int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Math.min(long,long) is not applicable\n      (actual and formal argument lists differ in length)\n    method Math.min(float,float) is not applicable\n      (actual and formal argument lists differ in length)\n    method Math.min(double,double) is not applicable\n      (actual and formal argument lists differ in length)\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:00 INFO Running task: 32_0...
+2023-12-12 02:31:01 INFO Test Passed!
+
+
+2023-12-12 02:31:01 INFO Running task: 33_0...
+2023-12-12 02:31:02 INFO Test Passed!
+
+
+2023-12-12 02:31:02 INFO Running task: 34_0...
+2023-12-12 02:31:03 INFO Test Failed!
+2023-12-12 02:31:03 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse true\nTestcase No.3 Failed!\nfalse true\nTestcase No.4 Failed!\nfalse false\nPassed 2 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 02:31:03 INFO Running task: 35_0...
+2023-12-12 02:31:04 INFO Test Failed!
+2023-12-12 02:31:04 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse false\nfalse true\nTestcase No.4 Failed!\nfalse true\nTestcase No.5 Failed!\nPassed 2 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 02:31:04 INFO Running task: 36_0...
+2023-12-12 02:31:04 INFO Test Passed!
+
+
+2023-12-12 02:31:04 INFO Running task: 37_0...
+2023-12-12 02:31:05 INFO Test Passed!
+
+
+2023-12-12 02:31:05 INFO Running task: 38_0...
+2023-12-12 02:31:06 INFO Test Passed!
+
+
+2023-12-12 02:31:06 INFO Running task: 39_0...
+2023-12-12 02:31:07 INFO Test Passed!
+
+
+2023-12-12 02:31:07 INFO Running task: 40_0...
+2023-12-12 02:31:08 INFO Test Passed!
+
+
+2023-12-12 02:31:08 INFO Running task: 41_0...
+2023-12-12 02:31:09 INFO Test Passed!
+
+
+2023-12-12 02:31:09 INFO Running task: 42_0...
+2023-12-12 02:31:10 INFO Runtime Failed!
+2023-12-12 02:31:10 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:269)\n\tat Test.main(test.java:290)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:269)\n\tat Test.main(test.java:290)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\n-3 3\nTestcase No.3 Failed!\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:269)\n\tat Test.main(test.java:290)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:269)\n\tat Test.main(test.java:290)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\nPassed 0 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 02:31:10 INFO Running task: 43_0...
+2023-12-12 02:31:11 INFO Test Passed!
+
+
+2023-12-12 02:31:11 INFO Running task: 44_0...
+2023-12-12 02:31:11 INFO Test Passed!
+
+
+2023-12-12 02:31:11 INFO Running task: 45_0...
+2023-12-12 02:31:12 INFO Compilation Failed!
+2023-12-12 02:31:12 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:227: error: no suitable constructor found for String(Object[])\n    return tail ? new String(q.toArray()) : new String(q.descendingIterator());\n                  ^\n    constructor String.String() is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(String) is not applicable\n      (argument mismatch; Object[] cannot be converted to String)\n    constructor String.String(char[]) is not applicable\n      (argument mismatch; Object[] cannot be converted to char[])\n    constructor String.String(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int,String) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int,Charset) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],String) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],Charset) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[]) is not applicable\n      (argument mismatch; Object[] cannot be converted to byte[])\n    constructor String.String(StringBuffer) is not applicable\n      (argument mismatch; Object[] cannot be converted to StringBuffer)\n    constructor String.String(StringBuilder) is not applicable\n      (argument mismatch; Object[] cannot be converted to StringBuilder)\n    constructor String.String(char[],int,int,Void) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(AbstractStringBuilder,Void) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],byte) is not applicable\n      (actual and formal argument lists differ in length)\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:227: error: no suitable constructor found for String(Iterator<Character>)\n    return tail ? new String(q.toArray()) : new String(q.descendingIterator());\n                                            ^\n    constructor String.String() is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(String) is not applicable\n      (argument mismatch; Iterator<Character> cannot be converted to String)\n    constructor String.String(char[]) is not applicable\n      (argument mismatch; Iterator<Character> cannot be converted to char[])\n    constructor String.String(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int,String) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int,Charset) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],String) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],Charset) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[]) is not applicable\n      (argument mismatch; Iterator<Character> cannot be converted to byte[])\n    constructor String.String(StringBuffer) is not applicable\n      (argument mismatch; Iterator<Character> cannot be converted to StringBuffer)\n    constructor String.String(StringBuilder) is not applicable\n      (argument mismatch; Iterator<Character> cannot be converted to StringBuilder)\n    constructor String.String(char[],int,int,Void) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(AbstractStringBuilder,Void) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor String.String(byte[],byte) is not applicable\n      (actual and formal argument lists differ in length)\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:12 INFO Running task: 46_0...
+2023-12-12 02:31:13 INFO Test Passed!
+
+
+2023-12-12 02:31:13 INFO Running task: 47_0...
+2023-12-12 02:31:14 INFO Test Passed!
+
+
+2023-12-12 02:31:14 INFO Running task: 48_0...
+2023-12-12 02:31:14 INFO Compilation Failed!
+2023-12-12 02:31:14 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression\n            ***puteIfAbsent(nums.get(i), k -> new ArrayList<>()).add(i);\n            ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression\n            ***puteIfAbsent(nums.get(i), k -> new ArrayList<>()).add(i);\n             ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression\n            ***puteIfAbsent(nums.get(i), k -> new ArrayList<>()).add(i);\n              ^\n3 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:14 INFO Running task: 49_0...
+2023-12-12 02:31:15 INFO Test Passed!
+
+
+2023-12-12 02:31:15 INFO Running task: 50_0...
+2023-12-12 02:31:16 INFO Test Passed!
+
+
+2023-12-12 02:31:16 INFO Running task: 51_0...
+2023-12-12 02:31:17 INFO Compilation Failed!
+2023-12-12 02:31:17 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: cannot find symbol\n        long sum = IntStream.of(a.toArray()).asLongStream().sum();\n                   ^\n  symbol:   variable IntStream\n  location: class Test\nNote: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:17 INFO Running task: 52_0...
+2023-12-12 02:31:18 INFO Test Passed!
+
+
+2023-12-12 02:31:18 INFO Running task: 53_0...
+2023-12-12 02:31:18 INFO Compilation Failed!
+2023-12-12 02:31:18 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                       ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                        ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                         ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                          ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                   ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                    ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                     ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                      ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                           ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                            ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                             ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:220: error: illegal start of expression\n    return (int) ((n % ***) * (n % ***)) % ***;\n                                              ^\n12 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:18 INFO Running task: 54_0...
+2023-12-12 02:31:19 INFO Test Passed!
+
+
+2023-12-12 02:31:19 INFO Running task: 55_0...
+2023-12-12 02:31:20 INFO Test Passed!
+
+
+2023-12-12 02:31:20 INFO Running task: 56_0...
+2023-12-12 02:31:22 INFO Test Passed!
+
+
+2023-12-12 02:31:22 INFO Running task: 57_0...
+2023-12-12 02:31:23 INFO Compilation Failed!
+2023-12-12 02:31:23 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:225: error: cannot find symbol\n            delete llist; \n            ^\n  symbol:   class delete\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:225: error: variable llist is already defined in method testfunc(ListNode,int)\n            delete llist; \n                   ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:237: error: cannot find symbol\n        delete nodeToDelete; \n        ^\n  symbol:   class delete\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:237: error: variable nodeToDelete is already defined in method testfunc(ListNode,int)\n        delete nodeToDelete; \n               ^\n4 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:23 INFO Running task: 58_0...
+2023-12-12 02:31:23 INFO Compilation Failed!
+2023-12-12 02:31:23 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:221: error: incompatible types: int cannot be converted to boolean\n        return root.val;\n                   ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:23 INFO Running task: 59_0...
+2023-12-12 02:31:25 INFO Test Passed!
+
+
+2023-12-12 02:31:25 INFO Running task: 60_0...
+2023-12-12 02:31:26 INFO Test Passed!
+
+
+2023-12-12 02:31:26 INFO Running task: 61_0...
+2023-12-12 02:31:27 INFO Test Passed!
+
+
+2023-12-12 02:31:27 INFO Running task: 62_0...
+2023-12-12 02:31:27 INFO Compilation Failed!
+2023-12-12 02:31:27 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:243: error: illegal start of expression\n    public static void start() {\n    ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:27 INFO Running task: 63_0...
+2023-12-12 02:31:28 INFO Test Passed!
+
+
+2023-12-12 02:31:28 INFO Running task: 64_0...
+2023-12-12 02:31:29 INFO Compilation Failed!
+2023-12-12 02:31:29 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:222: error: method add in interface Deque<E> cannot be applied to given types;\n    for (int i = 0; i < 10; ++i) q.add(i);\n                                  ^\n  required: Long\n  found:    int\n  reason: argument mismatch; int cannot be converted to Long\n  where E is a type-variable:\n    E extends Object declared in interface Deque\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:29 INFO Running task: 65_0...
+2023-12-12 02:31:30 INFO Compilation Failed!
+2023-12-12 02:31:30 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: no suitable method found for replace(int,int,String)\n                    grid.get(k).replace(j, j, "X");\n                               ^\n    method String.replace(char,char) is not applicable\n      (actual and formal argument lists differ in length)\n    method String.replace(CharSequence,CharSequence) is not applicable\n      (actual and formal argument lists differ in length)\nNote: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:30 INFO Running task: 66_0...
+2023-12-12 02:31:31 INFO Test Passed!
+
+
+2023-12-12 02:31:31 INFO Running task: 67_0...
+2023-12-12 02:31:32 INFO Test Passed!
+
+
+2023-12-12 02:31:32 INFO Running task: 68_0...
+2023-12-12 02:31:33 INFO Test Passed!
+
+
+2023-12-12 02:31:33 INFO Running task: 69_0...
+2023-12-12 02:31:35 INFO Test Passed!
+
+
+2023-12-12 02:31:35 INFO Running task: 70_0...
+2023-12-12 02:31:35 INFO Test Passed!
+
+
+2023-12-12 02:31:35 INFO Running task: 71_0...
+2023-12-12 02:31:37 INFO Test Failed!
+2023-12-12 02:31:37 INFO run_output: b'2 2\n6 2\nTestcase No.2 Failed!\n8 4\nTestcase No.3 Failed!\n31458 24008\nTestcase No.4 Failed!\n28472 15986\nTestcase No.5 Failed!\nPassed 1 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 02:31:37 INFO Running task: 72_0...
+2023-12-12 02:31:38 INFO Compilation Failed!
+2023-12-12 02:31:38 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:230: error: variable i is already defined in method testfunc(List<List<Integer>>,int)\n                for (int i = l; i < br - l - 1; i++) {\n                         ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:236: error: variable i is already defined in method testfunc(List<List<Integer>>,int)\n                for (int i = br - l - 1; i > l + 1; i--) {\n                         ^\nNote: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:38 INFO Running task: 73_0...
+2023-12-12 02:31:38 INFO Test Passed!
+
+
+2023-12-12 02:31:38 INFO Running task: 74_0...
+2023-12-12 02:31:39 INFO Test Passed!
+
+
+2023-12-12 02:31:39 INFO Running task: 75_0...
+2023-12-12 02:31:40 INFO Test Passed!
+
+
+2023-12-12 02:31:40 INFO Running task: 76_0...
+2023-12-12 02:31:41 INFO Test Passed!
+
+
+2023-12-12 02:31:41 INFO Running task: 77_0...
+2023-12-12 02:31:42 INFO Test Passed!
+
+
+2023-12-12 02:31:42 INFO Running task: 78_0...
+2023-12-12 02:31:43 INFO Test Failed!
+2023-12-12 02:31:43 INFO run_output: b'3 4\nTestcase No.1 Failed!\n10 11\nTestcase No.2 Failed!\n10 11\nTestcase No.3 Failed!\n99999 100000\nTestcase No.4 Failed!\n50000 50000\nPassed 1 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 02:31:43 INFO Running task: 79_0...
+2023-12-12 02:31:44 INFO Test Passed!
+
+
+2023-12-12 02:31:44 INFO Running task: 80_0...
+2023-12-12 02:31:45 INFO Test Passed!
+
+
+2023-12-12 02:31:45 INFO Running task: 81_0...
+2023-12-12 02:31:45 INFO Compilation Failed!
+2023-12-12 02:31:45 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:254: error: illegal start of expression\n    public static void start() {\n    ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:45 INFO Running task: 82_0...
+2023-12-12 02:31:46 INFO Compilation Failed!
+2023-12-12 02:31:46 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression\n    Arrays.fill(f, ***);\n                   ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression\n    Arrays.fill(f, ***);\n                    ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression\n    Arrays.fill(f, ***);\n                     ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:232: error: illegal start of expression\n    Arrays.fill(f, ***);\n                      ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression\n    if (f[n] == ***) return -1;\n                ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression\n    if (f[n] == ***) return -1;\n                 ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression\n    if (f[n] == ***) return -1;\n                  ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:245: error: illegal start of expression\n    if (f[n] == ***) return -1;\n                   ^\n8 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:46 INFO Running task: 83_0...
+2023-12-12 02:31:47 INFO Test Passed!
+
+
+2023-12-12 02:31:47 INFO Running task: 84_0...
+2023-12-12 02:31:47 INFO Test Passed!
+
+
+2023-12-12 02:31:47 INFO Running task: 85_0...
+2023-12-12 02:31:48 INFO Test Passed!
+
+
+2023-12-12 02:31:48 INFO Running task: 86_0...
+2023-12-12 02:31:49 INFO Compilation Failed!
+2023-12-12 02:31:49 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: cannot find symbol\n            if (cnt[y] > 0 && gcd(x % 10, y) == 1)\n                              ^\n  symbol:   method gcd(int,int)\n  location: class Test\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:49 INFO Running task: 87_0...
+2023-12-12 02:31:49 INFO Compilation Failed!
+2023-12-12 02:31:49 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression\n        Arrays.sort(id, ***paringInt(i -> queries[i]));\n                        ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression\n        Arrays.sort(id, ***paringInt(i -> queries[i]));\n                         ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:223: error: illegal start of expression\n        Arrays.sort(id, ***paringInt(i -> queries[i]));\n                          ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: illegal start of expression\n        Arrays.sort(logs, ***paringInt(a -> a[1]));\n                          ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: illegal start of expression\n        Arrays.sort(logs, ***paringInt(a -> a[1]));\n                           ^\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:224: error: illegal start of expression\n        Arrays.sort(logs, ***paringInt(a -> a[1]));\n                            ^\n6 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:49 INFO Running task: 88_0...
+2023-12-12 02:31:51 INFO Test Passed!
+
+
+2023-12-12 02:31:51 INFO Running task: 89_0...
+2023-12-12 02:31:52 INFO Test Passed!
+
+
+2023-12-12 02:31:52 INFO Running task: 90_0...
+2023-12-12 02:31:53 INFO Test Passed!
+
+
+2023-12-12 02:31:53 INFO Running task: 91_0...
+2023-12-12 02:31:53 INFO Compilation Failed!
+2023-12-12 02:31:53 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:236: error: bad operand types for binary operator '+'\n            ans += e == v * (v - 1);\n                ^\n  first type:  int\n  second type: boolean\n1 error\nerror: compilation failed\n"
+
+
+2023-12-12 02:31:53 INFO Running task: 92_0...
+2023-12-12 02:31:54 INFO Test Passed!
+
+
+2023-12-12 02:31:54 INFO Running task: 93_0...
+2023-12-12 02:31:55 INFO Test Passed!
+
+
+2023-12-12 02:31:55 INFO Running task: 94_0...
+2023-12-12 02:31:56 INFO Test Passed!
+
+
+2023-12-12 02:31:56 INFO Running task: 95_0...
+2023-12-12 02:31:57 INFO Compilation Failed!
+2023-12-12 02:31:57 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:229: error: no suitable method found for addAll(Iterator<Integer>)\n            merged.addAll(p2);\n                  ^\n    method List.addAll(Collection<? extends Integer>) is not applicable\n      (argument mismatch; Iterator<Integer> cannot be converted to Collection<? extends Integer>)\n    method List.addAll(int,Collection<? extends Integer>) is not applicable\n      (actual and formal argument lists differ in length)\n/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:233: error: no suitable method found for addAll(Iterator<Integer>)\n            merged.addAll(p1);\n                  ^\n    method List.addAll(Collection<? extends Integer>) is not applicable\n      (argument mismatch; Iterator<Integer> cannot be converted to Collection<? extends Integer>)\n    method List.addAll(int,Collection<? extends Integer>) is not applicable\n      (actual and formal argument lists differ in length)\nNote: /home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:57 INFO Running task: 96_0...
+2023-12-12 02:31:58 INFO Test Failed!
+2023-12-12 02:31:58 INFO run_output: b'8 2\nTestcase No.1 Failed!\n10251 2\nTestcase No.2 Failed!\n146958 3\nTestcase No.3 Failed!\n286391 9\nTestcase No.4 Failed!\n1573879 22\nTestcase No.5 Failed!\nPassed 0 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 02:31:58 INFO Running task: 97_0...
+2023-12-12 02:31:58 INFO Test Passed!
+
+
+2023-12-12 02:31:58 INFO Running task: 98_0...
+2023-12-12 02:31:59 INFO Compilation Failed!
+2023-12-12 02:31:59 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:261: error: cannot find symbol\n                return_data = testfunc(data1, data2, data3);\n                              ^\n  symbol:   method testfunc(TreeNode,int,int)\n  location: class Test\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:31:59 INFO Running task: 99_0...
+2023-12-12 02:32:00 INFO Compilation Failed!
+2023-12-12 02:32:00 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/minimax/c++_java/test.java:221: error: incompatible types: cannot infer type arguments for HashSet<>\n    Set<Integer> s = new HashSet<>(Arrays.asList(nums));\n                                ^\n    reason: inference variable E has incompatible bounds\n      equality constraints: Integer\n      lower bounds: T,int[]\n  where E,T are type-variables:\n    E extends Object declared in class HashSet\n    T extends Object declared in method <T>asList(T...)\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 02:32:00 INFO Running task: 100_0...
+2023-12-12 02:32:01 INFO Test Passed!
+
+
+Traceback (most recent call last):
+  File "/home/ubuntu/test_codellm/run_all_java_json.py", line 167, in <module>
+    results = run_tests(
+  File "/home/ubuntu/test_codellm/run_all_java_json.py", line 111, in run_tests
+    data = json_data(task, "total", "total", results)
+TypeError: json_data() missing 1 required positional argument: 'number'

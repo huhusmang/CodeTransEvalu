@@ -1,0 +1,1888 @@
+Translate python to java: def findKOr(nums: List[int], k: int) -> int:
+    ans = 0
+    for i in range(31):
+        cnt1 = 0
+        for x in nums:
+            cnt1 += x >> i & 1
+        if cnt1 >= k:
+            ans |= 1 << i
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 1_0    done
+Translate python to java: def minSum(nums1, nums2):
+    s1 = 0
+    zero1 = False
+    for x in nums1:
+        if x == 0:
+            zero1 = True
+            s1 += 1
+        else:
+            s1 += x
+    s2 = 0
+    zero2 = False
+    for x in nums2:
+        if x == 0:
+            zero2 = True
+            s2 += 1
+        else:
+            s2 += x
+    if (not zero1 and s1 < s2) or (not zero2 and s2 < s1):
+        return -1
+    return max(s1, s2). 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int[]'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 2_0    done
+Translate python to java: def lengthOfLongestSubsequence(nums: List[int], target: int) -> int:
+    f = [0] + [-inf] * target
+    s = 0
+    for x in nums:
+        s = min(s + x, target)
+        for j in range(s, x - 1, -1):
+            if f[j] < f[j - x] + 1:
+                f[j] = f[j - x] + 1
+    return f[-1] if f[-1] > 0 else -1. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 3_0    done
+Translate python to java: def minChanges(s):
+    ans = 0
+    for i in range(0, len(s), 2):
+        ans += int(s[i] != s[i + 1])
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['String'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 4_0    done
+Translate python to java: def minGroupsForValidAssignment(nums):
+    cnt = {}
+    for x in nums:
+        cnt[x] = cnt.get(x, 0) + 1
+    k = len(nums)
+    for c in cnt.values():
+        k = min(k, c)
+    while True:
+        ans = 0
+        for c in cnt.values():
+            if c // k < c % k:
+                ans = 0
+                break
+            ans += (c + k) // (k + 1)
+        if ans > 0:
+            return ans
+        k -= 1. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 5_0    done
+Translate python to java: def minimumSum(nums: List[int]) -> int:
+    n = len(nums)
+    suf = [0] * n
+    suf[-1] = nums[-1]
+    for i in range(n - 2, 1, -1):
+        suf[i] = min(suf[i + 1], nums[i])
+    ans = inf
+    pre = nums[0]
+    for j in range(1, n - 1):
+        if pre < nums[j] > suf[j + 1]:
+            ans = min(ans, pre + nums[j] + suf[j + 1])
+        pre = min(pre, nums[j])
+    return ans if ans < inf else -1. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 6_0    done
+Translate python to java: def constructProductMatrix(grid: List[List[int]]) -> List[List[int]]:
+    MOD = 12345
+    n, m = len(grid), len(grid[0])
+    p = [[0] * m for _ in range(n)]
+    suf = 1  
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            p[i][j] = suf  
+            suf = suf * grid[i][j] % MOD
+    pre = 1  
+    for i, row in enumerate(grid):
+        for j, x in enumerate(row):
+            p[i][j] = p[i][j] * pre % MOD  
+            pre = pre * x % MOD
+    return p. 
+- The input and return types of the translated function should be: {'paramsType': ['int[][]'], 'returnType': 'int[][]'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 7_0    done
+Translate python to java: def maximumOddBinaryNumber(s: str) -> str:
+    cnt1 = s.count('1')
+    return '1' * (cnt1 - 1) + '0' * (len(s) - cnt1) + '1'. 
+- The input and return types of the translated function should be: {'paramsType': ['String'], 'returnType': 'String'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 8_0    done
+Translate python to java: def shortestBeautifulSubstring(s: str, k: int) -> str:
+    if s.count('1') < k:
+        return ''
+    ans = s
+    cnt1 = left = 0
+    for right, c in enumerate(s):
+        cnt1 += int(c)
+        while cnt1 > k or s[left] == '0':
+            cnt1 -= int(s[left])
+            left += 1
+        if cnt1 == k:
+            t = s[left: right + 1]
+            if len(t) < len(ans) or len(t) == len(ans) and t < ans:
+                ans = t
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['String', 'int'], 'returnType': 'String'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 9_0    done
+Translate python to java: def addMinimum(s):
+    t = 1
+    for i in range(1, len(s)):
+        t += s[i - 1] >= s[i]
+    return t * 3 - len(s). 
+- The input and return types of the translated function should be: {'paramsType': ['String'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 10_0    done
+Translate python to java: def maxIncreasingGroups(usageLimits: List[int]) -> int:
+    ul = sorted(usageLimits)
+    remain = 0
+    require = 1
+    for num in ul:
+        remain += num
+        if remain >= require:
+            remain -= require 
+            require += 1 
+    return require - 1. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 11_0    done
+Translate python to java: def lastVisitedIntegers(words: List[str]) -> List[int]:
+    ans = []
+    nums = []
+    k = 0
+    for s in words:
+        if s[0] != 'p':  
+            nums.append(int(s))
+            k = 0
+        else:
+            k += 1
+            ans.append(-1 if k > len(nums) else nums[-k])  
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<String>'], 'returnType': 'List<Integer>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 12_0    done
+Translate python to java: def minOperations(s1, s2, x):
+    if s1 == s2:
+        return 0
+    p = [i for i in range(len(s1)) if s1[i] != s2[i]]
+    if len(p) % 2:
+        return -1
+    f0, f1 = 0, x
+    for i in range(1, len(p)):
+        new_f = min(f1 + x, f0 + (p[i] - p[i - 1]) * 2)
+        f0, f1 = f1, new_f
+    return f1 // 2. 
+- The input and return types of the translated function should be: {'paramsType': ['String', 'String', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 13_0    done
+Translate python to java: def minProcessingTime(processorTime: List[int], tasks: List[int]) -> int:
+        processorTime.sort()
+        tasks.sort(reverse=True)
+        return max(p + t for p, t in zip(processorTime, tasks[::4])). 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 14_0    done
+Translate python to java: def differenceOfSums(n: int, m: int) -> int:
+        return n * (n + 1) // 2 - n // m * (n // m + 1) * m. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 15_0    done
+Translate python to java: def minSizeSubarray(nums: List[int], target: int) -> int:
+    total = sum(nums)
+    n = len(nums)
+    ans = inf
+    left = s = 0
+    for right in range(n * 2):
+        s += nums[right % n]
+        while s > target % total:
+            s -= nums[left % n]
+            left += 1
+        if s == target % total:
+            ans = min(ans, right - left + 1)
+    return ans + target // total * n if ans < inf else -1. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 16_0    done
+Translate python to java: def maximumTripletValue(nums: List[int]) -> int:
+    n = len(nums)
+    suf_max = [0] * (n + 1)
+    for i in range(n - 1, 1, -1):
+        suf_max[i] = max(suf_max[i + 1], nums[i])
+    ans = pre_max = 0
+    for j, x in enumerate(nums):
+        ans = max(ans, (pre_max - x) * suf_max[j + 1])
+        pre_max = max(pre_max, x)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 17_0    done
+Translate python to java: def maximumTripletValue(nums: List[int]) -> int:
+    n = len(nums)
+    suf_max = [0] * (n + 1)
+    for i in range(n - 1, 1, -1):
+        suf_max[i] = max(suf_max[i + 1], nums[i])
+    ans = pre_max = 0
+    for j, x in enumerate(nums):
+        ans = max(ans, (pre_max - x) * suf_max[j + 1])
+        pre_max = max(pre_max, x)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 18_0    done
+Translate python to java: def maxSubarrays(nums: List[int]) -> int:
+    ans = 0
+    a = -1
+    for x in nums:
+        a &= x
+        if a == 0:
+            ans += 1 
+            a = -1
+    return max(ans, 1). 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 19_0    done
+Translate python to java: def minOperations(nums):
+    cnt = {}
+    for x in nums:
+        cnt[x] = cnt.get(x, 0) + 1
+    ans = 0
+    for c in cnt.values():
+        if c == 1:
+            return -1
+        ans += (c + 2) // 3
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 20_0    done
+Translate python to java: def minOperations(nums: List[int], k: int) -> int:
+    u = (2 << k) - 2  
+    s, n = 0, len(nums)
+    for i in range(n - 1, -1, -1):
+        s |= 1 << nums[i]
+        if (s & u) == u:
+            return n - i. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 21_0    done
+Translate python to java: def maxNumberOfAlloys(n: int, k: int, budget: int, composition: List[List[int]], stock: List[int], cost: List[int]) -> int:
+    ans = 0
+    mx = min(stock) + budget
+    for com in composition:
+        def check(num: int) -> int:
+            money = 0
+            for s, base, c in zip(stock, com, cost):
+                if s < base * num:
+                    money += (base * num - s) * c
+                    if money > budget:
+                        return False
+            return True
+        left, right = 0, mx + 1
+        while left + 1 < right:  
+            mid = (left + right) // 2
+            if check(mid):
+                left = mid
+            else:
+                right = mid
+        ans = max(ans, left)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int', 'int', 'List<List<Integer>>', 'List<Integer>', 'List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 22_0    done
+Translate python to java: def countWays(nums: List[int]) -> int:
+    nums.sort()
+    n = len(nums)
+    ans = nums[0] > 0  
+    for i, (x, y) in enumerate(pairwise(nums)):
+        if x < i + 1 < y:
+            ans += 1
+    return ans + 1. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 23_0    done
+Translate python to java: def sumIndicesWithKSetBits(nums, k):
+    ans = 0
+    for i in range(len(nums)):
+        if bin(i).count('1') == k:
+            ans += nums[i]
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 24_0    done
+Translate python to java: def countPairs(coordinates: List[List[int]], k: int) -> int:
+    ans = 0
+    cnt = Counter()
+    for x, y in coordinates:
+        for i in range(k + 1):
+            ans += cnt[x ^ i, y ^ (k - i)]  
+        cnt[x, y] += 1  
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<List<Integer>>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 25_0    done
+Translate python to java: def minimumRightShifts(nums: List[int]) -> int:
+    i, n = 1, len(nums)
+    while i < n and nums[i - 1] < nums[i]:
+        i += 1
+    if i == n:
+        return 0
+    if nums[0] < nums[-1]:
+        return -1
+    mid = i
+    i += 1
+    while i < n and nums[i - 1] < nums[i]:
+        i += 1
+    if i < n:
+        return -1
+    return n - mid. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 26_0    done
+Translate python to java: def minLengthAfterRemovals(nums):
+    maxCnt = cnt = 1
+    pre = nums[0]
+    n = len(nums)
+    for i in range(1, n):
+        if pre == nums[i]:
+            cnt += 1
+        else:
+            maxCnt = max(maxCnt, cnt)
+            pre = nums[i]
+            cnt = 1
+    maxCnt = max(maxCnt, cnt)
+    if maxCnt * 2 > n:
+        return maxCnt - (n - maxCnt)
+    else:
+        return 0 if n % 2 == 0 else 1. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 27_0    done
+Translate python to java: def numberOfPoints(nums):
+    diff = [0] * 102
+    for p in nums:
+        diff[p[0]] += 1
+        diff[p[1] + 1] -= 1
+    ans = s = 0
+    for d in diff:
+        s += d
+        ans += s > 0
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<List<Integer>>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 28_0    done
+Translate python to java: def isReachableAtTime(sx: int, sy: int, fx: int, fy: int, t: int) -> bool:
+    if sx == fx and sy == fy:
+        return t != 1
+    return max(abs(sx - fx), abs(sy - fy)) <= t. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int', 'int', 'int', 'int'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 29_0    done
+Translate python to java: def countInterestingSubarrays(nums, modulo, k):
+    n = len(nums)
+    ans = 0
+    preSum = [0] * (n + 1)
+    for i in range(n):
+        preSum[i+1] = preSum[i] + (1 if nums[i] % modulo == k else 0)
+    count_map = {}
+    for i in range(n + 1):
+        key = (preSum[i] % modulo - k + modulo) % modulo
+        if key in count_map:
+            ans += count_map[key]
+        count_map[preSum[i] % modulo] = count_map.get(preSum[i] % modulo, 0) + 1
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int', 'int'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 30_0    done
+Translate python to java: def minimumOperations(num):
+    len_num = len(num)
+    zero = len_num - 1 if "0" in num else len_num
+    return min(f("00", num), f("25", num), f("50", num), f("75", num), zero)
+def f(target, num):
+    try:
+        i = num.rfind(target[1])
+        if i < 0:
+            return len(num)
+        i = num[:i].rfind(target[0])
+        if i < 0:
+            return len(num)
+        return len(num) - i - 2
+    except IndexError:
+        return len(num). 
+- The input and return types of the translated function should be: {'paramsType': ['String'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 31_0    done
+Translate python to java: def countSymmetricIntegers(low, high):
+    ans = 0
+    for i in range(low, high + 1):
+        s = str(i)
+        n = len(s)
+        if n % 2 > 0:
+            continue
+        sum = 0
+        for j in range(n // 2):
+            sum += int(s[j])
+        for j in range(n // 2, n):
+            sum -= int(s[j])
+        if sum == 0:
+            ans += 1
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 32_0    done
+Translate python to java: def maxSum(nums: List[int], m: int, k: int) -> int:
+    ans = 0
+    s = sum(nums[:k - 1])  
+    cnt = Counter(nums[:k - 1])
+    for out, in_ in zip(nums, nums[k - 1:]):
+        s += in_  
+        cnt[in_] += 1
+        if len(cnt) >= m:
+            ans = max(ans, s)
+        s -= out  
+        cnt[out] -= 1
+        if cnt[out] == 0:
+            del cnt[out]
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int', 'int'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 33_0    done
+Translate python to java: def checkStrings(s1, s2):
+    cnt1 = [[0] * 26, [0] * 26]
+    cnt2 = [[0] * 26, [0] * 26]
+    for i in range(len(s1)):
+        cnt1[i % 2][ord(s1[i]) - ord('a')] += 1
+        cnt2[i % 2][ord(s2[i]) - ord('a')] += 1
+    return cnt1 == cnt2. 
+- The input and return types of the translated function should be: {'paramsType': ['String', 'String'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 34_0    done
+Translate python to java: def canBeEqual(s1, s2):
+    cnt1 = [[0] * 26 for _ in range(2)]
+    cnt2 = [[0] * 26 for _ in range(2)]
+    for i in range(len(s1)):
+        cnt1[i % 2][ord(s1[i]) - ord('a')] += 1
+        cnt2[i % 2][ord(s2[i]) - ord('a')] += 1
+    return cnt1 == cnt2. 
+- The input and return types of the translated function should be: {'paramsType': ['String', 'String'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 35_0    done
+Translate python to java: def furthestDistanceFromOrigin(moves):
+    cn = 0
+    ans = 0
+    for i in range(len(moves)):
+        if moves[i] == 'L':
+            ans -= 1
+        elif moves[i] == 'R':
+            ans += 1
+        else:
+            cn += 1
+    return abs(ans) + cn. 
+- The input and return types of the translated function should be: {'paramsType': ['String'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 36_0    done
+Translate python to java: def longestEqualSubarray(nums: List[int], k: int) -> int:
+    pos = [[] for _ in range(len(nums) + 1)]
+    for i, x in enumerate(nums):
+        pos[x].append(i - len(pos[x]))
+    ans = 0
+    for ps in pos:
+        if len(ps) <= ans: continue
+        left = 0
+        for right, p in enumerate(ps):
+            while p - ps[left] > k:  
+                left += 1
+            ans = max(ans, right - left + 1)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 37_0    done
+Translate python to java: def isAcronym(words, s):
+    if len(words) != len(s):
+        return False
+    for i in range(len(words)):
+        if words[i][0] != s[i]:
+            return False
+    return True. 
+- The input and return types of the translated function should be: {'paramsType': ['List<String>', 'String'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 38_0    done
+Translate python to java: def minimumSum(n: int, k: int) -> int:
+        m = min(k // 2, n)
+        return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) // 2. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 39_0    done
+Translate python to java: def minimumOperations(nums):
+    g = []
+    for x in nums:
+        j = upper_bound(g, x)
+        if j == len(g):
+            g.append(x)
+        else:
+            g[j] = x
+    return len(nums) - len(g)
+def upper_bound(g, target):
+    left, right = -1, len(g)
+    while left + 1 < right:
+        mid = (left + right) // 2
+        if g[mid] <= target:
+            left = mid
+        else:
+            right = mid
+    return right. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 40_0    done
+Translate python to java: def countPairs(nums: List[int], target: int) -> int:
+    nums.sort()
+    ans = left = 0
+    right = len(nums) - 1
+    while left < right:
+        if nums[left] + nums[right] < target:
+            ans += right - left
+            left += 1
+        else:
+            right -= 1
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 41_0    done
+Translate python to java: def minAbsoluteDifference(nums: List[int], x: int) -> int:
+    ans = float('inf') 
+    pre = [float('inf')] 
+    for i in range(len(nums)-x):
+        insort_left(pre, nums[i]) 
+        index = bisect_left(pre, nums[i+x])
+        tmp = min(abs(pre[index]-nums[i+x]) for index in (index, index-1))
+        ans = min(ans, tmp)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 42_0    done
+Translate python to java: def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:
+    if head.val > 4:
+        head = ListNode(0, head)
+    cur = head
+    while cur:
+        cur.val = cur.val * 2 % 10
+        if cur.next and cur.next.val > 4:
+            cur.val += 1
+        cur = cur.next
+    return head. 
+- The input and return types of the translated function should be: {'paramsType': ['ListNode'], 'returnType': 'ListNode'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 43_0    done
+Translate python to java: def maxSum(nums: List[int]) -> int:
+    ans = -1
+    max_val = [-inf] * 10
+    for v in nums:
+        max_d = max(map(int, str(v)))
+        ans = max(ans, v + max_val[max_d])
+        max_val[max_d] = max(max_val[max_d], v)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 44_0    done
+Translate python to java: def finalString(s: str) -> str:
+    q = deque()
+    tail = True
+    for c in s:
+        if c == 'i':
+            tail = not tail  
+        elif tail:  
+            q.append(c)
+        else:  
+            q.appendleft(c)
+    return ''.join(q if tail else reversed(q)). 
+- The input and return types of the translated function should be: {'paramsType': ['String'], 'returnType': 'String'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 45_0    done
+Translate python to java: def canSplitArray(nums, m):
+    n = len(nums)
+    if n <= 2: 
+        return True
+    for i in range(1, n):
+        if nums[i - 1] + nums[i] >= m:
+            return True
+    return False. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 46_0    done
+Translate python to java: def longestAlternatingSubarray(a: List[int], threshold: int) -> int:
+    ans, i, n = 0, 0, len(a)
+    while i < n:
+        if a[i] % 2 or a[i] > threshold:
+            i += 1
+        else:
+            i0 = i
+            i += 1
+            while i < n and a[i] <= threshold and a[i] % 2 != a[i - 1] % 2:
+                i += 1 
+            ans = max(ans, i - i0)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 47_0    done
+Translate python to java: def minimumSeconds(nums: List[int]) -> int:
+    pos = defaultdict(list)
+    for i, x in enumerate(nums):
+        pos[x].append(i)
+    ans = n = len(nums)
+    for a in pos.values():
+        a.append(a[0] + n)
+        mx = max((j - i) // 2 for i, j in pairwise(a))
+        ans = min(ans, mx)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 48_0    done
+Translate python to java: def numberOfEmployeesWhoMetTarget(hours: List[int], target: int) -> int:
+        ans = 0
+        for h in hours:
+                if h >= target:
+                        ans += 1
+        return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 49_0    done
+Translate python to java: def splitWordsBySeparator(words, separator):
+    ans = []
+    def func(str):
+        t = ""
+        for i in str:
+            if i == ' ':
+                continue
+            if i == separator:
+                if t:
+                    ans.append(t)
+                t = ""
+            else:
+                t += i
+        if t:
+            ans.append(t)
+
+    for i in words:
+        func(i)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['List<String>', 'char'], 'returnType': 'List<String>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 50_0    done
+Translate python to java: def miniMaxSum(a):
+    s = sum(a)
+    max_ = max(a)
+    min_ = min(a)
+    return [s - max_, s - min_]. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'List<Long>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 51_0    done
+Translate python to java: def pickingNumbers(a):
+    from collections import Counter
+    d = Counter(a)
+    best = 0
+    for i in range(99):
+        best = max(d[i] + d[i+1], best)
+    return best. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 52_0    done
+Translate python to java: def summingSeries(n):
+    return (n*n) % 1000000007. 
+- The input and return types of the translated function should be: {'paramsType': ['long'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 53_0    done
+Translate python to java: def matchingStrings(stringList, queries):
+    k = 0
+    arr = []
+    for i in queries:
+        for j in stringList:
+            if i == j:
+                k += 1
+        arr.append(k)
+        k = 0
+        
+    return [i for i in arr]. 
+- The input and return types of the translated function should be: {'paramsType': ['List<String>', 'List<String>'], 'returnType': 'List<Integer>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 54_0    done
+Translate python to java: def bsearch(arr, x):
+    low = 0
+    high = len(arr) - 1
+    mid = 0  # ranking
+    while low <= high:
+        mid = (high + low) // 2
+        if arr[mid] > x:
+            low = mid + 1
+        elif arr[mid] < x:
+            high = mid - 1
+        else:
+            return mid + 1
+    return low + 1
+def climbingLeaderboard(ranked, player):
+    from collections import OrderedDict
+    rank_nums = list(OrderedDict.fromkeys(ranked))
+    result = []
+    for score in player:
+        rank = bsearch(rank_nums, score)
+        result.append(rank)
+    return result. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'List<Integer>'], 'returnType': 'List<Integer>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 55_0    done
+Translate python to java: def arrayManipulation(n, queries):
+    arr = [0] * (n + 2)
+    max_val = 0
+    sum_val = 0
+    
+    for query in queries:
+        arr[query[0]] += query[2]
+        arr[query[1] + 1] -= query[2]
+    
+    for val in arr:
+        sum_val += val
+        max_val = max(max_val, sum_val)
+        
+    return max_val. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'List<List<Integer>>'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 56_0    done
+Translate python to java: def deleteNode(llist, position):
+    if not llist:
+        return 
+    if position == 0:
+        return llist.next
+    current = previous = llist
+    pointer = 1
+    while pointer < position+1:
+        previous = current
+        current = current.next
+        pointer += 1
+    previous.next = current.next
+    return llist. 
+- The input and return types of the translated function should be: {'paramsType': ['ListNode', 'int'], 'returnType': 'ListNode'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 57_0    done
+Translate python to java: def evaluateTree(root: Optional[TreeNode]) -> bool:
+    if root.left is None:
+        return bool(root.val)
+    l = evaluateTree(root.left)
+    r = evaluateTree(root.right)
+    return l or r if root.val == 2 else l and r. 
+- The input and return types of the translated function should be: {'paramsType': ['TreeNode'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 58_0    done
+Translate python to java: def andXorOr(a):
+    m = 0
+    s = []
+    for i in a:     
+        while s and s[-1] >= i:
+            m = max(m, i^s.pop())
+        if s:
+            m = max(m, i^s[-1])
+        s.append(i)
+    return m. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 59_0    done
+Translate python to java: def missingNumbers(arr, brr):
+    from collections import Counter
+    
+    mp = Counter(brr)
+    for num in arr:
+        mp[num] -= 1
+        
+    result = sorted([num for num, count in mp.items() if count > 0])
+    
+    return result. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'List<Integer>'], 'returnType': 'List<Integer>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 60_0    done
+Translate python to java: def maximumSum(a, m):
+    max_sum = 0
+    current_sum = 0
+    sorted_sums = [0] 
+    for value in a:
+        current_sum = (current_sum + value) % m
+        max_sum = max(max_sum, current_sum)
+        idx = bisect_right(sorted_sums, current_sum)
+        if idx < len(sorted_sums):
+            possible_max = (current_sum - sorted_sums[idx] + m) % m
+            max_sum = max(max_sum, possible_max)
+        insort(sorted_sums, current_sum)
+    return max_sum. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Long>', 'long'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 61_0    done
+Translate python to java: def formingMagicSquare(s):
+    magicSquares = [
+        [[8, 1, 6], [3, 5, 7], [4, 9, 2]],
+        [[6, 1, 8], [7, 5, 3], [2, 9, 4]],
+        [[4, 9, 2], [3, 5, 7], [8, 1, 6]],
+        [[2, 9, 4], [7, 5, 3], [6, 1, 8]],
+        [[8, 3, 4], [1, 5, 9], [6, 7, 2]],
+        [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
+        [[6, 7, 2], [1, 5, 9], [8, 3, 4]],
+        [[2, 7, 6], [9, 5, 1], [4, 3, 8]]
+    ]
+    minCost = 8*3
+    for magicSquare in magicSquares:
+        cost = 0
+        for i in range(3):
+            for j in range(3):
+                cost += abs(s[i][j] - magicSquare[i][j])
+        minCost = min(cost , minCost)
+    return minCost. 
+- The input and return types of the translated function should be: {'paramsType': ['List<List<Integer>>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 62_0    done
+Translate python to java: def isFibo(n):
+    start = 0
+    last = 1
+    while last <= n:
+        tmp = last + start
+        start = last
+        last = tmp
+        if last== n:
+            return "IsFibo"
+    return "IsNotFibo". 
+- The input and return types of the translated function should be: {'paramsType': ['long'], 'returnType': 'String'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 63_0    done
+Translate python to java: def solve(l, r):
+    from collections import deque
+    seen = set()
+    q = deque()
+    q.extend(range(10))
+    while q:
+        u = q.pop()
+        if len(str(u)) >= 20:
+            continue
+        if u in seen:
+            continue
+        seen.add(u)
+        length = len(str(u))
+        for k in range(length, length + 5):
+            if len(str(u * k)) == k:
+                q.append(u * k)
+    print(f'[{l}, {r}]: {sum(l <= s <= r for s in seen)}')
+    return sum(l <= s <= r for s in seen). 
+- The input and return types of the translated function should be: {'paramsType': ['long', 'long'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 64_0    done
+Translate python to java: def cavityMap(grid):
+    for k in range(1,len(grid)-1):
+        i = grid[k]
+        d = grid[k+1]
+        u = grid[k-1]
+        for j in range(1, len(grid)-1):
+            if (i[j-1] < i[j] > i[j+1]) and (d[j] <i[j] > u[j]):
+                x= list(grid[k])
+                x[j] = "X"
+                grid[k] = "".join(x)
+    return grid. 
+- The input and return types of the translated function should be: {'paramsType': ['List<String>'], 'returnType': 'List<String>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 65_0    done
+Translate python to java: def solve(a, b):
+    m = a
+    n = b
+    ans = min(((m-1)*n+(n-1)), ((n-1)*m+(m-1)))
+    return m*n - 1. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'long'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 66_0    done
+Translate python to java: def minimumLoss(price):
+    map_index = {p: i for i, p in enumerate(price)}
+    price.sort()
+    min_loss = float('inf')
+    for i in range(len(price) - 1):
+        current_loss = price[i+1] - price[i]
+        if current_loss < min_loss and map_index[price[i]] > map_index[price[i+1]]:
+            min_loss = current_loss
+    return int(min_loss). 
+- The input and return types of the translated function should be: {'paramsType': ['List<Long>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 67_0    done
+Translate python to java: def dayOfProgrammer(year):
+    if 1918==year:
+        return '26.09.1918'
+    leap_year = True
+    if year % 4 or year > 1918 and not year % 100 and year % 400:
+        leap_year = False
+    return '.'.join(['12' if leap_year else '13', '09', str(year)]). 
+- The input and return types of the translated function should be: {'paramsType': ['int'], 'returnType': 'String'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 68_0    done
+Translate python to java: def acmTeam(topic):
+    teamLen = len(topic)
+    topicLen = len(topic[0])
+    maxKnown = 0
+    maxTeams = 0
+    for i in range(teamLen):
+        t1 = topic[i]
+        for j in range(i + 1, teamLen):
+            know = 0
+            t2 = topic[j]
+            for k in range(topicLen):
+                if t1[k] == '1' or t2[k] == '1':
+                    know += 1
+            if know == maxKnown:
+                maxTeams += 1
+            elif know > maxKnown:
+                maxKnown = know
+                maxTeams = 1
+    return [maxKnown, maxTeams]. 
+- The input and return types of the translated function should be: {'paramsType': ['List<String>'], 'returnType': 'List<Integer>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 69_0    done
+Translate python to java: def timeInWords(h, m):
+    hour = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"]
+    minutes = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen",
+               "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", 
+               "twenty one", "twenty two", "twenty three", "twenty four", "twenty five", 
+               "twenty six", "twenty seven", "twenty eight", "twenty nine"]
+    if m == 0:
+        return hour[h - 1] + " o' clock"
+    elif m == 15:
+        return "quarter past " + hour[h - 1]
+    elif m == 30:
+        return "half past " + hour[h - 1]
+    elif m == 45:
+        return "quarter to " + hour[(h % 12)]
+    elif m == 1:
+        return minutes[m - 1] + " minute past " + hour[h - 1]
+    elif 0 < m < 30:
+        return minutes[m - 1] + " minutes past " + hour[h - 1]
+    else:
+        return minutes[60 - m - 1] + " minutes to " + hour[h % 12]. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'String'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 70_0    done
+Translate python to java: def collectTheCoins(coins: List[int], edges: List[List[int]]) -> int:
+    n = len(coins)
+    g = [[] for _ in range(n)]
+    for x, y in edges:
+        g[x].append(y)
+        g[y].append(x)  
+    deg = list(map(len, g))  
+    left_edges = n - 1      
+    q = []
+    for i, (d, c) in enumerate(zip(deg, coins)):
+        if d == 1 and c == 0:  
+            q.append(i)
+    while q:
+        left_edges -= 1  
+        for y in g[q.pop()]:
+            deg[y] -= 1
+            if deg[y] == 1 and coins[y] == 0:  
+                q.append(y)
+    for i, (d, c) in enumerate(zip(deg, coins)):
+        if d == 1 and c:  
+            q.append(i)
+    left_edges -= len(q)  
+    for x in q:  
+        for y in g[x]:
+            deg[y] -= 1
+            if deg[y] == 1:  
+                left_edges -= 1  
+    return max(left_edges * 2, 0). 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int[][]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 71_0    done
+Translate python to java: def matrixRotation(matrix, r):
+    l, br, bc = 0, len(matrix), len(matrix[0])
+    while l < min(br, bc) / 2:
+        rr = r % (2 * (br + bc - l * 4 - 2))
+        while (rr) != 0:
+            rr -= 1
+            buf = matrix[l][l]
+            for j in range(l, bc - l - 1):
+                matrix[l][j] = matrix[l][j + 1]
+            for i in range(l, br - l - 1):
+                matrix[i][bc - l - 1] = matrix[i + 1][bc - l - 1]
+            for j in range(bc - l - 1, l, -1):
+                matrix[br - l - 1][j] = matrix[br - l - 1][j - 1]
+            for i in range(br - l - 1, l + 1, -1):
+                matrix[i][l] = matrix[i - 1][l]
+            matrix[l + 1][l] = buf
+        l += 1
+    return matrix. 
+- The input and return types of the translated function should be: {'paramsType': ['List<List<Integer>>', 'int'], 'returnType': 'List<List<Integer>>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 72_0    done
+Translate python to java: def divisorSubstrings(num: int, k: int) -> int:
+    s = str(num)
+    n = len(s)
+    res = 0
+    for i in range(n - k + 1):
+        tmp = int(s[i:i+k])
+        if tmp != 0 and num % tmp == 0:
+            res += 1
+    return res. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 73_0    done
+Translate python to java: def solve(a):
+    result = []
+    cum = [0] * len(a)
+    cum[0] = a[0]
+    for i in range(1, len(a)):
+        cum[i] = cum[i-1] + a[i]
+    total = cum[-1]
+    for i in range(len(cum)):
+        if total % cum[i] == 0:
+            j = i + 1
+            segment_sum = 0
+            while j < len(a) and segment_sum < cum[i]:
+                segment_sum += a[j]
+                if segment_sum == cum[i]:
+                    segment_sum = 0
+                j += 1
+            if segment_sum == 0 and (j == len(a) or cum[i] == total):
+                result.append(cum[i])
+    return result. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>'], 'returnType': 'List<Integer>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 74_0    done
+Translate python to java: def maximumToys(prices, k):
+    prices = sorted(prices)
+    toys = 0
+    for i in prices:
+        if i <= k:
+            k = k - i
+            toys = toys + 1
+        else:
+            break
+    return toys. 
+- The input and return types of the translated function should be: {'paramsType': ['List<Integer>', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 75_0    done
+Translate python to java: def sumOfSquares(nums):
+    ans = 0
+    n = len(nums)
+    for i in range(1, n + 1):
+        if n % i == 0:
+            ans += nums[i - 1] ** 2
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 76_0    done
+Translate python to java: def checkArray(nums: List[int], k: int) -> bool:
+    n = len(nums)
+    d = [0] * (n + 1)
+    sum_d = 0
+    for i, x in enumerate(nums):
+        sum_d += d[i]
+        x += sum_d
+        if x == 0: continue  
+        if x < 0 or i + k > n: return False  
+        sum_d -= x  
+        d[i + k] += x
+    return True. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 77_0    done
+Translate python to java: def maxNonDecreasingLength(nums1, nums2):
+    n = len(nums1)
+    if n == 1:
+        return 1
+    dp = [[1] * 2 for _ in range(n)]
+    ans = 0
+    for i in range(1, n):
+        dp[i][0] = dp[i][1] = 1
+        if nums1[i] >= nums1[i - 1]:
+            dp[i][0] = max(dp[i][0], dp[i - 1][0] + 1)
+        if nums1[i] >= nums2[i - 1]:
+            dp[i][0] = max(dp[i][0], dp[i - 1][1] + 1)
+        if nums2[i] >= nums1[i - 1]:
+            dp[i][1] = max(dp[i][1], dp[i - 1][0] + 1)
+        if nums2[i] >= nums2[i - 1]:
+            dp[i][1] = max(dp[i][1], dp[i - 1][1] + 1)
+        ans = max(ans, max(dp[i][0], dp[i][1]))
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 78_0    done
+Translate python to java: def maximumJumps(nums: List[int], target: int) -> int:
+    n = len(nums)
+    f = [-inf] * n
+    f[0] = 0
+    for i in range(1, n):
+        for j in range(i):
+            if abs(nums[i] - nums[j]) <= target:
+                f[i] = max(f[i], f[j] + 1)
+    return -1 if f[-1] < 0 else f[-1]. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 79_0    done
+Translate python to java: def theMaximumAchievableX(num: int, t: int) -> int:
+        return num + t * 2. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 80_0    done
+Translate python to java: def countBlackBlocks(m, n, coordinates):
+    ans = [0] * 5
+    sum_blocks = (m - 1) * (n - 1)
+    st = set((x * n + y) for x, y in coordinates)
+    arr = [
+        [(0, -1), (-1, -1), (-1, 0)],
+        [(0, 1), (-1, 0), (-1, 1)],
+        [(0, -1), (1, 0), (1, -1)],
+        [(0, 1), (1, 0), (1, 1)]
+    ]
+    for x, y in coordinates:
+        for a in arr:
+            cnt = 1
+            for dx, dy in a:
+                nx, ny = x + dx, y + dy
+                if nx < 0 or ny < 0 or nx >= m or ny >= n:
+                    cnt = 0
+                    break
+                if (nx * n + ny) in st:
+                    cnt += 1
+            ans[cnt] += 1
+    for i in range(2, 5):
+        ans[i] //= i
+    ans[0] = sum_blocks - sum(ans[1:])
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int', 'int[][]'], 'returnType': 'long[]'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 81_0    done
+Translate python to java: def minimumBeautifulSubstrings(s):
+    if s[0] == '0':
+        return -1
+    beautiful_strings = {"1", "101", "11001", "1111101", "1001110001", "110000110101", "11110100001001"}
+    n = len(s)
+    f = [float('inf')] * (n + 10)
+    f[0] = 0
+    for i in range(n):
+        for j in range(i, n):
+            current_substring = s[i:j+1]
+            if current_substring in beautiful_strings:
+                f[j+1] = min(f[j+1], f[i] + 1)
+    if f[n] == float('inf'):
+        return -1
+    return f[n]. 
+- The input and return types of the translated function should be: {'paramsType': ['String'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 82_0    done
+Translate python to java: def gcdAndLcm(x: int, y: int) -> int:
+    n = x * y
+    ans = 0
+    for i in range(x,y+1):
+        if n % i == 0 and gcd(i, n // i) == x and lcm(i, n // i) == y:
+            ans += 1
+    return ans
+def gcd(x: int, y: int) -> int:
+    if x < y:
+        x, y = y, x
+    r = x % y  
+    while r != 0:
+        x = y
+        y = r
+        r = x % y
+    return y
+def lcm(x: int, y: int) -> int:
+    if x < y:
+        x, y = y, x
+    m = x
+    while x % y != 0:
+        x = x+m
+    return x. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 83_0    done
+Translate python to java: def findFirstPairExceedingSum(pairs: List[List[int]]) -> int:
+    max_sum = 0
+    day_index = 0
+    for i, pair in enumerate(pairs, start=1):
+        a = pair[0]
+        b = pair[1]
+        sum = a + b
+        if sum > 8 and sum > max_sum:
+            max_sum = sum
+            day_index = i
+    return day_index. 
+- The input and return types of the translated function should be: {'paramsType': ['List<List<Integer>>'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 84_0    done
+Translate python to java: def maximumValue(strs: List[str]) -> int:
+    res = 0
+    for s in strs:
+        is_digits = all(c.isdigit() for c in s)
+        res = max(res, int(s) if is_digits else len(s))
+    return res. 
+- The input and return types of the translated function should be: {'paramsType': ['String[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 85_0    done
+Translate python to java: def countBeautifulPairs(nums: List[int]) -> int:
+    ans, cnt = 0, [0] * 10
+    for x in nums:
+        for y in range(1, 10):
+            if cnt[y] and gcd(x % 10, y) == 1:
+                ans += cnt[y]
+        while x >= 10: x //= 10
+        cnt[x] += 1
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 86_0    done
+Translate python to java: def countServers(n: int, logs: List[List[int]], x: int, queries: List[int]) -> List[int]:
+    logs.sort(key=lambda p: p[1])  
+    ans = [0] * len(queries)
+    cnt = [0] * (n + 1)
+    out_of_range = n
+    left = right = 0
+    for qi, q in sorted(enumerate(queries), key=lambda p: p[1]):
+        while right < len(logs) and logs[right][1] <= q:  
+            i = logs[right][0]
+            if cnt[i] == 0: out_of_range -= 1
+            cnt[i] += 1
+            right += 1
+        while left < len(logs) and logs[left][1] < q - x:  
+            i = logs[left][0]
+            cnt[i] -= 1
+            if cnt[i] == 0: out_of_range += 1
+            left += 1
+        ans[qi] = out_of_range
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int[][]', 'int', 'int[]'], 'returnType': 'int[]'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 87_0    done
+Translate python to java: def isPossible(n: int, edges: List[List[int]]) -> bool:
+    g = defaultdict(set)
+    for x, y in edges:
+        g[x].add(y)
+        g[y].add(x)
+    odd = [i for i, nb in g.items() if len(nb) % 2]
+    m = len(odd)
+    if m == 0: return True
+    if m == 2:
+        x, y = odd
+        return x not in g[y] or any(
+            i != x and i != y and x not in g[i] and y not in g[i]
+            for i in range(1, n + 1))
+    if m == 4:
+        a, b, c, d = odd
+        return b not in g[a] and d not in g[c] or \
+                c not in g[a] and d not in g[b] or \
+                d not in g[a] and c not in g[b]
+    return False. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'List<List<Integer>>'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 88_0    done
+Translate python to java: def minExtraChar(s: str, dictionary: List[str]) -> int:
+    d = set(dictionary)
+    n = len(s)
+    f = [0] * (n + 1)
+    for i in range(n):
+        f[i + 1] = f[i] + 1  
+        for j in range(i + 1):  
+            if s[j:i + 1] in d:
+                f[i + 1] = min(f[i + 1], f[j])
+    return f[n]. 
+- The input and return types of the translated function should be: {'paramsType': ['String', 'String[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 89_0    done
+Translate python to java: def maximumPoints(edges: List[List[int]], coins: List[int], k: int) -> int:
+    g = [[] for _ in coins]
+    for x, y in edges:
+        g[x].append(y)
+        g[y].append(x)
+    return dfs(0, -1, g, coins, k)[0]
+def dfs(x: int, fa: int, g, coins, k) -> List[int]:
+    res1 = [0] * 14
+    res2 = [0] * 14
+    for y in g[x]:
+        if y == fa: continue
+        r = dfs(y, x, g, coins, k)
+        for j, v in enumerate(r):
+            res1[j] += v
+            if j < 13:
+                res2[j] += r[j + 1]
+    for j, (r1, r2) in enumerate(zip(res1, res2)):
+        res1[j] = max(r1 + (coins[x] >> j) - k, r2 + (coins[x] >> (j + 1)))
+    return res1. 
+- The input and return types of the translated function should be: {'paramsType': ['int[][]', 'int[]', 'int'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 90_0    done
+Translate python to java: def dfs(x: int, g: List[List[int]], vis: List[bool], counts: List[int]) -> None:
+    vis[x] = True
+    counts[0] += 1
+    counts[1] += len(g[x])
+    for y in g[x]:
+        if not vis[y]:
+            dfs(y, g, vis, counts)
+def countCompleteComponents(n: int, edges: List[List[int]]) -> int:
+    g = [[] for _ in range(n)]
+    for x, y in edges:
+        g[x].append(y)
+        g[y].append(x)
+    vis = [False] * n
+    ans = 0
+    for i in range(n):
+        if not vis[i]:
+            counts = [0, 0]
+            dfs(i, g, vis, counts)
+            v, e = counts
+            ans += e == v * (v - 1)
+    return ans. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int[][]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 91_0    done
+Translate python to java: def reach(x: int, y: int, grid: List[List[int]]) -> bool:
+    n, m = len(grid), len(grid[0])
+    if x == n - 1 and y == m - 1:
+        return True
+    grid[x][y] = 0
+    x1, y1 = x, y + 1
+    if y1 < m and grid[x1][y1] == 1:
+        ret = reach(x1, y1, grid)
+        if ret:
+            return ret
+    x2, y2 = x + 1, y
+    if x2 < n and grid[x2][y2] == 1:
+        return reach(x2, y2, grid)
+    return False
+def isPossibleToCutPath(grid: List[List[int]]) -> bool:
+    n, m = len(grid), len(grid[0])
+    if not reach(0, 0, grid):
+        return True
+    grid[0][0], grid[n - 1][m - 1] = 1, 1
+    if not reach(0, 0, grid):
+        return True
+    return False. 
+- The input and return types of the translated function should be: {'paramsType': ['int[][]'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 92_0    done
+Translate python to java: def validPath(n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+    adj = {i: [] for i in range(n)}
+    for x, y in edges:
+        adj[x].append(y)
+        adj[y].append(x)
+    visited = [False] * n
+    return dfs(source, destination, adj, visited)
+def dfs(source: int, destination: int, adj: dict, visited: List[bool]) -> bool:
+    if source == destination:
+        return True
+    visited[source] = True
+    for next in adj[source]:
+        if not visited[next] and dfs(next, destination, adj, visited):
+            return True
+    return False. 
+- The input and return types of the translated function should be: {'paramsType': ['int', 'int[][]', 'int', 'int'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 93_0    done
+Translate python to java: def dfs(head: ListNode, rt: TreeNode) -> bool:
+    if not head:
+        return True
+    if not rt:
+        return False
+    if rt.val != head.val:
+        return False
+    return dfs(head.next, rt.left) or dfs(head.next, rt.right)
+def isSubPath(head: ListNode, root: TreeNode) -> bool:
+    if not root:
+        return False
+    return dfs(head, root) or isSubPath(head, root.left) or isSubPath(head, root.right). 
+- The input and return types of the translated function should be: {'paramsType': ['ListNode', 'TreeNode'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 94_0    done
+Translate python to java: def inorder(node, res):
+    if node:
+        inorder(node.left, res)
+        res.append(node.val)
+        inorder(node.right, res)
+def getAllElements(root1, root2):
+    nums1, nums2 = [], []
+    inorder(root1, nums1)
+    inorder(root2, nums2)
+    merged = []
+    p1, p2 = 0, 0
+    while True:
+        if p1 == len(nums1):
+            merged.extend(nums2[p2:])
+            break
+        if p2 == len(nums2):
+            merged.extend(nums1[p1:])
+            break
+        if nums1[p1] < nums2[p2]:
+            merged.append(nums1[p1])
+            p1 += 1
+        else:
+            merged.append(nums2[p2])
+            p2 += 1
+    return merged. 
+- The input and return types of the translated function should be: {'paramsType': ['TreeNode', 'TreeNode'], 'returnType': 'List<Integer>'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 95_0    done
+Translate python to java: def maxLevelSum(root: Optional[TreeNode]) -> int:
+    sums = []
+    dfs(root, 0, sums)
+    return sums.index(max(sums)) + 1  
+def dfs(node: TreeNode, level: int, sums) -> None:
+    if level == len(sums):
+        sums.append(node.val)
+    else:
+        sums[level] += node.val
+    if node.left:
+        dfs(node.left, level + 1, sums)
+    if node.right:
+        dfs(node.right, level + 1, sums). 
+- The input and return types of the translated function should be: {'paramsType': ['TreeNode'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 96_0    done
+Translate python to java: def sumRootToLeaf(root: Optional[TreeNode]) -> int:
+    return dfs(root, 0)
+def dfs(node: Optional[TreeNode], val: int) -> int:
+    if node is None:
+        return 0
+    val = (val << 1) | node.val
+    if node.left is None and node.right is None:
+        return val
+    return dfs(node.left, val) + dfs(node.right, val). 
+- The input and return types of the translated function should be: {'paramsType': ['TreeNode'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 97_0    done
+Translate python to java: def dfs(root, fa, depth, t):
+    if root is None:
+        return [-1, -1]
+    if root.val == t:
+        return [fa.val if fa else -1, depth]
+    l = dfs(root.left, root, depth + 1, t)
+    if l[0] != -1:
+        return l
+    return dfs(root.right, root, depth + 1, t)
+def isCousins(root, x, y):
+    xi = dfs(root, None, 0, x)
+    yi = dfs(root, None, 0, y)
+    return xi[1] == yi[1] and xi[0] != yi[0]. 
+- The input and return types of the translated function should be: {'paramsType': ['TreeNode', 'int', 'int'], 'returnType': 'boolean'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 98_0    done
+Translate python to java: def longestSquareStreak(nums: List[int]) -> int:
+    ans, s = 0, set(nums)
+    for x in s:
+        cnt = 0
+        while x in s:
+            cnt += 1
+            x *= x
+        ans = max(ans, cnt)
+    return ans if ans > 1 else -1. 
+- The input and return types of the translated function should be: {'paramsType': ['int[]'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 99_0    done
+Translate python to java: def appendCharacters(s: str, t: str) -> int:
+    j, m = 0, len(t)
+    for c in s:
+        if c == t[j]:
+            j += 1
+            if j == m: return 0
+    return m - j. 
+- The input and return types of the translated function should be: {'paramsType': ['String', 'String'], 'returnType': 'int'}.
+- Support programming language version: {python: Python 3.10; java: OpenJDK 17; C++: C++ 20}
+- Do not return any textual content other than the translated function snippet.
+- And there is no need for any comments in the translated code.
+- Keep the translated function name [[unchanged]].
+- You should return translated code using the markdown code block syntax with target language specification.
+Task_id: 100_0    done

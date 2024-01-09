@@ -1,0 +1,4255 @@
+raw_prediction: ```cpp
+int findKOr(vector<int>& nums, int k) {
+    int ans = 0;
+    for (int i = 0; i < 31; ++i) {
+        int cnt1 = 0;
+        for (int x : nums) {
+            cnt1 += x >> i & 1;
+        }
+        if (cnt1 >= k) {
+            ans |= 1 << i;
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int findKOr(vector<int>& nums, int k) {
+    int ans = 0;
+    for (int i = 0; i < 31; ++i) {
+        int cnt1 = 0;
+        for (int x : nums) {
+            cnt1 += x >> i & 1;
+        }
+        if (cnt1 >= k) {
+            ans |= 1 << i;
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 1_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+long long minSum(std::vector<int>& nums1, std::vector<int>& nums2) {
+    long long s1 = 0;
+    bool zero1 = false;
+    for (int x : nums1) {
+        if (x == 0) {
+            zero1 = true;
+            s1 += 1;
+        } else {
+            s1 += x;
+        }
+    }
+    long long s2 = 0;
+    bool zero2 = false;
+    for (int x : nums2) {
+        if (x == 0) {
+            zero2 = true;
+            s2 += 1;
+        } else {
+            s2 += x;
+        }
+    }
+    if ((!zero1 && s1 < s2) || (!zero2 && s2 < s1)) {
+        return -1;
+    }
+    return std::max(s1, s2);
+}
+```
+
+
+result: long long minSum(std::vector<int>& nums1, std::vector<int>& nums2) {
+    long long s1 = 0;
+    bool zero1 = false;
+    for (int x : nums1) {
+        if (x == 0) {
+            zero1 = true;
+            s1 += 1;
+        } else {
+            s1 += x;
+        }
+    }
+    long long s2 = 0;
+    bool zero2 = false;
+    for (int x : nums2) {
+        if (x == 0) {
+            zero2 = true;
+            s2 += 1;
+        } else {
+            s2 += x;
+        }
+    }
+    if ((!zero1 && s1 < s2) || (!zero2 && s2 < s1)) {
+        return -1;
+    }
+    return std::max(s1, s2);
+}
+
+
+Task_id: 2_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <limits>
+
+int lengthOfLongestSubsequence(std::vector<int>& nums, int target) {
+    std::vector<int> f(target + 1, 0);
+    for (int i = 1; i <= target; ++i) {
+        f[i] = std::numeric_limits<int>::min();
+    }
+    int s = 0;
+    for (int x : nums) {
+        s = std::min(s + x, target);
+        for (int j = s; j >= x; --j) {
+            if (f[j] < f[j - x] + 1) {
+                f[j] = f[j - x] + 1;
+            }
+        }
+    }
+    return f.back() > 0 ? f.back() : -1;
+}
+```
+
+
+result: int lengthOfLongestSubsequence(std::vector<int>& nums, int target) {
+    std::vector<int> f(target + 1, 0);
+    for (int i = 1; i <= target; ++i) {
+        f[i] = std::numeric_limits<int>::min();
+    }
+    int s = 0;
+    for (int x : nums) {
+        s = std::min(s + x, target);
+        for (int j = s; j >= x; --j) {
+            if (f[j] < f[j - x] + 1) {
+                f[j] = f[j - x] + 1;
+            }
+        }
+    }
+    return f.back() > 0 ? f.back() : -1;
+}
+
+
+Task_id: 3_0    done
+raw_prediction: ```cpp
+int minChanges(string s) {
+    int ans = 0;
+    for (int i = 0; i < s.size(); i += 2) {
+        ans += (s[i] != s[i + 1]);
+    }
+    return ans;
+}
+```
+
+
+result: int minChanges(string s) {
+    int ans = 0;
+    for (int i = 0; i < s.size(); i += 2) {
+        ans += (s[i] != s[i + 1]);
+    }
+    return ans;
+}
+
+
+Task_id: 4_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
+
+int minGroupsForValidAssignment(std::vector<int>& nums) {
+    std::unordered_map<int, int> cnt;
+    for (int x : nums) {
+        cnt[x]++;
+    }
+    int k = nums.size();
+    for (auto& c : cnt) {
+        k = std::min(k, c.second);
+    }
+    while (true) {
+        int ans = 0;
+        for (auto& c : cnt) {
+            if (c.second / k < c.second % k) {
+                ans = 0;
+                break;
+            }
+            ans += (c.second + k) / (k + 1);
+        }
+        if (ans > 0) {
+            return ans;
+        }
+        k--;
+    }
+}
+```
+
+
+result: int minGroupsForValidAssignment(std::vector<int>& nums) {
+    std::unordered_map<int, int> cnt;
+    for (int x : nums) {
+        cnt[x]++;
+    }
+    int k = nums.size();
+    for (auto& c : cnt) {
+        k = std::min(k, c.second);
+    }
+    while (true) {
+        int ans = 0;
+        for (auto& c : cnt) {
+            if (c.second / k < c.second % k) {
+                ans = 0;
+                break;
+            }
+            ans += (c.second + k) / (k + 1);
+        }
+        if (ans > 0) {
+            return ans;
+        }
+        k--;
+    }
+}
+
+
+Task_id: 5_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <limits>
+
+int minimumSum(std::vector<int>& nums) {
+    int n = nums.size();
+    std::vector<int> suf(n);
+    suf[n - 1] = nums[n - 1];
+    for (int i = n - 2; i > 0; --i) {
+        suf[i] = std::min(suf[i + 1], nums[i]);
+    }
+    int ans = std::numeric_limits<int>::max();
+    int pre = nums[0];
+    for (int j = 1; j < n - 1; ++j) {
+        if (pre < nums[j] && nums[j] > suf[j + 1]) {
+            ans = std::min(ans, pre + nums[j] + suf[j + 1]);
+        }
+        pre = std::min(pre, nums[j]);
+    }
+    return ans < std::numeric_limits<int>::max() ? ans : -1;
+}
+```
+
+
+result: int minimumSum(std::vector<int>& nums) {
+    int n = nums.size();
+    std::vector<int> suf(n);
+    suf[n - 1] = nums[n - 1];
+    for (int i = n - 2; i > 0; --i) {
+        suf[i] = std::min(suf[i + 1], nums[i]);
+    }
+    int ans = std::numeric_limits<int>::max();
+    int pre = nums[0];
+    for (int j = 1; j < n - 1; ++j) {
+        if (pre < nums[j] && nums[j] > suf[j + 1]) {
+            ans = std::min(ans, pre + nums[j] + suf[j + 1]);
+        }
+        pre = std::min(pre, nums[j]);
+    }
+    return ans < std::numeric_limits<int>::max() ? ans : -1;
+}
+
+
+Task_id: 6_0    done
+raw_prediction: ```cpp
+#include <vector>
+
+using namespace std;
+
+vector<vector<int>> constructProductMatrix(vector<vector<int>>& grid) {
+    const int MOD = 12345;
+    int n = grid.size(), m = grid[0].size();
+    vector<vector<int>> p(n, vector<int>(m, 0));
+    int suf = 1;
+    for (int i = n - 1; i >= 0; --i) {
+        for (int j = m - 1; j >= 0; --j) {
+            p[i][j] = suf;
+            suf = suf * grid[i][j] % MOD;
+        }
+    }
+    int pre = 1;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            p[i][j] = p[i][j] * pre % MOD;
+            pre = pre * grid[i][j] % MOD;
+        }
+    }
+    return p;
+}
+```
+
+
+result: vector<vector<int>> constructProductMatrix(vector<vector<int>>& grid) {
+    const int MOD = 12345;
+    int n = grid.size(), m = grid[0].size();
+    vector<vector<int>> p(n, vector<int>(m, 0));
+    int suf = 1;
+    for (int i = n - 1; i >= 0; --i) {
+        for (int j = m - 1; j >= 0; --j) {
+            p[i][j] = suf;
+            suf = suf * grid[i][j] % MOD;
+        }
+    }
+    int pre = 1;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            p[i][j] = p[i][j] * pre % MOD;
+            pre = pre * grid[i][j] % MOD;
+        }
+    }
+    return p;
+}
+
+
+Task_id: 7_0    done
+raw_prediction: ```cpp
+#include <string>
+#include <algorithm>
+
+std::string maximumOddBinaryNumber(std::string s) {
+    int cnt1 = std::count(s.begin(), s.end(), '1');
+    return std::string(cnt1 - 1, '1') + std::string(s.length() - cnt1, '0') + '1';
+}
+```
+
+
+result: std::string maximumOddBinaryNumber(std::string s) {
+    int cnt1 = std::count(s.begin(), s.end(), '1');
+    return std::string(cnt1 - 1, '1') + std::string(s.length() - cnt1, '0') + '1';
+}
+
+
+Task_id: 8_0    done
+raw_prediction: ```cpp
+#include <string>
+using namespace std;
+
+string shortestBeautifulSubstring(string s, int k) {
+    if (count(s.begin(), s.end(), '1') < k) {
+        return "";
+    }
+    string ans = s;
+    int cnt1 = 0, left = 0;
+    for (int right = 0; right < s.size(); right++) {
+        cnt1 += s[right] - '0';
+        while (cnt1 > k || s[left] == '0') {
+            cnt1 -= s[left] - '0';
+            left++;
+        }
+        if (cnt1 == k) {
+            string t = s.substr(left, right - left + 1);
+            if (t.size() < ans.size() || (t.size() == ans.size() && t < ans)) {
+                ans = t;
+            }
+        }
+    }
+    return ans;
+}
+```
+
+
+result: string shortestBeautifulSubstring(string s, int k) {
+    if (count(s.begin(), s.end(), '1') < k) {
+        return "";
+    }
+    string ans = s;
+    int cnt1 = 0, left = 0;
+    for (int right = 0; right < s.size(); right++) {
+        cnt1 += s[right] - '0';
+        while (cnt1 > k || s[left] == '0') {
+            cnt1 -= s[left] - '0';
+            left++;
+        }
+        if (cnt1 == k) {
+            string t = s.substr(left, right - left + 1);
+            if (t.size() < ans.size() || (t.size() == ans.size() && t < ans)) {
+                ans = t;
+            }
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 9_0    done
+raw_prediction: ```cpp
+int addMinimum(string s) {
+    int t = 1;
+    for (int i = 1; i < s.length(); i++) {
+        t += s[i - 1] >= s[i];
+    }
+    return t * 3 - s.length();
+}
+```
+
+
+result: int addMinimum(string s) {
+    int t = 1;
+    for (int i = 1; i < s.length(); i++) {
+        t += s[i - 1] >= s[i];
+    }
+    return t * 3 - s.length();
+}
+
+
+Task_id: 10_0    done
+raw_prediction: ```cpp
+int maxIncreasingGroups(vector<int>& usageLimits) {
+    sort(usageLimits.begin(), usageLimits.end());
+    int remain = 0;
+    int require = 1;
+    for (int num : usageLimits) {
+        remain += num;
+        if (remain >= require) {
+            remain -= require;
+            require += 1;
+        }
+    }
+    return require - 1;
+}
+```
+
+
+result: int maxIncreasingGroups(vector<int>& usageLimits) {
+    sort(usageLimits.begin(), usageLimits.end());
+    int remain = 0;
+    int require = 1;
+    for (int num : usageLimits) {
+        remain += num;
+        if (remain >= require) {
+            remain -= require;
+            require += 1;
+        }
+    }
+    return require - 1;
+}
+
+
+Task_id: 11_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+
+std::vector<int> lastVisitedIntegers(std::vector<std::string> words) {
+    std::vector<int> ans;
+    std::vector<int> nums;
+    int k = 0;
+    for (const auto& s : words) {
+        if (s[0] != 'p') {
+            nums.push_back(std::stoi(s));
+            k = 0;
+        } else {
+            k++;
+            ans.push_back((k > nums.size()) ? -1 : nums[nums.size() - k]);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: std::vector<int> lastVisitedIntegers(std::vector<std::string> words) {
+    std::vector<int> ans;
+    std::vector<int> nums;
+    int k = 0;
+    for (const auto& s : words) {
+        if (s[0] != 'p') {
+            nums.push_back(std::stoi(s));
+            k = 0;
+        } else {
+            k++;
+            ans.push_back((k > nums.size()) ? -1 : nums[nums.size() - k]);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 12_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+#include <algorithm>
+
+int minOperations(std::string s1, std::string s2, int x) {
+    if (s1 == s2) {
+        return 0;
+    }
+    std::vector<int> p;
+    for (int i = 0; i < s1.size(); ++i) {
+        if (s1[i] != s2[i]) {
+            p.push_back(i);
+        }
+    }
+    if (p.size() % 2) {
+        return -1;
+    }
+    int f0 = 0, f1 = x;
+    for (int i = 1; i < p.size(); ++i) {
+        int new_f = std::min(f1 + x, f0 + (p[i] - p[i - 1]) * 2);
+        f0 = f1;
+        f1 = new_f;
+    }
+    return f1 / 2;
+}
+```
+
+
+result: int minOperations(std::string s1, std::string s2, int x) {
+    if (s1 == s2) {
+        return 0;
+    }
+    std::vector<int> p;
+    for (int i = 0; i < s1.size(); ++i) {
+        if (s1[i] != s2[i]) {
+            p.push_back(i);
+        }
+    }
+    if (p.size() % 2) {
+        return -1;
+    }
+    int f0 = 0, f1 = x;
+    for (int i = 1; i < p.size(); ++i) {
+        int new_f = std::min(f1 + x, f0 + (p[i] - p[i - 1]) * 2);
+        f0 = f1;
+        f1 = new_f;
+    }
+    return f1 / 2;
+}
+
+
+Task_id: 13_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+#include <numeric>
+
+int minProcessingTime(std::vector<int>& processorTime, std::vector<int>& tasks) {
+    std::sort(processorTime.begin(), processorTime.end());
+    std::sort(tasks.begin(), tasks.end(), std::greater<int>());
+    auto result = std::accumulate(processorTime.begin(), processorTime.end(), 0,
+        [&tasks](int sum, int p) {
+            return sum > p + tasks[std::distance(processorTime.begin(), &p) * 4 / processorTime.size()] ? 
+                sum : p + tasks[std::distance(processorTime.begin(), &p) * 4 / processorTime.size()];
+        }
+    );
+    return result;
+}
+```
+Note: The C++ version of the code uses `std::accumulate` to iterate over `processorTime` and `tasks` simultaneously, and applies a lambda function to calculate the maximum value of `p + t` for every 4th element in `tasks`. The lambda function uses `std::distance` to calculate the index of the current element in `processorTime`, and then multiplies it by `4 / processorTime.size()` to achieve the same effect as `tasks[::4]` in Python.
+
+
+result: int minProcessingTime(std::vector<int>& processorTime, std::vector<int>& tasks) {
+    std::sort(processorTime.begin(), processorTime.end());
+    std::sort(tasks.begin(), tasks.end(), std::greater<int>());
+    auto result = std::accumulate(processorTime.begin(), processorTime.end(), 0,
+        [&tasks](int sum, int p) {
+            return sum > p + tasks[std::distance(processorTime.begin(), &p) * 4 / processorTime.size()] ? 
+                sum : p + tasks[std::distance(processorTime.begin(), &p) * 4 / processorTime.size()];
+        }
+    );
+    return result;
+}
+
+
+Task_id: 14_0    done
+raw_prediction: ```cpp
+int differenceOfSums(int n, int m) {
+    return n * (n + 1) / 2 - n / m * (n / m + 1) * m;
+}
+```
+
+
+result: int differenceOfSums(int n, int m) {
+    return n * (n + 1) / 2 - n / m * (n / m + 1) * m;
+}
+
+
+Task_id: 15_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <limits>
+
+int minSizeSubarray(std::vector<int>& nums, int target) {
+    int total = 0;
+    for (int num : nums) {
+        total += num;
+    }
+    int n = nums.size();
+    int ans = std::numeric_limits<int>::max();
+    int left = 0, s = 0;
+    for (int right = 0; right < n * 2; ++right) {
+        s += nums[right % n];
+        while (s > target % total) {
+            s -= nums[left % n];
+            ++left;
+        }
+        if (s == target % total) {
+            ans = std::min(ans, right - left + 1);
+        }
+    }
+    return ans < std::numeric_limits<int>::max() ? ans + target / total * n : -1;
+}
+```
+
+
+result: int minSizeSubarray(std::vector<int>& nums, int target) {
+    int total = 0;
+    for (int num : nums) {
+        total += num;
+    }
+    int n = nums.size();
+    int ans = std::numeric_limits<int>::max();
+    int left = 0, s = 0;
+    for (int right = 0; right < n * 2; ++right) {
+        s += nums[right % n];
+        while (s > target % total) {
+            s -= nums[left % n];
+            ++left;
+        }
+        if (s == target % total) {
+            ans = std::min(ans, right - left + 1);
+        }
+    }
+    return ans < std::numeric_limits<int>::max() ? ans + target / total * n : -1;
+}
+
+
+Task_id: 16_0    done
+raw_prediction: ```cpp
+long long maximumTripletValue(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> suf_max(n + 1, 0);
+    for (int i = n - 1; i > 0; --i) {
+        suf_max[i] = max(suf_max[i + 1], nums[i]);
+    }
+    long long ans = 0, pre_max = 0;
+    for (int j = 0; j < n; ++j) {
+        ans = max(ans, static_cast<long long>(pre_max - nums[j]) * suf_max[j + 1]);
+        pre_max = max(pre_max, nums[j]);
+    }
+    return ans;
+}
+```
+
+
+result: long long maximumTripletValue(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> suf_max(n + 1, 0);
+    for (int i = n - 1; i > 0; --i) {
+        suf_max[i] = max(suf_max[i + 1], nums[i]);
+    }
+    long long ans = 0, pre_max = 0;
+    for (int j = 0; j < n; ++j) {
+        ans = max(ans, static_cast<long long>(pre_max - nums[j]) * suf_max[j + 1]);
+        pre_max = max(pre_max, nums[j]);
+    }
+    return ans;
+}
+
+
+Task_id: 17_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+long long maximumTripletValue(std::vector<int>& nums) {
+    int n = nums.size();
+    std::vector<int> suf_max(n + 1, 0);
+    for (int i = n - 1; i > 0; --i) {
+        suf_max[i] = std::max(suf_max[i + 1], nums[i]);
+    }
+    long long ans = 0, pre_max = 0;
+    for (int j = 0; j < n; ++j) {
+        ans = std::max(ans, static_cast<long long>(pre_max - nums[j]) * suf_max[j + 1]);
+        pre_max = std::max(pre_max, nums[j]);
+    }
+    return ans;
+}
+```
+
+
+result: long long maximumTripletValue(std::vector<int>& nums) {
+    int n = nums.size();
+    std::vector<int> suf_max(n + 1, 0);
+    for (int i = n - 1; i > 0; --i) {
+        suf_max[i] = std::max(suf_max[i + 1], nums[i]);
+    }
+    long long ans = 0, pre_max = 0;
+    for (int j = 0; j < n; ++j) {
+        ans = std::max(ans, static_cast<long long>(pre_max - nums[j]) * suf_max[j + 1]);
+        pre_max = std::max(pre_max, nums[j]);
+    }
+    return ans;
+}
+
+
+Task_id: 18_0    done
+raw_prediction: ```cpp
+int maxSubarrays(vector<int>& nums) {
+    int ans = 0;
+    int a = -1;
+    for (int x : nums) {
+        a &= x;
+        if (a == 0) {
+            ans += 1;
+            a = -1;
+        }
+    }
+    return max(ans, 1);
+}
+```
+
+
+result: int maxSubarrays(vector<int>& nums) {
+    int ans = 0;
+    int a = -1;
+    for (int x : nums) {
+        a &= x;
+        if (a == 0) {
+            ans += 1;
+            a = -1;
+        }
+    }
+    return max(ans, 1);
+}
+
+
+Task_id: 19_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+
+int minOperations(std::vector<int>& nums) {
+    std::unordered_map<int, int> cnt;
+    for (int x : nums) {
+        cnt[x]++;
+    }
+    int ans = 0;
+    for (auto& c : cnt) {
+        if (c.second == 1) {
+            return -1;
+        }
+        ans += (c.second + 2) / 3;
+    }
+    return ans;
+}
+```
+
+
+result: int minOperations(std::vector<int>& nums) {
+    std::unordered_map<int, int> cnt;
+    for (int x : nums) {
+        cnt[x]++;
+    }
+    int ans = 0;
+    for (auto& c : cnt) {
+        if (c.second == 1) {
+            return -1;
+        }
+        ans += (c.second + 2) / 3;
+    }
+    return ans;
+}
+
+
+Task_id: 20_0    done
+raw_prediction: ```cpp
+int minOperations(vector<int>& nums, int k) {
+    int u = (2 << k) - 2;  
+    int s = 0, n = nums.size();
+    for (int i = n - 1; i >= 0; --i) {
+        s |= 1 << nums[i];
+        if ((s & u) == u) {
+            return n - i;
+        }
+    }
+    return -1; // or throw an exception, or handle this case as appropriate for your application
+}
+```
+
+
+result: int minOperations(vector<int>& nums, int k) {
+    int u = (2 << k) - 2;  
+    int s = 0, n = nums.size();
+    for (int i = n - 1; i >= 0; --i) {
+        s |= 1 << nums[i];
+        if ((s & u) == u) {
+            return n - i;
+        }
+    }
+    return -1; // or throw an exception, or handle this case as appropriate for your application
+}
+
+
+Task_id: 21_0    done
+raw_prediction: ```cpp
+int maxNumberOfAlloys(int n, int k, int budget, vector<vector<int>>& composition, vector<int>& stock, vector<int>& cost) {
+    int ans = 0;
+    int mx = *min_element(stock.begin(), stock.end()) + budget;
+    for (auto& com : composition) {
+        auto check = [&](int num) -> bool {
+            int money = 0;
+            for (auto& [s, base, c] : zip(stock, com, cost)) {
+                if (s < base * num) {
+                    money += (base * num - s) * c;
+                    if (money > budget) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        };
+        int left = 0, right = mx + 1;
+        while (left + 1 < right) {
+            int mid = (left + right) / 2;
+            if (check(mid)) {
+                left = mid;
+            } else {
+                right = mid;
+            }
+        }
+        ans = max(ans, left);
+    }
+    return ans;
+}
+```
+Note: The `zip` function used in the Python code is not available in C++, so you will need to include a separate implementation of it or use an equivalent approach to iterate over multiple containers simultaneously.
+
+
+result: int maxNumberOfAlloys(int n, int k, int budget, vector<vector<int>>& composition, vector<int>& stock, vector<int>& cost) {
+    int ans = 0;
+    int mx = *min_element(stock.begin(), stock.end()) + budget;
+    for (auto& com : composition) {
+        auto check = [&](int num) -> bool {
+            int money = 0;
+            for (auto& [s, base, c] : zip(stock, com, cost)) {
+                if (s < base * num) {
+                    money += (base * num - s) * c;
+                    if (money > budget) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        };
+        int left = 0, right = mx + 1;
+        while (left + 1 < right) {
+            int mid = (left + right) / 2;
+            if (check(mid)) {
+                left = mid;
+            } else {
+                right = mid;
+            }
+        }
+        ans = max(ans, left);
+    }
+    return ans;
+}
+
+
+Task_id: 22_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+int countWays(std::vector<int>& nums) {
+    std::sort(nums.begin(), nums.end());
+    int n = nums.size();
+    int ans = nums[0] > 0;
+    for (int i = 0; i < n - 1; ++i) {
+        if (nums[i] < i + 1 && i + 1 < nums[i + 1]) {
+            ans += 1;
+        }
+    }
+    return ans + 1;
+}
+```
+
+
+result: int countWays(std::vector<int>& nums) {
+    std::sort(nums.begin(), nums.end());
+    int n = nums.size();
+    int ans = nums[0] > 0;
+    for (int i = 0; i < n - 1; ++i) {
+        if (nums[i] < i + 1 && i + 1 < nums[i + 1]) {
+            ans += 1;
+        }
+    }
+    return ans + 1;
+}
+
+
+Task_id: 23_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <bitset>
+
+int sumIndicesWithKSetBits(std::vector<int>& nums, int k) {
+    int ans = 0;
+    for (int i = 0; i < nums.size(); ++i) {
+        if (std::bitset<32>(i).count() == k) {
+            ans += nums[i];
+        }
+    }
+    return ans;
+}
+```
+Note: In the C++ version, I used `std::bitset<32>(i).count()` to count the number of set bits in the binary representation of `i`. The number `32` is used to specify the size of the bitset, which should be large enough to hold the binary representation of any index `i` in the input vector.
+
+
+result: int sumIndicesWithKSetBits(std::vector<int>& nums, int k) {
+    int ans = 0;
+    for (int i = 0; i < nums.size(); ++i) {
+        if (std::bitset<32>(i).count() == k) {
+            ans += nums[i];
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 24_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+
+using namespace std;
+
+int countPairs(vector<vector<int>>& coordinates, int k) {
+    int ans = 0;
+    unordered_map<pair<int, int>, int> cnt;
+    for (auto& p : coordinates) {
+        int x = p[0], y = p[1];
+        for (int i = 0; i <= k; ++i) {
+            ans += cnt[{x ^ i, y ^ (k - i)}];
+        }
+        cnt[{x, y}]++;
+    }
+    return ans;
+}
+```
+
+
+result: int countPairs(vector<vector<int>>& coordinates, int k) {
+    int ans = 0;
+    unordered_map<pair<int, int>, int> cnt;
+    for (auto& p : coordinates) {
+        int x = p[0], y = p[1];
+        for (int i = 0; i <= k; ++i) {
+            ans += cnt[{x ^ i, y ^ (k - i)}];
+        }
+        cnt[{x, y}]++;
+    }
+    return ans;
+}
+
+
+Task_id: 25_0    done
+raw_prediction: ```cpp
+int minimumRightShifts(vector<int>& nums) {
+    int i = 1, n = nums.size();
+    while (i < n && nums[i - 1] < nums[i]) {
+        i++;
+    }
+    if (i == n) {
+        return 0;
+    }
+    if (nums[0] < nums[n - 1]) {
+        return -1;
+    }
+    int mid = i;
+    i++;
+    while (i < n && nums[i - 1] < nums[i]) {
+        i++;
+    }
+    if (i < n) {
+        return -1;
+    }
+    return n - mid;
+}
+```
+
+
+result: int minimumRightShifts(vector<int>& nums) {
+    int i = 1, n = nums.size();
+    while (i < n && nums[i - 1] < nums[i]) {
+        i++;
+    }
+    if (i == n) {
+        return 0;
+    }
+    if (nums[0] < nums[n - 1]) {
+        return -1;
+    }
+    int mid = i;
+    i++;
+    while (i < n && nums[i - 1] < nums[i]) {
+        i++;
+    }
+    if (i < n) {
+        return -1;
+    }
+    return n - mid;
+}
+
+
+Task_id: 26_0    done
+raw_prediction: ```cpp
+int minLengthAfterRemovals(vector<int>& nums) {
+    int maxCnt = cnt = 1;
+    int pre = nums[0];
+    int n = nums.size();
+    for (int i = 1; i < n; ++i) {
+        if (pre == nums[i]) {
+            ++cnt;
+        } else {
+            maxCnt = max(maxCnt, cnt);
+            pre = nums[i];
+            cnt = 1;
+        }
+    }
+    maxCnt = max(maxCnt, cnt);
+    if (maxCnt * 2 > n) {
+        return maxCnt - (n - maxCnt);
+    } else {
+        return n % 2 == 0 ? 0 : 1;
+    }
+}
+```
+
+
+result: int minLengthAfterRemovals(vector<int>& nums) {
+    int maxCnt = cnt = 1;
+    int pre = nums[0];
+    int n = nums.size();
+    for (int i = 1; i < n; ++i) {
+        if (pre == nums[i]) {
+            ++cnt;
+        } else {
+            maxCnt = max(maxCnt, cnt);
+            pre = nums[i];
+            cnt = 1;
+        }
+    }
+    maxCnt = max(maxCnt, cnt);
+    if (maxCnt * 2 > n) {
+        return maxCnt - (n - maxCnt);
+    } else {
+        return n % 2 == 0 ? 0 : 1;
+    }
+}
+
+
+Task_id: 27_0    done
+raw_prediction: ```cpp
+int numberOfPoints(vector<vector<int>>& nums) {
+    vector<int> diff(102, 0);
+    for (auto& p : nums) {
+        diff[p[0]] += 1;
+        diff[p[1] + 1] -= 1;
+    }
+    int ans = 0, s = 0;
+    for (auto& d : diff) {
+        s += d;
+        ans += s > 0;
+    }
+    return ans;
+}
+```
+
+
+result: int numberOfPoints(vector<vector<int>>& nums) {
+    vector<int> diff(102, 0);
+    for (auto& p : nums) {
+        diff[p[0]] += 1;
+        diff[p[1] + 1] -= 1;
+    }
+    int ans = 0, s = 0;
+    for (auto& d : diff) {
+        s += d;
+        ans += s > 0;
+    }
+    return ans;
+}
+
+
+Task_id: 28_0    done
+raw_prediction: ```cpp
+bool isReachableAtTime(int sx, int sy, int fx, int fy, int t) {
+    if (sx == fx && sy == fy) {
+        return t != 1;
+    }
+    return std::max(std::abs(sx - fx), std::abs(sy - fy)) <= t;
+}
+```
+
+
+result: bool isReachableAtTime(int sx, int sy, int fx, int fy, int t) {
+    if (sx == fx && sy == fy) {
+        return t != 1;
+    }
+    return std::max(std::abs(sx - fx), std::abs(sy - fy)) <= t;
+}
+
+
+Task_id: 29_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+
+using namespace std;
+
+long long countInterestingSubarrays(vector<int>& nums, int modulo, int k) {
+    int n = nums.size();
+    long long ans = 0;
+    vector<int> preSum(n + 1, 0);
+    for (int i = 0; i < n; i++) {
+        preSum[i + 1] = preSum[i] + (nums[i] % modulo == k ? 1 : 0);
+    }
+    unordered_map<int, int> count_map;
+    for (int i = 0; i <= n; i++) {
+        int key = (preSum[i] % modulo - k + modulo) % modulo;
+        if (count_map.find(key) != count_map.end()) {
+            ans += count_map[key];
+        }
+        count_map[preSum[i] % modulo]++;
+    }
+    return ans;
+}
+```
+
+
+result: long long countInterestingSubarrays(vector<int>& nums, int modulo, int k) {
+    int n = nums.size();
+    long long ans = 0;
+    vector<int> preSum(n + 1, 0);
+    for (int i = 0; i < n; i++) {
+        preSum[i + 1] = preSum[i] + (nums[i] % modulo == k ? 1 : 0);
+    }
+    unordered_map<int, int> count_map;
+    for (int i = 0; i <= n; i++) {
+        int key = (preSum[i] % modulo - k + modulo) % modulo;
+        if (count_map.find(key) != count_map.end()) {
+            ans += count_map[key];
+        }
+        count_map[preSum[i] % modulo]++;
+    }
+    return ans;
+}
+
+
+Task_id: 30_0    done
+raw_prediction: ```cpp
+#include <string>
+#include <algorithm>
+
+int minimumOperations(std::string num) {
+    int len_num = num.length();
+    int zero = std::count(num.begin(), num.end(), '0') ? len_num - 1 : len_num;
+    return std::min({f("00", num), f("25", num), f("50", num), f("75", num), zero});
+}
+
+int f(std::string target, std::string num) {
+    auto i = num.rfind(target[1]);
+    if (i == std::string::npos) {
+        return num.length();
+    }
+    i = num.substr(0, i).rfind(target[0]);
+    if (i == std::string::npos) {
+        return num.length();
+    }
+    return num.length() - i - 2;
+}
+```
+
+
+result: int minimumOperations(std::string num) {
+    int len_num = num.length();
+    int zero = std::count(num.begin(), num.end(), '0') ? len_num - 1 : len_num;
+    return std::min({f("00", num), f("25", num), f("50", num), f("75", num), zero});
+}
+
+int f(std::string target, std::string num) {
+    auto i = num.rfind(target[1]);
+    if (i == std::string::npos) {
+        return num.length();
+    }
+    i = num.substr(0, i).rfind(target[0]);
+    if (i == std::string::npos) {
+        return num.length();
+    }
+    return num.length() - i - 2;
+}
+
+
+Task_id: 31_0    done
+raw_prediction: ```cpp
+int countSymmetricIntegers(int low, int high) {
+    int ans = 0;
+    for (int i = low; i <= high; i++) {
+        std::string s = std::to_string(i);
+        int n = s.length();
+        if (n % 2 > 0) {
+            continue;
+        }
+        int sum = 0;
+        for (int j = 0; j < n / 2; j++) {
+            sum += s[j] - '0';
+        }
+        for (int j = n / 2; j < n; j++) {
+            sum -= s[j] - '0';
+        }
+        if (sum == 0) {
+            ans++;
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int countSymmetricIntegers(int low, int high) {
+    int ans = 0;
+    for (int i = low; i <= high; i++) {
+        std::string s = std::to_string(i);
+        int n = s.length();
+        if (n % 2 > 0) {
+            continue;
+        }
+        int sum = 0;
+        for (int j = 0; j < n / 2; j++) {
+            sum += s[j] - '0';
+        }
+        for (int j = n / 2; j < n; j++) {
+            sum -= s[j] - '0';
+        }
+        if (sum == 0) {
+            ans++;
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 32_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+
+long long maxSum(std::vector<int>& nums, int m, int k) {
+    long long ans = 0;
+    long long s = 0;
+    for (int i = 0; i < k - 1; ++i) {
+        s += nums[i];
+    }
+    std::unordered_map<int, int> cnt;
+    for (int i = 0; i < k - 1; ++i) {
+        cnt[nums[i]]++;
+    }
+    for (int i = 0; i < nums.size() - k + 1; ++i) {
+        s += nums[i + k - 1];
+        cnt[nums[i + k - 1]]++;
+        if (cnt.size() >= m) {
+            ans = std::max(ans, s);
+        }
+        s -= nums[i];
+        cnt[nums[i]]--;
+        if (cnt[nums[i]] == 0) {
+            cnt.erase(nums[i]);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: long long maxSum(std::vector<int>& nums, int m, int k) {
+    long long ans = 0;
+    long long s = 0;
+    for (int i = 0; i < k - 1; ++i) {
+        s += nums[i];
+    }
+    std::unordered_map<int, int> cnt;
+    for (int i = 0; i < k - 1; ++i) {
+        cnt[nums[i]]++;
+    }
+    for (int i = 0; i < nums.size() - k + 1; ++i) {
+        s += nums[i + k - 1];
+        cnt[nums[i + k - 1]]++;
+        if (cnt.size() >= m) {
+            ans = std::max(ans, s);
+        }
+        s -= nums[i];
+        cnt[nums[i]]--;
+        if (cnt[nums[i]] == 0) {
+            cnt.erase(nums[i]);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 33_0    done
+raw_prediction: ```cpp
+#include <string>
+#include <vector>
+
+bool checkStrings(std::string s1, std::string s2) {
+    std::vector<std::vector<int>> cnt1(2, std::vector<int>(26, 0));
+    std::vector<std::vector<int>> cnt2(2, std::vector<int>(26, 0));
+
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1[i] - 'a'] += 1;
+        cnt2[i % 2][s2[i] - 'a'] += 1;
+    }
+
+    return cnt1 == cnt2;
+}
+```
+
+
+result: bool checkStrings(std::string s1, std::string s2) {
+    std::vector<std::vector<int>> cnt1(2, std::vector<int>(26, 0));
+    std::vector<std::vector<int>> cnt2(2, std::vector<int>(26, 0));
+
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1[i] - 'a'] += 1;
+        cnt2[i % 2][s2[i] - 'a'] += 1;
+    }
+
+    return cnt1 == cnt2;
+}
+
+
+Task_id: 34_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+
+bool canBeEqual(std::string s1, std::string s2) {
+    std::vector<std::vector<int>> cnt1(2, std::vector<int>(26, 0));
+    std::vector<std::vector<int>> cnt2(2, std::vector<int>(26, 0));
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1[i] - 'a'] += 1;
+        cnt2[i % 2][s2[i] - 'a'] += 1;
+    }
+    return cnt1 == cnt2;
+}
+```
+
+
+result: bool canBeEqual(std::string s1, std::string s2) {
+    std::vector<std::vector<int>> cnt1(2, std::vector<int>(26, 0));
+    std::vector<std::vector<int>> cnt2(2, std::vector<int>(26, 0));
+    for (int i = 0; i < s1.length(); i++) {
+        cnt1[i % 2][s1[i] - 'a'] += 1;
+        cnt2[i % 2][s2[i] - 'a'] += 1;
+    }
+    return cnt1 == cnt2;
+}
+
+
+Task_id: 35_0    done
+raw_prediction: ```cpp
+int furthestDistanceFromOrigin(string moves) {
+    int cn = 0;
+    int ans = 0;
+    for (int i = 0; i < moves.size(); i++) {
+        if (moves[i] == 'L') {
+            ans -= 1;
+        } else if (moves[i] == 'R') {
+            ans += 1;
+        } else {
+            cn += 1;
+        }
+    }
+    return abs(ans) + cn;
+}
+```
+
+
+result: int furthestDistanceFromOrigin(string moves) {
+    int cn = 0;
+    int ans = 0;
+    for (int i = 0; i < moves.size(); i++) {
+        if (moves[i] == 'L') {
+            ans -= 1;
+        } else if (moves[i] == 'R') {
+            ans += 1;
+        } else {
+            cn += 1;
+        }
+    }
+    return abs(ans) + cn;
+}
+
+
+Task_id: 36_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+int longestEqualSubarray(std::vector<int>& nums, int k) {
+    std::vector<std::vector<int>> pos(nums.size() + 1);
+    for (int i = 0; i < nums.size(); ++i) {
+        pos[nums[i]].push_back(i - pos[nums[i]].size());
+    }
+    int ans = 0;
+    for (auto& ps : pos) {
+        if (ps.size() <= ans) continue;
+        int left = 0;
+        for (int right = 0; right < ps.size(); ++right) {
+            while (ps[right] - ps[left] > k) {
+                ++left;
+            }
+            ans = std::max(ans, right - left + 1);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int longestEqualSubarray(std::vector<int>& nums, int k) {
+    std::vector<std::vector<int>> pos(nums.size() + 1);
+    for (int i = 0; i < nums.size(); ++i) {
+        pos[nums[i]].push_back(i - pos[nums[i]].size());
+    }
+    int ans = 0;
+    for (auto& ps : pos) {
+        if (ps.size() <= ans) continue;
+        int left = 0;
+        for (int right = 0; right < ps.size(); ++right) {
+            while (ps[right] - ps[left] > k) {
+                ++left;
+            }
+            ans = std::max(ans, right - left + 1);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 37_0    done
+raw_prediction: ```cpp
+bool isAcronym(vector<string> words, string s) {
+    if (words.size() != s.size()) {
+        return false;
+    }
+    for (int i = 0; i < words.size(); i++) {
+        if (words[i][0] != s[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+
+result: bool isAcronym(vector<string> words, string s) {
+    if (words.size() != s.size()) {
+        return false;
+    }
+    for (int i = 0; i < words.size(); i++) {
+        if (words[i][0] != s[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+Task_id: 38_0    done
+raw_prediction: ```cpp
+int minimumSum(int n, int k) {
+    int m = std::min(k / 2, n);
+    return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) / 2;
+}
+```
+
+
+result: int minimumSum(int n, int k) {
+    int m = std::min(k / 2, n);
+    return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) / 2;
+}
+
+
+Task_id: 39_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+int minimumOperations(std::vector<int>& nums) {
+    std::vector<int> g;
+    for (int x : nums) {
+        auto j = std::upper_bound(g.begin(), g.end(), x);
+        if (j == g.end()) {
+            g.push_back(x);
+        } else {
+            *j = x;
+        }
+    }
+    return nums.size() - g.size();
+}
+```
+Note: The `std::upper_bound` function in C++ returns an iterator pointing to the first element in the range `[first, last)` that is greater than the value `x`. If no such element is found, the function returns `last`.
+
+
+result: int minimumOperations(std::vector<int>& nums) {
+    std::vector<int> g;
+    for (int x : nums) {
+        auto j = std::upper_bound(g.begin(), g.end(), x);
+        if (j == g.end()) {
+            g.push_back(x);
+        } else {
+            *j = x;
+        }
+    }
+    return nums.size() - g.size();
+}
+
+
+Task_id: 40_0    done
+raw_prediction: ```cpp
+int countPairs(vector<int>& nums, int target) {
+    sort(nums.begin(), nums.end());
+    int ans = 0, left = 0, right = nums.size() - 1;
+    while (left < right) {
+        if (nums[left] + nums[right] < target) {
+            ans += right - left;
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int countPairs(vector<int>& nums, int target) {
+    sort(nums.begin(), nums.end());
+    int ans = 0, left = 0, right = nums.size() - 1;
+    while (left < right) {
+        if (nums[left] + nums[right] < target) {
+            ans += right - left;
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 41_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+int minAbsoluteDifference(std::vector<int>& nums, int x) {
+    int ans = INT_MAX;
+    std::vector<int> pre(nums.size(), INT_MAX);
+    for (int i = 0; i < nums.size() - x; ++i) {
+        auto it = std::lower_bound(pre.begin(), pre.end(), nums[i]);
+        *it = nums[i];
+        it = std::lower_bound(pre.begin(), pre.end(), nums[i+x]);
+        int index = it - pre.begin();
+        int tmp = std::min(std::abs(*it - nums[i+x]), index > 0 ? std::abs(pre[index-1] - nums[i+x]) : INT_MAX);
+        ans = std::min(ans, tmp);
+    }
+    return ans;
+}
+```
+
+
+result: int minAbsoluteDifference(std::vector<int>& nums, int x) {
+    int ans = INT_MAX;
+    std::vector<int> pre(nums.size(), INT_MAX);
+    for (int i = 0; i < nums.size() - x; ++i) {
+        auto it = std::lower_bound(pre.begin(), pre.end(), nums[i]);
+        *it = nums[i];
+        it = std::lower_bound(pre.begin(), pre.end(), nums[i+x]);
+        int index = it - pre.begin();
+        int tmp = std::min(std::abs(*it - nums[i+x]), index > 0 ? std::abs(pre[index-1] - nums[i+x]) : INT_MAX);
+        ans = std::min(ans, tmp);
+    }
+    return ans;
+}
+
+
+Task_id: 42_0    done
+raw_prediction: ```cpp
+ListNode* doubleIt(ListNode* head) {
+    if (head->val > 4) {
+        head = new ListNode(0, head);
+    }
+    ListNode* cur = head;
+    while (cur) {
+        cur->val = cur->val * 2 % 10;
+        if (cur->next && cur->next->val > 4) {
+            cur->val += 1;
+        }
+        cur = cur->next;
+    }
+    return head;
+}
+```
+
+
+result: ListNode* doubleIt(ListNode* head) {
+    if (head->val > 4) {
+        head = new ListNode(0, head);
+    }
+    ListNode* cur = head;
+    while (cur) {
+        cur->val = cur->val * 2 % 10;
+        if (cur->next && cur->next->val > 4) {
+            cur->val += 1;
+        }
+        cur = cur->next;
+    }
+    return head;
+}
+
+
+Task_id: 43_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+#include <limits>
+
+int maxSum(std::vector<int>& nums) {
+    int ans = -1;
+    std::vector<int> max_val(10, std::numeric_limits<int>::min());
+    for (int v : nums) {
+        int max_d = *std::max_element(std::to_string(v).begin(), std::to_string(v).end()) - '0';
+        ans = std::max(ans, v + max_val[max_d]);
+        max_val[max_d] = std::max(max_val[max_d], v);
+    }
+    return ans;
+}
+```
+
+
+result: int maxSum(std::vector<int>& nums) {
+    int ans = -1;
+    std::vector<int> max_val(10, std::numeric_limits<int>::min());
+    for (int v : nums) {
+        int max_d = *std::max_element(std::to_string(v).begin(), std::to_string(v).end()) - '0';
+        ans = std::max(ans, v + max_val[max_d]);
+        max_val[max_d] = std::max(max_val[max_d], v);
+    }
+    return ans;
+}
+
+
+Task_id: 44_0    done
+raw_prediction: ```cpp
+#include <string>
+#include <deque>
+
+std::string finalString(std::string s) {
+    std::deque<char> q;
+    bool tail = true;
+    for (char c : s) {
+        if (c == 'i') {
+            tail = !tail;
+        } else if (tail) {
+            q.push_back(c);
+        } else {
+            q.push_front(c);
+        }
+    }
+    std::string result(q.begin(), q.end());
+    if (!tail) {
+        std::reverse(result.begin(), result.end());
+    }
+    return result;
+}
+```
+
+
+result: std::string finalString(std::string s) {
+    std::deque<char> q;
+    bool tail = true;
+    for (char c : s) {
+        if (c == 'i') {
+            tail = !tail;
+        } else if (tail) {
+            q.push_back(c);
+        } else {
+            q.push_front(c);
+        }
+    }
+    std::string result(q.begin(), q.end());
+    if (!tail) {
+        std::reverse(result.begin(), result.end());
+    }
+    return result;
+}
+
+
+Task_id: 45_0    done
+raw_prediction: ```cpp
+bool canSplitArray(vector<int> nums, int m) {
+    int n = nums.size();
+    if (n <= 2) {
+        return true;
+    }
+    for (int i = 1; i < n; i++) {
+        if (nums[i - 1] + nums[i] >= m) {
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+
+result: bool canSplitArray(vector<int> nums, int m) {
+    int n = nums.size();
+    if (n <= 2) {
+        return true;
+    }
+    for (int i = 1; i < n; i++) {
+        if (nums[i - 1] + nums[i] >= m) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+Task_id: 46_0    done
+raw_prediction: ```cpp
+int longestAlternatingSubarray(vector<int>& a, int threshold) {
+    int ans = 0, i = 0, n = a.size();
+    while (i < n) {
+        if (a[i] % 2 || a[i] > threshold) {
+            i += 1;
+        } else {
+            int i0 = i;
+            i += 1;
+            while (i < n && a[i] <= threshold && a[i] % 2 != a[i - 1] % 2) {
+                i += 1;
+            }
+            ans = max(ans, i - i0);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int longestAlternatingSubarray(vector<int>& a, int threshold) {
+    int ans = 0, i = 0, n = a.size();
+    while (i < n) {
+        if (a[i] % 2 || a[i] > threshold) {
+            i += 1;
+        } else {
+            int i0 = i;
+            i += 1;
+            while (i < n && a[i] <= threshold && a[i] % 2 != a[i - 1] % 2) {
+                i += 1;
+            }
+            ans = max(ans, i - i0);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 47_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
+using namespace std;
+
+int minimumSeconds(vector<int>& nums) {
+    unordered_map<int, vector<int>> pos;
+    for (int i = 0; i < nums.size(); ++i) {
+        pos[nums[i]].push_back(i);
+    }
+    int ans = nums.size();
+    for (auto& a : pos) {
+        a.second.push_back(a.second[0] + nums.size());
+        int mx = 0;
+        for (int i = 1; i < a.second.size(); ++i) {
+            mx = max(mx, (a.second[i] - a.second[i-1]) / 2);
+        }
+        ans = min(ans, mx);
+    }
+    return ans;
+}
+```
+
+
+result: int minimumSeconds(vector<int>& nums) {
+    unordered_map<int, vector<int>> pos;
+    for (int i = 0; i < nums.size(); ++i) {
+        pos[nums[i]].push_back(i);
+    }
+    int ans = nums.size();
+    for (auto& a : pos) {
+        a.second.push_back(a.second[0] + nums.size());
+        int mx = 0;
+        for (int i = 1; i < a.second.size(); ++i) {
+            mx = max(mx, (a.second[i] - a.second[i-1]) / 2);
+        }
+        ans = min(ans, mx);
+    }
+    return ans;
+}
+
+
+Task_id: 48_0    done
+raw_prediction: ```cpp
+int numberOfEmployeesWhoMetTarget(vector<int> hours, int target) {
+    int ans = 0;
+    for (int h : hours) {
+        if (h >= target) {
+            ans += 1;
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int numberOfEmployeesWhoMetTarget(vector<int> hours, int target) {
+    int ans = 0;
+    for (int h : hours) {
+        if (h >= target) {
+            ans += 1;
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 49_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+
+std::vector<std::string> splitWordsBySeparator(std::vector<std::string> words, char separator) {
+    std::vector<std::string> ans;
+    for (const auto& word : words) {
+        std::string t;
+        for (char c : word) {
+            if (c == ' ') {
+                continue;
+            }
+            if (c == separator) {
+                if (!t.empty()) {
+                    ans.push_back(t);
+                    t.clear();
+                }
+            } else {
+                t += c;
+            }
+        }
+        if (!t.empty()) {
+            ans.push_back(t);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: std::vector<std::string> splitWordsBySeparator(std::vector<std::string> words, char separator) {
+    std::vector<std::string> ans;
+    for (const auto& word : words) {
+        std::string t;
+        for (char c : word) {
+            if (c == ' ') {
+                continue;
+            }
+            if (c == separator) {
+                if (!t.empty()) {
+                    ans.push_back(t);
+                    t.clear();
+                }
+            } else {
+                t += c;
+            }
+        }
+        if (!t.empty()) {
+            ans.push_back(t);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 50_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+#include <numeric>
+
+std::vector<long> miniMaxSum(std::vector<int>& a) {
+    long s = std::accumulate(a.begin(), a.end(), 0L);
+    auto max_ = *std::max_element(a.begin(), a.end());
+    auto min_ = *std::min_element(a.begin(), a.end());
+    return {s - max_, s - min_};
+}
+```
+
+
+result: std::vector<long> miniMaxSum(std::vector<int>& a) {
+    long s = std::accumulate(a.begin(), a.end(), 0L);
+    auto max_ = *std::max_element(a.begin(), a.end());
+    auto min_ = *std::min_element(a.begin(), a.end());
+    return {s - max_, s - min_};
+}
+
+
+Task_id: 51_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
+
+int pickingNumbers(std::vector<int>& a) {
+    std::unordered_map<int, int> d;
+    for (int num : a) {
+        d[num]++;
+    }
+
+    int best = 0;
+    for (int i = 0; i < 99; i++) {
+        best = std::max(d[i] + d[i+1], best);
+    }
+    return best;
+}
+```
+
+
+result: int pickingNumbers(std::vector<int>& a) {
+    std::unordered_map<int, int> d;
+    for (int num : a) {
+        d[num]++;
+    }
+
+    int best = 0;
+    for (int i = 0; i < 99; i++) {
+        best = std::max(d[i] + d[i+1], best);
+    }
+    return best;
+}
+
+
+Task_id: 52_0    done
+raw_prediction: ```cpp
+int summingSeries(long long n) {
+    return static_cast<int>((n * n) % 1000000007);
+}
+```
+
+
+result: int summingSeries(long long n) {
+    return static_cast<int>((n * n) % 1000000007);
+}
+
+
+Task_id: 53_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+
+std::vector<int> matchingStrings(std::vector<std::string> stringList, std::vector<std::string> queries) {
+    int k = 0;
+    std::vector<int> arr;
+    for (const auto& i : queries) {
+        for (const auto& j : stringList) {
+            if (i == j) {
+                k++;
+            }
+        }
+        arr.push_back(k);
+        k = 0;
+    }
+    return arr;
+}
+```
+
+
+result: std::vector<int> matchingStrings(std::vector<std::string> stringList, std::vector<std::string> queries) {
+    int k = 0;
+    std::vector<int> arr;
+    for (const auto& i : queries) {
+        for (const auto& j : stringList) {
+            if (i == j) {
+                k++;
+            }
+        }
+        arr.push_back(k);
+        k = 0;
+    }
+    return arr;
+}
+
+
+Task_id: 54_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <set>
+
+using namespace std;
+
+int bsearch(vector<int>& arr, int x) {
+    int low = 0;
+    int high = arr.size() - 1;
+    int mid = 0;  // ranking
+    while (low <= high) {
+        mid = (high + low) / 2;
+        if (arr[mid] > x) {
+            low = mid + 1;
+        } else if (arr[mid] < x) {
+            high = mid - 1;
+        } else {
+            return mid + 1;
+        }
+    }
+    return low + 1;
+}
+
+vector<int> climbingLeaderboard(vector<int>& ranked, vector<int>& player) {
+    set<int> rank_nums(ranked.begin(), ranked.end());
+    vector<int> result;
+    for (int score : player) {
+        int rank = bsearch(vector<int>(rank_nums.begin(), rank_nums.end()), score);
+        result.push_back(rank);
+    }
+    return result;
+}
+```
+
+
+result: vector<int> climbingLeaderboard(vector<int>& ranked, vector<int>& player) {
+    set<int> rank_nums(ranked.begin(), ranked.end());
+    vector<int> result;
+    for (int score : player) {
+        int rank = bsearch(vector<int>(rank_nums.begin(), rank_nums.end()), score);
+        result.push_back(rank);
+    }
+    return result;
+}
+
+int bsearch(vector<int>& arr, int x) {
+    int low = 0;
+    int high = arr.size() - 1;
+    int mid = 0;  // ranking
+    while (low <= high) {
+        mid = (high + low) / 2;
+        if (arr[mid] > x) {
+            low = mid + 1;
+        } else if (arr[mid] < x) {
+            high = mid - 1;
+        } else {
+            return mid + 1;
+        }
+    }
+    return low + 1;
+}
+
+
+Task_id: 55_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+long long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
+    std::vector<long long> arr(n + 2, 0);
+    long long max_val = 0;
+    long long sum_val = 0;
+
+    for (const auto& query : queries) {
+        arr[query[0]] += query[2];
+        arr[query[1] + 1] -= query[2];
+    }
+
+    for (const auto& val : arr) {
+        sum_val += val;
+        max_val = std::max(max_val, sum_val);
+    }
+
+    return max_val;
+}
+```
+
+
+result: long long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
+    std::vector<long long> arr(n + 2, 0);
+    long long max_val = 0;
+    long long sum_val = 0;
+
+    for (const auto& query : queries) {
+        arr[query[0]] += query[2];
+        arr[query[1] + 1] -= query[2];
+    }
+
+    for (const auto& val : arr) {
+        sum_val += val;
+        max_val = std::max(max_val, sum_val);
+    }
+
+    return max_val;
+}
+
+
+Task_id: 56_0    done
+raw_prediction: ```cpp
+ListNode* deleteNode(ListNode* llist, int position) {
+    if (!llist) {
+        return nullptr;
+    }
+    if (position == 0) {
+        return llist->next;
+    }
+    ListNode* current = llist;
+    ListNode* previous = nullptr;
+    int pointer = 1;
+    while (pointer < position + 1) {
+        previous = current;
+        current = current->next;
+        pointer++;
+    }
+    previous->next = current->next;
+    return llist;
+}
+```
+
+
+result: ListNode* deleteNode(ListNode* llist, int position) {
+    if (!llist) {
+        return nullptr;
+    }
+    if (position == 0) {
+        return llist->next;
+    }
+    ListNode* current = llist;
+    ListNode* previous = nullptr;
+    int pointer = 1;
+    while (pointer < position + 1) {
+        previous = current;
+        current = current->next;
+        pointer++;
+    }
+    previous->next = current->next;
+    return llist;
+}
+
+
+Task_id: 57_0    done
+raw_prediction: ```cpp
+bool evaluateTree(TreeNode* root) {
+    if (root->left == nullptr) {
+        return bool(root->val);
+    }
+    bool l = evaluateTree(root->left);
+    bool r = evaluateTree(root->right);
+    return (root->val == 2) ? (l || r) : (l && r);
+}
+```
+
+
+result: bool evaluateTree(TreeNode* root) {
+    if (root->left == nullptr) {
+        return bool(root->val);
+    }
+    bool l = evaluateTree(root->left);
+    bool r = evaluateTree(root->right);
+    return (root->val == 2) ? (l || r) : (l && r);
+}
+
+
+Task_id: 58_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <stack>
+#include <algorithm>
+
+int andXorOr(std::vector<int>& a) {
+    int m = 0;
+    std::stack<int> s;
+    for (int i : a) {
+        while (!s.empty() && s.top() >= i) {
+            m = std::max(m, i ^ s.top());
+            s.pop();
+        }
+        if (!s.empty()) {
+            m = std::max(m, i ^ s.top());
+        }
+        s.push(i);
+    }
+    return m;
+}
+```
+
+
+result: int andXorOr(std::vector<int>& a) {
+    int m = 0;
+    std::stack<int> s;
+    for (int i : a) {
+        while (!s.empty() && s.top() >= i) {
+            m = std::max(m, i ^ s.top());
+            s.pop();
+        }
+        if (!s.empty()) {
+            m = std::max(m, i ^ s.top());
+        }
+        s.push(i);
+    }
+    return m;
+}
+
+
+Task_id: 59_0    done
+raw_prediction: Here's the translation of the given Python function `missingNumbers` to C++:
+
+
+```cpp
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
+
+std::vector<int> missingNumbers(std::vector<int>& arr, std::vector<int>& brr) {
+    std::unordered_map<int, int> mp;
+    for (int num : brr) {
+        mp[num]++;
+    }
+    for (int num : arr) {
+        mp[num]--;
+    }
+
+    std::vector<int> result;
+    for (auto& pair : mp) {
+        if (pair.second > 0) {
+            result.push_back(pair.first);
+        }
+    }
+    std::sort(result.begin(), result.end());
+
+    return result;
+}
+```
+The translated function takes two input vectors `arr` and `brr` of type `vector<int>` and returns a `vector<int>` containing the sorted list of missing numbers. The function utilizes an `unordered_map` to count the occurrences of numbers in `brr` and then subtracts the count for each number in `arr`. The resulting map contains the missing numbers with their respective counts. Finally, the function constructs a `vector` from the map entries with counts greater than zero and sorts it before returning.
+
+
+result: std::vector<int> missingNumbers(std::vector<int>& arr, std::vector<int>& brr) {
+    std::unordered_map<int, int> mp;
+    for (int num : brr) {
+        mp[num]++;
+    }
+    for (int num : arr) {
+        mp[num]--;
+    }
+
+    std::vector<int> result;
+    for (auto& pair : mp) {
+        if (pair.second > 0) {
+            result.push_back(pair.first);
+        }
+    }
+    std::sort(result.begin(), result.end());
+
+    return result;
+}
+
+
+Task_id: 60_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+long maximumSum(std::vector<long> a, long m) {
+    long max_sum = 0;
+    long current_sum = 0;
+    std::vector<long> sorted_sums = {0};
+    for (long value : a) {
+        current_sum = (current_sum + value) % m;
+        max_sum = std::max(max_sum, current_sum);
+        auto idx = std::upper_bound(sorted_sums.begin(), sorted_sums.end(), current_sum) - sorted_sums.begin();
+        if (idx < sorted_sums.size()) {
+            long possible_max = (current_sum - sorted_sums[idx] + m) % m;
+            max_sum = std::max(max_sum, possible_max);
+        }
+        sorted_sums.insert(sorted_sums.begin() + idx, current_sum);
+    }
+    return max_sum;
+}
+```
+
+
+result: long maximumSum(std::vector<long> a, long m) {
+    long max_sum = 0;
+    long current_sum = 0;
+    std::vector<long> sorted_sums = {0};
+    for (long value : a) {
+        current_sum = (current_sum + value) % m;
+        max_sum = std::max(max_sum, current_sum);
+        auto idx = std::upper_bound(sorted_sums.begin(), sorted_sums.end(), current_sum) - sorted_sums.begin();
+        if (idx < sorted_sums.size()) {
+            long possible_max = (current_sum - sorted_sums[idx] + m) % m;
+            max_sum = std::max(max_sum, possible_max);
+        }
+        sorted_sums.insert(sorted_sums.begin() + idx, current_sum);
+    }
+    return max_sum;
+}
+
+
+Task_id: 61_0    done
+raw_prediction: ```cpp
+int formingMagicSquare(vector<vector<int>>& s) {
+    vector<vector<vector<int>>> magicSquares = {
+        {{8, 1, 6}, {3, 5, 7}, {4, 9, 2}},
+        {{6, 1, 8}, {7, 5, 3}, {2, 9, 4}},
+        {{4, 9, 2}, {3, 5, 7}, {8, 1, 6}},
+        {{2, 9, 4}, {7, 5, 3}, {6, 1, 8}},
+        {{8, 3, 4}, {1, 5, 9}, {6, 7, 2}},
+        {{4, 3, 8}, {9, 5, 1}, {2, 7, 6}},
+        {{6, 7, 2}, {1, 5, 9}, {8, 3, 4}},
+        {{2, 7, 6}, {9, 5, 1}, {4, 3, 8}}
+    };
+    int minCost = 8 * 3;
+    for (auto& magicSquare : magicSquares) {
+        int cost = 0;
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                cost += abs(s[i][j] - magicSquare[i][j]);
+            }
+        }
+        minCost = min(cost, minCost);
+    }
+    return minCost;
+}
+```
+
+
+result: int formingMagicSquare(vector<vector<int>>& s) {
+    vector<vector<vector<int>>> magicSquares = {
+        {{8, 1, 6}, {3, 5, 7}, {4, 9, 2}},
+        {{6, 1, 8}, {7, 5, 3}, {2, 9, 4}},
+        {{4, 9, 2}, {3, 5, 7}, {8, 1, 6}},
+        {{2, 9, 4}, {7, 5, 3}, {6, 1, 8}},
+        {{8, 3, 4}, {1, 5, 9}, {6, 7, 2}},
+        {{4, 3, 8}, {9, 5, 1}, {2, 7, 6}},
+        {{6, 7, 2}, {1, 5, 9}, {8, 3, 4}},
+        {{2, 7, 6}, {9, 5, 1}, {4, 3, 8}}
+    };
+    int minCost = 8 * 3;
+    for (auto& magicSquare : magicSquares) {
+        int cost = 0;
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                cost += abs(s[i][j] - magicSquare[i][j]);
+            }
+        }
+        minCost = min(cost, minCost);
+    }
+    return minCost;
+}
+
+
+Task_id: 62_0    done
+raw_prediction: ```cpp
+#include <string>
+
+std::string isFibo(long long n) {
+    long long start = 0;
+    long long last = 1;
+    while (last <= n) {
+        long long tmp = last + start;
+        start = last;
+        last = tmp;
+        if (last == n) {
+            return "IsFibo";
+        }
+    }
+    return "IsNotFibo";
+}
+```
+
+
+result: std::string isFibo(long long n) {
+    long long start = 0;
+    long long last = 1;
+    while (last <= n) {
+        long long tmp = last + start;
+        start = last;
+        last = tmp;
+        if (last == n) {
+            return "IsFibo";
+        }
+    }
+    return "IsNotFibo";
+}
+
+
+Task_id: 63_0    done
+raw_prediction: ```cpp
+#include <iostream>
+#include <deque>
+#include <set>
+#include <string>
+
+using namespace std;
+
+int solve(long long l, long long r) {
+    set<long long> seen;
+    deque<long long> q;
+    for (int i = 0; i < 10; ++i) {
+        q.push_back(i);
+    }
+    while (!q.empty()) {
+        long long u = q.front();
+        q.pop_front();
+        if (to_string(u).length() >= 20) {
+            continue;
+        }
+        if (seen.count(u)) {
+            continue;
+        }
+        seen.insert(u);
+        int length = to_string(u).length();
+        for (int k = length; k <= length + 5; ++k) {
+            long long product = u * k;
+            if (to_string(product).length() == k) {
+                q.push_back(product);
+            }
+        }
+    }
+    int count = 0;
+    for (auto s : seen) {
+        if (l <= s && s <= r) {
+            ++count;
+        }
+    }
+    return count;
+}
+```
+
+
+result: int solve(long long l, long long r) {
+    set<long long> seen;
+    deque<long long> q;
+    for (int i = 0; i < 10; ++i) {
+        q.push_back(i);
+    }
+    while (!q.empty()) {
+        long long u = q.front();
+        q.pop_front();
+        if (to_string(u).length() >= 20) {
+            continue;
+        }
+        if (seen.count(u)) {
+            continue;
+        }
+        seen.insert(u);
+        int length = to_string(u).length();
+        for (int k = length; k <= length + 5; ++k) {
+            long long product = u * k;
+            if (to_string(product).length() == k) {
+                q.push_back(product);
+            }
+        }
+    }
+    int count = 0;
+    for (auto s : seen) {
+        if (l <= s && s <= r) {
+            ++count;
+        }
+    }
+    return count;
+}
+
+
+Task_id: 64_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+
+std::vector<std::string> cavityMap(std::vector<std::string>& grid) {
+    for (int k = 1; k < grid.size() - 1; ++k) {
+        std::string i = grid[k];
+        std::string d = grid[k + 1];
+        std::string u = grid[k - 1];
+        for (int j = 1; j < i.size() - 1; ++j) {
+            if ((i[j - 1] < i[j] && i[j] > i[j + 1]) && (d[j] < i[j] && i[j] > u[j])) {
+                std::string x = grid[k];
+                x[j] = 'X';
+                grid[k] = x;
+            }
+        }
+    }
+    return grid;
+}
+```
+
+
+result: std::vector<std::string> cavityMap(std::vector<std::string>& grid) {
+    for (int k = 1; k < grid.size() - 1; ++k) {
+        std::string i = grid[k];
+        std::string d = grid[k + 1];
+        std::string u = grid[k - 1];
+        for (int j = 1; j < i.size() - 1; ++j) {
+            if ((i[j - 1] < i[j] && i[j] > i[j + 1]) && (d[j] < i[j] && i[j] > u[j])) {
+                std::string x = grid[k];
+                x[j] = 'X';
+                grid[k] = x;
+            }
+        }
+    }
+    return grid;
+}
+
+
+Task_id: 65_0    done
+raw_prediction: ```cpp
+long long solve(int a, int b) {
+    int m = a;
+    int n = b;
+    long long ans = std::min(((long long)(m-1)*n+(n-1)), ((long long)(n-1)*m+(m-1)));
+    return (long long)m*n - 1; 
+}
+```
+
+
+result: long long solve(int a, int b) {
+    int m = a;
+    int n = b;
+    long long ans = std::min(((long long)(m-1)*n+(n-1)), ((long long)(n-1)*m+(m-1)));
+    return (long long)m*n - 1; 
+}
+
+
+Task_id: 66_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
+
+int minimumLoss(std::vector<long> price) {
+    std::unordered_map<long, int> map_index;
+    for (int i = 0; i < price.size(); ++i) {
+        map_index[price[i]] = i;
+    }
+    std::sort(price.begin(), price.end());
+    int min_loss = INT_MAX;
+    for (int i = 0; i < price.size() - 1; ++i) {
+        int current_loss = price[i+1] - price[i];
+        if (current_loss < min_loss && map_index[price[i]] > map_index[price[i+1]]) {
+            min_loss = current_loss;
+        }
+    }
+    return min_loss;
+}
+```
+
+
+result: int minimumLoss(std::vector<long> price) {
+    std::unordered_map<long, int> map_index;
+    for (int i = 0; i < price.size(); ++i) {
+        map_index[price[i]] = i;
+    }
+    std::sort(price.begin(), price.end());
+    int min_loss = INT_MAX;
+    for (int i = 0; i < price.size() - 1; ++i) {
+        int current_loss = price[i+1] - price[i];
+        if (current_loss < min_loss && map_index[price[i]] > map_index[price[i+1]]) {
+            min_loss = current_loss;
+        }
+    }
+    return min_loss;
+}
+
+
+Task_id: 67_0    done
+raw_prediction: ```cpp
+#include <string>
+
+std::string dayOfProgrammer(int year) {
+    if (1918 == year) {
+        return "26.09.1918";
+    }
+    bool leap_year = true;
+    if (year % 4 || (year > 1918 && !(year % 100) && year % 400)) {
+        leap_year = false;
+    }
+    return (leap_year ? "12" : "13") + ".09." + std::to_string(year);
+}
+```
+
+
+result: std::string dayOfProgrammer(int year) {
+    if (1918 == year) {
+        return "26.09.1918";
+    }
+    bool leap_year = true;
+    if (year % 4 || (year > 1918 && !(year % 100) && year % 400)) {
+        leap_year = false;
+    }
+    return (leap_year ? "12" : "13") + ".09." + std::to_string(year);
+}
+
+
+Task_id: 68_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+
+using namespace std;
+
+vector<int> acmTeam(vector<string> topic) {
+    int teamLen = topic.size();
+    int topicLen = topic[0].size();
+    int maxKnown = 0;
+    int maxTeams = 0;
+    for (int i = 0; i < teamLen; i++) {
+        string t1 = topic[i];
+        for (int j = i + 1; j < teamLen; j++) {
+            int know = 0;
+            string t2 = topic[j];
+            for (int k = 0; k < topicLen; k++) {
+                if (t1[k] == '1' || t2[k] == '1') {
+                    know++;
+                }
+            }
+            if (know == maxKnown) {
+                maxTeams++;
+            } else if (know > maxKnown) {
+                maxKnown = know;
+                maxTeams = 1;
+            }
+        }
+    }
+    return {maxKnown, maxTeams};
+}
+```
+
+
+result: vector<int> acmTeam(vector<string> topic) {
+    int teamLen = topic.size();
+    int topicLen = topic[0].size();
+    int maxKnown = 0;
+    int maxTeams = 0;
+    for (int i = 0; i < teamLen; i++) {
+        string t1 = topic[i];
+        for (int j = i + 1; j < teamLen; j++) {
+            int know = 0;
+            string t2 = topic[j];
+            for (int k = 0; k < topicLen; k++) {
+                if (t1[k] == '1' || t2[k] == '1') {
+                    know++;
+                }
+            }
+            if (know == maxKnown) {
+                maxTeams++;
+            } else if (know > maxKnown) {
+                maxKnown = know;
+                maxTeams = 1;
+            }
+        }
+    }
+    return {maxKnown, maxTeams};
+}
+
+
+Task_id: 69_0    done
+raw_prediction: ```cpp
+#include <string>
+#include <vector>
+
+std::string timeInWords(int h, int m) {
+    std::vector<std::string> hour = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"};
+    std::vector<std::string> minutes = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", 
+                                        "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", 
+                                        "nineteen", "twenty", "twenty one", "twenty two", "twenty three", "twenty four", 
+                                        "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine"};
+    if (m == 0) {
+        return hour[h - 1] + " o' clock";
+    } else if (m == 15) {
+        return "quarter past " + hour[h - 1];
+    } else if (m == 30) {
+        return "half past " + hour[h - 1];
+    } else if (m == 45) {
+        return "quarter to " + hour[(h % 12)];
+    } else if (m == 1) {
+        return minutes[m - 1] + " minute past " + hour[h - 1];
+    } else if (0 < m && m < 30) {
+        return minutes[m - 1] + " minutes past " + hour[h - 1];
+    } else {
+        return minutes[60 - m - 1] + " minutes to " + hour[h % 12];
+    }
+}
+```
+
+
+result: std::string timeInWords(int h, int m) {
+    std::vector<std::string> hour = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"};
+    std::vector<std::string> minutes = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", 
+                                        "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", 
+                                        "nineteen", "twenty", "twenty one", "twenty two", "twenty three", "twenty four", 
+                                        "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine"};
+    if (m == 0) {
+        return hour[h - 1] + " o' clock";
+    } else if (m == 15) {
+        return "quarter past " + hour[h - 1];
+    } else if (m == 30) {
+        return "half past " + hour[h - 1];
+    } else if (m == 45) {
+        return "quarter to " + hour[(h % 12)];
+    } else if (m == 1) {
+        return minutes[m - 1] + " minute past " + hour[h - 1];
+    } else if (0 < m && m < 30) {
+        return minutes[m - 1] + " minutes past " + hour[h - 1];
+    } else {
+        return minutes[60 - m - 1] + " minutes to " + hour[h % 12];
+    }
+}
+
+
+Task_id: 70_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <queue>
+#include <algorithm>
+
+using namespace std;
+
+int collectTheCoins(vector<int>& coins, vector<vector<int>>& edges) {
+    int n = coins.size();
+    vector<vector<int>> g(n);
+    for (auto& edge : edges) {
+        g[edge[0]].push_back(edge[1]);
+        g[edge[1]].push_back(edge[0]);
+    }
+    vector<int> deg(n);
+    for (int i = 0; i < n; ++i) {
+        deg[i] = g[i].size();
+    }
+    int left_edges = n - 1;
+    queue<int> q;
+    for (int i = 0; i < n; ++i) {
+        if (deg[i] == 1 && coins[i] == 0) {
+            q.push(i);
+        }
+    }
+    while (!q.empty()) {
+        left_edges--;
+        int x = q.front();
+        q.pop();
+        for (int y : g[x]) {
+            deg[y]--;
+            if (deg[y] == 1 && coins[y] == 0) {
+                q.push(y);
+            }
+        }
+    }
+    for (int i = 0; i < n; ++i) {
+        if (deg[i] == 1 && coins[i]) {
+            q.push(i);
+        }
+    }
+    left_edges -= q.size();
+    while (!q.empty()) {
+        int x = q.front();
+        q.pop();
+        for (int y : g[x]) {
+            deg[y]--;
+            if (deg[y] == 1) {
+                left_edges--;
+            }
+        }
+    }
+    return max(left_edges * 2, 0);
+}
+```
+
+
+result: int collectTheCoins(vector<int>& coins, vector<vector<int>>& edges) {
+    int n = coins.size();
+    vector<vector<int>> g(n);
+    for (auto& edge : edges) {
+        g[edge[0]].push_back(edge[1]);
+        g[edge[1]].push_back(edge[0]);
+    }
+    vector<int> deg(n);
+    for (int i = 0; i < n; ++i) {
+        deg[i] = g[i].size();
+    }
+    int left_edges = n - 1;
+    queue<int> q;
+    for (int i = 0; i < n; ++i) {
+        if (deg[i] == 1 && coins[i] == 0) {
+            q.push(i);
+        }
+    }
+    while (!q.empty()) {
+        left_edges--;
+        int x = q.front();
+        q.pop();
+        for (int y : g[x]) {
+            deg[y]--;
+            if (deg[y] == 1 && coins[y] == 0) {
+                q.push(y);
+            }
+        }
+    }
+    for (int i = 0; i < n; ++i) {
+        if (deg[i] == 1 && coins[i]) {
+            q.push(i);
+        }
+    }
+    left_edges -= q.size();
+    while (!q.empty()) {
+        int x = q.front();
+        q.pop();
+        for (int y : g[x]) {
+            deg[y]--;
+            if (deg[y] == 1) {
+                left_edges--;
+            }
+        }
+    }
+    return max(left_edges * 2, 0);
+}
+
+
+Task_id: 71_0    done
+raw_prediction: ```cpp
+#include <vector>
+
+std::vector<std::vector<int>> matrixRotation(std::vector<std::vector<int>>& matrix, int r) {
+    int l = 0, br = matrix.size(), bc = matrix[0].size();
+    while (l < std::min(br, bc) / 2) {
+        int rr = r % (2 * (br + bc - l * 4 - 2));
+        while (rr != 0) {
+            rr -= 1;
+            int buf = matrix[l][l];
+            for (int j = l; j < bc - l - 1; ++j) {
+                matrix[l][j] = matrix[l][j + 1];
+            }
+            for (int i = l; i < br - l - 1; ++i) {
+                matrix[i][bc - l - 1] = matrix[i + 1][bc - l - 1];
+            }
+            for (int j = bc - l - 1; j > l; --j) {
+                matrix[br - l - 1][j] = matrix[br - l - 1][j - 1];
+            }
+            for (int i = br - l - 1; i > l; --i) {
+                matrix[i][l] = matrix[i - 1][l];
+            }
+            matrix[l + 1][l] = buf;
+        }
+        l += 1;
+    }
+    return matrix;
+}
+```
+
+
+result: std::vector<std::vector<int>> matrixRotation(std::vector<std::vector<int>>& matrix, int r) {
+    int l = 0, br = matrix.size(), bc = matrix[0].size();
+    while (l < std::min(br, bc) / 2) {
+        int rr = r % (2 * (br + bc - l * 4 - 2));
+        while (rr != 0) {
+            rr -= 1;
+            int buf = matrix[l][l];
+            for (int j = l; j < bc - l - 1; ++j) {
+                matrix[l][j] = matrix[l][j + 1];
+            }
+            for (int i = l; i < br - l - 1; ++i) {
+                matrix[i][bc - l - 1] = matrix[i + 1][bc - l - 1];
+            }
+            for (int j = bc - l - 1; j > l; --j) {
+                matrix[br - l - 1][j] = matrix[br - l - 1][j - 1];
+            }
+            for (int i = br - l - 1; i > l; --i) {
+                matrix[i][l] = matrix[i - 1][l];
+            }
+            matrix[l + 1][l] = buf;
+        }
+        l += 1;
+    }
+    return matrix;
+}
+
+
+Task_id: 72_0    done
+raw_prediction: ```cpp
+int divisorSubstrings(int num, int k) {
+    string s = to_string(num);
+    int n = s.size();
+    int res = 0;
+    for (int i = 0; i <= n - k; i++) {
+        int tmp = stoi(s.substr(i, k));
+        if (tmp != 0 && num % tmp == 0) {
+            res++;
+        }
+    }
+    return res;
+}
+```
+
+
+result: int divisorSubstrings(int num, int k) {
+    string s = to_string(num);
+    int n = s.size();
+    int res = 0;
+    for (int i = 0; i <= n - k; i++) {
+        int tmp = stoi(s.substr(i, k));
+        if (tmp != 0 && num % tmp == 0) {
+            res++;
+        }
+    }
+    return res;
+}
+
+
+Task_id: 73_0    done
+raw_prediction: ```cpp
+#include <vector>
+
+std::vector<int> solve(std::vector<int>& a) {
+    std::vector<int> result;
+    std::vector<int> cum(a.size(), 0);
+    cum[0] = a[0];
+    for (int i = 1; i < a.size(); ++i) {
+        cum[i] = cum[i-1] + a[i];
+    }
+    int total = cum.back();
+    for (int i = 0; i < cum.size(); ++i) {
+        if (total % cum[i] == 0) {
+            int j = i + 1;
+            int segment_sum = 0;
+            while (j < a.size() && segment_sum < cum[i]) {
+                segment_sum += a[j];
+                if (segment_sum == cum[i]) {
+                    segment_sum = 0;
+                }
+                j += 1;
+            }
+            if (segment_sum == 0 && (j == a.size() || cum[i] == total)) {
+                result.push_back(cum[i]);
+            }
+        }
+    }
+    return result;
+}
+```
+
+
+result: std::vector<int> solve(std::vector<int>& a) {
+    std::vector<int> result;
+    std::vector<int> cum(a.size(), 0);
+    cum[0] = a[0];
+    for (int i = 1; i < a.size(); ++i) {
+        cum[i] = cum[i-1] + a[i];
+    }
+    int total = cum.back();
+    for (int i = 0; i < cum.size(); ++i) {
+        if (total % cum[i] == 0) {
+            int j = i + 1;
+            int segment_sum = 0;
+            while (j < a.size() && segment_sum < cum[i]) {
+                segment_sum += a[j];
+                if (segment_sum == cum[i]) {
+                    segment_sum = 0;
+                }
+                j += 1;
+            }
+            if (segment_sum == 0 && (j == a.size() || cum[i] == total)) {
+                result.push_back(cum[i]);
+            }
+        }
+    }
+    return result;
+}
+
+
+Task_id: 74_0    done
+raw_prediction: ```cpp
+int maximumToys(vector<int> prices, int k) {
+    sort(prices.begin(), prices.end());
+    int toys = 0;
+    for (int i : prices) {
+        if (i <= k) {
+            k = k - i;
+            toys = toys + 1;
+        } else {
+            break;
+        }
+    }
+    return toys;
+}
+```
+
+
+result: int maximumToys(vector<int> prices, int k) {
+    sort(prices.begin(), prices.end());
+    int toys = 0;
+    for (int i : prices) {
+        if (i <= k) {
+            k = k - i;
+            toys = toys + 1;
+        } else {
+            break;
+        }
+    }
+    return toys;
+}
+
+
+Task_id: 75_0    done
+raw_prediction: ```cpp
+int sumOfSquares(vector<int> nums) {
+    int ans = 0;
+    int n = nums.size();
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            ans += pow(nums[i - 1], 2);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int sumOfSquares(vector<int> nums) {
+    int ans = 0;
+    int n = nums.size();
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            ans += pow(nums[i - 1], 2);
+        }
+    }
+    return ans;
+}
+
+
+Task_id: 76_0    done
+raw_prediction: ```cpp
+bool checkArray(vector<int>& nums, int k) {
+    int n = nums.size();
+    vector<int> d(n + 1, 0);
+    int sum_d = 0;
+    for (int i = 0; i < n; i++) {
+        sum_d += d[i];
+        nums[i] += sum_d;
+        if (nums[i] == 0) continue;
+        if (nums[i] < 0 || i + k > n) return false;
+        sum_d -= nums[i];
+        d[i + k] += nums[i];
+    }
+    return true;
+}
+```
+
+
+result: bool checkArray(vector<int>& nums, int k) {
+    int n = nums.size();
+    vector<int> d(n + 1, 0);
+    int sum_d = 0;
+    for (int i = 0; i < n; i++) {
+        sum_d += d[i];
+        nums[i] += sum_d;
+        if (nums[i] == 0) continue;
+        if (nums[i] < 0 || i + k > n) return false;
+        sum_d -= nums[i];
+        d[i + k] += nums[i];
+    }
+    return true;
+}
+
+
+Task_id: 77_0    done
+raw_prediction: ```cpp
+int maxNonDecreasingLength(vector<int>& nums1, vector<int>& nums2) {
+    int n = nums1.size();
+    if (n == 1) {
+        return 1;
+    }
+    vector<vector<int>> dp(n, vector<int>(2, 1));
+    int ans = 0;
+    for (int i = 1; i < n; ++i) {
+        dp[i][0] = dp[i][1] = 1;
+        if (nums1[i] >= nums1[i - 1]) {
+            dp[i][0] = max(dp[i][0], dp[i - 1][0] + 1);
+        }
+        if (nums1[i] >= nums2[i - 1]) {
+            dp[i][0] = max(dp[i][0], dp[i - 1][1] + 1);
+        }
+        if (nums2[i] >= nums1[i - 1]) {
+            dp[i][1] = max(dp[i][1], dp[i - 1][0] + 1);
+        }
+        if (nums2[i] >= nums2[i - 1]) {
+            dp[i][1] = max(dp[i][1], dp[i - 1][1] + 1);
+        }
+        ans = max(ans, max(dp[i][0], dp[i][1]));
+    }
+    return ans;
+}
+```
+
+
+result: int maxNonDecreasingLength(vector<int>& nums1, vector<int>& nums2) {
+    int n = nums1.size();
+    if (n == 1) {
+        return 1;
+    }
+    vector<vector<int>> dp(n, vector<int>(2, 1));
+    int ans = 0;
+    for (int i = 1; i < n; ++i) {
+        dp[i][0] = dp[i][1] = 1;
+        if (nums1[i] >= nums1[i - 1]) {
+            dp[i][0] = max(dp[i][0], dp[i - 1][0] + 1);
+        }
+        if (nums1[i] >= nums2[i - 1]) {
+            dp[i][0] = max(dp[i][0], dp[i - 1][1] + 1);
+        }
+        if (nums2[i] >= nums1[i - 1]) {
+            dp[i][1] = max(dp[i][1], dp[i - 1][0] + 1);
+        }
+        if (nums2[i] >= nums2[i - 1]) {
+            dp[i][1] = max(dp[i][1], dp[i - 1][1] + 1);
+        }
+        ans = max(ans, max(dp[i][0], dp[i][1]));
+    }
+    return ans;
+}
+
+
+Task_id: 78_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <limits>
+#include <algorithm>
+
+int maximumJumps(std::vector<int>& nums, int target) {
+    int n = nums.size();
+    std::vector<int> f(n, std::numeric_limits<int>::min());
+    f[0] = 0;
+    for (int i = 1; i < n; ++i) {
+        for (int j = 0; j < i; ++j) {
+            if (std::abs(nums[i] - nums[j]) <= target) {
+                f[i] = std::max(f[i], f[j] + 1);
+            }
+        }
+    }
+    return f[n-1] < 0 ? -1 : f[n-1];
+}
+```
+
+
+result: int maximumJumps(std::vector<int>& nums, int target) {
+    int n = nums.size();
+    std::vector<int> f(n, std::numeric_limits<int>::min());
+    f[0] = 0;
+    for (int i = 1; i < n; ++i) {
+        for (int j = 0; j < i; ++j) {
+            if (std::abs(nums[i] - nums[j]) <= target) {
+                f[i] = std::max(f[i], f[j] + 1);
+            }
+        }
+    }
+    return f[n-1] < 0 ? -1 : f[n-1];
+}
+
+
+Task_id: 79_0    done
+raw_prediction: ```cpp
+int theMaximumAchievableX(int num, int t) {
+    return num + t * 2;
+}
+```
+
+
+result: int theMaximumAchievableX(int num, int t) {
+    return num + t * 2;
+}
+
+
+Task_id: 80_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <set>
+
+std::vector<long long> countBlackBlocks(int m, int n, std::vector<std::vector<int>>& coordinates) {
+    std::vector<long long> ans(5, 0);
+    long long sum_blocks = (m - 1) * (n - 1);
+    std::set<int> st;
+    for (auto& coordinate : coordinates) {
+        int x = coordinate[0];
+        int y = coordinate[1];
+        st.insert(x * n + y);
+    }
+    std::vector<std::vector<std::pair<int, int>>> arr = {
+        {{0, -1}, {-1, -1}, {-1, 0}},
+        {{0, 1}, {-1, 0}, {-1, 1}},
+        {{0, -1}, {1, 0}, {1, -1}},
+        {{0, 1}, {1, 0}, {1, 1}}
+    };
+    for (auto& coordinate : coordinates) {
+        int x = coordinate[0];
+        int y = coordinate[1];
+        for (auto& a : arr) {
+            int cnt = 1;
+            for (auto& [dx, dy] : a) {
+                int nx = x + dx;
+                int ny = y + dy;
+                if (nx < 0 || ny < 0 || nx >= m || ny >= n) {
+                    cnt = 0;
+                    break;
+                }
+                if (st.count(nx * n + ny)) {
+                    cnt += 1;
+                }
+            }
+            ans[cnt] += 1;
+        }
+    }
+    for (int i = 2; i < 5; ++i) {
+        ans[i] /= i;
+    }
+    ans[0] = sum_blocks - std::accumulate(ans.begin() + 1, ans.end(), 0LL);
+    return ans;
+}
+```
+
+
+result: std::vector<long long> countBlackBlocks(int m, int n, std::vector<std::vector<int>>& coordinates) {
+    std::vector<long long> ans(5, 0);
+    long long sum_blocks = (m - 1) * (n - 1);
+    std::set<int> st;
+    for (auto& coordinate : coordinates) {
+        int x = coordinate[0];
+        int y = coordinate[1];
+        st.insert(x * n + y);
+    }
+    std::vector<std::vector<std::pair<int, int>>> arr = {
+        {{0, -1}, {-1, -1}, {-1, 0}},
+        {{0, 1}, {-1, 0}, {-1, 1}},
+        {{0, -1}, {1, 0}, {1, -1}},
+        {{0, 1}, {1, 0}, {1, 1}}
+    };
+    for (auto& coordinate : coordinates) {
+        int x = coordinate[0];
+        int y = coordinate[1];
+        for (auto& a : arr) {
+            int cnt = 1;
+            for (auto& [dx, dy] : a) {
+                int nx = x + dx;
+                int ny = y + dy;
+                if (nx < 0 || ny < 0 || nx >= m || ny >= n) {
+                    cnt = 0;
+                    break;
+                }
+                if (st.count(nx * n + ny)) {
+                    cnt += 1;
+                }
+            }
+            ans[cnt] += 1;
+        }
+    }
+    for (int i = 2; i < 5; ++i) {
+        ans[i] /= i;
+    }
+    ans[0] = sum_blocks - std::accumulate(ans.begin() + 1, ans.end(), 0LL);
+    return ans;
+}
+
+
+Task_id: 81_0    done
+raw_prediction: ```cpp
+#include <string>
+#include <vector>
+#include <unordered_set>
+#include <limits>
+
+int minimumBeautifulSubstrings(std::string s) {
+    if (s[0] == '0') {
+        return -1;
+    }
+    std::unordered_set<std::string> beautiful_strings = {"1", "101", "11001", "1111101", "1001110001", "110000110101", "11110100001001"};
+    int n = s.length();
+    std::vector<int> f(n + 10, std::numeric_limits<int>::max());
+    f[0] = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            std::string current_substring = s.substr(i, j - i + 1);
+            if (beautiful_strings.count(current_substring)) {
+                f[j + 1] = std::min(f[j + 1], f[i] + 1);
+            }
+        }
+    }
+    if (f[n] == std::numeric_limits<int>::max()) {
+        return -1;
+    }
+    return f[n];
+}
+```
+
+
+result: int minimumBeautifulSubstrings(std::string s) {
+    if (s[0] == '0') {
+        return -1;
+    }
+    std::unordered_set<std::string> beautiful_strings = {"1", "101", "11001", "1111101", "1001110001", "110000110101", "11110100001001"};
+    int n = s.length();
+    std::vector<int> f(n + 10, std::numeric_limits<int>::max());
+    f[0] = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            std::string current_substring = s.substr(i, j - i + 1);
+            if (beautiful_strings.count(current_substring)) {
+                f[j + 1] = std::min(f[j + 1], f[i] + 1);
+            }
+        }
+    }
+    if (f[n] == std::numeric_limits<int>::max()) {
+        return -1;
+    }
+    return f[n];
+}
+
+
+Task_id: 82_0    done
+raw_prediction: ```cpp
+#include <algorithm>
+
+int gcd(int x, int y) {
+    if (x < y)
+        std::swap(x, y);
+    int r = x % y;
+    while (r != 0) {
+        x = y;
+        y = r;
+        r = x % y;
+    }
+    return y;
+}
+
+int lcm(int x, int y) {
+    if (x < y)
+        std::swap(x, y);
+    int m = x;
+    while (x % y != 0) {
+        x = x + m;
+    }
+    return x;
+}
+
+int gcdAndLcm(int x, int y) {
+    int n = x * y;
+    int ans = 0;
+    for (int i = x; i <= y; ++i) {
+        if (n % i == 0 && gcd(i, n / i) == x && lcm(i, n / i) == y) {
+            ans += 1;
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int gcdAndLcm(int x, int y) {
+    int n = x * y;
+    int ans = 0;
+    for (int i = x; i <= y; ++i) {
+        if (n % i == 0 && gcd(i, n / i) == x && lcm(i, n / i) == y) {
+            ans += 1;
+        }
+    }
+    return ans;
+}
+
+int gcd(int x, int y) {
+    if (x < y)
+        std::swap(x, y);
+    int r = x % y;
+    while (r != 0) {
+        x = y;
+        y = r;
+        r = x % y;
+    }
+    return y;
+}
+
+int lcm(int x, int y) {
+    if (x < y)
+        std::swap(x, y);
+    int m = x;
+    while (x % y != 0) {
+        x = x + m;
+    }
+    return x;
+}
+
+
+Task_id: 83_0    done
+raw_prediction: ```cpp
+int findFirstPairExceedingSum(vector<vector<int>>& pairs) {
+    int max_sum = 0;
+    int day_index = 0;
+    for (int i = 0; i < pairs.size(); ++i) {
+        int a = pairs[i][0];
+        int b = pairs[i][1];
+        int sum = a + b;
+        if (sum > 8 && sum > max_sum) {
+            max_sum = sum;
+            day_index = i + 1;
+        }
+    }
+    return day_index;
+}
+```
+
+
+result: int findFirstPairExceedingSum(vector<vector<int>>& pairs) {
+    int max_sum = 0;
+    int day_index = 0;
+    for (int i = 0; i < pairs.size(); ++i) {
+        int a = pairs[i][0];
+        int b = pairs[i][1];
+        int sum = a + b;
+        if (sum > 8 && sum > max_sum) {
+            max_sum = sum;
+            day_index = i + 1;
+        }
+    }
+    return day_index;
+}
+
+
+Task_id: 84_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int maximumValue(vector<string> strs) {
+    int res = 0;
+    for (string s : strs) {
+        bool is_digits = all_of(s.begin(), s.end(), ::isdigit);
+        res = max(res, is_digits ? stoi(s) : s.length());
+    }
+    return res;
+}
+```
+
+
+result: int maximumValue(vector<string> strs) {
+    int res = 0;
+    for (string s : strs) {
+        bool is_digits = all_of(s.begin(), s.end(), ::isdigit);
+        res = max(res, is_digits ? stoi(s) : s.length());
+    }
+    return res;
+}
+
+
+Task_id: 85_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+
+int countBeautifulPairs(std::vector<int>& nums) {
+    int ans = 0;
+    std::vector<int> cnt(10, 0);
+    for (int x : nums) {
+        for (int y = 1; y < 10; ++y) {
+            if (cnt[y] && gcd(x % 10, y) == 1) {
+                ans += cnt[y];
+            }
+        }
+        while (x >= 10) {
+            x /= 10;
+        }
+        cnt[x] += 1;
+    }
+    return ans;
+}
+```
+
+
+result: int countBeautifulPairs(std::vector<int>& nums) {
+    int ans = 0;
+    std::vector<int> cnt(10, 0);
+    for (int x : nums) {
+        for (int y = 1; y < 10; ++y) {
+            if (cnt[y] && gcd(x % 10, y) == 1) {
+                ans += cnt[y];
+            }
+        }
+        while (x >= 10) {
+            x /= 10;
+        }
+        cnt[x] += 1;
+    }
+    return ans;
+}
+
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+
+
+Task_id: 86_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> countServers(int n, vector<vector<int>>& logs, int x, vector<int>& queries) {
+    sort(logs.begin(), logs.end(), [](const vector<int>& a, const vector<int>& b) { return a[1] < b[1]; });
+    vector<int> ans(queries.size());
+    vector<int> cnt(n + 1);
+    int out_of_range = n;
+    int left = 0, right = 0;
+    vector<pair<int, int>> q_with_index;
+    for (int i = 0; i < queries.size(); ++i) {
+        q_with_index.push_back({queries[i], i});
+    }
+    sort(q_with_index.begin(), q_with_index.end());
+    for (auto& [q, qi] : q_with_index) {
+        while (right < logs.size() && logs[right][1] <= q) {
+            int i = logs[right][0];
+            if (cnt[i] == 0) out_of_range -= 1;
+            cnt[i] += 1;
+            right += 1;
+        }
+        while (left < logs.size() && logs[left][1] < q - x) {
+            int i = logs[left][0];
+            cnt[i] -= 1;
+            if (cnt[i] == 0) out_of_range += 1;
+            left += 1;
+        }
+        ans[qi] = out_of_range;
+    }
+    return ans;
+}
+```
+
+
+result: vector<int> countServers(int n, vector<vector<int>>& logs, int x, vector<int>& queries) {
+    sort(logs.begin(), logs.end(), [](const vector<int>& a, const vector<int>& b) { return a[1] < b[1]; });
+    vector<int> ans(queries.size());
+    vector<int> cnt(n + 1);
+    int out_of_range = n;
+    int left = 0, right = 0;
+    vector<pair<int, int>> q_with_index;
+    for (int i = 0; i < queries.size(); ++i) {
+        q_with_index.push_back({queries[i], i});
+    }
+    sort(q_with_index.begin(), q_with_index.end());
+    for (auto& [q, qi] : q_with_index) {
+        while (right < logs.size() && logs[right][1] <= q) {
+            int i = logs[right][0];
+            if (cnt[i] == 0) out_of_range -= 1;
+            cnt[i] += 1;
+            right += 1;
+        }
+        while (left < logs.size() && logs[left][1] < q - x) {
+            int i = logs[left][0];
+            cnt[i] -= 1;
+            if (cnt[i] == 0) out_of_range += 1;
+            left += 1;
+        }
+        ans[qi] = out_of_range;
+    }
+    return ans;
+}
+
+
+Task_id: 87_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_map>
+#include <unordered_set>
+
+bool isPossible(int n, std::vector<std::vector<int>>& edges) {
+    std::unordered_map<int, std::unordered_set<int>> g;
+    for (auto& edge : edges) {
+        g[edge[0]].insert(edge[1]);
+        g[edge[1]].insert(edge[0]);
+    }
+    std::vector<int> odd;
+    for (auto& kv : g) {
+        if (kv.second.size() % 2) {
+            odd.push_back(kv.first);
+        }
+    }
+    int m = odd.size();
+    if (m == 0) return true;
+    if (m == 2) {
+        int x = odd[0], y = odd[1];
+        return g[x].find(y) == g[x].end() || std::any_of(g.begin(), g.end(), [&](const auto& kv) {
+            int i = kv.first;
+            return i != x && i != y && g[i].find(x) == g[i].end() && g[i].find(y) == g[i].end();
+        });
+    }
+    if (m == 4) {
+        int a = odd[0], b = odd[1], c = odd[2], d = odd[3];
+        return (g[a].find(b) == g[a].end() && g[c].find(d) == g[c].end()) ||
+               (g[a].find(c) == g[a].end() && g[b].find(d) == g[b].end()) ||
+               (g[a].find(d) == g[a].end() && g[b].find(c) == g[b].end());
+    }
+    return false;
+}
+```
+
+
+result: bool isPossible(int n, std::vector<std::vector<int>>& edges) {
+    std::unordered_map<int, std::unordered_set<int>> g;
+    for (auto& edge : edges) {
+        g[edge[0]].insert(edge[1]);
+        g[edge[1]].insert(edge[0]);
+    }
+    std::vector<int> odd;
+    for (auto& kv : g) {
+        if (kv.second.size() % 2) {
+            odd.push_back(kv.first);
+        }
+    }
+    int m = odd.size();
+    if (m == 0) return true;
+    if (m == 2) {
+        int x = odd[0], y = odd[1];
+        return g[x].find(y) == g[x].end() || std::any_of(g.begin(), g.end(), [&](const auto& kv) {
+            int i = kv.first;
+            return i != x && i != y && g[i].find(x) == g[i].end() && g[i].find(y) == g[i].end();
+        });
+    }
+    if (m == 4) {
+        int a = odd[0], b = odd[1], c = odd[2], d = odd[3];
+        return (g[a].find(b) == g[a].end() && g[c].find(d) == g[c].end()) ||
+               (g[a].find(c) == g[a].end() && g[b].find(d) == g[b].end()) ||
+               (g[a].find(d) == g[a].end() && g[b].find(c) == g[b].end());
+    }
+    return false;
+}
+
+
+Task_id: 88_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <string>
+#include <set>
+#include <algorithm>
+
+int minExtraChar(std::string s, std::vector<std::string> dictionary) {
+    std::set<std::string> d(dictionary.begin(), dictionary.end());
+    int n = s.length();
+    std::vector<int> f(n + 1, 0);
+    for (int i = 0; i < n; i++) {
+        f[i + 1] = f[i] + 1;
+        for (int j = 0; j <= i; j++) {
+            if (d.find(s.substr(j, i - j + 1)) != d.end()) {
+                f[i + 1] = std::min(f[i + 1], f[j]);
+            }
+        }
+    }
+    return f[n];
+}
+```
+
+
+result: int minExtraChar(std::string s, std::vector<std::string> dictionary) {
+    std::set<std::string> d(dictionary.begin(), dictionary.end());
+    int n = s.length();
+    std::vector<int> f(n + 1, 0);
+    for (int i = 0; i < n; i++) {
+        f[i + 1] = f[i] + 1;
+        for (int j = 0; j <= i; j++) {
+            if (d.find(s.substr(j, i - j + 1)) != d.end()) {
+                f[i + 1] = std::min(f[i + 1], f[j]);
+            }
+        }
+    }
+    return f[n];
+}
+
+
+Task_id: 89_0    done
+raw_prediction: ```cpp
+#include <vector>
+using namespace std;
+
+vector<int> dfs(int x, int fa, vector<vector<int>>& g, vector<int>& coins, int k) {
+    vector<int> res1(14, 0);
+    vector<int> res2(14, 0);
+    for (int y : g[x]) {
+        if (y == fa) continue;
+        vector<int> r = dfs(y, x, g, coins, k);
+        for (int j = 0; j < 14; ++j) {
+            res1[j] += r[j];
+            if (j < 13) {
+                res2[j] += r[j + 1];
+            }
+        }
+    }
+    for (int j = 0; j < 14; ++j) {
+        res1[j] = max(res1[j] + ((coins[x] >> j) & 1) - k, res2[j] + ((coins[x] >> (j + 1)) & 1));
+    }
+    return res1;
+}
+
+int maximumPoints(vector<vector<int>>& edges, vector<int>& coins, int k) {
+    vector<vector<int>> g(coins.size());
+    for (auto& edge : edges) {
+        int x = edge[0], y = edge[1];
+        g[x].push_back(y);
+        g[y].push_back(x);
+    }
+    return dfs(0, -1, g, coins, k)[0];
+}
+```
+
+
+result: int maximumPoints(vector<vector<int>>& edges, vector<int>& coins, int k) {
+    vector<vector<int>> g(coins.size());
+    for (auto& edge : edges) {
+        int x = edge[0], y = edge[1];
+        g[x].push_back(y);
+        g[y].push_back(x);
+    }
+    return dfs(0, -1, g, coins, k)[0];
+}
+
+vector<int> dfs(int x, int fa, vector<vector<int>>& g, vector<int>& coins, int k) {
+    vector<int> res1(14, 0);
+    vector<int> res2(14, 0);
+    for (int y : g[x]) {
+        if (y == fa) continue;
+        vector<int> r = dfs(y, x, g, coins, k);
+        for (int j = 0; j < 14; ++j) {
+            res1[j] += r[j];
+            if (j < 13) {
+                res2[j] += r[j + 1];
+            }
+        }
+    }
+    for (int j = 0; j < 14; ++j) {
+        res1[j] = max(res1[j] + ((coins[x] >> j) & 1) - k, res2[j] + ((coins[x] >> (j + 1)) & 1));
+    }
+    return res1;
+}
+
+
+Task_id: 90_0    done
+raw_prediction: ```cpp
+#include <vector>
+
+using namespace std;
+
+void dfs(int x, vector<vector<int>>& g, vector<bool>& vis, vector<int>& counts) {
+    vis[x] = true;
+    counts[0] += 1;
+    counts[1] += g[x].size();
+    for (int y : g[x]) {
+        if (!vis[y]) {
+            dfs(y, g, vis, counts);
+        }
+    }
+}
+
+int countCompleteComponents(int n, vector<vector<int>>& edges) {
+    vector<vector<int>> g(n);
+    for (auto& edge : edges) {
+        int x = edge[0], y = edge[1];
+        g[x].push_back(y);
+        g[y].push_back(x);
+    }
+    vector<bool> vis(n, false);
+    int ans = 0;
+    for (int i = 0; i < n; ++i) {
+        if (!vis[i]) {
+            vector<int> counts = {0, 0};
+            dfs(i, g, vis, counts);
+            int v = counts[0], e = counts[1];
+            ans += e == v * (v - 1);
+        }
+    }
+    return ans;
+}
+```
+
+
+result: int countCompleteComponents(int n, vector<vector<int>>& edges) {
+    vector<vector<int>> g(n);
+    for (auto& edge : edges) {
+        int x = edge[0], y = edge[1];
+        g[x].push_back(y);
+        g[y].push_back(x);
+    }
+    vector<bool> vis(n, false);
+    int ans = 0;
+    for (int i = 0; i < n; ++i) {
+        if (!vis[i]) {
+            vector<int> counts = {0, 0};
+            dfs(i, g, vis, counts);
+            int v = counts[0], e = counts[1];
+            ans += e == v * (v - 1);
+        }
+    }
+    return ans;
+}
+
+void dfs(int x, vector<vector<int>>& g, vector<bool>& vis, vector<int>& counts) {
+    vis[x] = true;
+    counts[0] += 1;
+    counts[1] += g[x].size();
+    for (int y : g[x]) {
+        if (!vis[y]) {
+            dfs(y, g, vis, counts);
+        }
+    }
+}
+
+
+Task_id: 91_0    done
+raw_prediction: ```cpp
+bool reach(int x, int y, vector<vector<int>>& grid) {
+    int n = grid.size(), m = grid[0].size();
+    if (x == n - 1 && y == m - 1)
+        return true;
+    grid[x][y] = 0;
+    int x1 = x, y1 = y + 1;
+    if (y1 < m && grid[x1][y1] == 1) {
+        bool ret = reach(x1, y1, grid);
+        if (ret)
+            return ret;
+    }
+    int x2 = x + 1, y2 = y;
+    if (x2 < n && grid[x2][y2] == 1)
+        return reach(x2, y2, grid);
+    return false;
+}
+
+bool isPossibleToCutPath(vector<vector<int>>& grid) {
+    int n = grid.size(), m = grid[0].size();
+    if (!reach(0, 0, grid))
+        return true;
+    grid[0][0] = grid[n - 1][m - 1] = 1;
+    if (!reach(0, 0, grid))
+        return true;
+    return false;
+}
+```
+
+
+result: bool isPossibleToCutPath(vector<vector<int>>& grid) {
+    int n = grid.size(), m = grid[0].size();
+    if (!reach(0, 0, grid))
+        return true;
+    grid[0][0] = grid[n - 1][m - 1] = 1;
+    if (!reach(0, 0, grid))
+        return true;
+    return false;
+}
+
+bool reach(int x, int y, vector<vector<int>>& grid) {
+    int n = grid.size(), m = grid[0].size();
+    if (x == n - 1 && y == m - 1)
+        return true;
+    grid[x][y] = 0;
+    int x1 = x, y1 = y + 1;
+    if (y1 < m && grid[x1][y1] == 1) {
+        bool ret = reach(x1, y1, grid);
+        if (ret)
+            return ret;
+    }
+    int x2 = x + 1, y2 = y;
+    if (x2 < n && grid[x2][y2] == 1)
+        return reach(x2, y2, grid);
+    return false;
+}
+
+
+Task_id: 92_0    done
+raw_prediction: ```cpp
+bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
+    vector<vector<int>> adj(n);
+    for (auto& edge : edges) {
+        adj[edge[0]].push_back(edge[1]);
+        adj[edge[1]].push_back(edge[0]);
+    }
+    vector<bool> visited(n, false);
+    return dfs(source, destination, adj, visited);
+}
+
+bool dfs(int source, int destination, vector<vector<int>>& adj, vector<bool>& visited) {
+    if (source == destination) {
+        return true;
+    }
+    visited[source] = true;
+    for (int next : adj[source]) {
+        if (!visited[next] && dfs(next, destination, adj, visited)) {
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+
+result: bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
+    vector<vector<int>> adj(n);
+    for (auto& edge : edges) {
+        adj[edge[0]].push_back(edge[1]);
+        adj[edge[1]].push_back(edge[0]);
+    }
+    vector<bool> visited(n, false);
+    return dfs(source, destination, adj, visited);
+}
+
+bool dfs(int source, int destination, vector<vector<int>>& adj, vector<bool>& visited) {
+    if (source == destination) {
+        return true;
+    }
+    visited[source] = true;
+    for (int next : adj[source]) {
+        if (!visited[next] && dfs(next, destination, adj, visited)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+Task_id: 93_0    done
+raw_prediction: ```cpp
+bool dfs(ListNode* head, TreeNode* rt) {
+    if (!head) {
+        return true;
+    }
+    if (!rt) {
+        return false;
+    }
+    if (rt->val != head->val) {
+        return false;
+    }
+    return dfs(head->next, rt->left) || dfs(head->next, rt->right);
+}
+
+bool isSubPath(ListNode* head, TreeNode* root) {
+    if (!root) {
+        return false;
+    }
+    return dfs(head, root) || isSubPath(head, root->left) || isSubPath(head, root->right);
+}
+```
+
+
+result: bool isSubPath(ListNode* head, TreeNode* root) {
+    if (!root) {
+        return false;
+    }
+    return dfs(head, root) || isSubPath(head, root->left) || isSubPath(head, root->right);
+}
+
+bool dfs(ListNode* head, TreeNode* rt) {
+    if (!head) {
+        return true;
+    }
+    if (!rt) {
+        return false;
+    }
+    if (rt->val != head->val) {
+        return false;
+    }
+    return dfs(head->next, rt->left) || dfs(head->next, rt->right);
+}
+
+
+Task_id: 94_0    done
+raw_prediction: ```cpp
+#include <vector>
+
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
+void inorder(TreeNode* node, vector<int>& res) {
+    if (node) {
+        inorder(node->left, res);
+        res.push_back(node->val);
+        inorder(node->right, res);
+    }
+}
+
+vector<int> getAllElements(TreeNode* root1, TreeNode* root2) {
+    vector<int> nums1, nums2;
+    inorder(root1, nums1);
+    inorder(root2, nums2);
+    vector<int> merged;
+    int p1 = 0, p2 = 0;
+    while (true) {
+        if (p1 == nums1.size()) {
+            merged.insert(merged.end(), nums2.begin() + p2, nums2.end());
+            break;
+        }
+        if (p2 == nums2.size()) {
+            merged.insert(merged.end(), nums1.begin() + p1, nums1.end());
+            break;
+        }
+        if (nums1[p1] < nums2[p2]) {
+            merged.push_back(nums1[p1]);
+            p1++;
+        } else {
+            merged.push_back(nums2[p2]);
+            p2++;
+        }
+    }
+    return merged;
+}
+```
+
+
+result: vector<int> getAllElements(TreeNode* root1, TreeNode* root2) {
+    vector<int> nums1, nums2;
+    inorder(root1, nums1);
+    inorder(root2, nums2);
+    vector<int> merged;
+    int p1 = 0, p2 = 0;
+    while (true) {
+        if (p1 == nums1.size()) {
+            merged.insert(merged.end(), nums2.begin() + p2, nums2.end());
+            break;
+        }
+        if (p2 == nums2.size()) {
+            merged.insert(merged.end(), nums1.begin() + p1, nums1.end());
+            break;
+        }
+        if (nums1[p1] < nums2[p2]) {
+            merged.push_back(nums1[p1]);
+            p1++;
+        } else {
+            merged.push_back(nums2[p2]);
+            p2++;
+        }
+    }
+    return merged;
+}
+
+void inorder(TreeNode* node, vector<int>& res) {
+    if (node) {
+        inorder(node->left, res);
+        res.push_back(node->val);
+        inorder(node->right, res);
+    }
+}
+
+
+Task_id: 95_0    done
+raw_prediction: ```cpp
+int maxLevelSum(TreeNode* root) {
+    vector<int> sums;
+    dfs(root, 0, sums);
+    return max_element(sums.begin(), sums.end()) - sums.begin() + 1;
+}
+
+void dfs(TreeNode* node, int level, vector<int>& sums) {
+    if (level == sums.size()) {
+        sums.push_back(node->val);
+    } else {
+        sums[level] += node->val;
+    }
+    if (node->left) {
+        dfs(node->left, level + 1, sums);
+    }
+    if (node->right) {
+        dfs(node->right, level + 1, sums);
+    }
+}
+```
+
+
+result: int maxLevelSum(TreeNode* root) {
+    vector<int> sums;
+    dfs(root, 0, sums);
+    return max_element(sums.begin(), sums.end()) - sums.begin() + 1;
+}
+
+void dfs(TreeNode* node, int level, vector<int>& sums) {
+    if (level == sums.size()) {
+        sums.push_back(node->val);
+    } else {
+        sums[level] += node->val;
+    }
+    if (node->left) {
+        dfs(node->left, level + 1, sums);
+    }
+    if (node->right) {
+        dfs(node->right, level + 1, sums);
+    }
+}
+
+
+Task_id: 96_0    done
+raw_prediction: ```cpp
+int sumRootToLeaf(TreeNode* root) {
+    return dfs(root, 0);
+}
+
+int dfs(TreeNode* node, int val) {
+    if (node == nullptr) {
+        return 0;
+    }
+    val = (val << 1) | node->val;
+    if (node->left == nullptr && node->right == nullptr) {
+        return val;
+    }
+    return dfs(node->left, val) + dfs(node->right, val);
+}
+```
+
+
+result: int sumRootToLeaf(TreeNode* root) {
+    return dfs(root, 0);
+}
+
+int dfs(TreeNode* node, int val) {
+    if (node == nullptr) {
+        return 0;
+    }
+    val = (val << 1) | node->val;
+    if (node->left == nullptr && node->right == nullptr) {
+        return val;
+    }
+    return dfs(node->left, val) + dfs(node->right, val);
+}
+
+
+Task_id: 97_0    done
+raw_prediction: ```cpp
+bool isCousins(TreeNode* root, int x, int y) {
+    auto dfs = [&](TreeNode* root, TreeNode* fa, int depth, int t) -> pair<int, int> {
+        if (root == nullptr)
+            return {-1, -1};
+        if (root->val == t)
+            return {(fa != nullptr) ? fa->val : -1, depth};
+        auto l = dfs(root->left, root, depth + 1, t);
+        if (l.first != -1)
+            return l;
+        return dfs(root->right, root, depth + 1, t);
+    };
+
+    auto xi = dfs(root, nullptr, 0, x);
+    auto yi = dfs(root, nullptr, 0, y);
+    return xi.second == yi.second && xi.first != yi.first;
+}
+```
+
+
+result: bool isCousins(TreeNode* root, int x, int y) {
+    auto dfs = [&](TreeNode* root, TreeNode* fa, int depth, int t) -> pair<int, int> {
+        if (root == nullptr)
+            return {-1, -1};
+        if (root->val == t)
+            return {(fa != nullptr) ? fa->val : -1, depth};
+        auto l = dfs(root->left, root, depth + 1, t);
+        if (l.first != -1)
+            return l;
+        return dfs(root->right, root, depth + 1, t);
+    };
+
+    auto xi = dfs(root, nullptr, 0, x);
+    auto yi = dfs(root, nullptr, 0, y);
+    return xi.second == yi.second && xi.first != yi.first;
+}
+
+
+Task_id: 98_0    done
+raw_prediction: ```cpp
+#include <vector>
+#include <unordered_set>
+#include <algorithm>
+
+int longestSquareStreak(std::vector<int>& nums) {
+    int ans = 0;
+    std::unordered_set<int> s(nums.begin(), nums.end());
+    for (auto x : s) {
+        int cnt = 0;
+        while (s.count(x)) {
+            cnt++;
+            x *= x;
+        }
+        ans = std::max(ans, cnt);
+    }
+    return ans > 1 ? ans : -1;
+}
+```
+
+
+result: int longestSquareStreak(std::vector<int>& nums) {
+    int ans = 0;
+    std::unordered_set<int> s(nums.begin(), nums.end());
+    for (auto x : s) {
+        int cnt = 0;
+        while (s.count(x)) {
+            cnt++;
+            x *= x;
+        }
+        ans = std::max(ans, cnt);
+    }
+    return ans > 1 ? ans : -1;
+}
+
+
+Task_id: 99_0    done
+raw_prediction: ```cpp
+int appendCharacters(string s, string t) {
+    int j = 0, m = t.length();
+    for (char c : s) {
+        if (c == t[j]) {
+            j++;
+            if (j == m) return 0;
+        }
+    }
+    return m - j;
+}
+```
+
+
+result: int appendCharacters(string s, string t) {
+    int j = 0, m = t.length();
+    for (char c : s) {
+        if (c == t[j]) {
+            j++;
+            if (j == m) return 0;
+        }
+    }
+    return m - j;
+}
+
+
+Task_id: 100_0    done

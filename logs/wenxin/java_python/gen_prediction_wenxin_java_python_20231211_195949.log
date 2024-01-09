@@ -1,0 +1,3417 @@
+raw_prediction: ```python
+def findKOr(nums: List[int], k: int) -> int:
+    ans = 0
+    for i in range(31):
+        cnt1 = sum((x >> i) & 1 for x in nums)
+        if cnt1 >= k:
+            ans |= 1 << i
+    return ans
+```
+
+
+result: def findKOr(nums: List[int], k: int) -> int:
+    ans = 0
+    for i in range(31):
+        cnt1 = sum((x >> i) & 1 for x in nums)
+        if cnt1 >= k:
+            ans |= 1 << i
+    return ans
+
+
+Task_id: 1_0    done
+raw_prediction: ```python
+from typing import List
+
+def minSum(nums1: List[int], nums2: List[int]) -> int:
+    s1 = 0
+    zero1 = False
+    for x in nums1:
+        if x == 0:
+            zero1 = True
+            s1 += 1
+        else:
+            s1 += x
+    s2 = 0
+    zero2 = False
+    for x in nums2:
+        if x == 0:
+            zero2 = True
+            s2 += 1
+        else:
+            s2 += x
+    if (not zero1 and s1 < s2) or (not zero2 and s2 < s1):
+        return -1
+    return max(s1, s2)
+```
+
+
+result: def minSum(nums1: List[int], nums2: List[int]) -> int:
+    s1 = 0
+    zero1 = False
+    for x in nums1:
+        if x == 0:
+            zero1 = True
+            s1 += 1
+        else:
+            s1 += x
+    s2 = 0
+    zero2 = False
+    for x in nums2:
+        if x == 0:
+            zero2 = True
+            s2 += 1
+        else:
+            s2 += x
+    if (not zero1 and s1 < s2) or (not zero2 and s2 < s1):
+        return -1
+    return max(s1, s2)
+
+
+Task_id: 2_0    done
+raw_prediction: ```python
+from typing import List
+
+def lengthOfLongestSubsequence(nums: List[int], target: int) -> int:
+    f = [float('-inf')] * (target + 1)
+    f[0] = 0
+    s = 0
+    for x in nums:
+        s = min(s + x, target)
+        for j in range(s, x - 1, -1):
+            f[j] = max(f[j], f[j - x] + 1)
+    return f[target] if f[target] > 0 else -1
+```
+
+
+result: def lengthOfLongestSubsequence(nums: List[int], target: int) -> int:
+    f = [float('-inf')] * (target + 1)
+    f[0] = 0
+    s = 0
+    for x in nums:
+        s = min(s + x, target)
+        for j in range(s, x - 1, -1):
+            f[j] = max(f[j], f[j - x] + 1)
+    return f[target] if f[target] > 0 else -1
+
+
+Task_id: 3_0    done
+raw_prediction: ```python
+def minChanges(s: str) -> int:
+    ans = 0
+    for i in range(0, len(s), 2):
+        if s[i] != s[i + 1]:
+            ans += 1
+    return ans
+```
+
+
+result: def minChanges(s: str) -> int:
+    ans = 0
+    for i in range(0, len(s), 2):
+        if s[i] != s[i + 1]:
+            ans += 1
+    return ans
+
+
+Task_id: 4_0    done
+raw_prediction: ```python
+from typing import List
+from collections import Counter
+
+def minGroupsForValidAssignment(nums: List[int]) -> int:
+    cnt = Counter(nums)
+    k = len(nums)
+    for c in cnt.values():
+        k = min(k, c)
+    while True:
+        ans = 0
+        for c in cnt.values():
+            if c // k < c % k:
+                ans = 0
+                break
+            ans += (c + k) // (k + 1)
+        if ans > 0:
+            return ans
+        k -= 1
+```
+
+
+result: def minGroupsForValidAssignment(nums: List[int]) -> int:
+    cnt = Counter(nums)
+    k = len(nums)
+    for c in cnt.values():
+        k = min(k, c)
+    while True:
+        ans = 0
+        for c in cnt.values():
+            if c // k < c % k:
+                ans = 0
+                break
+            ans += (c + k) // (k + 1)
+        if ans > 0:
+            return ans
+        k -= 1
+
+
+Task_id: 5_0    done
+raw_prediction: ```python
+def minimumSum(nums):
+    n = len(nums)
+    suf = [0] * n
+    suf[n - 1] = nums[n - 1]
+    for i in range(n - 2, 0, -1):
+        suf[i] = min(suf[i + 1], nums[i])
+    ans = float('inf')
+    pre = nums[0]
+    for j in range(1, n - 1):
+        if pre < nums[j] and nums[j] > suf[j + 1]:
+            ans = min(ans, pre + nums[j] + suf[j + 1])
+        pre = min(pre, nums[j])
+    return -1 if ans == float('inf') else ans
+```
+
+
+result: def minimumSum(nums):
+    n = len(nums)
+    suf = [0] * n
+    suf[n - 1] = nums[n - 1]
+    for i in range(n - 2, 0, -1):
+        suf[i] = min(suf[i + 1], nums[i])
+    ans = float('inf')
+    pre = nums[0]
+    for j in range(1, n - 1):
+        if pre < nums[j] and nums[j] > suf[j + 1]:
+            ans = min(ans, pre + nums[j] + suf[j + 1])
+        pre = min(pre, nums[j])
+    return -1 if ans == float('inf') else ans
+
+
+Task_id: 6_0    done
+raw_prediction: ```python
+from typing import List
+
+def constructProductMatrix(grid: List[List[int]]) -> List[List[int]]:
+    MOD = 12345
+    n = len(grid)
+    m = len(grid[0])
+    p = [[0] * m for _ in range(n)]
+    suf = 1
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            p[i][j] = int(suf)
+            suf = suf * grid[i][j] % MOD
+    pre = 1
+    for i in range(n):
+        for j in range(m):
+            p[i][j] = int(p[i][j] * pre % MOD)
+            pre = pre * grid[i][j] % MOD
+    return p
+```
+
+
+result: def constructProductMatrix(grid: List[List[int]]) -> List[List[int]]:
+    MOD = 12345
+    n = len(grid)
+    m = len(grid[0])
+    p = [[0] * m for _ in range(n)]
+    suf = 1
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            p[i][j] = int(suf)
+            suf = suf * grid[i][j] % MOD
+    pre = 1
+    for i in range(n):
+        for j in range(m):
+            p[i][j] = int(p[i][j] * pre % MOD)
+            pre = pre * grid[i][j] % MOD
+    return p
+
+
+Task_id: 7_0    done
+raw_prediction: ```python
+def maximum_odd_binary_number(s: str) -> str:
+    cnt1 = s.count('1')
+    return '1' * (cnt1 - 1) + '0' * (len(s) - cnt1) + '1'
+```
+
+
+result: def maximum_odd_binary_number(s: str) -> str:
+    cnt1 = s.count('1')
+    return '1' * (cnt1 - 1) + '0' * (len(s) - cnt1) + '1'
+
+
+Task_id: 8_0    done
+raw_prediction: ```python
+def shortestBeautifulSubstring(S: str, k: int) -> str:
+    if len(S.replace("0", "")) < k:
+        return ""
+    s = list(S)
+    ans = S
+    cnt1 = 0
+    left = 0
+    for right in range(len(s)):
+        cnt1 += int(s[right])
+        while cnt1 > k or s[left] == '0':
+            cnt1 -= int(s[left])
+            left += 1
+        if cnt1 == k:
+            t = S[left:right + 1]
+            if len(t) < len(ans) or len(t) == len(ans) and t < ans:
+                ans = t
+    return ans
+```
+
+
+result: def shortestBeautifulSubstring(S: str, k: int) -> str:
+    if len(S.replace("0", "")) < k:
+        return ""
+    s = list(S)
+    ans = S
+    cnt1 = 0
+    left = 0
+    for right in range(len(s)):
+        cnt1 += int(s[right])
+        while cnt1 > k or s[left] == '0':
+            cnt1 -= int(s[left])
+            left += 1
+        if cnt1 == k:
+            t = S[left:right + 1]
+            if len(t) < len(ans) or len(t) == len(ans) and t < ans:
+                ans = t
+    return ans
+
+
+Task_id: 9_0    done
+raw_prediction: ```python
+def addMinimum(word: str) -> int:
+    s = list(word)
+    t = 1
+    for i in range(1, len(s)):
+        if s[i - 1] >= s[i]:
+            t += 1
+    return t * 3 - len(s)
+```
+
+
+result: def addMinimum(word: str) -> int:
+    s = list(word)
+    t = 1
+    for i in range(1, len(s)):
+        if s[i - 1] >= s[i]:
+            t += 1
+    return t * 3 - len(s)
+
+
+Task_id: 10_0    done
+raw_prediction: ```python
+from typing import List
+
+def maxIncreasingGroups(usageLimits: List[int]) -> int:
+    usageLimits.sort()
+    remain = 0
+    require = 1
+    for num in usageLimits:
+        remain += num
+        if remain >= require:
+            remain -= require
+            require += 1
+    return require - 1
+```
+
+
+result: def maxIncreasingGroups(usageLimits: List[int]) -> int:
+    usageLimits.sort()
+    remain = 0
+    require = 1
+    for num in usageLimits:
+        remain += num
+        if remain >= require:
+            remain -= require
+            require += 1
+    return require - 1
+
+
+Task_id: 11_0    done
+raw_prediction: ```python
+from typing import List
+
+def lastVisitedIntegers(words: List[str]) -> List[int]:
+    ans = []
+    a = []
+    k = 0
+    for s in words:
+        if s[0] != 'p':
+            a.append(int(s))
+            k = 0
+        else:
+            ans.append(-1 if k + 1 > len(a) else a[len(a) - k - 1])
+            k += 1
+    return ans
+```
+
+
+result: def lastVisitedIntegers(words: List[str]) -> List[int]:
+    ans = []
+    a = []
+    k = 0
+    for s in words:
+        if s[0] != 'p':
+            a.append(int(s))
+            k = 0
+        else:
+            ans.append(-1 if k + 1 > len(a) else a[len(a) - k - 1])
+            k += 1
+    return ans
+
+
+Task_id: 12_0    done
+raw_prediction: ```python
+def minOperations(s1: str, s2: str, x: int) -> int:
+    if s1 == s2:
+        return 0
+    p = [i for i in range(len(s1)) if s1[i] != s2[i]]
+    if len(p) % 2 != 0:
+        return -1
+    f0, f1 = 0, x
+    for i in range(1, len(p)):
+        newF = min(f1 + x, f0 + (p[i] - p[i - 1]) * 2)
+        f0, f1 = f1, newF
+    return f1 // 2
+```
+
+
+result: def minOperations(s1: str, s2: str, x: int) -> int:
+    if s1 == s2:
+        return 0
+    p = [i for i in range(len(s1)) if s1[i] != s2[i]]
+    if len(p) % 2 != 0:
+        return -1
+    f0, f1 = 0, x
+    for i in range(1, len(p)):
+        newF = min(f1 + x, f0 + (p[i] - p[i - 1]) * 2)
+        f0, f1 = f1, newF
+    return f1 // 2
+
+
+Task_id: 13_0    done
+raw_prediction: ```python
+from typing import List
+
+def minProcessingTime(processorTime: List[int], tasks: List[int]) -> int:
+    processorTime.sort()
+    tasks.sort(reverse=True)
+    ans = 0
+    for i in range(len(processorTime)):
+        ans = max(ans, processorTime[i] + tasks[i * 4])
+    return ans
+```
+
+
+result: def minProcessingTime(processorTime: List[int], tasks: List[int]) -> int:
+    processorTime.sort()
+    tasks.sort(reverse=True)
+    ans = 0
+    for i in range(len(processorTime)):
+        ans = max(ans, processorTime[i] + tasks[i * 4])
+    return ans
+
+
+Task_id: 14_0    done
+raw_prediction: ```python
+def differenceOfSums(n: int, m: int) -> int:
+    return n * (n + 1) // 2 - n // m * (n // m + 1) * m
+```
+
+
+result: def differenceOfSums(n: int, m: int) -> int:
+    return n * (n + 1) // 2 - n // m * (n // m + 1) * m
+
+
+Task_id: 15_0    done
+raw_prediction: ```python
+def minSizeSubarray(nums: List[int], target: int) -> int:
+    total = sum(nums)
+    n = len(nums)
+    ans = float('inf')
+    left = 0
+    sum = 0
+    for right in range(n * 2):
+        sum += nums[right % n]
+        while sum > target % total:
+            sum -= nums[left % n]
+            left += 1
+        if sum == target % total:
+            ans = min(ans, right - left + 1)
+    return -1 if ans == float('inf') else ans + (target // total) * n
+```
+
+
+result: def minSizeSubarray(nums: List[int], target: int) -> int:
+    total = sum(nums)
+    n = len(nums)
+    ans = float('inf')
+    left = 0
+    sum = 0
+    for right in range(n * 2):
+        sum += nums[right % n]
+        while sum > target % total:
+            sum -= nums[left % n]
+            left += 1
+        if sum == target % total:
+            ans = min(ans, right - left + 1)
+    return -1 if ans == float('inf') else ans + (target // total) * n
+
+
+Task_id: 16_0    done
+raw_prediction: ```python
+def maximumTripletValue(nums: List[int]) -> int:
+    n = len(nums)
+    sufMax = [0] * (n + 1)
+    for i in range(n - 1, 1, -1):
+        sufMax[i] = max(sufMax[i + 1], nums[i])
+    ans = 0
+    preMax = nums[0]
+    for j in range(1, n - 1):
+        ans = max(ans, (preMax - nums[j]) * sufMax[j + 1])
+        preMax = max(preMax, nums[j])
+    return ans
+```
+
+
+result: def maximumTripletValue(nums: List[int]) -> int:
+    n = len(nums)
+    sufMax = [0] * (n + 1)
+    for i in range(n - 1, 1, -1):
+        sufMax[i] = max(sufMax[i + 1], nums[i])
+    ans = 0
+    preMax = nums[0]
+    for j in range(1, n - 1):
+        ans = max(ans, (preMax - nums[j]) * sufMax[j + 1])
+        preMax = max(preMax, nums[j])
+    return ans
+
+
+Task_id: 17_0    done
+raw_prediction: ```python
+def maximumTripletValue(nums: List[int]) -> int:
+    n = len(nums)
+    sufMax = [0] * (n + 1)
+    for i in range(n - 1, 1, -1):
+        sufMax[i] = max(sufMax[i + 1], nums[i])
+    ans = 0
+    preMax = nums[0]
+    for j in range(1, n - 1):
+        ans = max(ans, (preMax - nums[j]) * sufMax[j + 1])
+        preMax = max(preMax, nums[j])
+    return ans
+```
+
+
+result: def maximumTripletValue(nums: List[int]) -> int:
+    n = len(nums)
+    sufMax = [0] * (n + 1)
+    for i in range(n - 1, 1, -1):
+        sufMax[i] = max(sufMax[i + 1], nums[i])
+    ans = 0
+    preMax = nums[0]
+    for j in range(1, n - 1):
+        ans = max(ans, (preMax - nums[j]) * sufMax[j + 1])
+        preMax = max(preMax, nums[j])
+    return ans
+
+
+Task_id: 18_0    done
+raw_prediction: ```python
+def maxSubarrays(nums: List[int]) -> int:
+    ans = 0
+    a = -1
+    for x in nums:
+        a &= x
+        if a == 0:
+            ans += 1
+            a = -1
+    return max(ans, 1)
+```
+
+
+result: def maxSubarrays(nums: List[int]) -> int:
+    ans = 0
+    a = -1
+    for x in nums:
+        a &= x
+        if a == 0:
+            ans += 1
+            a = -1
+    return max(ans, 1)
+
+
+Task_id: 19_0    done
+raw_prediction: ```python
+from typing import List
+from collections import Counter
+
+def minOperations(nums: List[int]) -> int:
+    cnt = Counter(nums)
+    ans = 0
+    for c in cnt.values():
+        if c == 1:
+            return -1
+        ans += (c + 2) // 3
+    return ans
+```
+
+
+result: def minOperations(nums: List[int]) -> int:
+    cnt = Counter(nums)
+    ans = 0
+    for c in cnt.values():
+        if c == 1:
+            return -1
+        ans += (c + 2) // 3
+    return ans
+
+
+Task_id: 20_0    done
+raw_prediction: ```python
+from typing import List
+
+def minOperations(nums: List[int], k: int) -> int:
+    n = len(nums)
+    u = (2 << k) - 2
+    s = 0
+    for i in range(n - 1, -1, -1):
+        s |= 1 << nums[i]
+        if (s & u) == u:
+            return n - i
+```
+
+
+result: def minOperations(nums: List[int], k: int) -> int:
+    n = len(nums)
+    u = (2 << k) - 2
+    s = 0
+    for i in range(n - 1, -1, -1):
+        s |= 1 << nums[i]
+        if (s & u) == u:
+            return n - i
+
+
+Task_id: 21_0    done
+raw_prediction: ```python
+from typing import List
+
+def maxNumberOfAlloys(n: int, k: int, budget: int, composition: List[List[int]], stock: List[int], cost: List[int]) -> int:
+    ans = 0
+    mx = min(stock) + budget
+    for com in composition:
+        left = 0
+        right = mx + 1
+        while left + 1 < right:
+            mid = (left + right) // 2
+            ok = True
+            money = 0
+            for i in range(n):
+                if stock[i] < com[i] * mid:
+                    money += (com[i] * mid - stock[i]) * cost[i]
+                    if money > budget:
+                        ok = False
+                        break
+            if ok:
+                left = mid
+            else:
+                right = mid
+        ans = max(ans, left)
+    return ans
+```
+
+
+result: def maxNumberOfAlloys(n: int, k: int, budget: int, composition: List[List[int]], stock: List[int], cost: List[int]) -> int:
+    ans = 0
+    mx = min(stock) + budget
+    for com in composition:
+        left = 0
+        right = mx + 1
+        while left + 1 < right:
+            mid = (left + right) // 2
+            ok = True
+            money = 0
+            for i in range(n):
+                if stock[i] < com[i] * mid:
+                    money += (com[i] * mid - stock[i]) * cost[i]
+                    if money > budget:
+                        ok = False
+                        break
+            if ok:
+                left = mid
+            else:
+                right = mid
+        ans = max(ans, left)
+    return ans
+
+
+Task_id: 22_0    done
+raw_prediction: ```python
+from typing import List
+
+def countWays(nums: List[int]) -> int:
+    a = sorted(nums)
+    n = len(a)
+    ans = 1 if a[0] > 0 else 0
+    for i in range(n - 1):
+        if a[i] < i + 1 < a[i + 1]:
+            ans += 1
+    return ans + 1
+```
+
+
+result: def countWays(nums: List[int]) -> int:
+    a = sorted(nums)
+    n = len(a)
+    ans = 1 if a[0] > 0 else 0
+    for i in range(n - 1):
+        if a[i] < i + 1 < a[i + 1]:
+            ans += 1
+    return ans + 1
+
+
+Task_id: 23_0    done
+raw_prediction: ```python
+from typing import List
+
+def sumIndicesWithKSetBits(nums: List[int], k: int) -> int:
+    ans = 0
+    n = len(nums)
+    for i in range(n):
+        if bin(i).count('1') == k:
+            ans += nums[i]
+    return ans
+```
+
+
+result: def sumIndicesWithKSetBits(nums: List[int], k: int) -> int:
+    ans = 0
+    n = len(nums)
+    for i in range(n):
+        if bin(i).count('1') == k:
+            ans += nums[i]
+    return ans
+
+
+Task_id: 24_0    done
+raw_prediction: ```python
+from typing import List
+from collections import defaultdict
+
+def countPairs(coordinates: List[List[int]], k: int) -> int:
+    ans = 0
+    cnt = defaultdict(int)
+    for p in coordinates:
+        x, y = p
+        for i in range(k + 1):
+            ans += cnt[(x ^ i) * 2000000 + (y ^ (k - i))]
+        cnt[x * 2000000 + y] += 1
+    return ans
+```
+
+
+result: def countPairs(coordinates: List[List[int]], k: int) -> int:
+    ans = 0
+    cnt = defaultdict(int)
+    for p in coordinates:
+        x, y = p
+        for i in range(k + 1):
+            ans += cnt[(x ^ i) * 2000000 + (y ^ (k - i))]
+        cnt[x * 2000000 + y] += 1
+    return ans
+
+
+Task_id: 25_0    done
+raw_prediction: ```python
+from typing import List
+
+def minimumRightShifts(nums: List[int]) -> int:
+    i = 1
+    n = len(nums)
+    while i < n and nums[i - 1] < nums[i]:
+        i += 1
+    if i == n:
+        return 0
+    if nums[0] < nums[n - 1]:
+        return -1
+    mid = i
+    i += 1
+    while i < n and nums[i - 1] < nums[i]:
+        i += 1
+    if i < n:
+        return -1
+    return n - mid
+```
+
+
+result: def minimumRightShifts(nums: List[int]) -> int:
+    i = 1
+    n = len(nums)
+    while i < n and nums[i - 1] < nums[i]:
+        i += 1
+    if i == n:
+        return 0
+    if nums[0] < nums[n - 1]:
+        return -1
+    mid = i
+    i += 1
+    while i < n and nums[i - 1] < nums[i]:
+        i += 1
+    if i < n:
+        return -1
+    return n - mid
+
+
+Task_id: 26_0    done
+raw_prediction: ```python
+from typing import List
+
+def minLengthAfterRemovals(nums: List[int]) -> int:
+    maxCnt = 0
+    cnt = 1
+    pre = nums[0]
+    n = len(nums)
+    for i in range(1, n):
+        if pre == nums[i]:
+            cnt += 1
+        else:
+            maxCnt = max(maxCnt, cnt)
+            pre = nums[i]
+            cnt = 1
+    maxCnt = max(maxCnt, cnt)
+    if maxCnt * 2 > n:
+        return maxCnt - (n - maxCnt)
+    else:
+        if n % 2 == 0:
+            return 0
+        else:
+            return 1
+```
+
+
+result: def minLengthAfterRemovals(nums: List[int]) -> int:
+    maxCnt = 0
+    cnt = 1
+    pre = nums[0]
+    n = len(nums)
+    for i in range(1, n):
+        if pre == nums[i]:
+            cnt += 1
+        else:
+            maxCnt = max(maxCnt, cnt)
+            pre = nums[i]
+            cnt = 1
+    maxCnt = max(maxCnt, cnt)
+    if maxCnt * 2 > n:
+        return maxCnt - (n - maxCnt)
+    else:
+        if n % 2 == 0:
+            return 0
+        else:
+            return 1
+
+
+Task_id: 27_0    done
+raw_prediction: ```python
+from typing import List
+
+def numberOfPoints(nums: List[List[int]]) -> int:
+    diff = [0] * 102
+    for p in nums:
+        diff[p[0]] += 1
+        diff[p[1] + 1] -= 1
+    s = ans = 0
+    for d in diff:
+        s += d
+        if s > 0:
+            ans += 1
+    return ans
+```
+
+
+result: def numberOfPoints(nums: List[List[int]]) -> int:
+    diff = [0] * 102
+    for p in nums:
+        diff[p[0]] += 1
+        diff[p[1] + 1] -= 1
+    s = ans = 0
+    for d in diff:
+        s += d
+        if s > 0:
+            ans += 1
+    return ans
+
+
+Task_id: 28_0    done
+raw_prediction: ```python
+def is_reachable_at_time(sx: int, sy: int, fx: int, fy: int, t: int) -> bool:
+    if sx == fx and sy == fy:
+        return t != 1
+    return max(abs(sx - fx), abs(sy - fy)) <= t
+```
+
+
+result: def is_reachable_at_time(sx: int, sy: int, fx: int, fy: int, t: int) -> bool:
+    if sx == fx and sy == fy:
+        return t != 1
+    return max(abs(sx - fx), abs(sy - fy)) <= t
+
+
+Task_id: 29_0    done
+raw_prediction: ```python
+from typing import List
+from collections import defaultdict
+
+def countInterestingSubarrays(nums: List[int], modulo: int, k: int) -> int:
+    n = len(nums)
+    ans = 0
+    preSum = [0] * (n + 1)
+    for i in range(n):
+        preSum[i + 1] = preSum[i] + (nums[i] % modulo == k)
+    map = defaultdict(int)
+    for i in range(n + 1):
+        ans += map[(preSum[i] % modulo - k + modulo) % modulo]
+        map[preSum[i] % modulo] += 1
+    return ans
+```
+
+
+result: def countInterestingSubarrays(nums: List[int], modulo: int, k: int) -> int:
+    n = len(nums)
+    ans = 0
+    preSum = [0] * (n + 1)
+    for i in range(n):
+        preSum[i + 1] = preSum[i] + (nums[i] % modulo == k)
+    map = defaultdict(int)
+    for i in range(n + 1):
+        ans += map[(preSum[i] % modulo - k + modulo) % modulo]
+        map[preSum[i] % modulo] += 1
+    return ans
+
+
+Task_id: 30_0    done
+raw_prediction: ```python
+def minimumOperations(num: str) -> int:
+    len_num = len(num)
+    zero = len_num - 1 if '0' in num else len_num
+    return min(f("00", num), min(f("25", num), min(f("50", num), min(f("75", num), zero))))
+
+def f(target: str, num: str) -> int:
+    i = num.rfind(target[1:])
+    if i < 0:
+        return len(num)
+    i = num[:i].rfind(target[0])
+    if i < 0:
+        return len(num)
+    return len(num) - i - 2
+```
+
+
+result: def minimumOperations(num: str) -> int:
+    len_num = len(num)
+    zero = len_num - 1 if '0' in num else len_num
+    return min(f("00", num), min(f("25", num), min(f("50", num), min(f("75", num), zero))))
+
+
+def f(target: str, num: str) -> int:
+    i = num.rfind(target[1:])
+    if i < 0:
+        return len(num)
+    i = num[:i].rfind(target[0])
+    if i < 0:
+        return len(num)
+    return len(num) - i - 2
+
+
+Task_id: 31_0    done
+raw_prediction: ```python
+def count_symmetric_integers(low: int, high: int) -> int:
+    ans = 0
+    for i in range(low, high + 1):
+        s = list(str(i))
+        n = len(s)
+        if n % 2 > 0:
+            continue
+        sum = 0
+        for j in range(n // 2):
+            sum += int(s[j])
+        for j in range(n // 2, n):
+            sum -= int(s[j])
+        if sum == 0:
+            ans += 1
+    return ans
+```
+
+
+result: def count_symmetric_integers(low: int, high: int) -> int:
+    ans = 0
+    for i in range(low, high + 1):
+        s = list(str(i))
+        n = len(s)
+        if n % 2 > 0:
+            continue
+        sum = 0
+        for j in range(n // 2):
+            sum += int(s[j])
+        for j in range(n // 2, n):
+            sum -= int(s[j])
+        if sum == 0:
+            ans += 1
+    return ans
+
+
+Task_id: 32_0    done
+raw_prediction: ```python
+from typing import List
+import collections
+
+def maxSum(nums: List[int], m: int, k: int) -> int:
+    a = list(nums)
+    ans = sum_ = 0
+    cnt = collections.defaultdict(int)
+    for i in range(k - 1):
+        sum_ += a[i]
+        cnt[a[i]] += 1
+    for i in range(k - 1, len(nums)):
+        sum_ += a[i]
+        cnt[a[i]] += 1
+        if len(cnt) >= m:
+            ans = max(ans, sum_)
+        out = a[i - k + 1]
+        sum_ -= out
+        cnt[out] -= 1
+        if cnt[out] == 0:
+            del cnt[out]
+    return ans
+```
+
+
+result: def maxSum(nums: List[int], m: int, k: int) -> int:
+    a = list(nums)
+    ans = sum_ = 0
+    cnt = collections.defaultdict(int)
+    for i in range(k - 1):
+        sum_ += a[i]
+        cnt[a[i]] += 1
+    for i in range(k - 1, len(nums)):
+        sum_ += a[i]
+        cnt[a[i]] += 1
+        if len(cnt) >= m:
+            ans = max(ans, sum_)
+        out = a[i - k + 1]
+        sum_ -= out
+        cnt[out] -= 1
+        if cnt[out] == 0:
+            del cnt[out]
+    return ans
+
+
+Task_id: 33_0    done
+raw_prediction: ```python
+def check_strings(s1: str, s2: str) -> bool:
+    cnt1 = [[0] * 26 for _ in range(2)]
+    cnt2 = [[0] * 26 for _ in range(2)]
+    for i in range(len(s1)):
+        cnt1[i % 2][ord(s1[i]) - ord('a')] += 1
+        cnt2[i % 2][ord(s2[i]) - ord('a')] += 1
+    return cnt1 == cnt2
+```
+
+
+result: def check_strings(s1: str, s2: str) -> bool:
+    cnt1 = [[0] * 26 for _ in range(2)]
+    cnt2 = [[0] * 26 for _ in range(2)]
+    for i in range(len(s1)):
+        cnt1[i % 2][ord(s1[i]) - ord('a')] += 1
+        cnt2[i % 2][ord(s2[i]) - ord('a')] += 1
+    return cnt1 == cnt2
+
+
+Task_id: 34_0    done
+raw_prediction: ```python
+def canBeEqual(s1: str, s2: str) -> bool:
+    cnt1 = [[0] * 26 for _ in range(2)]
+    cnt2 = [[0] * 26 for _ in range(2)]
+    for i in range(len(s1)):
+        cnt1[i % 2][ord(s1[i]) - ord('a')] += 1
+        cnt2[i % 2][ord(s2[i]) - ord('a')] += 1
+    return cnt1 == cnt2
+```
+
+
+result: def canBeEqual(s1: str, s2: str) -> bool:
+    cnt1 = [[0] * 26 for _ in range(2)]
+    cnt2 = [[0] * 26 for _ in range(2)]
+    for i in range(len(s1)):
+        cnt1[i % 2][ord(s1[i]) - ord('a')] += 1
+        cnt2[i % 2][ord(s2[i]) - ord('a')] += 1
+    return cnt1 == cnt2
+
+
+Task_id: 35_0    done
+raw_prediction: ```python
+def furthestDistanceFromOrigin(moves: str) -> int:
+    cn = 0
+    ans = 0
+    for move in moves:
+        if move == 'L':
+            ans -= 1
+        elif move == 'R':
+            ans += 1
+        else:
+            cn += 1
+    return abs(ans) + cn
+```
+
+
+result: def furthestDistanceFromOrigin(moves: str) -> int:
+    cn = 0
+    ans = 0
+    for move in moves:
+        if move == 'L':
+            ans -= 1
+        elif move == 'R':
+            ans += 1
+        else:
+            cn += 1
+    return abs(ans) + cn
+
+
+Task_id: 36_0    done
+raw_prediction: ```python
+from typing import List
+
+def longestEqualSubarray(nums: List[int], k: int) -> int:
+    n = len(nums)
+    ans = 0
+    pos = [[] for _ in range(n + 1)]
+    for i in range(n):
+        x = nums[i]
+        pos[x].append(i - len(pos[x]))
+    for ps in pos:
+        if len(ps) <= ans:
+            continue
+        left = 0
+        for right in range(len(ps)):
+            while ps[right] - ps[left] > k:
+                left += 1
+            ans = max(ans, right - left + 1)
+    return ans
+```
+
+
+result: def longestEqualSubarray(nums: List[int], k: int) -> int:
+    n = len(nums)
+    ans = 0
+    pos = [[] for _ in range(n + 1)]
+    for i in range(n):
+        x = nums[i]
+        pos[x].append(i - len(pos[x]))
+    for ps in pos:
+        if len(ps) <= ans:
+            continue
+        left = 0
+        for right in range(len(ps)):
+            while ps[right] - ps[left] > k:
+                left += 1
+            ans = max(ans, right - left + 1)
+    return ans
+
+
+Task_id: 37_0    done
+raw_prediction: ```python
+def is_acronym(words: List[str], s: str) -> bool:
+    if len(words) != len(s):
+        return False
+    for i in range(len(words)):
+        if words[i][0] != s[i]:
+            return False
+    return True
+```
+
+
+result: def is_acronym(words: List[str], s: str) -> bool:
+    if len(words) != len(s):
+        return False
+    for i in range(len(words)):
+        if words[i][0] != s[i]:
+            return False
+    return True
+
+
+Task_id: 38_0    done
+raw_prediction: ```python
+def minimumSum(n: int, k: int) -> int:
+    m = min(k // 2, n)
+    return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) // 2
+```
+
+
+result: def minimumSum(n: int, k: int) -> int:
+    m = min(k // 2, n)
+    return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) // 2
+
+
+Task_id: 39_0    done
+raw_prediction: ```python
+from typing import List
+
+def minimumOperations(nums: List[int]) -> int:
+    g = []
+    for x in nums:
+        j = upperBound(g, x)
+        if j == len(g):
+            g.append(x)
+        else:
+            g[j] = x
+    return len(nums) - len(g)
+
+def upperBound(g: List[int], target: int) -> int:
+    left, right = -1, len(g)
+    while left + 1 < right:
+        mid = (left + right) // 2
+        if g[mid] <= target:
+            left = mid
+        else:
+            right = mid
+    return right
+```
+
+
+result: def minimumOperations(nums: List[int]) -> int:
+    g = []
+    for x in nums:
+        j = upperBound(g, x)
+        if j == len(g):
+            g.append(x)
+        else:
+            g[j] = x
+    return len(nums) - len(g)
+
+
+def upperBound(g: List[int], target: int) -> int:
+    left, right = -1, len(g)
+    while left + 1 < right:
+        mid = (left + right) // 2
+        if g[mid] <= target:
+            left = mid
+        else:
+            right = mid
+    return right
+
+
+Task_id: 40_0    done
+raw_prediction: ```python
+from typing import List
+
+def countPairs(nums: List[int], target: int) -> int:
+    nums.sort()
+    ans = 0
+    left = 0
+    right = len(nums) - 1
+    while left < right:
+        if nums[left] + nums[right] < target:
+            ans += right - left
+            left += 1
+        else:
+            right -= 1
+    return ans
+```
+
+
+result: def countPairs(nums: List[int], target: int) -> int:
+    nums.sort()
+    ans = 0
+    left = 0
+    right = len(nums) - 1
+    while left < right:
+        if nums[left] + nums[right] < target:
+            ans += right - left
+            left += 1
+        else:
+            right -= 1
+    return ans
+
+
+Task_id: 41_0    done
+raw_prediction: ```python
+from typing import List
+from sortedcontainers import SortedSet
+
+def minAbsoluteDifference(nums: List[int], x: int) -> int:
+    a = list(nums)
+    ans = float('inf')
+    n = len(a)
+    s = SortedSet()
+    s.add(float('inf'))
+    s.add(float('-inf') / 2)
+    for i in range(x, n):
+        s.add(a[i - x])
+        y = a[i]
+        ans = min(ans, min(s.bisect_right(y) - y, y - s.bisect_left(y)))
+    return ans
+```
+
+
+result: def minAbsoluteDifference(nums: List[int], x: int) -> int:
+    a = list(nums)
+    ans = float('inf')
+    n = len(a)
+    s = SortedSet()
+    s.add(float('inf'))
+    s.add(float('-inf') / 2)
+    for i in range(x, n):
+        s.add(a[i - x])
+        y = a[i]
+        ans = min(ans, min(s.bisect_right(y) - y, y - s.bisect_left(y)))
+    return ans
+
+
+Task_id: 42_0    done
+raw_prediction: ```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def doubleIt(head):
+    if head.val > 4:
+        head = ListNode(0, head)
+    cur = head
+    while cur:
+        cur.val = cur.val * 2 % 10
+        if cur.next and cur.next.val > 4:
+            cur.val += 1
+        cur = cur.next
+    return head
+```
+
+
+result: def doubleIt(head):
+    if head.val > 4:
+        head = ListNode(0, head)
+    cur = head
+    while cur:
+        cur.val = cur.val * 2 % 10
+        if cur.next and cur.next.val > 4:
+            cur.val += 1
+        cur = cur.next
+    return head
+
+
+Task_id: 43_0    done
+raw_prediction: ```python
+from typing import List
+
+def maxSum(nums: List[int]) -> int:
+    ans = -1
+    maxVal = [float('-inf')] * 10
+    for v in nums:
+        maxD = 0
+        for x in str(v):
+            maxD = max(maxD, int(x))
+        ans = max(ans, v + maxVal[maxD])
+        maxVal[maxD] = max(maxVal[maxD], v)
+    return ans
+```
+
+
+result: def maxSum(nums: List[int]) -> int:
+    ans = -1
+    maxVal = [float('-inf')] * 10
+    for v in nums:
+        maxD = 0
+        for x in str(v):
+            maxD = max(maxD, int(x))
+        ans = max(ans, v + maxVal[maxD])
+        maxVal[maxD] = max(maxVal[maxD], v)
+    return ans
+
+
+Task_id: 44_0    done
+raw_prediction: ```python
+from collections import deque
+
+def finalString(s: str) -> str:
+    q = deque()
+    tail = True
+    for c in s:
+        if c == 'i':
+            tail = not tail
+        elif tail:
+            q.append(c)
+        else:
+            q.appendleft(c)
+    ans = ''.join(q)
+    if not tail:
+        ans = ans[::-1]
+    return ans
+```
+
+
+result: def finalString(s: str) -> str:
+    q = deque()
+    tail = True
+    for c in s:
+        if c == 'i':
+            tail = not tail
+        elif tail:
+            q.append(c)
+        else:
+            q.appendleft(c)
+    ans = ''.join(q)
+    if not tail:
+        ans = ans[::-1]
+    return ans
+
+
+Task_id: 45_0    done
+raw_prediction: ```python
+from typing import List
+
+def canSplitArray(nums: List[int], m: int) -> bool:
+    n = len(nums)
+    if n <= 2:
+        return True
+    for i in range(1, n):
+        if nums[i - 1] + nums[i] >= m:
+            return True
+    return False
+```
+
+
+result: def canSplitArray(nums: List[int], m: int) -> bool:
+    n = len(nums)
+    if n <= 2:
+        return True
+    for i in range(1, n):
+        if nums[i - 1] + nums[i] >= m:
+            return True
+    return False
+
+
+Task_id: 46_0    done
+raw_prediction: ```python
+def longestAlternatingSubarray(a: List[int], threshold: int) -> int:
+    ans = 0
+    i = 0
+    n = len(a)
+    while i < n:
+        if a[i] % 2 != 0 or a[i] > threshold:
+            i += 1
+        else:
+            i0 = i
+            i += 1
+            while i < n and a[i] <= threshold and a[i] % 2 != a[i - 1] % 2:
+                i += 1
+            ans = max(ans, i - i0)
+    return ans
+```
+
+
+result: def longestAlternatingSubarray(a: List[int], threshold: int) -> int:
+    ans = 0
+    i = 0
+    n = len(a)
+    while i < n:
+        if a[i] % 2 != 0 or a[i] > threshold:
+            i += 1
+        else:
+            i0 = i
+            i += 1
+            while i < n and a[i] <= threshold and a[i] % 2 != a[i - 1] % 2:
+                i += 1
+            ans = max(ans, i - i0)
+    return ans
+
+
+Task_id: 47_0    done
+raw_prediction: ```python
+from typing import List
+from collections import defaultdict
+
+def minimumSeconds(nums: List[int]) -> int:
+    n = len(nums)
+    map = defaultdict(list)
+    for i in range(n):
+        map[nums[i]].append(i)
+    ans = n // 2
+    for _, list in map.items():
+        list.append(list[0] + n)
+        mx = -1
+        for j in range(1, len(list)):
+            mx = max(mx, (list[j] - list[j-1]) // 2)
+        ans = min(ans, mx)
+    return ans
+```
+
+
+result: def minimumSeconds(nums: List[int]) -> int:
+    n = len(nums)
+    map = defaultdict(list)
+    for i in range(n):
+        map[nums[i]].append(i)
+    ans = n // 2
+    for _, list in map.items():
+        list.append(list[0] + n)
+        mx = -1
+        for j in range(1, len(list)):
+            mx = max(mx, (list[j] - list[j-1]) // 2)
+        ans = min(ans, mx)
+    return ans
+
+
+Task_id: 48_0    done
+raw_prediction: ```python
+def numberOfEmployeesWhoMetTarget(hours: List[int], target: int) -> int:
+    ans = 0
+    for h in hours:
+        if h >= target:
+            ans += 1
+    return ans
+```
+
+
+result: def numberOfEmployeesWhoMetTarget(hours: List[int], target: int) -> int:
+    ans = 0
+    for h in hours:
+        if h >= target:
+            ans += 1
+    return ans
+
+
+Task_id: 49_0    done
+raw_prediction: ```python
+from typing import List
+
+def splitWordsBySeparator(words: List[str], separator: str) -> List[str]:
+    rs = []
+    sb = ""
+    for word in words:
+        for c in word:
+            if c == separator:
+                if len(sb) > 0:
+                    rs.append(sb)
+                    sb = ""
+            else:
+                sb += c
+        if len(sb) > 0:
+            rs.append(sb)
+            sb = ""
+    return rs
+```
+
+
+result: def splitWordsBySeparator(words: List[str], separator: str) -> List[str]:
+    rs = []
+    sb = ""
+    for word in words:
+        for c in word:
+            if c == separator:
+                if len(sb) > 0:
+                    rs.append(sb)
+                    sb = ""
+            else:
+                sb += c
+        if len(sb) > 0:
+            rs.append(sb)
+            sb = ""
+    return rs
+
+
+Task_id: 50_0    done
+raw_prediction: ```python
+from typing import List
+
+def miniMaxSum(a: List[int]) -> List[int]:
+    sum_a = sum(a)
+    max_a = max(a)
+    min_a = min(a)
+    return [sum_a - max_a, sum_a - min_a]
+```
+
+
+result: def miniMaxSum(a: List[int]) -> List[int]:
+    sum_a = sum(a)
+    max_a = max(a)
+    min_a = min(a)
+    return [sum_a - max_a, sum_a - min_a]
+
+
+Task_id: 51_0    done
+raw_prediction: ```python
+from typing import List
+import collections
+
+def pickingNumbers(a: List[int]) -> int:
+    d = collections.defaultdict(int)
+    for num in a:
+        d[num] += 1
+    best = 0
+    for i in range(99):
+        best = max(d[i] + d[i + 1], best)
+    return best
+```
+
+
+result: def pickingNumbers(a: List[int]) -> int:
+    d = collections.defaultdict(int)
+    for num in a:
+        d[num] += 1
+    best = 0
+    for i in range(99):
+        best = max(d[i] + d[i + 1], best)
+    return best
+
+
+Task_id: 52_0    done
+raw_prediction: ```python
+def summingSeries(n: int) -> int:
+    return (n % 1000000007) * (n % 1000000007) % 1000000007
+```
+
+
+result: def summingSeries(n: int) -> int:
+    return (n % 1000000007) * (n % 1000000007) % 1000000007
+
+
+Task_id: 53_0    done
+raw_prediction: ```python
+from typing import List
+
+def matching_strings(string_list: List[str], queries: List[str]) -> List[int]:
+    arr = []
+    for i in queries:
+        k = 0
+        for j in string_list:
+            if i == j:
+                k += 1
+        arr.append(k)
+    return arr
+```
+
+
+result: def matching_strings(string_list: List[str], queries: List[str]) -> List[int]:
+    arr = []
+    for i in queries:
+        k = 0
+        for j in string_list:
+            if i == j:
+                k += 1
+        arr.append(k)
+    return arr
+
+
+Task_id: 54_0    done
+raw_prediction: ```python
+from typing import List
+from sortedcontainers import SortedList
+
+def bsearch(arr: List[int], x: int) -> int:
+    low = 0
+    high = len(arr) - 1
+    mid = 0
+    while low <= high:
+        mid = low + (high - low) // 2
+        if arr[mid] < x:
+            high = mid - 1
+        elif arr[mid] > x:
+            low = mid + 1
+        else:
+            return mid + 1
+    return low + 1
+
+def climbingLeaderboard(ranked: List[int], player: List[int]) -> List[int]:
+    rankSet = SortedList(ranked)
+    rankSet = rankSet[::-1]
+    result = []
+    for score in player:
+        rank = bsearch(rankSet, score)
+        result.append(rank)
+    return result
+```
+Note: In the Python version, I used the `SortedList` data structure from the `sortedcontainers` library to maintain a sorted list in descending order. This allows for efficient searching and insertion operations. Also, the `//` operator is used for integer division in Python, which is equivalent to the `/` operator in Java.
+
+
+result: def climbingLeaderboard(ranked: List[int], player: List[int]) -> List[int]:
+    rankSet = SortedList(ranked)
+    rankSet = rankSet[::-1]
+    result = []
+    for score in player:
+        rank = bsearch(rankSet, score)
+        result.append(rank)
+    return result
+
+def bsearch(arr: List[int], x: int) -> int:
+    low = 0
+    high = len(arr) - 1
+    mid = 0
+    while low <= high:
+        mid = low + (high - low) // 2
+        if arr[mid] < x:
+            high = mid - 1
+        elif arr[mid] > x:
+            low = mid + 1
+        else:
+            return mid + 1
+    return low + 1
+
+
+
+Task_id: 55_0    done
+raw_prediction: ```python
+from typing import List
+
+def arrayManipulation(n: int, queries: List[List[int]]) -> int:
+    arr = [0] * (n + 2)
+    max_val = 0
+    curr_sum = 0
+    
+    for query in queries:
+        arr[query[0]] += query[2]
+        arr[query[1] + 1] -= query[2]
+    
+    for val in arr:
+        curr_sum += val
+        if curr_sum > max_val:
+            max_val = curr_sum
+            
+    return max_val
+```
+
+
+result: def arrayManipulation(n: int, queries: List[List[int]]) -> int:
+    arr = [0] * (n + 2)
+    max_val = 0
+    curr_sum = 0
+    
+    for query in queries:
+        arr[query[0]] += query[2]
+        arr[query[1] + 1] -= query[2]
+    
+    for val in arr:
+        curr_sum += val
+        if curr_sum > max_val:
+            max_val = curr_sum
+            
+    return max_val
+
+
+Task_id: 56_0    done
+raw_prediction: ```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def deleteNode(llist: ListNode, position: int) -> ListNode:
+    if llist is None:
+        return None
+    if position == 0:
+        return llist.next
+    current = llist
+    for _ in range(position - 1):
+        if current is None:
+            return llist
+        current = current.next
+    if current is None or current.next is None:
+        return llist
+    current.next = current.next.next
+    return llist
+```
+
+
+result: def deleteNode(llist: ListNode, position: int) -> ListNode:
+    if llist is None:
+        return None
+    if position == 0:
+        return llist.next
+    current = llist
+    for _ in range(position - 1):
+        if current is None:
+            return llist
+        current = current.next
+    if current is None or current.next is None:
+        return llist
+    current.next = current.next.next
+    return llist
+
+
+Task_id: 57_0    done
+raw_prediction: ```python
+def evaluateTree(root):
+    if root.left is None:
+        return root.val == 1
+    l = evaluateTree(root.left)
+    r = evaluateTree(root.right)
+    return root.val == 2 and (l or r) or (root.val != 2 and l and r)
+```
+
+
+result: def evaluateTree(root):
+    if root.left is None:
+        return root.val == 1
+    l = evaluateTree(root.left)
+    r = evaluateTree(root.right)
+    return root.val == 2 and (l or r) or (root.val != 2 and l and r)
+
+
+Task_id: 58_0    done
+raw_prediction: ```python
+from typing import List
+
+def andXorOr(a: List[int]) -> int:
+    m = 0
+    s = []
+    for i in a:
+        while s and s[-1] >= i:
+            m = max(m, i ^ s.pop())
+        if s:
+            m = max(m, i ^ s[-1])
+        s.append(i)
+    return m
+```
+
+
+result: def andXorOr(a: List[int]) -> int:
+    m = 0
+    s = []
+    for i in a:
+        while s and s[-1] >= i:
+            m = max(m, i ^ s.pop())
+        if s:
+            m = max(m, i ^ s[-1])
+        s.append(i)
+    return m
+
+
+Task_id: 59_0    done
+raw_prediction: ```python
+from typing import List
+
+def missingNumbers(arr: List[int], brr: List[int]) -> List[int]:
+    mp = {}
+    for num in brr:
+        mp[num] = mp.get(num, 0) + 1
+    for num in arr:
+        mp[num] = mp.get(num, 0) - 1
+
+    result = []
+    for key, value in mp.items():
+        if value > 0:
+            result.append(key)
+    
+    return result
+```
+
+
+result: def missingNumbers(arr: List[int], brr: List[int]) -> List[int]:
+    mp = {}
+    for num in brr:
+        mp[num] = mp.get(num, 0) + 1
+    for num in arr:
+        mp[num] = mp.get(num, 0) - 1
+
+    result = []
+    for key, value in mp.items():
+        if value > 0:
+            result.append(key)
+    
+    return result
+
+
+Task_id: 60_0    done
+raw_prediction: ```python
+from sortedcontainers import SortedSet
+from typing import List
+
+def maximumSum(a: List[int], m: int) -> int:
+    maxSum = 0
+    currentSum = 0
+    s = SortedSet()
+    for number in a:
+        currentSum = (currentSum + number) % m
+        maxSum = max(maxSum, currentSum)
+        b = s.bisect_right(currentSum)
+        if b != len(s):
+            possibleMax = (currentSum - s[b] + m) % m
+            maxSum = max(maxSum, possibleMax)
+        s.add(currentSum)
+    return maxSum
+```
+
+
+result: def maximumSum(a: List[int], m: int) -> int:
+    maxSum = 0
+    currentSum = 0
+    s = SortedSet()
+    for number in a:
+        currentSum = (currentSum + number) % m
+        maxSum = max(maxSum, currentSum)
+        b = s.bisect_right(currentSum)
+        if b != len(s):
+            possibleMax = (currentSum - s[b] + m) % m
+            maxSum = max(maxSum, possibleMax)
+        s.add(currentSum)
+    return maxSum
+
+
+Task_id: 61_0    done
+raw_prediction: ```python
+from typing import List
+
+def formingMagicSquare(sList: List[List[int]]) -> int:
+    s = [[i for i in l] for l in sList]
+    magicSquares = [
+        [[8, 1, 6], [3, 5, 7], [4, 9, 2]],
+        [[6, 1, 8], [7, 5, 3], [2, 9, 4]],
+        [[4, 9, 2], [3, 5, 7], [8, 1, 6]],
+        [[2, 9, 4], [7, 5, 3], [6, 1, 8]],
+        [[8, 3, 4], [1, 5, 9], [6, 7, 2]],
+        [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
+        [[6, 7, 2], [1, 5, 9], [8, 3, 4]],
+        [[2, 7, 6], [9, 5, 1], [4, 3, 8]]
+    ]
+    minCost = 8 * 3
+    for magicSquare in magicSquares:
+        cost = sum(abs(s[i][j] - magicSquare[i][j]) for i in range(3) for j in range(3))
+        minCost = min(cost, minCost)
+    return minCost
+```
+
+
+result: def formingMagicSquare(sList: List[List[int]]) -> int:
+    s = [[i for i in l] for l in sList]
+    magicSquares = [
+        [[8, 1, 6], [3, 5, 7], [4, 9, 2]],
+        [[6, 1, 8], [7, 5, 3], [2, 9, 4]],
+        [[4, 9, 2], [3, 5, 7], [8, 1, 6]],
+        [[2, 9, 4], [7, 5, 3], [6, 1, 8]],
+        [[8, 3, 4], [1, 5, 9], [6, 7, 2]],
+        [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
+        [[6, 7, 2], [1, 5, 9], [8, 3, 4]],
+        [[2, 7, 6], [9, 5, 1], [4, 3, 8]]
+    ]
+    minCost = 8 * 3
+    for magicSquare in magicSquares:
+        cost = sum(abs(s[i][j] - magicSquare[i][j]) for i in range(3) for j in range(3))
+        minCost = min(cost, minCost)
+    return minCost
+
+
+Task_id: 62_0    done
+raw_prediction: ```python
+def isFibo(n: int) -> str:
+    start = 0
+    last = 1
+    while last <= n:
+        tmp = last + start
+        start = last
+        last = tmp
+        if last == n:
+            return "IsFibo"
+    return "IsNotFibo"
+```
+
+
+result: def isFibo(n: int) -> str:
+    start = 0
+    last = 1
+    while last <= n:
+        tmp = last + start
+        start = last
+        last = tmp
+        if last == n:
+            return "IsFibo"
+    return "IsNotFibo"
+
+
+Task_id: 63_0    done
+raw_prediction: ```python
+def solve(l: int, r: int) -> int:
+    seen = set()
+    q = collections.deque()
+    for i in range(10):
+        q.append(i)
+    while q:
+        u = q.pop()
+        if len(str(u)) >= 20:
+            continue
+        if u in seen:
+            continue
+        seen.add(u)
+        length = len(str(u))
+        for k in range(length, length + 5):
+            if len(str(u * k)) == k:
+                q.append(u * k)
+    count = sum(l <= s <= r for s in seen)
+    print(f"[{l}, {r}]: {count}")
+    return count
+```
+
+
+result: def solve(l: int, r: int) -> int:
+    seen = set()
+    q = collections.deque()
+    for i in range(10):
+        q.append(i)
+    while q:
+        u = q.pop()
+        if len(str(u)) >= 20:
+            continue
+        if u in seen:
+            continue
+        seen.add(u)
+        length = len(str(u))
+        for k in range(length, length + 5):
+            if len(str(u * k)) == k:
+                q.append(u * k)
+    count = sum(l <= s <= r for s in seen)
+    print(f"[{l}, {r}]: {count}")
+    return count
+
+
+Task_id: 64_0    done
+raw_prediction: ```python
+def cavityMap(grid: List[str]) -> List[str]:
+    for k in range(1, len(grid) - 1):
+        row = list(grid[k])
+        d = grid[k + 1]
+        u = grid[k - 1]
+        for j in range(1, len(row) - 1):
+            left = row[j - 1]
+            current = row[j]
+            right = row[j + 1]
+            down = d[j]
+            up = u[j]
+            if left < current > right and down < current and up < current:
+                row[j] = 'X'
+        grid[k] = ''.join(row)
+    return grid
+```
+
+
+result: def cavityMap(grid: List[str]) -> List[str]:
+    for k in range(1, len(grid) - 1):
+        row = list(grid[k])
+        d = grid[k + 1]
+        u = grid[k - 1]
+        for j in range(1, len(row) - 1):
+            left = row[j - 1]
+            current = row[j]
+            right = row[j + 1]
+            down = d[j]
+            up = u[j]
+            if left < current > right and down < current and up < current:
+                row[j] = 'X'
+        grid[k] = ''.join(row)
+    return grid
+
+
+Task_id: 65_0    done
+raw_prediction: ```python
+def solve(a: int, b: int) -> int:
+    m = a
+    n = b
+    ans = min(((m-1)*n+(n-1)),((n-1)*m+(m-1)))
+    return m*n-1
+```
+
+
+result: def solve(a: int, b: int) -> int:
+    m = a
+    n = b
+    ans = min(((m-1)*n+(n-1)),((n-1)*m+(m-1)))
+    return m*n-1
+
+
+Task_id: 66_0    done
+raw_prediction: ```python
+from typing import List
+
+def minimumLoss(price: List[int]) -> int:
+    map = {}
+    for i in range(len(price)):
+        map[price[i]] = i
+    price.sort()
+    min = float('inf')
+    for i in range(len(price)-1):
+        currentMin = price[i+1]-price[i]
+        if currentMin < min and map[price[i]]>map[price[i+1]]:
+            min = currentMin
+    return int(min)
+```
+
+
+result: def minimumLoss(price: List[int]) -> int:
+    map = {}
+    for i in range(len(price)):
+        map[price[i]] = i
+    price.sort()
+    min = float('inf')
+    for i in range(len(price)-1):
+        currentMin = price[i+1]-price[i]
+        if currentMin < min and map[price[i]]>map[price[i+1]]:
+            min = currentMin
+    return int(min)
+
+
+Task_id: 67_0    done
+raw_prediction: ```python
+def dayOfProgrammer(year: int) -> str:
+    if year == 1918:
+        return "26.09.1918"
+    leap_year = True
+    if year % 4 != 0 or (year > 1918 and year % 100 == 0 and year % 400 != 0):
+        leap_year = False
+    return f"{12 if leap_year else 13}.09.{year}"
+```
+
+
+result: def dayOfProgrammer(year: int) -> str:
+    if year == 1918:
+        return "26.09.1918"
+    leap_year = True
+    if year % 4 != 0 or (year > 1918 and year % 100 == 0 and year % 400 != 0):
+        leap_year = False
+    return f"{12 if leap_year else 13}.09.{year}"
+
+
+Task_id: 68_0    done
+raw_prediction: ```python
+from typing import List
+
+def acmTeam(topic: List[str]) -> List[int]:
+    teamLen = len(topic)
+    topicLen = len(topic[0])
+    maxKnown = 0
+    maxTeams = 0
+    for i in range(teamLen):
+        t1 = topic[i]
+        for j in range(i + 1, teamLen):
+            know = 0
+            t2 = topic[j]
+            for k in range(topicLen):
+                if t1[k] == '1' or t2[k] == '1':
+                    know += 1
+            if know == maxKnown:
+                maxTeams += 1
+            elif know > maxKnown:
+                maxKnown = know
+                maxTeams = 1
+    return [maxKnown, maxTeams]
+```
+
+
+result: def acmTeam(topic: List[str]) -> List[int]:
+    teamLen = len(topic)
+    topicLen = len(topic[0])
+    maxKnown = 0
+    maxTeams = 0
+    for i in range(teamLen):
+        t1 = topic[i]
+        for j in range(i + 1, teamLen):
+            know = 0
+            t2 = topic[j]
+            for k in range(topicLen):
+                if t1[k] == '1' or t2[k] == '1':
+                    know += 1
+            if know == maxKnown:
+                maxTeams += 1
+            elif know > maxKnown:
+                maxKnown = know
+                maxTeams = 1
+    return [maxKnown, maxTeams]
+
+
+Task_id: 69_0    done
+raw_prediction: ```python
+def time_in_words(h: int, m: int) -> str:
+    hour = ["one", "two", "three", "four",
+            "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"]
+    minutes = ["one", "two",
+               "three", "four", "five",
+               "six", "seven", "eight",
+               "nine", "ten", "eleven",
+               "twelve", "thirteen", "fourteen",
+               "fifteen", "sixteen", "seventeen",
+               "eighteen", "nineteen", "twenty", "twenty one", "twenty two", "twenty three", "twenty four", "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine"]
+    if m == 0:
+        return hour[h - 1] + " o' clock"
+    elif m == 15:
+        return "quarter past " + hour[h - 1]
+    elif m == 30:
+        return "half past " + hour[h - 1]
+    elif m == 45:
+        return "quarter to " + hour[h]
+    elif m == 1:
+        return minutes[m - 1] + " minute past " + hour[h - 1]
+    elif 0 < m < 30:
+        return minutes[m - 1] + " minutes past " + hour[h - 1]
+    else:
+        return minutes[60 - m - 1] + " minutes to " + hour[h]
+```
+
+
+result: def time_in_words(h: int, m: int) -> str:
+    hour = ["one", "two", "three", "four",
+            "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"]
+    minutes = ["one", "two",
+               "three", "four", "five",
+               "six", "seven", "eight",
+               "nine", "ten", "eleven",
+               "twelve", "thirteen", "fourteen",
+               "fifteen", "sixteen", "seventeen",
+               "eighteen", "nineteen", "twenty", "twenty one", "twenty two", "twenty three", "twenty four", "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine"]
+    if m == 0:
+        return hour[h - 1] + " o' clock"
+    elif m == 15:
+        return "quarter past " + hour[h - 1]
+    elif m == 30:
+        return "half past " + hour[h - 1]
+    elif m == 45:
+        return "quarter to " + hour[h]
+    elif m == 1:
+        return minutes[m - 1] + " minute past " + hour[h - 1]
+    elif 0 < m < 30:
+        return minutes[m - 1] + " minutes past " + hour[h - 1]
+    else:
+        return minutes[60 - m - 1] + " minutes to " + hour[h]
+
+
+Task_id: 70_0    done
+raw_prediction: ```python
+from typing import List
+from collections import deque
+
+def collectTheCoins(coins: List[int], edges: List[List[int]]) -> int:
+    n = len(coins)
+    g = [[] for _ in range(n)]
+    deg = [0] * n
+    for e in edges:
+        x, y = e
+        g[x].append(y)
+        g[y].append(x)
+        deg[x] += 1
+        deg[y] += 1
+    leftEdges = n - 1
+    q = deque()
+    for i in range(n):
+        if deg[i] == 1 and coins[i] == 0:
+            q.append(i)
+    while q:
+        leftEdges -= 1
+        for y in g[q.popleft()]:
+            if deg[y] == 1 and coins[y] == 0:
+                q.append(y)
+    for i in range(n):
+        if deg[i] == 1 and coins[i] == 1:
+            q.append(i)
+    leftEdges -= len(q)
+    for x in q:
+        for y in g[x]:
+            if deg[y] == 1:
+                leftEdges -= 1
+    return max(leftEdges * 2, 0)
+```
+
+
+result: def collectTheCoins(coins: List[int], edges: List[List[int]]) -> int:
+    n = len(coins)
+    g = [[] for _ in range(n)]
+    deg = [0] * n
+    for e in edges:
+        x, y = e
+        g[x].append(y)
+        g[y].append(x)
+        deg[x] += 1
+        deg[y] += 1
+    leftEdges = n - 1
+    q = deque()
+    for i in range(n):
+        if deg[i] == 1 and coins[i] == 0:
+            q.append(i)
+    while q:
+        leftEdges -= 1
+        for y in g[q.popleft()]:
+            if deg[y] == 1 and coins[y] == 0:
+                q.append(y)
+    for i in range(n):
+        if deg[i] == 1 and coins[i] == 1:
+            q.append(i)
+    leftEdges -= len(q)
+    for x in q:
+        for y in g[x]:
+            if deg[y] == 1:
+                leftEdges -= 1
+    return max(leftEdges * 2, 0)
+
+
+Task_id: 71_0    done
+raw_prediction: ```python
+from typing import List
+
+def matrixRotation(matrix: List[List[int]], r: int) -> List[List[int]]:
+    l = 0
+    br = len(matrix)
+    bc = len(matrix[0])
+    while l < min(br, bc) // 2:
+        rr = r % (2 * (br + bc - 4 * l - 2))
+        while rr > 0:
+            buf = matrix[l][l]
+            for j in range(l, bc - l - 1):
+                matrix[l][j] = matrix[l][j + 1]
+            for i in range(l, br - l - 1):
+                matrix[i][bc - l - 1] = matrix[i + 1][bc - l - 1]
+            for j in range(bc - l - 1, l, -1):
+                matrix[br - l - 1][j] = matrix[br - l - 1][j - 1]
+            for i in range(br - l - 1, l + 1, -1):
+                matrix[i][l] = matrix[i - 1][l]
+            matrix[l + 1][l] = buf
+            rr -= 1
+        l += 1
+    return matrix
+```
+
+
+result: def matrixRotation(matrix: List[List[int]], r: int) -> List[List[int]]:
+    l = 0
+    br = len(matrix)
+    bc = len(matrix[0])
+    while l < min(br, bc) // 2:
+        rr = r % (2 * (br + bc - 4 * l - 2))
+        while rr > 0:
+            buf = matrix[l][l]
+            for j in range(l, bc - l - 1):
+                matrix[l][j] = matrix[l][j + 1]
+            for i in range(l, br - l - 1):
+                matrix[i][bc - l - 1] = matrix[i + 1][bc - l - 1]
+            for j in range(bc - l - 1, l, -1):
+                matrix[br - l - 1][j] = matrix[br - l - 1][j - 1]
+            for i in range(br - l - 1, l + 1, -1):
+                matrix[i][l] = matrix[i - 1][l]
+            matrix[l + 1][l] = buf
+            rr -= 1
+        l += 1
+    return matrix
+
+
+Task_id: 72_0    done
+raw_prediction: ```python
+def divisor_substrings(num: int, k: int) -> int:
+    s = str(num)
+    n = len(s)
+    res = 0
+    for i in range(n - k + 1):
+        tmp = int(s[i:i + k])
+        if tmp != 0 and num % tmp == 0:
+            res += 1
+    return res
+```
+
+
+result: def divisor_substrings(num: int, k: int) -> int:
+    s = str(num)
+    n = len(s)
+    res = 0
+    for i in range(n - k + 1):
+        tmp = int(s[i:i + k])
+        if tmp != 0 and num % tmp == 0:
+            res += 1
+    return res
+
+
+Task_id: 73_0    done
+raw_prediction: ```python
+from typing import List
+
+def solve(a: List[int]) -> List[int]:
+    result = []
+    cum = [0] * len(a)
+    cum[0] = a[0]
+    for i in range(1, len(a)):
+        cum[i] = cum[i-1] + a[i]
+    for i in range(len(cum) // 2 + 1):
+        if cum[-1] % cum[i] == 0:
+            temp = 0
+            for j in range(i+1, len(cum)):
+                temp += a[j]
+                if temp > cum[i]:
+                    break
+                if temp % cum[i] == 0:
+                    temp = 0
+            if temp == 0:
+                result.append(cum[i])
+    return result
+```
+
+
+result: def solve(a: List[int]) -> List[int]:
+    result = []
+    cum = [0] * len(a)
+    cum[0] = a[0]
+    for i in range(1, len(a)):
+        cum[i] = cum[i-1] + a[i]
+    for i in range(len(cum) // 2 + 1):
+        if cum[-1] % cum[i] == 0:
+            temp = 0
+            for j in range(i+1, len(cum)):
+                temp += a[j]
+                if temp > cum[i]:
+                    break
+                if temp % cum[i] == 0:
+                    temp = 0
+            if temp == 0:
+                result.append(cum[i])
+    return result
+
+
+Task_id: 74_0    done
+raw_prediction: ```python
+from typing import List
+
+def maximumToys(prices: List[int], k: int) -> int:
+    prices.sort()
+    toys = 0
+    for price in prices:
+        if price <= k:
+            k -= price
+            toys += 1
+        else:
+            break
+    return toys
+```
+
+
+result: def maximumToys(prices: List[int], k: int) -> int:
+    prices.sort()
+    toys = 0
+    for price in prices:
+        if price <= k:
+            k -= price
+            toys += 1
+        else:
+            break
+    return toys
+
+
+Task_id: 75_0    done
+raw_prediction: ```python
+def sumOfSquares(nums: List[int]) -> int:
+    ans = 0
+    n = len(nums)
+    for i in range(1, n + 1):
+        if n % i == 0:
+            ans += nums[i - 1] * nums[i - 1]
+    return ans
+```
+
+
+result: def sumOfSquares(nums: List[int]) -> int:
+    ans = 0
+    n = len(nums)
+    for i in range(1, n + 1):
+        if n % i == 0:
+            ans += nums[i - 1] * nums[i - 1]
+    return ans
+
+
+Task_id: 76_0    done
+raw_prediction: ```python
+def checkArray(nums: List[int], k: int) -> bool:
+    n = len(nums)
+    sumD = 0
+    d = [0] * (n + 1)
+    for i in range(n):
+        sumD += d[i]
+        x = nums[i]
+        x += sumD
+        if x == 0:
+            continue
+        if x < 0 or i + k > n:
+            return False
+        sumD -= x
+        d[i + k] += x
+    return True
+```
+
+
+result: def checkArray(nums: List[int], k: int) -> bool:
+    n = len(nums)
+    sumD = 0
+    d = [0] * (n + 1)
+    for i in range(n):
+        sumD += d[i]
+        x = nums[i]
+        x += sumD
+        if x == 0:
+            continue
+        if x < 0 or i + k > n:
+            return False
+        sumD -= x
+        d[i + k] += x
+    return True
+
+
+Task_id: 77_0    done
+raw_prediction: ```python
+from typing import List
+
+def maxNonDecreasingLength(nums1: List[int], nums2: List[int]) -> int:
+    n = len(nums1)
+    if n == 1:
+        return 1
+    dp = [[1, 1] for _ in range(n)]
+    ans = 0
+    for i in range(1, n):
+        dp[i][0] = dp[i][1] = 1
+        if nums1[i] >= nums1[i-1]:
+            dp[i][0] = max(dp[i][0], dp[i-1][0]+1)
+        if nums1[i] >= nums2[i-1]:
+            dp[i][0] = max(dp[i][0], dp[i-1][1]+1)
+        if nums2[i] >= nums1[i-1]:
+            dp[i][1] = max(dp[i][1], dp[i-1][0]+1)
+        if nums2[i] >= nums2[i-1]:
+            dp[i][1] = max(dp[i][1], dp[i-1][1]+1)
+        ans = max(ans, max(dp[i][0], dp[i][1]))
+    return ans
+```
+
+
+result: def maxNonDecreasingLength(nums1: List[int], nums2: List[int]) -> int:
+    n = len(nums1)
+    if n == 1:
+        return 1
+    dp = [[1, 1] for _ in range(n)]
+    ans = 0
+    for i in range(1, n):
+        dp[i][0] = dp[i][1] = 1
+        if nums1[i] >= nums1[i-1]:
+            dp[i][0] = max(dp[i][0], dp[i-1][0]+1)
+        if nums1[i] >= nums2[i-1]:
+            dp[i][0] = max(dp[i][0], dp[i-1][1]+1)
+        if nums2[i] >= nums1[i-1]:
+            dp[i][1] = max(dp[i][1], dp[i-1][0]+1)
+        if nums2[i] >= nums2[i-1]:
+            dp[i][1] = max(dp[i][1], dp[i-1][1]+1)
+        ans = max(ans, max(dp[i][0], dp[i][1]))
+    return ans
+
+
+Task_id: 78_0    done
+raw_prediction: ```python
+from typing import List
+
+def maximumJumps(nums: List[int], target: int) -> int:
+    n = len(nums)
+    dp = [-1] * n
+    dp[0] = 0
+    for i in range(1, n):
+        for j in range(i):
+            if abs(nums[i] - nums[j]) <= target and dp[j] != -1:
+                dp[i] = max(dp[i], dp[j] + 1)
+    return dp[n - 1]
+```
+
+
+result: def maximumJumps(nums: List[int], target: int) -> int:
+    n = len(nums)
+    dp = [-1] * n
+    dp[0] = 0
+    for i in range(1, n):
+        for j in range(i):
+            if abs(nums[i] - nums[j]) <= target and dp[j] != -1:
+                dp[i] = max(dp[i], dp[j] + 1)
+    return dp[n - 1]
+
+
+Task_id: 79_0    done
+raw_prediction: ```python
+def theMaximumAchievableX(num: int, t: int) -> int:
+    return num + (t << 1)
+```
+
+
+result: def theMaximumAchievableX(num: int, t: int) -> int:
+    return num + (t << 1)
+
+
+Task_id: 80_0    done
+raw_prediction: ```python
+from typing import List
+
+def countBlackBlocks(m: int, n: int, coordinates: List[List[int]]) -> List[int]:
+    ansList = [0] * 5
+    sum = (m - 1) * (n - 1)
+    st = set()
+    num = len(coordinates)
+    for i in range(num):
+        st.add(coordinates[i][0] * n + coordinates[i][1])
+    arr = [
+        [[0, -1], [-1, -1], [-1, 0]],
+        [[0, 1], [-1, 0], [-1, 1]],
+        [[0, -1], [1, 0], [1, -1]],
+        [[0, 1], [1, 0], [1, 1]]
+    ]
+    for i in range(num):
+        x, y = coordinates[i][0], coordinates[i][1]
+        for a in arr:
+            cnt = 1
+            for direction in a:
+                nx, ny = x + direction[0], y + direction[1]
+                if nx < 0 or ny < 0 or nx >= m or ny >= n:
+                    cnt = 0
+                    break
+                if (nx * n + ny) in st: cnt += 1
+            ansList[cnt] += 1
+    for i in range(2, 5): ansList[i] //= i
+    ansList[0] = sum - sum(ansList[1:])
+    return ansList
+```
+
+
+result: def countBlackBlocks(m: int, n: int, coordinates: List[List[int]]) -> List[int]:
+    ansList = [0] * 5
+    sum = (m - 1) * (n - 1)
+    st = set()
+    num = len(coordinates)
+    for i in range(num):
+        st.add(coordinates[i][0] * n + coordinates[i][1])
+    arr = [
+        [[0, -1], [-1, -1], [-1, 0]],
+        [[0, 1], [-1, 0], [-1, 1]],
+        [[0, -1], [1, 0], [1, -1]],
+        [[0, 1], [1, 0], [1, 1]]
+    ]
+    for i in range(num):
+        x, y = coordinates[i][0], coordinates[i][1]
+        for a in arr:
+            cnt = 1
+            for direction in a:
+                nx, ny = x + direction[0], y + direction[1]
+                if nx < 0 or ny < 0 or nx >= m or ny >= n:
+                    cnt = 0
+                    break
+                if (nx * n + ny) in st: cnt += 1
+            ansList[cnt] += 1
+    for i in range(2, 5): ansList[i] //= i
+    ansList[0] = sum - sum(ansList[1:])
+    return ansList
+
+
+Task_id: 81_0    done
+raw_prediction: ```python
+def minimumBeautifulSubstrings(s: str) -> int:
+    five_powers_binary = [
+        "1", "101", "11001", "1111101",
+        "1001110001", "110000110101", "11110100001001"
+    ]
+    n = len(s)
+    dp = [0] * (n + 1)
+    dp[n] = 0
+    for i in range(n - 1, -1, -1):
+        dp[i] = 16
+        if s[i] == '0':
+            continue
+        for bin in five_powers_binary:
+            if i + len(bin) > n:
+                break
+            if s[i:i + len(bin)] == bin:
+                dp[i] = min(dp[i], dp[i + len(bin)] + 1)
+    return dp[0] if dp[0] <= n else -1
+```
+
+
+result: def minimumBeautifulSubstrings(s: str) -> int:
+    five_powers_binary = [
+        "1", "101", "11001", "1111101",
+        "1001110001", "110000110101", "11110100001001"
+    ]
+    n = len(s)
+    dp = [0] * (n + 1)
+    dp[n] = 0
+    for i in range(n - 1, -1, -1):
+        dp[i] = 16
+        if s[i] == '0':
+            continue
+        for bin in five_powers_binary:
+            if i + len(bin) > n:
+                break
+            if s[i:i + len(bin)] == bin:
+                dp[i] = min(dp[i], dp[i + len(bin)] + 1)
+    return dp[0] if dp[0] <= n else -1
+
+
+Task_id: 82_0    done
+raw_prediction: ```python
+def gcdAndLcm(x: int, y: int) -> int:
+    n = x * y
+    ans = 0
+    for i in range(x, y + 1):
+        if n % i == 0 and gcd(i, n // i) == x and lcm(i, n // i) == y:
+            ans += 1
+    return ans
+
+def gcd(x: int, y: int) -> int:
+    if x < y:
+        x, y = y, x
+    while y != 0:
+        x, y = y, x % y
+    return x
+
+def lcm(x: int, y: int) -> int:
+    if x < y:
+        x, y = y, x
+    m = x
+    while y != 0:
+        x += m
+        y = x % y
+    return x
+```
+
+
+result: def gcdAndLcm(x: int, y: int) -> int:
+    n = x * y
+    ans = 0
+    for i in range(x, y + 1):
+        if n % i == 0 and gcd(i, n // i) == x and lcm(i, n // i) == y:
+            ans += 1
+    return ans
+
+
+def gcd(x: int, y: int) -> int:
+    if x < y:
+        x, y = y, x
+    while y != 0:
+        x, y = y, x % y
+    return x
+
+
+def lcm(x: int, y: int) -> int:
+    if x < y:
+        x, y = y, x
+    m = x
+    while y != 0:
+        x += m
+        y = x % y
+    return x
+
+
+Task_id: 83_0    done
+raw_prediction: ```python
+from typing import List
+
+def findFirstPairExceedingSum(pairs: List[List[int]]) -> int:
+    max_sum = 0
+    day_index = 0
+    for i in range(len(pairs)):
+        pair = pairs[i]
+        a = pair[0]
+        b = pair[1]
+        sum = a + b
+        if sum > 8 and sum > max_sum:
+            max_sum = sum
+            day_index = i + 1
+    return day_index
+```
+
+
+result: def findFirstPairExceedingSum(pairs: List[List[int]]) -> int:
+    max_sum = 0
+    day_index = 0
+    for i in range(len(pairs)):
+        pair = pairs[i]
+        a = pair[0]
+        b = pair[1]
+        sum = a + b
+        if sum > 8 and sum > max_sum:
+            max_sum = sum
+            day_index = i + 1
+    return day_index
+
+
+Task_id: 84_0    done
+raw_prediction: ```python
+def maximumValue(strs: List[str]) -> int:
+    res = 0
+    for s in strs:
+        is_digits = all(c.isdigit() for c in s)
+        res = max(res, int(s) if is_digits else len(s))
+    return res
+```
+
+
+result: def maximumValue(strs: List[str]) -> int:
+    res = 0
+    for s in strs:
+        is_digits = all(c.isdigit() for c in s)
+        res = max(res, int(s) if is_digits else len(s))
+    return res
+
+
+Task_id: 85_0    done
+raw_prediction: ```python
+from typing import List
+from math import gcd
+
+def countBeautifulPairs(nums: List[int]) -> int:
+    ans = 0
+    cnt = [0] * 10
+    for x in nums:
+        for y in range(1, 10):
+            if cnt[y] > 0 and gcd(x % 10, y) == 1:
+                ans += cnt[y]
+        while x >= 10:
+            x //= 10
+        cnt[x] += 1
+    return ans
+```
+
+
+result: def countBeautifulPairs(nums: List[int]) -> int:
+    ans = 0
+    cnt = [0] * 10
+    for x in nums:
+        for y in range(1, 10):
+            if cnt[y] > 0 and gcd(x % 10, y) == 1:
+                ans += cnt[y]
+        while x >= 10:
+            x //= 10
+        cnt[x] += 1
+    return ans
+
+
+Task_id: 86_0    done
+raw_prediction: ```python
+from typing import List
+
+def countServers(n: int, logs: List[List[int]], x: int, queries: List[int]) -> List[int]:
+    nq = len(queries)
+    id = list(range(nq))
+    id.sort(key=lambda i: queries[i])
+    logs.sort(key=lambda a: a[1])
+    ans = [0] * nq
+    cnt = [0] * (n + 1)
+    outOfRange = n
+    left = right = 0
+    for i in id:
+        while right < len(logs) and logs[right][1] <= queries[i]:
+            if cnt[logs[right][0]] == 0:
+                outOfRange -= 1
+            cnt[logs[right][0]] += 1
+            right += 1
+        while left < len(logs) and logs[left][1] < queries[i] - x:
+            cnt[logs[left][0]] -= 1
+            if cnt[logs[left][0]] == 0:
+                outOfRange += 1
+            left += 1
+        ans[i] = outOfRange
+    return ans
+```
+
+
+result: def countServers(n: int, logs: List[List[int]], x: int, queries: List[int]) -> List[int]:
+    nq = len(queries)
+    id = list(range(nq))
+    id.sort(key=lambda i: queries[i])
+    logs.sort(key=lambda a: a[1])
+    ans = [0] * nq
+    cnt = [0] * (n + 1)
+    outOfRange = n
+    left = right = 0
+    for i in id:
+        while right < len(logs) and logs[right][1] <= queries[i]:
+            if cnt[logs[right][0]] == 0:
+                outOfRange -= 1
+            cnt[logs[right][0]] += 1
+            right += 1
+        while left < len(logs) and logs[left][1] < queries[i] - x:
+            cnt[logs[left][0]] -= 1
+            if cnt[logs[left][0]] == 0:
+                outOfRange += 1
+            left += 1
+        ans[i] = outOfRange
+    return ans
+
+
+Task_id: 87_0    done
+raw_prediction: ```python
+from typing import List
+
+def isPossible(n: int, edges: List[List[int]]) -> bool:
+    g = [set() for _ in range(n + 1)]
+    for e in edges:
+        x, y = e
+        g[x].add(y)
+        g[y].add(x)
+    odd = [i for i in range(1, n + 1) if len(g[i]) % 2 > 0]
+    m = len(odd)
+    if m == 0:
+        return True
+    if m == 2:
+        x, y = odd
+        if y not in g[x]:
+            return True
+        for i in range(1, n + 1):
+            if i != x and i != y and x not in g[i] and y not in g[i]:
+                return True
+        return False
+    if m == 4:
+        a, b, c, d = odd
+        return (b not in g[a] and d not in g[c]) or (c not in g[a] and d not in g[b]) or (d not in g[a] and c not in g[b])
+    return False
+```
+
+
+result: def isPossible(n: int, edges: List[List[int]]) -> bool:
+    g = [set() for _ in range(n + 1)]
+    for e in edges:
+        x, y = e
+        g[x].add(y)
+        g[y].add(x)
+    odd = [i for i in range(1, n + 1) if len(g[i]) % 2 > 0]
+    m = len(odd)
+    if m == 0:
+        return True
+    if m == 2:
+        x, y = odd
+        if y not in g[x]:
+            return True
+        for i in range(1, n + 1):
+            if i != x and i != y and x not in g[i] and y not in g[i]:
+                return True
+        return False
+    if m == 4:
+        a, b, c, d = odd
+        return (b not in g[a] and d not in g[c]) or (c not in g[a] and d not in g[b]) or (d not in g[a] and c not in g[b])
+    return False
+
+
+Task_id: 88_0    done
+raw_prediction: ```python
+def minExtraChar(s: str, dictionary: List[str]) -> int:
+    set = HashSet(dictionary)
+    n = len(s)
+    f = [0] * (n + 1)
+    for i in range(n):
+        f[i + 1] = f[i] + 1
+        for j in range(i + 1):
+            if s[j:i + 1] in set:
+                f[i + 1] = min(f[i + 1], f[j])
+    return f[n]
+```
+
+
+result: def minExtraChar(s: str, dictionary: List[str]) -> int:
+    set = HashSet(dictionary)
+    n = len(s)
+    f = [0] * (n + 1)
+    for i in range(n):
+        f[i + 1] = f[i] + 1
+        for j in range(i + 1):
+            if s[j:i + 1] in set:
+                f[i + 1] = min(f[i + 1], f[j])
+    return f[n]
+
+
+Task_id: 89_0    done
+raw_prediction: ```python
+from typing import List
+
+def maximumPoints(edges: List[List[int]], coins: List[int], k: int) -> int:
+    g = [[] for _ in range(len(coins))]
+    for e in edges:
+        x, y = e
+        g[x].append(y)
+        g[y].append(x)
+    return dfs(0, -1, g, coins, k)[0]
+
+def dfs(x: int, fa: int, g: List[List[int]], coins: List[int], k: int) -> List[int]:
+    res1 = [0] * 14
+    res2 = [0] * 14
+    for y in g[x]:
+        if y == fa:
+            continue
+        r = dfs(y, x, g, coins, k)
+        for j in range(len(r)):
+            res1[j] += r[j]
+            if j < 13:
+                res2[j] += r[j + 1]
+    for j in range(len(res1)):
+        res1[j] = max(res1[j] + (coins[x] >> j) - k, res2[j] + (coins[x] >> (j + 1)))
+    return res1
+```
+
+
+result: def maximumPoints(edges: List[List[int]], coins: List[int], k: int) -> int:
+    g = [[] for _ in range(len(coins))]
+    for e in edges:
+        x, y = e
+        g[x].append(y)
+        g[y].append(x)
+    return dfs(0, -1, g, coins, k)[0]
+
+
+def dfs(x: int, fa: int, g: List[List[int]], coins: List[int], k: int) -> List[int]:
+    res1 = [0] * 14
+    res2 = [0] * 14
+    for y in g[x]:
+        if y == fa:
+            continue
+        r = dfs(y, x, g, coins, k)
+        for j in range(len(r)):
+            res1[j] += r[j]
+            if j < 13:
+                res2[j] += r[j + 1]
+    for j in range(len(res1)):
+        res1[j] = max(res1[j] + (coins[x] >> j) - k, res2[j] + (coins[x] >> (j + 1)))
+    return res1
+
+
+Task_id: 90_0    done
+raw_prediction: ```python
+from typing import List
+
+def countCompleteComponents(n: int, edges: List[List[int]]) -> int:
+    list = [[] for _ in range(n)]
+    for i in range(len(edges)):
+        list[edges[i][0]].append(edges[i][1])
+        list[edges[i][1]].append(edges[i][0])
+    ans = 0
+    visited = [False] * n
+    for i in range(n):
+        if not visited[i]:
+            v = [0]
+            e = [0]
+            dfs(list, visited, v, e, i)
+            if v[0] * (v[0] - 1) == e[0]:
+                ans += 1
+    return ans
+
+def dfs(list: List[List[int]], visited: List[bool], v: List[int], e: List[int], current: int) -> None:
+    if not visited[current]:
+        visited[current] = True
+        v[0] += 1
+        e[0] += len(list[current])
+        for n in list[current]:
+            dfs(list, visited, v, e, n)
+```
+
+
+result: def countCompleteComponents(n: int, edges: List[List[int]]) -> int:
+    list = [[] for _ in range(n)]
+    for i in range(len(edges)):
+        list[edges[i][0]].append(edges[i][1])
+        list[edges[i][1]].append(edges[i][0])
+    ans = 0
+    visited = [False] * n
+    for i in range(n):
+        if not visited[i]:
+            v = [0]
+            e = [0]
+            dfs(list, visited, v, e, i)
+            if v[0] * (v[0] - 1) == e[0]:
+                ans += 1
+    return ans
+
+
+def dfs(list: List[List[int]], visited: List[bool], v: List[int], e: List[int], current: int) -> None:
+    if not visited[current]:
+        visited[current] = True
+        v[0] += 1
+        e[0] += len(list[current])
+        for n in list[current]:
+            dfs(list, visited, v, e, n)
+
+
+Task_id: 91_0    done
+raw_prediction: ```python
+def reach(x: int, y: int, grid: List[List[int]]) -> bool:
+    n = len(grid)
+    m = len(grid[0])
+    if x == n - 1 and y == m - 1:
+        return True
+    grid[x][y] = 0
+    x1, y1 = x, y + 1
+    if y1 < m and grid[x1][y1] == 1:
+        ret = reach(x1, y1, grid)
+        if ret:
+            return ret
+    x2, y2 = x + 1, y
+    if x2 < n and grid[x2][y2] == 1:
+        return reach(x2, y2, grid)
+    return False
+
+def isPossibleToCutPath(grid: List[List[int]]) -> bool:
+    n = len(grid)
+    m = len(grid[0])
+    queue = []
+    rea = [[False] * m for _ in range(n)]
+    if not reach(0, 0, grid):
+        return True
+    grid[0][0] = grid[n - 1][m - 1] = 1
+    if not reach(0, 0, grid):
+        return True
+    return False
+```
+
+
+result: def isPossibleToCutPath(grid: List[List[int]]) -> bool:
+    n = len(grid)
+    m = len(grid[0])
+    queue = []
+    rea = [[False] * m for _ in range(n)]
+    if not reach(0, 0, grid):
+        return True
+    grid[0][0] = grid[n - 1][m - 1] = 1
+    if not reach(0, 0, grid):
+        return True
+    return False
+
+def reach(x: int, y: int, grid: List[List[int]]) -> bool:
+    n = len(grid)
+    m = len(grid[0])
+    if x == n - 1 and y == m - 1:
+        return True
+    grid[x][y] = 0
+    x1, y1 = x, y + 1
+    if y1 < m and grid[x1][y1] == 1:
+        ret = reach(x1, y1, grid)
+        if ret:
+            return ret
+    x2, y2 = x + 1, y
+    if x2 < n and grid[x2][y2] == 1:
+        return reach(x2, y2, grid)
+    return False
+
+
+
+Task_id: 92_0    done
+raw_prediction: ```python
+from typing import List
+
+def validPath(n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+    adj = [[] for _ in range(n)]
+    for edge in edges:
+        x, y = edge
+        adj[x].append(y)
+        adj[y].append(x)
+    visited = [False] * n
+    return dfs(source, destination, adj, visited)
+
+def dfs(source: int, destination: int, adj: List[List[int]], visited: List[bool]) -> bool:
+    if source == destination:
+        return True
+    visited[source] = True
+    for next in adj[source]:
+        if not visited[next] and dfs(next, destination, adj, visited):
+            return True
+    return False
+```
+
+
+result: def validPath(n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+    adj = [[] for _ in range(n)]
+    for edge in edges:
+        x, y = edge
+        adj[x].append(y)
+        adj[y].append(x)
+    visited = [False] * n
+    return dfs(source, destination, adj, visited)
+
+
+def dfs(source: int, destination: int, adj: List[List[int]], visited: List[bool]) -> bool:
+    if source == destination:
+        return True
+    visited[source] = True
+    for next in adj[source]:
+        if not visited[next] and dfs(next, destination, adj, visited):
+            return True
+    return False
+
+
+Task_id: 93_0    done
+raw_prediction: ```python
+class Solution:
+    @staticmethod
+    def isSubPath(head: ListNode, root: TreeNode) -> bool:
+        if root is None:
+            return False
+        return Solution.dfs(head, root) or Solution.isSubPath(head, root.left) or Solution.isSubPath(head, root.right)
+
+    @staticmethod
+    def dfs(head: ListNode, root: TreeNode) -> bool:
+        if head is None:
+            return True
+        if root is None:
+            return False
+        if head.val != root.val:
+            return False
+        return Solution.dfs(head.next, root.left) or Solution.dfs(head.next, root.right)
+```
+
+
+result:     def isSubPath(head: ListNode, root: TreeNode) -> bool:
+        if root is None:
+            return False
+        return Solution.dfs(head, root) or Solution.isSubPath(head, root.left) or Solution.isSubPath(head, root.right)
+
+
+    def dfs(head: ListNode, root: TreeNode) -> bool:
+        if head is None:
+            return True
+        if root is None:
+            return False
+        if head.val != root.val:
+            return False
+        return Solution.dfs(head.next, root.left) or Solution.dfs(head.next, root.right)
+
+
+Task_id: 94_0    done
+raw_prediction: ```python
+from typing import List
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def inorder(node: TreeNode, res: List[int]) -> None:
+    if node is not None:
+        inorder(node.left, res)
+        res.append(node.val)
+        inorder(node.right, res)
+
+def getAllElements(root1: TreeNode, root2: TreeNode) -> List[int]:
+    nums1 = []
+    nums2 = []
+    inorder(root1, nums1)
+    inorder(root2, nums2)
+    merged = []
+    p1 = 0
+    p2 = 0
+    while True:
+        if p1 == len(nums1):
+            merged.extend(nums2[p2:])
+            break
+        if p2 == len(nums2):
+            merged.extend(nums1[p1:])
+            break
+        if nums1[p1] < nums2[p2]:
+            merged.append(nums1[p1])
+            p1 += 1
+        else:
+            merged.append(nums2[p2])
+            p2 += 1
+    return merged
+```
+
+
+result: def getAllElements(root1: TreeNode, root2: TreeNode) -> List[int]:
+    nums1 = []
+    nums2 = []
+    inorder(root1, nums1)
+    inorder(root2, nums2)
+    merged = []
+    p1 = 0
+    p2 = 0
+    while True:
+        if p1 == len(nums1):
+            merged.extend(nums2[p2:])
+            break
+        if p2 == len(nums2):
+            merged.extend(nums1[p1:])
+            break
+        if nums1[p1] < nums2[p2]:
+            merged.append(nums1[p1])
+            p1 += 1
+        else:
+            merged.append(nums2[p2])
+            p2 += 1
+    return merged
+
+def inorder(node: TreeNode, res: List[int]) -> None:
+    if node is not None:
+        inorder(node.left, res)
+        res.append(node.val)
+        inorder(node.right, res)
+
+
+
+Task_id: 95_0    done
+raw_prediction: ```python
+class Solution:
+    @staticmethod
+    def maxLevelSum(root):
+        sums = []
+        Solution.dfs(root, 0, sums)
+        return sums.index(max(sums)) + 1
+
+    @staticmethod
+    def dfs(node, level, sums):
+        if not node:
+            return
+        if level == len(sums):
+            sums.append(node.val)
+        else:
+            sums[level] = sums[level] + node.val
+        Solution.dfs(node.left, level + 1, sums)
+        Solution.dfs(node.right, level + 1, sums)
+```
+
+
+result:     def maxLevelSum(root):
+        sums = []
+        Solution.dfs(root, 0, sums)
+        return sums.index(max(sums)) + 1
+
+
+    def dfs(node, level, sums):
+        if not node:
+            return
+        if level == len(sums):
+            sums.append(node.val)
+        else:
+            sums[level] = sums[level] + node.val
+        Solution.dfs(node.left, level + 1, sums)
+        Solution.dfs(node.right, level + 1, sums)
+
+
+Task_id: 96_0    done
+raw_prediction: ```python
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def sumRootToLeaf(root):
+    return dfs(root, 0)
+
+def dfs(root, val):
+    if not root:
+        return 0
+    val = (val << 1) | root.val
+    if not root.left and not root.right:
+        return val
+    return dfs(root.left, val) + dfs(root.right, val)
+```
+
+
+result: def sumRootToLeaf(root):
+    return dfs(root, 0)
+
+
+def dfs(root, val):
+    if not root:
+        return 0
+    val = (val << 1) | root.val
+    if not root.left and not root.right:
+        return val
+    return dfs(root.left, val) + dfs(root.right, val)
+
+
+Task_id: 97_0    done
+raw_prediction: ```python
+class Solution:
+    @staticmethod
+    def isCousins(root: TreeNode, x: int, y: int) -> bool:
+        xi = Solution.dfs(root, None, 0, x)
+        yi = Solution.dfs(root, None, 0, y)
+        return xi[1] == yi[1] and xi[0] != yi[0]
+
+    @staticmethod
+    def dfs(root: TreeNode, fa: TreeNode, depth: int, t: int) -> List[int]:
+        if root is None:
+            return [-1, -1]
+        if root.val == t:
+            return [fa.val if fa is not None else 1, depth]
+        l = Solution.dfs(root.left, root, depth + 1, t)
+        if l[0] != -1:
+            return l
+        return Solution.dfs(root.right, root, depth + 1, t)
+```
+
+
+result:     def isCousins(root: TreeNode, x: int, y: int) -> bool:
+        xi = Solution.dfs(root, None, 0, x)
+        yi = Solution.dfs(root, None, 0, y)
+        return xi[1] == yi[1] and xi[0] != yi[0]
+
+
+    def dfs(root: TreeNode, fa: TreeNode, depth: int, t: int) -> List[int]:
+        if root is None:
+            return [-1, -1]
+        if root.val == t:
+            return [fa.val if fa is not None else 1, depth]
+        l = Solution.dfs(root.left, root, depth + 1, t)
+        if l[0] != -1:
+            return l
+        return Solution.dfs(root.right, root, depth + 1, t)
+
+
+Task_id: 98_0    done
+raw_prediction: ```python
+from typing import List
+import math
+
+def longestSquareStreak(nums: List[int]) -> int:
+    ans = 0
+    s = set(nums)
+    for x in s:
+        cnt = 0
+        while x in s:
+            cnt += 1
+            if x > math.isqrt(max(s)):
+                break
+            x *= x
+        ans = max(ans, cnt)
+    return ans if ans > 1 else -1
+```
+
+
+result: def longestSquareStreak(nums: List[int]) -> int:
+    ans = 0
+    s = set(nums)
+    for x in s:
+        cnt = 0
+        while x in s:
+            cnt += 1
+            if x > math.isqrt(max(s)):
+                break
+            x *= x
+        ans = max(ans, cnt)
+    return ans if ans > 1 else -1
+
+
+Task_id: 99_0    done
+raw_prediction: ```python
+def appendCharacters(s: str, t: str) -> int:
+    j = 0
+    m = len(t)
+    for c in s:
+        if c == t[j]:
+            j += 1
+            if j == m:
+                return 0
+    return m - j
+```
+
+
+result: def appendCharacters(s: str, t: str) -> int:
+    j = 0
+    m = len(t)
+    for c in s:
+        if c == t[j]:
+            j += 1
+            if j == m:
+                return 0
+    return m - j
+
+
+Task_id: 100_0    done

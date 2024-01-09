@@ -1,0 +1,1931 @@
+2023-12-07 19:27:23 INFO Running task: 1_0...
+2023-12-07 19:27:25 INFO Test Passed!
+
+
+2023-12-07 19:27:25 INFO Running task: 2_0...
+2023-12-07 19:27:26 INFO Test Passed!
+
+
+2023-12-07 19:27:26 INFO Running task: 3_0...
+2023-12-07 19:27:28 INFO Test Passed!
+
+
+2023-12-07 19:27:28 INFO Running task: 4_0...
+2023-12-07 19:27:30 INFO Test Passed!
+
+
+2023-12-07 19:27:30 INFO Running task: 5_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:18: error: cannot convert ‘std::pair<const int, int>’ to ‘int’ in initialization
+  328 |     for (int c : cnt) {
+      |                  ^~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:333:22: error: cannot convert ‘std::pair<const int, int>’ to ‘int’ in initialization
+  333 |         for (int c : cnt) {
+      |                      ^~~
+2023-12-07 19:27:31 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:27:31 INFO Compilation Failed!
+2023-12-07 19:27:31 INFO run_output: b''
+
+
+2023-12-07 19:27:31 INFO Running task: 6_0...
+2023-12-07 19:27:33 INFO Test Passed!
+
+
+2023-12-07 19:27:33 INFO Running task: 7_0...
+2023-12-07 19:27:34 INFO Test Passed!
+
+
+2023-12-07 19:27:34 INFO Running task: 8_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:12: error: stray ‘\’ in program
+  324 |     return \"1\".repeat(cnt1 - 1) + \"0\".repeat(s.length() - cnt1) + \"1\";
+      |            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:13: warning: missing terminating " character
+  324 |     return \"1\".repeat(cnt1 - 1) + \"0\".repeat(s.length() - cnt1) + \"1\";
+      |             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:13: error: missing terminating " character
+  324 |     return \"1\".repeat(cnt1 - 1) + \"0\".repeat(s.length() - cnt1) + \"1\";
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::string Test::testfunc(std::string)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:18: error: ‘std::string’ {aka ‘class std::__cxx11::basic_string<char>’} has no member named ‘chars’
+  323 |     int cnt1 = s.chars().filter([](char c) { return c == '1'; }).count();
+      |                  ^~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:1: error: expected primary-expression before ‘}’ token
+  325 | }
+      | ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:1: error: expected ‘;’ before ‘}’ token
+2023-12-07 19:27:36 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:27:36 INFO Compilation Failed!
+2023-12-07 19:27:36 INFO run_output: b''
+
+
+2023-12-07 19:27:36 INFO Running task: 9_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:19: error: stray ‘\’ in program
+  323 |     if (S.replace(\"0\", \"\").length() < k) {
+      |                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:20: warning: missing terminating " character
+  323 |     if (S.replace(\"0\", \"\").length() < k) {
+      |                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:20: error: missing terminating " character
+  323 |     if (S.replace(\"0\", \"\").length() < k) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:16: error: stray ‘\’ in program
+  324 |         return \"\";
+      |                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:17: warning: missing terminating " character
+  324 |         return \"\";
+      |                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:17: error: missing terminating " character
+  324 |         return \"\";
+      |                 ^~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::string Test::testfunc(std::string, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:9: error: expected primary-expression before ‘return’
+  324 |         return \"\";
+      |         ^~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected ‘)’ before ‘}’ token
+  325 |     }
+      |     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:8: note: to match this ‘(’
+  323 |     if (S.replace(\"0\", \"\").length() < k) {
+      |        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected primary-expression before ‘}’ token
+  325 |     }
+      |     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: warning: no return statement in function returning non-void [-Wreturn-type]
+2023-12-07 19:27:37 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:27:37 INFO Compilation Failed!
+2023-12-07 19:27:37 INFO run_output: b''
+
+
+2023-12-07 19:27:37 INFO Running task: 10_0...
+2023-12-07 19:27:38 INFO Test Passed!
+
+
+2023-12-07 19:27:38 INFO Running task: 11_0...
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h: In instantiation of ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’:
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_algo.h:1831:24: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+ 1831 |               *__first = _GLIBCXX_MOVE(__val);
+      |                        ^
+/usr/include/c++/11/bits/stl_algo.h: In instantiation of ‘constexpr void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Val_less_iter]’:
+/usr/include/c++/11/bits/stl_algo.h:1834:36:   required from ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_algo.h:1808:19: error: assignment of read-only location ‘__last.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+ 1808 |           *__last = _GLIBCXX_MOVE(*__next);
+      |                   ^
+/usr/include/c++/11/bits/stl_algo.h:1812:15: error: assignment of read-only location ‘__last.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+ 1812 |       *__last = _GLIBCXX_MOVE(__val);
+      |               ^
+In file included from /usr/include/c++/11/bits/stl_algo.h:61,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘constexpr void std::__pop_heap(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’:
+/usr/include/c++/11/bits/stl_algo.h:1649:19:   required from ‘constexpr void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1917:25:   required from ‘constexpr void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1933:27:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_heap.h:262:17: error: assignment of read-only location ‘__result.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+  262 |       *__result = _GLIBCXX_MOVE(*__first);
+      |                 ^
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘constexpr void std::iter_swap(_ForwardIterator1, _ForwardIterator2) [with _ForwardIterator1 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _ForwardIterator2 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’:
+/usr/include/c++/11/bits/stl_algo.h:85:20:   required from ‘constexpr void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1904:34:   required from ‘constexpr _RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1938:38:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:182:11: error: no matching function for call to ‘swap(const int&, const int&)’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/move.h:196:5: note: candidate: ‘template<class _Tp> constexpr std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&)’
+  196 |     swap(_Tp& __a, _Tp& __b)
+      |     ^~~~
+/usr/include/c++/11/bits/move.h:196:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/move.h:57,
+                 from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void]’:
+/usr/include/c++/11/type_traits:2215:11:   required by substitution of ‘template<class ... _Cond> using _Require = std::__enable_if_t<std::__and_< <template-parameter-1-1> >::value> [with _Cond = {std::__not_<std::__is_tuple_like<const int> >, std::is_move_constructible<const int>, std::is_move_assignable<const int>}]’
+/usr/include/c++/11/bits/move.h:196:5:   required by substitution of ‘template<class _Tp> constexpr std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = const int]’
+/usr/include/c++/11/bits/stl_algobase.h:182:11:   required from ‘constexpr void std::iter_swap(_ForwardIterator1, _ForwardIterator2) [with _ForwardIterator1 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _ForwardIterator2 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/usr/include/c++/11/bits/stl_algo.h:85:20:   required from ‘constexpr void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1904:34:   required from ‘constexpr _RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1938:38:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/type_traits:2211:11: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+ 2211 |     using __enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘constexpr void std::iter_swap(_ForwardIterator1, _ForwardIterator2) [with _ForwardIterator1 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _ForwardIterator2 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’:
+/usr/include/c++/11/bits/stl_algo.h:85:20:   required from ‘constexpr void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1904:34:   required from ‘constexpr _RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1938:38:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/move.h:220:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> constexpr std::__enable_if_t<std::__is_swappable<_Tp>::value> std::swap(_Tp (&)[_Nm], _Tp (&)[_Nm])’
+  220 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])
+      |     ^~~~
+/usr/include/c++/11/bits/move.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:182:11: note:   mismatched types ‘_Tp [_Nm]’ and ‘const int’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_pair.h:533:5: note: candidate: ‘template<class _T1, class _T2> constexpr typename std::enable_if<std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value>::type std::swap(std::pair<_T1, _T2>&, std::pair<_T1, _T2>&)’
+  533 |     swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)
+      |     ^~~~
+/usr/include/c++/11/bits/stl_pair.h:533:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:182:11: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const int’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_pair.h:541:5: note: candidate: ‘template<class _T1, class _T2> typename std::enable_if<(! std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value)>::type std::swap(std::pair<_T1, _T2>&, std::pair<_T1, _T2>&)’ (deleted)
+  541 |     swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;
+      |     ^~~~
+/usr/include/c++/11/bits/stl_pair.h:541:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:182:11: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const int’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algo.h:61,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘constexpr void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Distance = long int; _Tp = int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’:
+/usr/include/c++/11/bits/stl_heap.h:355:22:   required from ‘constexpr void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1646:23:   required from ‘constexpr void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1917:25:   required from ‘constexpr void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1933:27:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_heap.h:234:36: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+  234 |           *(__first + __holeIndex) = _GLIBCXX_MOVE(*(__first + __secondChild));
+      |                                    ^
+/usr/include/c++/11/bits/stl_heap.h:240:36: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+  240 |           *(__first + __holeIndex) = _GLIBCXX_MOVE(*(__first
+      |                                    ^
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘constexpr _BI2 std::__copy_move_backward_a2(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const int*; _BI2 = const int*]’:
+/usr/include/c++/11/bits/stl_algobase.h:769:51:   required from ‘constexpr _BI2 std::__copy_move_backward_a1(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const int*; _BI2 = const int*]’
+/usr/include/c++/11/bits/stl_algobase.h:800:5:   required from ‘constexpr _OI std::__copy_move_backward_a(_II, _II, _OI) [with bool _IsMove = true; _II = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _OI = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/usr/include/c++/11/bits/stl_algobase.h:894:47:   required from ‘constexpr _BI2 std::move_backward(_BI1, _BI1, _BI2) [with _BI1 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _BI2 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/usr/include/c++/11/bits/stl_algo.h:1830:8:   required from ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:760:65: error: no matching function for call to ‘std::__copy_move_backward<true, true, std::random_access_iterator_tag>::__copy_move_b(const int*&, const int*&, const int*&)’
+  758 |       return std::__copy_move_backward<_IsMove,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+  759 |                                        __memcpyable<_BI2, _BI1>::__value,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  760 |                                        _Category>::__copy_move_b(__first,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+  761 |                                                                  __last,
+      |                                                                  ~~~~~~~
+  762 |                                                                  __result);
+      |                                                                  ~~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:731:9: note: candidate: ‘template<class _Tp> static constexpr _Tp* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::__copy_move_b(const _Tp*, const _Tp*, _Tp*) [with _Tp = _Tp; bool _IsMove = true]’
+  731 |         __copy_move_b(const _Tp* __first, const _Tp* __last, _Tp* __result)
+      |         ^~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:731:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/stl_algobase.h:760:65: note:   deduced conflicting types for parameter ‘_Tp’ (‘int’ and ‘const int’)
+  758 |       return std::__copy_move_backward<_IsMove,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+  759 |                                        __memcpyable<_BI2, _BI1>::__value,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  760 |                                        _Category>::__copy_move_b(__first,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+  761 |                                                                  __last,
+      |                                                                  ~~~~~~~
+  762 |                                                                  __result);
+      |                                                                  ~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algo.h:61,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘constexpr void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Distance = long int; _Tp = int; _Compare = __gnu_cxx::__ops::_Iter_less_val]’:
+/usr/include/c++/11/bits/stl_heap.h:246:23:   required from ‘constexpr void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Distance = long int; _Tp = int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_heap.h:355:22:   required from ‘constexpr void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1646:23:   required from ‘constexpr void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1917:25:   required from ‘constexpr void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1933:27:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_heap.h:141:36: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+  141 |           *(__first + __holeIndex) = _GLIBCXX_MOVE(*(__first + __parent));
+      |                                    ^
+/usr/include/c++/11/bits/stl_heap.h:145:32: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const int*, std::vector<int> >::operator*()’
+  145 |       *(__first + __holeIndex) = _GLIBCXX_MOVE(__value);
+      |                                ^
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘static constexpr _BI2 std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b(_BI1, _BI1, _BI2) [with _BI1 = const int*; _BI2 = const int*]’:
+/usr/include/c++/11/bits/stl_algobase.h:756:17:   required from ‘constexpr _BI2 std::__copy_move_backward_a2(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const int*; _BI2 = const int*]’
+/usr/include/c++/11/bits/stl_algobase.h:769:51:   required from ‘constexpr _BI2 std::__copy_move_backward_a1(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const int*; _BI2 = const int*]’
+/usr/include/c++/11/bits/stl_algobase.h:800:5:   required from ‘constexpr _OI std::__copy_move_backward_a(_II, _II, _OI) [with bool _IsMove = true; _II = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _OI = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/usr/include/c++/11/bits/stl_algobase.h:894:47:   required from ‘constexpr _BI2 std::move_backward(_BI1, _BI1, _BI2) [with _BI1 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _BI2 = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/usr/include/c++/11/bits/stl_algo.h:1830:8:   required from ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:14:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:719:25: error: assignment of read-only location ‘* -- __result’
+  719 |             *--__result = std::move(*--__last);
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+2023-12-07 19:27:40 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:27:40 INFO Compilation Failed!
+2023-12-07 19:27:40 INFO run_output: b''
+
+
+2023-12-07 19:27:40 INFO Running task: 12_0...
+2023-12-07 19:27:41 INFO Command '['/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' died with <Signals.SIGSEGV: 11>.
+2023-12-07 19:27:41 INFO Compilation Failed!
+2023-12-07 19:27:41 INFO run_output: b'[137653472,137653472,137653472] [2,1,-1]\nTestcase No.1 Failed!\n[21985,0,0] [1,2,1]\nTestcase No.2 Failed!\n'
+
+
+2023-12-07 19:27:41 INFO Running task: 13_0...
+2023-12-07 19:27:43 INFO Test Passed!
+
+
+2023-12-07 19:27:43 INFO Running task: 14_0...
+2023-12-07 19:27:45 INFO Test Passed!
+
+
+2023-12-07 19:27:45 INFO Running task: 15_0...
+2023-12-07 19:27:47 INFO Test Passed!
+
+
+2023-12-07 19:27:47 INFO Running task: 16_0...
+2023-12-07 19:27:49 INFO Test Passed!
+
+
+2023-12-07 19:27:49 INFO Running task: 17_0...
+2023-12-07 19:27:50 INFO Test Passed!
+
+
+2023-12-07 19:27:50 INFO Running task: 18_0...
+2023-12-07 19:27:52 INFO Test Passed!
+
+
+2023-12-07 19:27:52 INFO Running task: 19_0...
+2023-12-07 19:27:54 INFO Test Passed!
+
+
+2023-12-07 19:27:54 INFO Running task: 20_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:18: error: cannot convert ‘std::pair<const int, int>’ to ‘int’ in initialization
+  328 |     for (int c : cnt) {
+      |                  ^~~
+2023-12-07 19:27:55 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:27:55 INFO Compilation Failed!
+2023-12-07 19:27:55 INFO run_output: b''
+
+
+2023-12-07 19:27:55 INFO Running task: 21_0...
+2023-12-07 19:27:57 INFO Test Passed!
+
+
+2023-12-07 19:27:57 INFO Running task: 22_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(int, int, int, const std::vector<std::vector<int> >&, const std::vector<int>&, const std::vector<int>&)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:55: error: cannot convert ‘__gnu_cxx::__normal_iterator<const int*, std::vector<int> >’ to ‘int’ in initialization
+  324 |         int mx = std::min(stock.begin(), stock.end()) + budget;
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+      |                                                       |
+      |                                                       __gnu_cxx::__normal_iterator<const int*, std::vector<int> >
+2023-12-07 19:27:58 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:27:58 INFO Compilation Failed!
+2023-12-07 19:27:58 INFO run_output: b''
+
+
+2023-12-07 19:27:58 INFO Running task: 23_0...
+2023-12-07 19:28:00 INFO Test Passed!
+
+
+2023-12-07 19:28:00 INFO Running task: 24_0...
+2023-12-07 19:28:02 INFO Test Passed!
+
+
+2023-12-07 19:28:02 INFO Running task: 25_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::vector<std::vector<int> > Test::testfunc(std::vector<std::vector<int> >, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:332:12: error: could not convert ‘ans’ from ‘int’ to ‘std::vector<std::vector<int> >’
+  332 |     return ans;
+      |            ^~~
+      |            |
+      |            int
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘void Test::Start()’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:373:39: error: cannot convert ‘std::vector<std::vector<int> >’ to ‘int’ in assignment
+  373 |                 return_data = testfunc(data1, data2);
+      |                               ~~~~~~~~^~~~~~~~~~~~~~
+      |                                       |
+      |                                       std::vector<std::vector<int> >
+2023-12-07 19:28:03 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:03 INFO Compilation Failed!
+2023-12-07 19:28:03 INFO run_output: b''
+
+
+2023-12-07 19:28:03 INFO Running task: 26_0...
+2023-12-07 19:28:04 INFO Test Passed!
+
+
+2023-12-07 19:28:04 INFO Running task: 27_0...
+2023-12-07 19:28:06 INFO Test Passed!
+
+
+2023-12-07 19:28:06 INFO Running task: 28_0...
+2023-12-07 19:28:08 INFO Test Passed!
+
+
+2023-12-07 19:28:08 INFO Running task: 29_0...
+2023-12-07 19:28:10 INFO Test Passed!
+
+
+2023-12-07 19:28:10 INFO Running task: 30_0...
+2023-12-07 19:28:12 INFO Test Passed!
+
+
+2023-12-07 19:28:12 INFO Running task: 31_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:25: error: stray ‘\’ in program
+  324 |     int zero = num.find(\"0\") == std::string::npos ? len - 1 : len;
+      |                         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:26: warning: missing terminating " character
+  324 |     int zero = num.find(\"0\") == std::string::npos ? len - 1 : len;
+      |                          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:26: error: missing terminating " character
+  324 |     int zero = num.find(\"0\") == std::string::npos ? len - 1 : len;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:23: error: stray ‘\’ in program
+  325 |     return std::min(f(\"00\", num),
+      |                       ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:24: warning: missing terminating " character
+  325 |     return std::min(f(\"00\", num),
+      |                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:24: error: missing terminating " character
+  325 |     return std::min(f(\"00\", num),
+      |                        ^~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:31: error: stray ‘\’ in program
+  326 |                    std::min(f(\"25\", num),
+      |                               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:32: warning: missing terminating " character
+  326 |                    std::min(f(\"25\", num),
+      |                                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:32: error: missing terminating " character
+  326 |                    std::min(f(\"25\", num),
+      |                                ^~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:39: error: stray ‘\’ in program
+  327 |                            std::min(f(\"50\", num),
+      |                                       ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:40: warning: missing terminating " character
+  327 |                            std::min(f(\"50\", num),
+      |                                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:40: error: missing terminating " character
+  327 |                            std::min(f(\"50\", num),
+      |                                        ^~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:47: error: stray ‘\’ in program
+  328 |                                    std::min(f(\"75\", num), zero))));
+      |                                               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:48: warning: missing terminating " character
+  328 |                                    std::min(f(\"75\", num), zero))));
+      |                                                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:48: error: missing terminating " character
+  328 |                                    std::min(f(\"75\", num), zero))));
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:400:2: error: expected ‘}’ at end of input
+  400 | }
+      |  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:29:12: note: to match this ‘{’
+   29 | class Test {
+      |            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(const string&)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected primary-expression before ‘return’
+  325 |     return std::min(f(\"00\", num),
+      |     ^~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  329 | }
+      | ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: At global scope:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:400:2: error: expected unqualified-id at end of input
+  400 | }
+      |  ^
+2023-12-07 19:28:13 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:13 INFO Compilation Failed!
+2023-12-07 19:28:13 INFO run_output: b''
+
+
+2023-12-07 19:28:13 INFO Running task: 32_0...
+2023-12-07 19:28:14 INFO Test Passed!
+
+
+2023-12-07 19:28:14 INFO Running task: 33_0...
+2023-12-07 19:28:16 INFO Test Passed!
+
+
+2023-12-07 19:28:16 INFO Running task: 34_0...
+2023-12-07 19:28:18 INFO Test Passed!
+
+
+2023-12-07 19:28:18 INFO Running task: 35_0...
+2023-12-07 19:28:19 INFO Test Passed!
+
+
+2023-12-07 19:28:19 INFO Running task: 36_0...
+2023-12-07 19:28:21 INFO Test Passed!
+
+
+2023-12-07 19:28:21 INFO Running task: 37_0...
+2023-12-07 19:28:23 INFO Test Passed!
+
+
+2023-12-07 19:28:23 INFO Running task: 38_0...
+2023-12-07 19:28:25 INFO Test Passed!
+
+
+2023-12-07 19:28:25 INFO Running task: 39_0...
+2023-12-07 19:28:26 INFO Test Passed!
+
+
+2023-12-07 19:28:26 INFO Running task: 40_0...
+2023-12-07 19:28:28 INFO Test Passed!
+
+
+2023-12-07 19:28:28 INFO Running task: 41_0...
+2023-12-07 19:28:30 INFO Test Passed!
+
+
+2023-12-07 19:28:30 INFO Running task: 42_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:332:40: error: ‘class std::set<int>’ has no member named ‘ceiling’
+  332 |         ans = std::min(ans, std::min(s.ceiling(y) - y, y - s.floor(y)));
+      |                                        ^~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:332:62: error: ‘class std::set<int>’ has no member named ‘floor’
+  332 |         ans = std::min(ans, std::min(s.ceiling(y) - y, y - s.floor(y)));
+      |                                                              ^~~~~
+2023-12-07 19:28:31 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:31 INFO Compilation Failed!
+2023-12-07 19:28:31 INFO run_output: b''
+
+
+2023-12-07 19:28:31 INFO Running task: 43_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::shared_ptr<Test::ListNode> Test::testfunc(Test::ListNode*)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:37: error: cannot convert ‘std::shared_ptr<Test::ListNode>’ to ‘Test::ListNode*’ in assignment
+  324 |         head = make_shared<ListNode>(0, head);
+      |                ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+      |                                     |
+      |                                     std::shared_ptr<Test::ListNode>
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:332:12: error: could not convert ‘head’ from ‘Test::ListNode*’ to ‘std::shared_ptr<Test::ListNode>’
+  332 |     return head;
+      |            ^~~~
+      |            |
+      |            Test::ListNode*
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘void Test::Start()’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:371:39: error: cannot convert ‘std::shared_ptr<Test::ListNode>’ to ‘Test::ListNode*’ in assignment
+  371 |                 return_data = testfunc(data1);
+      |                               ~~~~~~~~^~~~~~~
+      |                                       |
+      |                                       std::shared_ptr<Test::ListNode>
+2023-12-07 19:28:32 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:32 INFO Compilation Failed!
+2023-12-07 19:28:32 INFO run_output: b''
+
+
+2023-12-07 19:28:32 INFO Running task: 44_0...
+2023-12-07 19:28:34 INFO Test Passed!
+
+
+2023-12-07 19:28:34 INFO Running task: 45_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::string Test::testfunc(std::string_view)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:21: error: ‘using string_view = class std::basic_string_view<char>’ {aka ‘class std::basic_string_view<char>’} has no member named ‘to_char_array’
+  325 |     for (char c : s.to_char_array()) {
+      |                     ^~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:339:13: error: ‘std::string’ {aka ‘class std::__cxx11::basic_string<char>’} has no member named ‘reverse’; did you mean ‘reserve’?
+  339 |         ans.reverse();
+      |             ^~~~~~~
+      |             reserve
+2023-12-07 19:28:35 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:35 INFO Compilation Failed!
+2023-12-07 19:28:35 INFO run_output: b''
+
+
+2023-12-07 19:28:35 INFO Running task: 46_0...
+2023-12-07 19:28:36 INFO Test Passed!
+
+
+2023-12-07 19:28:36 INFO Running task: 47_0...
+2023-12-07 19:28:38 INFO Test Passed!
+
+
+2023-12-07 19:28:38 INFO Running task: 48_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:335:38: error: binding reference of type ‘std::__cxx11::list<int>&’ to ‘const std::__cxx11::list<int>’ discards qualifiers
+  335 |         std::list<int>& list = entry.second;
+      |                                ~~~~~~^~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:339:36: error: no match for ‘operator[]’ (operand types are ‘std::__cxx11::list<int>’ and ‘int’)
+  339 |             mx = std::max(mx, (list[j] - list[j - 1]) / 2);
+      |                                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:339:46: error: no match for ‘operator[]’ (operand types are ‘std::__cxx11::list<int>’ and ‘int’)
+  339 |             mx = std::max(mx, (list[j] - list[j - 1]) / 2);
+      |                                              ^
+2023-12-07 19:28:39 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:39 INFO Compilation Failed!
+2023-12-07 19:28:39 INFO run_output: b''
+
+
+2023-12-07 19:28:39 INFO Running task: 49_0...
+2023-12-07 19:28:41 INFO Test Passed!
+
+
+2023-12-07 19:28:41 INFO Running task: 50_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > Test::testfunc(std::vector<std::__cxx11::basic_string<char> >, char)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:10: error: ‘stringBuilder’ is not a member of ‘std’; did you mean ‘string_view’?
+  324 |     std::stringBuilder sb;
+      |          ^~~~~~~~~~~~~
+      |          string_view
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:22: error: ‘sb’ was not declared in this scope
+  329 |                 if (!sb.empty()) {
+      |                      ^~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:17: error: ‘sb’ was not declared in this scope
+  334 |                 sb.push_back(c);
+      |                 ^~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:337:14: error: ‘sb’ was not declared in this scope
+  337 |         if (!sb.empty()) {
+      |              ^~
+2023-12-07 19:28:42 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:42 INFO Compilation Failed!
+2023-12-07 19:28:42 INFO run_output: b''
+
+
+2023-12-07 19:28:42 INFO Running task: 51_0...
+2023-12-07 19:28:44 INFO Test Passed!
+
+
+2023-12-07 19:28:44 INFO Running task: 52_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:9: error: ‘best’ does not name a type; did you mean ‘Test’?
+  334 |         best = std::max(d[i] + d.find_if(begin(d), end(d), [i](auto&& pair) { return pair.first == i; })->second, best);
+      |         ^~~~
+      |         Test
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:104: error: expected unqualified-id before ‘)’ token
+  334 |         best = std::max(d[i] + d.find_if(begin(d), end(d), [i](auto&& pair) { return pair.first == i; })->second, best);
+      |                                                                                                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:34: error: ‘class std::map<int, int>’ has no member named ‘find_if’; did you mean ‘find’?
+  329 |         best = std::max(d[i] + d.find_if(begin(d), end(d), [i](auto&& pair) { return pair.first == i; })->second, best);
+      |                                  ^~~~~~~
+      |                                  find
+2023-12-07 19:28:45 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:45 INFO Compilation Failed!
+2023-12-07 19:28:45 INFO run_output: b''
+
+
+2023-12-07 19:28:45 INFO Running task: 53_0...
+2023-12-07 19:28:47 INFO Test Passed!
+
+
+2023-12-07 19:28:47 INFO Running task: 54_0...
+2023-12-07 19:28:48 INFO Test Passed!
+
+
+2023-12-07 19:28:48 INFO Running task: 55_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::vector<int> Test::testfunc(std::vector<int>, std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:32: error: cannot convert ‘std::vector<int>’ to ‘std::__cxx11::list<int>’
+  328 |             int rank = bsearch(rankNums, score);
+      |                                ^~~~~~~~
+      |                                |
+      |                                std::vector<int>
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:33: note:   initializing argument 1 of ‘int Test::bsearch(std::__cxx11::list<int>, int)’
+  334 |      int bsearch(std::list<int> arr, int x) {
+      |                  ~~~~~~~~~~~~~~~^~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::bsearch(std::__cxx11::list<int>, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:340:21: error: ‘class std::__cxx11::list<int>’ has no member named ‘at’
+  340 |             if (arr.at(mid) < x) {
+      |                     ^~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:342:28: error: ‘class std::__cxx11::list<int>’ has no member named ‘at’
+  342 |             } else if (arr.at(mid) > x) {
+      |                            ^~
+2023-12-07 19:28:49 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:49 INFO Compilation Failed!
+2023-12-07 19:28:49 INFO run_output: b''
+
+
+2023-12-07 19:28:49 INFO Running task: 56_0...
+2023-12-07 19:28:52 INFO Command '['/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' died with <Signals.SIGSEGV: 11>.
+2023-12-07 19:28:52 INFO Compilation Failed!
+2023-12-07 19:28:52 INFO run_output: b'1364842530855895 10\nTestcase No.1 Failed!\n1364842530856191 31\nTestcase No.2 Failed!\n'
+
+
+2023-12-07 19:28:52 INFO Running task: 57_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:322:1: error: ‘Test::ListNode’ is not a template
+  322 | ListNode<T>* testfunc(ListNode<T>* llist, int position) {
+      | ^~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:322:10: error: ‘T’ was not declared in this scope
+  322 | ListNode<T>* testfunc(ListNode<T>* llist, int position) {
+      |          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:322:23: error: ‘Test::ListNode’ is not a template
+  322 | ListNode<T>* testfunc(ListNode<T>* llist, int position) {
+      |                       ^~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:322:32: error: ‘T’ was not declared in this scope
+  322 | ListNode<T>* testfunc(ListNode<T>* llist, int position) {
+      |                                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘Test::ListNode* Test::testfunc(Test::ListNode*, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:5: error: ‘Test::ListNode’ is not a template
+  329 |     ListNode<T>* current = llist;
+      |     ^~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:14: error: ‘T’ was not declared in this scope
+  329 |     ListNode<T>* current = llist;
+      |              ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:5: error: ‘Test::ListNode’ is not a template
+  336 |     ListNode<T>* next = current->next->next;
+      |     ^~~~~~~~
+2023-12-07 19:28:53 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:28:53 INFO Compilation Failed!
+2023-12-07 19:28:53 INFO run_output: b''
+
+
+2023-12-07 19:28:53 INFO Running task: 58_0...
+2023-12-07 19:28:55 INFO Test Passed!
+
+
+2023-12-07 19:28:55 INFO Running task: 59_0...
+2023-12-07 19:28:58 INFO Test Passed!
+
+
+2023-12-07 19:28:58 INFO Running task: 60_0...
+2023-12-07 19:29:00 INFO Test Failed!
+2023-12-07 19:29:00 INFO run_output: b'] [204,205,206]\nTestcase No.1 Failed!\n] [3,7,8,10,12]\nTestcase No.2 Failed!\n[3685] [3670,3674,3677,3684,3685,3695,3714,3720]\nTestcase No.3 Failed!\n] [8587,8609]\nTestcase No.4 Failed!\n] [2437,2438,2442,2444,2447,2451,2457,2458,2466,2473,2479,2483,2488,2489,2510,2515,2517,2518]\nTestcase No.5 Failed!\nPassed 0/5 tests\nTest Failed!\n'
+
+
+2023-12-07 19:29:00 INFO Running task: 61_0...
+2023-12-07 19:29:01 INFO Test Passed!
+
+
+2023-12-07 19:29:01 INFO Running task: 62_0...
+2023-12-07 19:29:03 INFO Test Passed!
+
+
+2023-12-07 19:29:03 INFO Running task: 63_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:20: error: stray ‘\’ in program
+  330 |             return \"IsFibo\";
+      |                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:21: warning: missing terminating " character
+  330 |             return \"IsFibo\";
+      |                     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:21: error: missing terminating " character
+  330 |             return \"IsFibo\";
+      |                     ^~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:333:12: error: stray ‘\’ in program
+  333 |     return \"IsNotFibo\";
+      |            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:333:13: warning: missing terminating " character
+  333 |     return \"IsNotFibo\";
+      |             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:333:13: error: missing terminating " character
+  333 |     return \"IsNotFibo\";
+      |             ^~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::string Test::testfunc(long long int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:9: error: expected primary-expression before ‘}’ token
+  331 |         }
+      |         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:9: error: expected ‘;’ before ‘}’ token
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:1: error: expected primary-expression before ‘}’ token
+  334 | }
+      | ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:1: error: expected ‘;’ before ‘}’ token
+2023-12-07 19:29:04 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:04 INFO Compilation Failed!
+2023-12-07 19:29:04 INFO run_output: b''
+
+
+2023-12-07 19:29:04 INFO Running task: 64_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:346:22: error: stray ‘\’ in program
+  346 |         std::cout << \"[\" << l << \", \" << r << \"]: \" << count << std::endl;
+      |                      ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:346:23: warning: missing terminating " character
+  346 |         std::cout << \"[\" << l << \", \" << r << \"]: \" << count << std::endl;
+      |                       ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:346:23: error: missing terminating " character
+  346 |         std::cout << \"[\" << l << \", \" << r << \"]: \" << count << std::endl;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(long long int, long long int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:39: error: no matching function for call to ‘std::__cxx11::basic_string<char>::basic_string(long long int&)’
+  334 |             int length = std::string(u).length();
+      |                                       ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:664:9: note: candidate: ‘template<class _Tp, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, const _Alloc&) [with _Tp = _Tp; <template-parameter-2-2> = <template-parameter-1-2>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  664 |         basic_string(const _Tp& __t, const _Alloc& __a = _Alloc())
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:664:9: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/move.h:57,
+                 from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void]’:
+/usr/include/c++/11/bits/basic_string.h:125:8:   required by substitution of ‘template<class _CharT, class _Traits, class _Alloc> template<class _Tp, class _Res> using _If_sv = std::enable_if_t<std::__and_<std::is_convertible<const _Tp&, std::basic_string_view<_CharT, _Traits> >, std::__not_<std::is_convertible<const _Tp*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>*> >, std::__not_<std::is_convertible<const _Tp&, const _CharT*> > >::value, _Res> [with _Tp = long long int; _Res = void; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/usr/include/c++/11/bits/basic_string.h:662:30:   required from here
+/usr/include/c++/11/type_traits:2585:11: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+ 2585 |     using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:653:9: note: candidate: ‘template<class _Tp, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _Tp = _Tp; <template-parameter-2-2> = <template-parameter-1-2>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  653 |         basic_string(const _Tp& __t, size_type __pos, size_type __n,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:653:9: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:39: note:   candidate expects 4 arguments, 1 provided
+  334 |             int length = std::string(u).length();
+      |                                       ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:638:9: note: candidate: ‘template<class _InputIterator, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  638 |         basic_string(_InputIterator __beg, _InputIterator __end,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:638:9: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:39: note:   candidate expects 3 arguments, 1 provided
+  334 |             int length = std::string(u).length();
+      |                                       ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:553:7: note: candidate: ‘template<class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, _CharT, const _Alloc&) [with <template-parameter-2-1> = <template-parameter-1-1>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  553 |       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:553:7: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:39: note:   candidate expects 3 arguments, 1 provided
+  334 |             int length = std::string(u).length();
+      |                                       ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:533:7: note: candidate: ‘template<class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with <template-parameter-2-1> = <template-parameter-1-1>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  533 |       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:533:7: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:38: note:   cannot convert ‘u’ (type ‘long long int’) to type ‘const char*’
+  334 |             int length = std::string(u).length();
+      |                                      ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:600:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  600 |       basic_string(basic_string&& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:600:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:596:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  596 |       basic_string(const basic_string& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:596:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:592:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::initializer_list<_Tp>, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  592 |       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:592:45: note:   no known conversion for argument 1 from ‘long long int’ to ‘std::initializer_list<char>’
+  592 |       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/11/bits/basic_string.h:565:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  565 |       basic_string(basic_string&& __str) noexcept
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:565:35: note:   no known conversion for argument 1 from ‘long long int’ to ‘std::__cxx11::basic_string<char>&&’
+  565 |       basic_string(basic_string&& __str) noexcept
+      |                    ~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/bits/basic_string.h:518:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  518 |       basic_string(const _CharT* __s, size_type __n,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:518:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:500:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  500 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:500:7: note:   candidate expects 4 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:484:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  484 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:484:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:469:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  469 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:469:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:456:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  456 |       basic_string(const basic_string& __str)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:456:40: note:   no known conversion for argument 1 from ‘long long int’ to ‘const std::__cxx11::basic_string<char>&’
+  456 |       basic_string(const basic_string& __str)
+      |                    ~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/bits/basic_string.h:448:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  448 |       basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:448:34: note:   no known conversion for argument 1 from ‘long long int’ to ‘const std::allocator<char>&’
+  448 |       basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+      |                    ~~~~~~~~~~~~~~^~~
+/usr/include/c++/11/bits/basic_string.h:439:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  439 |       basic_string()
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:439:7: note:   candidate expects 0 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:153:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__sv_wrapper, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  153 |       basic_string(__sv_wrapper __svw, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:153:7: note:   candidate expects 2 arguments, 1 provided
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:38: error: no matching function for call to ‘std::__cxx11::basic_string<char>::basic_string(long long int)’
+  336 |                 if (std::string(u * k).length() == k) {
+      |                                      ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:664:9: note: candidate: ‘template<class _Tp, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, const _Alloc&) [with _Tp = _Tp; <template-parameter-2-2> = <template-parameter-1-2>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  664 |         basic_string(const _Tp& __t, const _Alloc& __a = _Alloc())
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:664:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/basic_string.h:653:9: note: candidate: ‘template<class _Tp, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _Tp = _Tp; <template-parameter-2-2> = <template-parameter-1-2>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  653 |         basic_string(const _Tp& __t, size_type __pos, size_type __n,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:653:9: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:38: note:   candidate expects 4 arguments, 1 provided
+  336 |                 if (std::string(u * k).length() == k) {
+      |                                      ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:638:9: note: candidate: ‘template<class _InputIterator, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  638 |         basic_string(_InputIterator __beg, _InputIterator __end,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:638:9: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:38: note:   candidate expects 3 arguments, 1 provided
+  336 |                 if (std::string(u * k).length() == k) {
+      |                                      ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:553:7: note: candidate: ‘template<class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, _CharT, const _Alloc&) [with <template-parameter-2-1> = <template-parameter-1-1>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  553 |       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:553:7: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:38: note:   candidate expects 3 arguments, 1 provided
+  336 |                 if (std::string(u * k).length() == k) {
+      |                                      ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:533:7: note: candidate: ‘template<class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with <template-parameter-2-1> = <template-parameter-1-1>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  533 |       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:533:7: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:35: note:   cannot convert ‘(u * ((long long int)k))’ (type ‘long long int’) to type ‘const char*’
+  336 |                 if (std::string(u * k).length() == k) {
+      |                                 ~~^~~
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:600:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  600 |       basic_string(basic_string&& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:600:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:596:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  596 |       basic_string(const basic_string& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:596:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:592:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::initializer_list<_Tp>, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  592 |       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:592:45: note:   no known conversion for argument 1 from ‘long long int’ to ‘std::initializer_list<char>’
+  592 |       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/11/bits/basic_string.h:565:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  565 |       basic_string(basic_string&& __str) noexcept
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:565:35: note:   no known conversion for argument 1 from ‘long long int’ to ‘std::__cxx11::basic_string<char>&&’
+  565 |       basic_string(basic_string&& __str) noexcept
+      |                    ~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/bits/basic_string.h:518:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  518 |       basic_string(const _CharT* __s, size_type __n,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:518:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:500:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  500 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:500:7: note:   candidate expects 4 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:484:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  484 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:484:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:469:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]’
+  469 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:469:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:456:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  456 |       basic_string(const basic_string& __str)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:456:40: note:   no known conversion for argument 1 from ‘long long int’ to ‘const std::__cxx11::basic_string<char>&’
+  456 |       basic_string(const basic_string& __str)
+      |                    ~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/bits/basic_string.h:448:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  448 |       basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:448:34: note:   no known conversion for argument 1 from ‘long long int’ to ‘const std::allocator<char>&’
+  448 |       basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+      |                    ~~~~~~~~~~~~~~^~~
+/usr/include/c++/11/bits/basic_string.h:439:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  439 |       basic_string()
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:439:7: note:   candidate expects 0 arguments, 1 provided
+/usr/include/c++/11/bits/basic_string.h:153:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::__sv_wrapper, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  153 |       basic_string(__sv_wrapper __svw, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:153:7: note:   candidate expects 2 arguments, 1 provided
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:347:9: error: expected primary-expression before ‘return’
+  347 |         return count;
+      |         ^~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:348:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  348 |     }
+      |     ^
+2023-12-07 19:29:05 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:05 INFO Compilation Failed!
+2023-12-07 19:29:05 INFO run_output: b''
+
+
+2023-12-07 19:29:05 INFO Running task: 65_0...
+2023-12-07 19:29:07 INFO Test Passed!
+
+
+2023-12-07 19:29:07 INFO Running task: 66_0...
+2023-12-07 19:29:09 INFO Test Passed!
+
+
+2023-12-07 19:29:09 INFO Running task: 67_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(const std::vector<long int>&)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:335:12: error: ‘_cast’ was not declared in this scope
+  335 |     return _cast<int>(min);
+      |            ^~~~~~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h: In instantiation of ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’:
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_algo.h:1831:24: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+ 1831 |               *__first = _GLIBCXX_MOVE(__val);
+      |                        ^
+/usr/include/c++/11/bits/stl_algo.h: In instantiation of ‘constexpr void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Val_less_iter]’:
+/usr/include/c++/11/bits/stl_algo.h:1834:36:   required from ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_algo.h:1808:19: error: assignment of read-only location ‘__last.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+ 1808 |           *__last = _GLIBCXX_MOVE(*__next);
+      |                   ^
+/usr/include/c++/11/bits/stl_algo.h:1812:15: error: assignment of read-only location ‘__last.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+ 1812 |       *__last = _GLIBCXX_MOVE(__val);
+      |               ^
+In file included from /usr/include/c++/11/bits/stl_algo.h:61,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘constexpr void std::__pop_heap(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’:
+/usr/include/c++/11/bits/stl_algo.h:1649:19:   required from ‘constexpr void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1917:25:   required from ‘constexpr void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1933:27:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_heap.h:262:17: error: assignment of read-only location ‘__result.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+  262 |       *__result = _GLIBCXX_MOVE(*__first);
+      |                 ^
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘constexpr void std::iter_swap(_ForwardIterator1, _ForwardIterator2) [with _ForwardIterator1 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _ForwardIterator2 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’:
+/usr/include/c++/11/bits/stl_algo.h:85:20:   required from ‘constexpr void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1904:34:   required from ‘constexpr _RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1938:38:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:182:11: error: no matching function for call to ‘swap(const long int&, const long int&)’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/move.h:196:5: note: candidate: ‘template<class _Tp> constexpr std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&)’
+  196 |     swap(_Tp& __a, _Tp& __b)
+      |     ^~~~
+/usr/include/c++/11/bits/move.h:196:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/move.h:57,
+                 from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void]’:
+/usr/include/c++/11/type_traits:2215:11:   required by substitution of ‘template<class ... _Cond> using _Require = std::__enable_if_t<std::__and_< <template-parameter-1-1> >::value> [with _Cond = {std::__not_<std::__is_tuple_like<const long int> >, std::is_move_constructible<const long int>, std::is_move_assignable<const long int>}]’
+/usr/include/c++/11/bits/move.h:196:5:   required by substitution of ‘template<class _Tp> constexpr std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = const long int]’
+/usr/include/c++/11/bits/stl_algobase.h:182:11:   required from ‘constexpr void std::iter_swap(_ForwardIterator1, _ForwardIterator2) [with _ForwardIterator1 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _ForwardIterator2 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/usr/include/c++/11/bits/stl_algo.h:85:20:   required from ‘constexpr void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1904:34:   required from ‘constexpr _RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1938:38:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/type_traits:2211:11: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+ 2211 |     using __enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘constexpr void std::iter_swap(_ForwardIterator1, _ForwardIterator2) [with _ForwardIterator1 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _ForwardIterator2 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’:
+/usr/include/c++/11/bits/stl_algo.h:85:20:   required from ‘constexpr void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1904:34:   required from ‘constexpr _RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1938:38:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/move.h:220:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> constexpr std::__enable_if_t<std::__is_swappable<_Tp>::value> std::swap(_Tp (&)[_Nm], _Tp (&)[_Nm])’
+  220 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])
+      |     ^~~~
+/usr/include/c++/11/bits/move.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:182:11: note:   mismatched types ‘_Tp [_Nm]’ and ‘const long int’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_pair.h:533:5: note: candidate: ‘template<class _T1, class _T2> constexpr typename std::enable_if<std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value>::type std::swap(std::pair<_T1, _T2>&, std::pair<_T1, _T2>&)’
+  533 |     swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)
+      |     ^~~~
+/usr/include/c++/11/bits/stl_pair.h:533:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:182:11: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const long int’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_pair.h:541:5: note: candidate: ‘template<class _T1, class _T2> typename std::enable_if<(! std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value)>::type std::swap(std::pair<_T1, _T2>&, std::pair<_T1, _T2>&)’ (deleted)
+  541 |     swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;
+      |     ^~~~
+/usr/include/c++/11/bits/stl_pair.h:541:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:182:11: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const long int’
+  182 |       swap(*__a, *__b);
+      |       ~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algo.h:61,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘constexpr void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Distance = long int; _Tp = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’:
+/usr/include/c++/11/bits/stl_heap.h:355:22:   required from ‘constexpr void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1646:23:   required from ‘constexpr void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1917:25:   required from ‘constexpr void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1933:27:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_heap.h:234:36: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+  234 |           *(__first + __holeIndex) = _GLIBCXX_MOVE(*(__first + __secondChild));
+      |                                    ^
+/usr/include/c++/11/bits/stl_heap.h:240:36: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+  240 |           *(__first + __holeIndex) = _GLIBCXX_MOVE(*(__first
+      |                                    ^
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘constexpr _BI2 std::__copy_move_backward_a2(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const long int*; _BI2 = const long int*]’:
+/usr/include/c++/11/bits/stl_algobase.h:769:51:   required from ‘constexpr _BI2 std::__copy_move_backward_a1(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const long int*; _BI2 = const long int*]’
+/usr/include/c++/11/bits/stl_algobase.h:800:5:   required from ‘constexpr _OI std::__copy_move_backward_a(_II, _II, _OI) [with bool _IsMove = true; _II = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _OI = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/usr/include/c++/11/bits/stl_algobase.h:894:47:   required from ‘constexpr _BI2 std::move_backward(_BI1, _BI1, _BI2) [with _BI1 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _BI2 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/usr/include/c++/11/bits/stl_algo.h:1830:8:   required from ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:760:65: error: no matching function for call to ‘std::__copy_move_backward<true, true, std::random_access_iterator_tag>::__copy_move_b(const long int*&, const long int*&, const long int*&)’
+  758 |       return std::__copy_move_backward<_IsMove,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+  759 |                                        __memcpyable<_BI2, _BI1>::__value,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  760 |                                        _Category>::__copy_move_b(__first,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+  761 |                                                                  __last,
+      |                                                                  ~~~~~~~
+  762 |                                                                  __result);
+      |                                                                  ~~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:731:9: note: candidate: ‘template<class _Tp> static constexpr _Tp* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::__copy_move_b(const _Tp*, const _Tp*, _Tp*) [with _Tp = _Tp; bool _IsMove = true]’
+  731 |         __copy_move_b(const _Tp* __first, const _Tp* __last, _Tp* __result)
+      |         ^~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:731:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/stl_algobase.h:760:65: note:   deduced conflicting types for parameter ‘_Tp’ (‘long int’ and ‘const long int’)
+  758 |       return std::__copy_move_backward<_IsMove,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+  759 |                                        __memcpyable<_BI2, _BI1>::__value,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  760 |                                        _Category>::__copy_move_b(__first,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+  761 |                                                                  __last,
+      |                                                                  ~~~~~~~
+  762 |                                                                  __result);
+      |                                                                  ~~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algo.h:61,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘constexpr void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Distance = long int; _Tp = long int; _Compare = __gnu_cxx::__ops::_Iter_less_val]’:
+/usr/include/c++/11/bits/stl_heap.h:246:23:   required from ‘constexpr void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Distance = long int; _Tp = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_heap.h:355:22:   required from ‘constexpr void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1646:23:   required from ‘constexpr void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1917:25:   required from ‘constexpr void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1933:27:   required from ‘constexpr void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1954:25:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_heap.h:141:36: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+  141 |           *(__first + __holeIndex) = _GLIBCXX_MOVE(*(__first + __parent));
+      |                                    ^
+/usr/include/c++/11/bits/stl_heap.h:145:32: error: assignment of read-only location ‘__first.__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator+(__holeIndex).__gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >::operator*()’
+  145 |       *(__first + __holeIndex) = _GLIBCXX_MOVE(__value);
+      |                                ^
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘static constexpr _BI2 std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b(_BI1, _BI1, _BI2) [with _BI1 = const long int*; _BI2 = const long int*]’:
+/usr/include/c++/11/bits/stl_algobase.h:756:17:   required from ‘constexpr _BI2 std::__copy_move_backward_a2(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const long int*; _BI2 = const long int*]’
+/usr/include/c++/11/bits/stl_algobase.h:769:51:   required from ‘constexpr _BI2 std::__copy_move_backward_a1(_BI1, _BI1, _BI2) [with bool _IsMove = true; _BI1 = const long int*; _BI2 = const long int*]’
+/usr/include/c++/11/bits/stl_algobase.h:800:5:   required from ‘constexpr _OI std::__copy_move_backward_a(_II, _II, _OI) [with bool _IsMove = true; _II = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _OI = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/usr/include/c++/11/bits/stl_algobase.h:894:47:   required from ‘constexpr _BI2 std::move_backward(_BI1, _BI1, _BI2) [with _BI1 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _BI2 = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/usr/include/c++/11/bits/stl_algo.h:1830:8:   required from ‘constexpr void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1866:25:   required from ‘constexpr void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:1957:31:   required from ‘constexpr void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/11/bits/stl_algo.h:4842:18:   required from ‘constexpr void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<const long int*, std::vector<long int> >]’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:14:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:719:25: error: assignment of read-only location ‘* -- __result’
+  719 |             *--__result = std::move(*--__last);
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+2023-12-07 19:29:10 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:10 INFO Compilation Failed!
+2023-12-07 19:29:10 INFO run_output: b''
+
+
+2023-12-07 19:29:10 INFO Running task: 68_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:16: error: stray ‘\’ in program
+  324 |         return \"26.09.1918\";
+      |                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:17: warning: missing terminating " character
+  324 |         return \"26.09.1918\";
+      |                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:17: error: missing terminating " character
+  324 |         return \"26.09.1918\";
+      |                 ^~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:24: error: stray ‘\’ in program
+  330 |     return (leapYear ? \"12\" : \"13\") + \".09.\" + std::to_string(year);
+      |                        ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:25: warning: missing terminating " character
+  330 |     return (leapYear ? \"12\" : \"13\") + \".09.\" + std::to_string(year);
+      |                         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:25: error: missing terminating " character
+  330 |     return (leapYear ? \"12\" : \"13\") + \".09.\" + std::to_string(year);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:394:2: error: expected ‘}’ at end of input
+  394 | }
+      |  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:29:12: note: to match this ‘{’
+   29 | class Test {
+      |            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::string Test::testfunc(int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected primary-expression before ‘}’ token
+  325 |     }
+      |     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected ‘;’ before ‘}’ token
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:1: error: expected primary-expression before ‘}’ token
+  331 | }
+      | ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:1: error: expected ‘:’ before ‘}’ token
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:1: error: expected primary-expression before ‘}’ token
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:1: error: expected ‘)’ before ‘}’ token
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:12: note: to match this ‘(’
+  330 |     return (leapYear ? \"12\" : \"13\") + \".09.\" + std::to_string(year);
+      |            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:1: error: expected ‘;’ before ‘}’ token
+  331 | }
+      | ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: At global scope:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:394:2: error: expected unqualified-id at end of input
+  394 | }
+      |  ^
+2023-12-07 19:29:11 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:11 INFO Compilation Failed!
+2023-12-07 19:29:11 INFO run_output: b''
+
+
+2023-12-07 19:29:11 INFO Running task: 69_0...
+2023-12-07 19:29:15 INFO Test Passed!
+
+
+2023-12-07 19:29:15 INFO Running task: 70_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:33: error: stray ‘\’ in program
+  323 |     const std::string hour[] = {\"one\", \"two\", \"three\", \"four\",
+      |                                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:34: warning: missing terminating " character
+  323 |     const std::string hour[] = {\"one\", \"two\", \"three\", \"four\",
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:34: error: missing terminating " character
+  323 |     const std::string hour[] = {\"one\", \"two\", \"three\", \"four\",
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:32: error: stray ‘\’ in program
+  324 |                                \"five\", \"six\", \"seven\", \"eight\", \"nine\", \"ten\", \"eleven\", \"twelve\"};
+      |                                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:33: warning: missing terminating " character
+  324 |                                \"five\", \"six\", \"seven\", \"eight\", \"nine\", \"ten\", \"eleven\", \"twelve\"};
+      |                                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:33: error: missing terminating " character
+  324 |                                \"five\", \"six\", \"seven\", \"eight\", \"nine\", \"ten\", \"eleven\", \"twelve\"};
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:36: error: stray ‘\’ in program
+  325 |     const std::string minutes[] = {\"one\", \"two\",
+      |                                    ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:37: warning: missing terminating " character
+  325 |     const std::string minutes[] = {\"one\", \"two\",
+      |                                     ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:37: error: missing terminating " character
+  325 |     const std::string minutes[] = {\"one\", \"two\",
+      |                                     ^~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:34: error: stray ‘\’ in program
+  326 |                                  \"three\", \"four\", \"five\",
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:35: warning: missing terminating " character
+  326 |                                  \"three\", \"four\", \"five\",
+      |                                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:35: error: missing terminating " character
+  326 |                                  \"three\", \"four\", \"five\",
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:34: error: stray ‘\’ in program
+  327 |                                  \"six\", \"seven\", \"eight\",
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:35: warning: missing terminating " character
+  327 |                                  \"six\", \"seven\", \"eight\",
+      |                                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:327:35: error: missing terminating " character
+  327 |                                  \"six\", \"seven\", \"eight\",
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:34: error: stray ‘\’ in program
+  328 |                                  \"nine\", \"ten\", \"eleven\",
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:35: warning: missing terminating " character
+  328 |                                  \"nine\", \"ten\", \"eleven\",
+      |                                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:35: error: missing terminating " character
+  328 |                                  \"nine\", \"ten\", \"eleven\",
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:34: error: stray ‘\’ in program
+  329 |                                  \"twelve\", \"thirteen\", \"fourteen\",
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:35: warning: missing terminating " character
+  329 |                                  \"twelve\", \"thirteen\", \"fourteen\",
+      |                                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:35: error: missing terminating " character
+  329 |                                  \"twelve\", \"thirteen\", \"fourteen\",
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:34: error: stray ‘\’ in program
+  330 |                                  \"fifteen\", \"sixteen\", \"seventeen\",
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:35: warning: missing terminating " character
+  330 |                                  \"fifteen\", \"sixteen\", \"seventeen\",
+      |                                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:35: error: missing terminating " character
+  330 |                                  \"fifteen\", \"sixteen\", \"seventeen\",
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:34: error: stray ‘\’ in program
+  331 |                                  \"eighteen\", \"nineteen\", \"twenty\", \"twenty one\", \"twenty two\", \"twenty three\", \"twenty four\", \"twenty five\", \"twenty six\", \"twenty seven\", \"twenty eight\", \"twenty nine\"};
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:35: warning: missing terminating " character
+  331 |                                  \"eighteen\", \"nineteen\", \"twenty\", \"twenty one\", \"twenty two\", \"twenty three\", \"twenty four\", \"twenty five\", \"twenty six\", \"twenty seven\", \"twenty eight\", \"twenty nine\"};
+      |                                   ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:35: error: missing terminating " character
+  331 |                                  \"eighteen\", \"nineteen\", \"twenty\", \"twenty one\", \"twenty two\", \"twenty three\", \"twenty four\", \"twenty five\", \"twenty six\", \"twenty seven\", \"twenty eight\", \"twenty nine\"};
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:30: error: stray ‘\’ in program
+  334 |         return hour[h - 1] + \" o' clock\";
+      |                              ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:31: warning: missing terminating " character
+  334 |         return hour[h - 1] + \" o' clock\";
+      |                               ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:334:31: error: missing terminating " character
+  334 |         return hour[h - 1] + \" o' clock\";
+      |                               ^~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:16: error: stray ‘\’ in program
+  336 |         return \"quarter past \" + hour[h - 1];
+      |                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:17: warning: missing terminating " character
+  336 |         return \"quarter past \" + hour[h - 1];
+      |                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:336:17: error: missing terminating " character
+  336 |         return \"quarter past \" + hour[h - 1];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:338:16: error: stray ‘\’ in program
+  338 |         return \"half past \" + hour[h - 1];
+      |                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:338:17: warning: missing terminating " character
+  338 |         return \"half past \" + hour[h - 1];
+      |                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:338:17: error: missing terminating " character
+  338 |         return \"half past \" + hour[h - 1];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:340:16: error: stray ‘\’ in program
+  340 |         return \"quarter to \" + hour[h];
+      |                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:340:17: warning: missing terminating " character
+  340 |         return \"quarter to \" + hour[h];
+      |                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:340:17: error: missing terminating " character
+  340 |         return \"quarter to \" + hour[h];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:342:33: error: stray ‘\’ in program
+  342 |         return minutes[m - 1] + \" minute past \" + hour[h - 1];
+      |                                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:342:34: warning: missing terminating " character
+  342 |         return minutes[m - 1] + \" minute past \" + hour[h - 1];
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:342:34: error: missing terminating " character
+  342 |         return minutes[m - 1] + \" minute past \" + hour[h - 1];
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:344:33: error: stray ‘\’ in program
+  344 |         return minutes[m - 1] + \" minutes past \" + hour[h - 1];
+      |                                 ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:344:34: warning: missing terminating " character
+  344 |         return minutes[m - 1] + \" minutes past \" + hour[h - 1];
+      |                                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:344:34: error: missing terminating " character
+  344 |         return minutes[m - 1] + \" minutes past \" + hour[h - 1];
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:346:38: error: stray ‘\’ in program
+  346 |         return minutes[60 - m - 1] + \" minutes to \" + hour[h];
+      |                                      ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:346:39: warning: missing terminating " character
+  346 |         return minutes[60 - m - 1] + \" minutes to \" + hour[h];
+      |                                       ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:346:39: error: missing terminating " character
+  346 |         return minutes[60 - m - 1] + \" minutes to \" + hour[h];
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:413:2: error: expected ‘}’ at end of input
+  413 | }
+      |  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:29:12: note: to match this ‘{’
+   29 | class Test {
+      |            ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::string Test::testfunc(int, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected primary-expression before ‘const’
+  325 |     const std::string minutes[] = {\"one\", \"two\",
+      |     ^~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected ‘}’ before ‘const’
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:323:32: note: to match this ‘{’
+  323 |     const std::string hour[] = {\"one\", \"two\", \"three\", \"four\",
+      |                                ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:5: error: expected ‘,’ or ‘;’ before ‘const’
+  325 |     const std::string minutes[] = {\"one\", \"two\",
+      |     ^~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:350:18: error: a function-definition is not allowed here before ‘{’ token
+  350 |     void Start() {
+      |                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:407:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  407 | };
+      | ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: At global scope:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:413:2: error: expected unqualified-id at end of input
+  413 | }
+      |  ^
+2023-12-07 19:29:16 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:16 INFO Compilation Failed!
+2023-12-07 19:29:16 INFO run_output: b''
+
+
+2023-12-07 19:29:16 INFO Running task: 71_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>, std::vector<std::vector<int> >)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: error: no matching function for call to ‘begin(std::queue<int>&)’
+  363 |     for (int x : q) {
+      |                  ^
+In file included from /usr/include/c++/11/bits/algorithmfwd.h:39,
+                 from /usr/include/c++/11/bits/stl_algo.h:60,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/initializer_list:90:5: note: candidate: ‘template<class _Tp> constexpr const _Tp* std::begin(std::initializer_list<_Tp>)’
+   90 |     begin(initializer_list<_Tp> __ils) noexcept
+      |     ^~~~~
+/usr/include/c++/11/initializer_list:90:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   ‘std::queue<int>’ is not derived from ‘std::initializer_list<_Tp>’
+  363 |     for (int x : q) {
+      |                  ^
+In file included from /usr/include/c++/11/string:54,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/range_access.h:51:5: note: candidate: ‘template<class _Container> constexpr decltype (__cont.begin()) std::begin(_Container&)’
+   51 |     begin(_Container& __cont) -> decltype(__cont.begin())
+      |     ^~~~~
+/usr/include/c++/11/bits/range_access.h:51:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/range_access.h: In substitution of ‘template<class _Container> constexpr decltype (__cont.begin()) std::begin(_Container&) [with _Container = std::queue<int>]’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18:   required from here
+/usr/include/c++/11/bits/range_access.h:51:50: error: ‘class std::queue<int>’ has no member named ‘begin’
+   51 |     begin(_Container& __cont) -> decltype(__cont.begin())
+      |                                           ~~~~~~~^~~~~
+/usr/include/c++/11/bits/range_access.h:61:5: note: candidate: ‘template<class _Container> constexpr decltype (__cont.begin()) std::begin(const _Container&)’
+   61 |     begin(const _Container& __cont) -> decltype(__cont.begin())
+      |     ^~~~~
+/usr/include/c++/11/bits/range_access.h:61:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/range_access.h: In substitution of ‘template<class _Container> constexpr decltype (__cont.begin()) std::begin(const _Container&) [with _Container = std::queue<int>]’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18:   required from here
+/usr/include/c++/11/bits/range_access.h:61:56: error: ‘const class std::queue<int>’ has no member named ‘begin’
+   61 |     begin(const _Container& __cont) -> decltype(__cont.begin())
+      |                                                 ~~~~~~~^~~~~
+/usr/include/c++/11/bits/range_access.h:90:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> constexpr _Tp* std::begin(_Tp (&)[_Nm])’
+   90 |     begin(_Tp (&__arr)[_Nm]) noexcept
+      |     ^~~~~
+/usr/include/c++/11/bits/range_access.h:90:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   mismatched types ‘_Tp [_Nm]’ and ‘std::queue<int>’
+  363 |     for (int x : q) {
+      |                  ^
+In file included from /usr/include/c++/11/string:54,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/range_access.h:107:31: note: candidate: ‘template<class _Tp> _Tp* std::begin(std::valarray<_Tp>&)’
+  107 |   template<typename _Tp> _Tp* begin(valarray<_Tp>&) noexcept;
+      |                               ^~~~~
+/usr/include/c++/11/bits/range_access.h:107:31: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   ‘std::queue<int>’ is not derived from ‘std::valarray<_Tp>’
+  363 |     for (int x : q) {
+      |                  ^
+In file included from /usr/include/c++/11/string:54,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/range_access.h:108:37: note: candidate: ‘template<class _Tp> const _Tp* std::begin(const std::valarray<_Tp>&)’
+  108 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&) noexcept;
+      |                                     ^~~~~
+/usr/include/c++/11/bits/range_access.h:108:37: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   ‘std::queue<int>’ is not derived from ‘const std::valarray<_Tp>’
+  363 |     for (int x : q) {
+      |                  ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: error: no matching function for call to ‘end(std::queue<int>&)’
+In file included from /usr/include/c++/11/bits/algorithmfwd.h:39,
+                 from /usr/include/c++/11/bits/stl_algo.h:60,
+                 from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/initializer_list:101:5: note: candidate: ‘template<class _Tp> constexpr const _Tp* std::end(std::initializer_list<_Tp>)’
+  101 |     end(initializer_list<_Tp> __ils) noexcept
+      |     ^~~
+/usr/include/c++/11/initializer_list:101:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   ‘std::queue<int>’ is not derived from ‘std::initializer_list<_Tp>’
+  363 |     for (int x : q) {
+      |                  ^
+In file included from /usr/include/c++/11/string:54,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/range_access.h:71:5: note: candidate: ‘template<class _Container> constexpr decltype (__cont.end()) std::end(_Container&)’
+   71 |     end(_Container& __cont) -> decltype(__cont.end())
+      |     ^~~
+/usr/include/c++/11/bits/range_access.h:71:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/range_access.h: In substitution of ‘template<class _Container> constexpr decltype (__cont.end()) std::end(_Container&) [with _Container = std::queue<int>]’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18:   required from here
+/usr/include/c++/11/bits/range_access.h:71:48: error: ‘class std::queue<int>’ has no member named ‘end’
+   71 |     end(_Container& __cont) -> decltype(__cont.end())
+      |                                         ~~~~~~~^~~
+/usr/include/c++/11/bits/range_access.h:81:5: note: candidate: ‘template<class _Container> constexpr decltype (__cont.end()) std::end(const _Container&)’
+   81 |     end(const _Container& __cont) -> decltype(__cont.end())
+      |     ^~~
+/usr/include/c++/11/bits/range_access.h:81:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/range_access.h: In substitution of ‘template<class _Container> constexpr decltype (__cont.end()) std::end(const _Container&) [with _Container = std::queue<int>]’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18:   required from here
+/usr/include/c++/11/bits/range_access.h:81:54: error: ‘const class std::queue<int>’ has no member named ‘end’
+   81 |     end(const _Container& __cont) -> decltype(__cont.end())
+      |                                               ~~~~~~~^~~
+/usr/include/c++/11/bits/range_access.h:100:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> constexpr _Tp* std::end(_Tp (&)[_Nm])’
+  100 |     end(_Tp (&__arr)[_Nm]) noexcept
+      |     ^~~
+/usr/include/c++/11/bits/range_access.h:100:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   mismatched types ‘_Tp [_Nm]’ and ‘std::queue<int>’
+  363 |     for (int x : q) {
+      |                  ^
+In file included from /usr/include/c++/11/string:54,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/range_access.h:109:31: note: candidate: ‘template<class _Tp> _Tp* std::end(std::valarray<_Tp>&)’
+  109 |   template<typename _Tp> _Tp* end(valarray<_Tp>&) noexcept;
+      |                               ^~~
+/usr/include/c++/11/bits/range_access.h:109:31: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   ‘std::queue<int>’ is not derived from ‘std::valarray<_Tp>’
+  363 |     for (int x : q) {
+      |                  ^
+In file included from /usr/include/c++/11/string:54,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/range_access.h:110:37: note: candidate: ‘template<class _Tp> const _Tp* std::end(const std::valarray<_Tp>&)’
+  110 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&) noexcept;
+      |                                     ^~~
+/usr/include/c++/11/bits/range_access.h:110:37: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:363:18: note:   ‘std::queue<int>’ is not derived from ‘const std::valarray<_Tp>’
+  363 |     for (int x : q) {
+      |                  ^
+2023-12-07 19:29:17 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:17 INFO Compilation Failed!
+2023-12-07 19:29:17 INFO run_output: b''
+
+
+2023-12-07 19:29:17 INFO Running task: 72_0...
+2023-12-07 19:29:19 INFO Test Passed!
+
+
+2023-12-07 19:29:19 INFO Running task: 73_0...
+2023-12-07 19:29:21 INFO Test Passed!
+
+
+2023-12-07 19:29:21 INFO Running task: 74_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::vector<int> Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:30: error: request for member ‘size’ in ‘*(int*)(& cum)’, which is of non-class type ‘int’
+  329 |     for (int i = 0; i < cum->size() + 1 / 2; i++) {
+      |                              ^~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:22: error: request for member ‘size’ in ‘*(int*)(& cum)’, which is of non-class type ‘int’
+  330 |         if (cum[cum->size() - 1] % cum[i] == 0) {
+      |                      ^~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:332:42: error: request for member ‘size’ in ‘*(int*)(& cum)’, which is of non-class type ‘int’
+  332 |             for (int j = i + 1; j < cum->size(); j++) {
+      |                                          ^~~~
+2023-12-07 19:29:22 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:22 INFO Compilation Failed!
+2023-12-07 19:29:22 INFO run_output: b''
+
+
+2023-12-07 19:29:22 INFO Running task: 75_0...
+2023-12-07 19:29:24 INFO Test Passed!
+
+
+2023-12-07 19:29:24 INFO Running task: 76_0...
+2023-12-07 19:29:25 INFO Test Passed!
+
+
+2023-12-07 19:29:25 INFO Running task: 77_0...
+2023-12-07 19:29:27 INFO Test Passed!
+
+
+2023-12-07 19:29:27 INFO Running task: 78_0...
+2023-12-07 19:29:29 INFO Test Passed!
+
+
+2023-12-07 19:29:29 INFO Running task: 79_0...
+2023-12-07 19:29:31 INFO Test Passed!
+
+
+2023-12-07 19:29:31 INFO Running task: 80_0...
+2023-12-07 19:29:33 INFO Test Passed!
+
+
+2023-12-07 19:29:33 INFO Running task: 81_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘std::vector<long long int> Test::testfunc(int, int, std::vector<std::vector<int> >)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:337:5: error: could not convert ‘{{{0, -1}, {-1, -1}, {-1, 0}}, {{0, 1}, {-1, 0}, {-1, 1}}, {{0, -1}, {1, 0}, {1, -1}}, {{0, 1}, {1, 0}, {1, 1}}}’ from ‘<brace-enclosed initializer list>’ to ‘std::vector<std::vector<int> >’
+  337 |     };
+      |     ^
+      |     |
+      |     <brace-enclosed initializer list>
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:344:45: error: invalid types ‘int[int]’ for array subscript
+  344 |                 long long nx = x + direction[0], ny = y + direction[1];
+      |                                             ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:345:52: error: ‘ny’ was not declared in this scope; did you mean ‘yn’?
+  345 |                 if (nx < 0 || ny < 0 || nx >= m || ny >= n) {
+      |                                                    ^~
+      |                                                    yn
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:349:39: error: ‘ny’ was not declared in this scope; did you mean ‘yn’?
+  349 |                 if (st.count(nx * n + ny)) {
+      |                                       ^~
+      |                                       yn
+2023-12-07 19:29:34 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:34 INFO Compilation Failed!
+2023-12-07 19:29:34 INFO run_output: b''
+
+
+2023-12-07 19:29:34 INFO Running task: 82_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:9: error: stray ‘\’ in program
+  324 |         \"1\", \"101\", \"11001\", \"1111101\",
+      |         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:10: warning: missing terminating " character
+  324 |         \"1\", \"101\", \"11001\", \"1111101\",
+      |          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:324:10: error: missing terminating " character
+  324 |         \"1\", \"101\", \"11001\", \"1111101\",
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:9: error: stray ‘\’ in program
+  325 |         \"1001110001\", \"110000110101\", \"11110100001001\"
+      |         ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:10: warning: missing terminating " character
+  325 |         \"1001110001\", \"110000110101\", \"11110100001001\"
+      |          ^
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:10: error: missing terminating " character
+  325 |         \"1001110001\", \"110000110101\", \"11110100001001\"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::string)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:335:43: error: ‘class std::__cxx11::basic_string<char>’ has no member named ‘equals’
+  335 |             if (s.substr(i, bin.length()).equals(bin)) {
+      |                                           ^~~~~~
+2023-12-07 19:29:35 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:35 INFO Compilation Failed!
+2023-12-07 19:29:35 INFO run_output: b''
+
+
+2023-12-07 19:29:35 INFO Running task: 83_0...
+2023-12-07 19:29:37 INFO Test Passed!
+
+
+2023-12-07 19:29:37 INFO Running task: 84_0...
+2023-12-07 19:29:38 INFO Test Passed!
+
+
+2023-12-07 19:29:38 INFO Running task: 85_0...
+2023-12-07 19:29:40 INFO Test Passed!
+
+
+2023-12-07 19:29:40 INFO Running task: 86_0...
+2023-12-07 19:29:42 INFO Test Passed!
+
+
+2023-12-07 19:29:42 INFO Running task: 87_0...
+2023-12-07 19:29:44 INFO Command '['/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' died with <Signals.SIGSEGV: 11>.
+2023-12-07 19:29:44 INFO Compilation Failed!
+2023-12-07 19:29:44 INFO run_output: b'[1,1] [1,2]\nTestcase No.1 Failed!\n[1,1] [0,1]\nTestcase No.2 Failed!\n'
+
+
+2023-12-07 19:29:44 INFO Running task: 88_0...
+2023-12-07 19:29:47 INFO Test Failed!
+2023-12-07 19:29:47 INFO run_output: b'true true\ntrue true\ntrue false\nTestcase No.3 Failed!\nfalse false\ntrue true\nPassed 4/5 tests\nTest Failed!\n'
+
+
+2023-12-07 19:29:47 INFO Running task: 89_0...
+2023-12-07 19:29:48 INFO Test Failed!
+2023-12-07 19:29:48 INFO run_output: b'1 1\n6 3\nTestcase No.2 Failed!\n14 7\nTestcase No.3 Failed!\n46 10\nTestcase No.4 Failed!\n43 11\nTestcase No.5 Failed!\nPassed 1/5 tests\nTest Failed!\n'
+
+
+2023-12-07 19:29:48 INFO Running task: 90_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<std::vector<int> >, std::vector<int>, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:14: error: ‘__gnu_cxx::__alloc_traits<std::allocator<std::__cxx11::list<int> >, std::__cxx11::list<int> >::value_type’ {aka ‘class std::__cxx11::list<int>’} has no member named ‘reserve’; did you mean ‘reverse’?
+  325 |         g[i].reserve(coins.size());
+      |              ^~~~~~~
+      |              reverse
+2023-12-07 19:29:49 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:49 INFO Compilation Failed!
+2023-12-07 19:29:49 INFO run_output: b''
+
+
+2023-12-07 19:29:49 INFO Running task: 91_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(int, std::vector<std::vector<int> >)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:328:31: error: request for member ‘push_back’ in ‘list[(& edges.std::vector<std::vector<int> >::operator[](((std::vector<std::vector<int> >::size_type)i)))->std::vector<int>::operator[](0)]’, which is of pointer type ‘std::__cxx11::list<int>*’ (maybe you meant to use ‘->’ ?)
+  328 |             list[edges[i][0]].push_back(edges[i][1]);
+      |                               ^~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:31: error: request for member ‘push_back’ in ‘list[(& edges.std::vector<std::vector<int> >::operator[](((std::vector<std::vector<int> >::size_type)i)))->std::vector<int>::operator[](1)]’, which is of pointer type ‘std::__cxx11::list<int>*’ (maybe you meant to use ‘->’ ?)
+  329 |             list[edges[i][1]].push_back(edges[i][0]);
+      |                               ^~~~~~~~~
+2023-12-07 19:29:51 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:51 INFO Compilation Failed!
+2023-12-07 19:29:51 INFO run_output: b''
+
+
+2023-12-07 19:29:51 INFO Running task: 92_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘bool Test::testfunc(const std::vector<std::vector<int> >&)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:57: error: no matching function for call to ‘std::vector<bool>::vector(int&, std::vector<bool>)’
+  326 |     std::vector<bool> rea(n, std::vector<bool>(m, false));
+      |                                                         ^
+In file included from /usr/include/c++/11/vector:68,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:2:
+/usr/include/c++/11/bits/stl_bvector.h:714:9: note: candidate: ‘template<class _InputIterator, class> std::vector<bool, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Alloc = std::allocator<bool>]’
+  714 |         vector(_InputIterator __first, _InputIterator __last,
+      |         ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:714:9: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:326:57: note:   deduced conflicting types for parameter ‘_InputIterator’ (‘int’ and ‘std::vector<bool>’)
+  326 |     std::vector<bool> rea(n, std::vector<bool>(m, false));
+      |                                                         ^
+In file included from /usr/include/c++/11/vector:68,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:2:
+/usr/include/c++/11/bits/stl_bvector.h:702:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(std::initializer_list<bool>, const allocator_type&) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>]’
+  702 |       vector(initializer_list<bool> __l,
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:702:37: note:   no known conversion for argument 1 from ‘int’ to ‘std::initializer_list<bool>’
+  702 |       vector(initializer_list<bool> __l,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/11/bits/stl_bvector.h:695:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(const std::vector<bool, _Alloc>&, const allocator_type&) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>]’
+  695 |       vector(const vector& __x, const allocator_type& __a)
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:695:28: note:   no known conversion for argument 1 from ‘int’ to ‘const std::vector<bool>&’
+  695 |       vector(const vector& __x, const allocator_type& __a)
+      |              ~~~~~~~~~~~~~~^~~
+/usr/include/c++/11/bits/stl_bvector.h:689:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(std::vector<bool, _Alloc>&&, const allocator_type&) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>]’
+  689 |       vector(vector&& __x, const allocator_type& __a)
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:689:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::vector<bool>&&’
+  689 |       vector(vector&& __x, const allocator_type& __a)
+      |              ~~~~~~~~~^~~
+/usr/include/c++/11/bits/stl_bvector.h:675:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(std::vector<bool, _Alloc>&&, const allocator_type&, std::false_type) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>; std::false_type = std::integral_constant<bool, false>]’
+  675 |       vector(vector&& __x, const allocator_type& __a, false_type)
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:675:7: note:   candidate expects 3 arguments, 2 provided
+/usr/include/c++/11/bits/stl_bvector.h:671:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(std::vector<bool, _Alloc>&&, const allocator_type&, std::true_type) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>; std::true_type = std::integral_constant<bool, true>]’
+  671 |       vector(vector&& __x, const allocator_type& __a, true_type) noexcept
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:671:7: note:   candidate expects 3 arguments, 2 provided
+/usr/include/c++/11/bits/stl_bvector.h:668:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(std::vector<bool, _Alloc>&&) [with _Alloc = std::allocator<bool>]’
+  668 |       vector(vector&&) = default;
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:668:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/11/bits/stl_bvector.h:660:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(const std::vector<bool, _Alloc>&) [with _Alloc = std::allocator<bool>]’
+  660 |       vector(const vector& __x)
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:660:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/11/bits/stl_bvector.h:647:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(std::vector<bool, _Alloc>::size_type, const bool&, const allocator_type&) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::size_type = long unsigned int; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>]’
+  647 |       vector(size_type __n, const bool& __value,
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:647:41: note:   no known conversion for argument 2 from ‘std::vector<bool>’ to ‘const bool&’
+  647 |       vector(size_type __n, const bool& __value,
+      |                             ~~~~~~~~~~~~^~~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:643:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(std::vector<bool, _Alloc>::size_type, const allocator_type&) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::size_type = long unsigned int; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>]’
+  643 |       vector(size_type __n, const allocator_type& __a = allocator_type())
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:643:51: note:   no known conversion for argument 2 from ‘std::vector<bool>’ to ‘const allocator_type&’ {aka ‘const std::allocator<bool>&’}
+  643 |       vector(size_type __n, const allocator_type& __a = allocator_type())
+      |                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:638:7: note: candidate: ‘std::vector<bool, _Alloc>::vector(const allocator_type&) [with _Alloc = std::allocator<bool>; std::vector<bool, _Alloc>::allocator_type = std::allocator<bool>]’
+  638 |       vector(const allocator_type& __a)
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:638:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/11/bits/stl_bvector.h:632:7: note: candidate: ‘std::vector<bool, _Alloc>::vector() [with _Alloc = std::allocator<bool>]’
+  632 |       vector() = default;
+      |       ^~~~~~
+/usr/include/c++/11/bits/stl_bvector.h:632:7: note:   candidate expects 0 arguments, 2 provided
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:16: error: assignment of read-only location ‘(&(& grid)->std::vector<std::vector<int> >::operator[](0))->std::vector<int>::operator[](0)’
+  330 |     grid[0][0] = 1;
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:331:24: error: assignment of read-only location ‘(&(& grid)->std::vector<std::vector<int> >::operator[](((std::vector<std::vector<int> >::size_type)(n - 1))))->std::vector<int>::operator[](((std::vector<int>::size_type)(m - 1)))’
+  331 |     grid[n - 1][m - 1] = 1;
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘bool Test::reach(int, int, const std::vector<std::vector<int> >&)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:344:16: error: assignment of read-only location ‘(&(& grid)->std::vector<std::vector<int> >::operator[](((std::vector<std::vector<int> >::size_type)x)))->std::vector<int>::operator[](((std::vector<int>::size_type)y))’
+  344 |     grid[x][y] = 0;
+2023-12-07 19:29:52 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:52 INFO Compilation Failed!
+2023-12-07 19:29:52 INFO run_output: b''
+
+
+2023-12-07 19:29:52 INFO Running task: 93_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘bool Test::testfunc(int, const std::vector<std::vector<int> >&, int, int)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:329:16: error: request for member ‘push_back’ in ‘adj[x]’, which is of pointer type ‘std::__cxx11::list<int>*’ (maybe you meant to use ‘->’ ?)
+  329 |         adj[x].push_back(y);
+      |                ^~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:330:16: error: request for member ‘push_back’ in ‘adj[y]’, which is of pointer type ‘std::__cxx11::list<int>*’ (maybe you meant to use ‘->’ ?)
+  330 |         adj[y].push_back(x);
+      |                ^~~~~~~~~
+2023-12-07 19:29:53 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:53 INFO Compilation Failed!
+2023-12-07 19:29:53 INFO run_output: b''
+
+
+2023-12-07 19:29:53 INFO Running task: 94_0...
+2023-12-07 19:29:55 INFO Test Passed!
+
+
+2023-12-07 19:29:55 INFO Running task: 95_0...
+2023-12-07 19:29:56 INFO Test Passed!
+
+
+2023-12-07 19:29:56 INFO Running task: 96_0...
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp: In member function ‘int Test::testfunc(Test::TreeNode*)’:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:21: error: ‘class std::vector<int>’ has no member named ‘find’
+  325 |         return sums.find(max(sums)) + 1;
+      |                     ^~~~
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:29: error: no matching function for call to ‘max(std::vector<int>&)’
+  325 |         return sums.find(max(sums)) + 1;
+      |                          ~~~^~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)’
+  254 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:29: note:   candidate expects 2 arguments, 1 provided
+  325 |         return sums.find(max(sums)) + 1;
+      |                          ~~~^~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)’
+  300 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:29: note:   candidate expects 3 arguments, 1 provided
+  325 |         return sums.find(max(sums)) + 1;
+      |                          ~~~^~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)’
+ 3461 |     max(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:29: note:   ‘std::vector<int>’ is not derived from ‘std::initializer_list<_Tp>’
+  325 |         return sums.find(max(sums)) + 1;
+      |                          ~~~^~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)’
+ 3467 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp:325:29: note:   ‘std::vector<int>’ is not derived from ‘std::initializer_list<_Tp>’
+  325 |         return sums.find(max(sums)) + 1;
+      |                          ~~~^~~~~~
+2023-12-07 19:29:57 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/zhipu/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 19:29:57 INFO Compilation Failed!
+2023-12-07 19:29:57 INFO run_output: b''
+
+
+2023-12-07 19:29:57 INFO Running task: 97_0...
+2023-12-07 19:29:59 INFO Test Passed!
+
+
+2023-12-07 19:29:59 INFO Running task: 98_0...
+2023-12-07 19:30:01 INFO Test Passed!
+
+
+2023-12-07 19:30:01 INFO Running task: 99_0...
+2023-12-07 19:30:03 INFO Test Passed!
+
+
+2023-12-07 19:30:03 INFO Running task: 100_0...
+2023-12-07 19:30:04 INFO Test Passed!
+
+
+2023-12-07 19:30:04 INFO [[1], [1], [1], [1], [3], [1], [1], [3], [3], [1], [3], [3], [1], [1], [1], [1], [1], [1], [1], [3], [1], [3], [1], [1], [3], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [3], [3], [1], [3], [1], [1], [3], [1], [3], [1], [3], [1], [1], [3], [3], [3], [1], [1], [2], [1], [1], [3], [3], [1], [1], [3], [3], [1], [3], [3], [1], [1], [3], [1], [1], [1], [1], [1], [1], [3], [3], [1], [1], [1], [1], [3], [2], [2], [3], [3], [3], [3], [1], [1], [3], [1], [1], [1], [1]]

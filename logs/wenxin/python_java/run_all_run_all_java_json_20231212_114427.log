@@ -1,0 +1,420 @@
+2023-12-12 11:44:27 INFO Running task: 1_0...
+2023-12-12 11:44:28 INFO Test Passed!
+
+
+2023-12-12 11:44:28 INFO Running task: 2_0...
+2023-12-12 11:44:29 INFO Test Passed!
+
+
+2023-12-12 11:44:29 INFO Running task: 3_0...
+2023-12-12 11:44:30 INFO Test Passed!
+
+
+2023-12-12 11:44:30 INFO Running task: 4_0...
+2023-12-12 11:44:31 INFO Test Passed!
+
+
+2023-12-12 11:44:31 INFO Running task: 5_0...
+2023-12-12 11:44:32 INFO Test Passed!
+
+
+2023-12-12 11:44:32 INFO Running task: 6_0...
+2023-12-12 11:44:33 INFO Test Passed!
+
+
+2023-12-12 11:44:33 INFO Running task: 7_0...
+2023-12-12 11:44:34 INFO Test Passed!
+
+
+2023-12-12 11:44:34 INFO Running task: 8_0...
+2023-12-12 11:44:35 INFO Test Passed!
+
+
+2023-12-12 11:44:35 INFO Running task: 9_0...
+2023-12-12 11:44:36 INFO Test Passed!
+
+
+2023-12-12 11:44:36 INFO Running task: 10_0...
+2023-12-12 11:44:36 INFO Test Passed!
+
+
+2023-12-12 11:44:36 INFO Running task: 11_0...
+2023-12-12 11:44:37 INFO Test Passed!
+
+
+2023-12-12 11:44:37 INFO Running task: 12_0...
+2023-12-12 11:44:38 INFO Test Passed!
+
+
+2023-12-12 11:44:38 INFO Running task: 13_0...
+2023-12-12 11:44:39 INFO Test Passed!
+
+
+2023-12-12 11:44:39 INFO Running task: 14_0...
+2023-12-12 11:44:40 INFO Compilation Failed!
+2023-12-12 11:44:40 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:222: error: cannot find symbol\n        return IntStream.range(0, Math.min(processorTime.size(), tasks.size()))\n               ^\n  symbol:   variable IntStream\n  location: class Test\nNote: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 11:44:40 INFO Running task: 15_0...
+2023-12-12 11:44:41 INFO Test Passed!
+
+
+2023-12-12 11:44:41 INFO Running task: 16_0...
+2023-12-12 11:44:42 INFO Test Passed!
+
+
+2023-12-12 11:44:42 INFO Running task: 17_0...
+2023-12-12 11:44:43 INFO Test Passed!
+
+
+2023-12-12 11:44:43 INFO Running task: 18_0...
+2023-12-12 11:44:44 INFO Test Passed!
+
+
+2023-12-12 11:44:44 INFO Running task: 19_0...
+2023-12-12 11:44:45 INFO Test Passed!
+
+
+2023-12-12 11:44:45 INFO Running task: 20_0...
+2023-12-12 11:44:45 INFO Test Passed!
+
+
+2023-12-12 11:44:45 INFO Running task: 21_0...
+2023-12-12 11:44:46 INFO Test Passed!
+
+
+2023-12-12 11:44:46 INFO Running task: 22_0...
+2023-12-12 11:44:47 INFO Compilation Failed!
+2023-12-12 11:44:47 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:221: error: no suitable method found for min(List<Integer>)\n        int mx = Math.min(stock) + budget;\n                     ^\n    method Math.min(int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Math.min(long,long) is not applicable\n      (actual and formal argument lists differ in length)\n    method Math.min(float,float) is not applicable\n      (actual and formal argument lists differ in length)\n    method Math.min(double,double) is not applicable\n      (actual and formal argument lists differ in length)\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:242: error: cannot find symbol\n                if (money > budget) {\n                            ^\n  symbol:   variable budget\n  location: class Test\nNote: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-12 11:44:47 INFO Running task: 23_0...
+2023-12-12 11:44:48 INFO Test Passed!
+
+
+2023-12-12 11:44:48 INFO Running task: 24_0...
+2023-12-12 11:44:49 INFO Test Passed!
+
+
+2023-12-12 11:44:49 INFO Running task: 25_0...
+2023-12-12 11:44:50 INFO Test Passed!
+
+
+2023-12-12 11:44:50 INFO Running task: 26_0...
+2023-12-12 11:44:51 INFO Test Passed!
+
+
+2023-12-12 11:44:51 INFO Running task: 27_0...
+2023-12-12 11:44:52 INFO Test Passed!
+
+
+2023-12-12 11:44:52 INFO Running task: 28_0...
+2023-12-12 11:44:53 INFO Test Passed!
+
+
+2023-12-12 11:44:53 INFO Running task: 29_0...
+2023-12-12 11:44:53 INFO Test Passed!
+
+
+2023-12-12 11:44:53 INFO Running task: 30_0...
+2023-12-12 11:44:54 INFO Compilation Failed!
+2023-12-12 11:44:54 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:277: error: method testfunc in class Test cannot be applied to given types;\n                return_data = testfunc(data1, data2, data3);\n                              ^\n  required: int[],int,int\n  found:    List<Integer>,int,int\n  reason: argument mismatch; List<Integer> cannot be converted to int[]\nNote: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 11:44:54 INFO Running task: 31_0...
+2023-12-12 11:44:55 INFO Test Passed!
+
+
+2023-12-12 11:44:55 INFO Running task: 32_0...
+2023-12-12 11:44:56 INFO Test Passed!
+
+
+2023-12-12 11:44:56 INFO Running task: 33_0...
+2023-12-12 11:44:57 INFO Runtime Failed!
+2023-12-12 11:44:57 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:230)\n\tat Test.start(test.java:283)\n\tat Test.main(test.java:304)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:230)\n\tat Test.start(test.java:283)\n\tat Test.main(test.java:304)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\n0 0\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:230)\n\tat Test.start(test.java:283)\n\tat Test.main(test.java:304)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:230)\n\tat Test.start(test.java:283)\n\tat Test.main(test.java:304)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\nPassed 1 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:44:57 INFO Running task: 34_0...
+2023-12-12 11:44:58 INFO Test Passed!
+
+
+2023-12-12 11:44:58 INFO Running task: 35_0...
+2023-12-12 11:44:59 INFO Test Passed!
+
+
+2023-12-12 11:44:59 INFO Running task: 36_0...
+2023-12-12 11:44:59 INFO Test Passed!
+
+
+2023-12-12 11:44:59 INFO Running task: 37_0...
+2023-12-12 11:45:00 INFO Test Passed!
+
+
+2023-12-12 11:45:00 INFO Running task: 38_0...
+2023-12-12 11:45:01 INFO Test Passed!
+
+
+2023-12-12 11:45:01 INFO Running task: 39_0...
+2023-12-12 11:45:02 INFO Test Passed!
+
+
+2023-12-12 11:45:02 INFO Running task: 40_0...
+2023-12-12 11:45:03 INFO Test Passed!
+
+
+2023-12-12 11:45:03 INFO Running task: 41_0...
+2023-12-12 11:45:04 INFO Test Passed!
+
+
+2023-12-12 11:45:04 INFO Running task: 42_0...
+2023-12-12 11:45:05 INFO Test Passed!
+
+
+2023-12-12 11:45:05 INFO Running task: 43_0...
+2023-12-12 11:45:06 INFO Test Passed!
+
+
+2023-12-12 11:45:06 INFO Running task: 44_0...
+2023-12-12 11:45:06 INFO Test Passed!
+
+
+2023-12-12 11:45:06 INFO Running task: 45_0...
+2023-12-12 11:45:07 INFO Compilation Failed!
+2023-12-12 11:45:07 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:237: error: cannot find symbol\n            for (Deque<Character>.DescendingIterator it = q.descendingIterator(); it.hasNext(); ) {\n                                 ^\n  symbol:   class DescendingIterator\n  location: interface Deque<Character>\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 11:45:07 INFO Running task: 46_0...
+2023-12-12 11:45:08 INFO Test Passed!
+
+
+2023-12-12 11:45:08 INFO Running task: 47_0...
+2023-12-12 11:45:09 INFO Test Passed!
+
+
+2023-12-12 11:45:09 INFO Running task: 48_0...
+2023-12-12 11:45:10 INFO Compilation Failed!
+2023-12-12 11:45:10 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:226: error: cannot find symbol\n            pos.get(x).append(i);\n                      ^\n  symbol:   method append(int)\n  location: interface List<Integer>\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:232: error: cannot find symbol\n                    .pairwise()\n                    ^\n  symbol:   method pairwise()\n  location: interface Stream<Integer>\nNote: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-12 11:45:10 INFO Running task: 49_0...
+2023-12-12 11:45:11 INFO Test Passed!
+
+
+2023-12-12 11:45:11 INFO Running task: 50_0...
+2023-12-12 11:45:11 INFO Compilation Failed!
+2023-12-12 11:45:11 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:230: error: cannot find symbol\n                        ans.append(t.toString());\n                           ^\n  symbol:   method append(String)\n  location: variable ans of type List<String>\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:238: error: cannot find symbol\n                ans.append(t.toString());\n                   ^\n  symbol:   method append(String)\n  location: variable ans of type List<String>\nNote: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-12 11:45:11 INFO Running task: 51_0...
+2023-12-12 11:45:12 INFO Test Failed!
+2023-12-12 11:45:12 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n[10,14] [10,14]\n[299,9271] [299,9271]\n[-1722871536,-1295821736] [2572095760,2999145560]\nTestcase No.3 Failed!\n[1376364526,1985813780] [1376364526,1985813780]\n[-1782444017,-1146826329] [2512523279,3148140967]\nTestcase No.5 Failed!\nPassed 3 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:12 INFO Running task: 52_0...
+2023-12-12 11:45:13 INFO Test Passed!
+
+
+2023-12-12 11:45:13 INFO Running task: 53_0...
+2023-12-12 11:45:14 INFO Test Failed!
+2023-12-12 11:45:14 INFO run_output: b'4 4\n85264 85264\n78818884 78818884\n-727320015 20752136\nTestcase No.4 Failed!\n-295396676 136582381\nTestcase No.5 Failed!\nPassed 3 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:14 INFO Running task: 54_0...
+2023-12-12 11:45:15 INFO Compilation Failed!
+2023-12-12 11:45:15 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:228: error: cannot find symbol\n            arr.append(k);\n               ^\n  symbol:   method append(int)\n  location: variable arr of type List<Integer>\nNote: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 11:45:15 INFO Running task: 55_0...
+2023-12-12 11:45:16 INFO Test Passed!
+
+
+2023-12-12 11:45:16 INFO Running task: 56_0...
+2023-12-12 11:45:18 INFO Test Passed!
+
+
+2023-12-12 11:45:18 INFO Running task: 57_0...
+2023-12-12 11:45:18 INFO Test Passed!
+
+
+2023-12-12 11:45:18 INFO Running task: 58_0...
+2023-12-12 11:45:19 INFO Test Passed!
+
+
+2023-12-12 11:45:19 INFO Running task: 59_0...
+2023-12-12 11:45:21 INFO Test Passed!
+
+
+2023-12-12 11:45:21 INFO Running task: 60_0...
+2023-12-12 11:45:22 INFO Test Passed!
+
+
+2023-12-12 11:45:22 INFO Running task: 61_0...
+2023-12-12 11:45:23 INFO Test Failed!
+2023-12-12 11:45:23 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n6 6\n1 1\n1 4\nTestcase No.3 Failed!\n238898107 238898107\n10002143548514 10002143548514\nPassed 4 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:23 INFO Running task: 62_0...
+2023-12-12 11:45:24 INFO Test Passed!
+
+
+2023-12-12 11:45:24 INFO Running task: 63_0...
+2023-12-12 11:45:25 INFO Test Passed!
+
+
+2023-12-12 11:45:25 INFO Running task: 64_0...
+2023-12-12 11:45:26 INFO Compilation Failed!
+2023-12-12 11:45:26 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:221: error: incompatible types: cannot infer type arguments for ArrayDeque<>\n        Deque<Long> q = new ArrayDeque<>(Arrays.asList(0,1,2,3,4,5,6,7,8,9));\n                                      ^\n    reason: inference variable E has incompatible bounds\n      equality constraints: Long\n      lower bounds: T,Integer\n  where E,T are type-variables:\n    E extends Object declared in class ArrayDeque\n    T extends Object declared in method <T>asList(T...)\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 11:45:26 INFO Running task: 65_0...
+2023-12-12 11:45:27 INFO Test Passed!
+
+
+2023-12-12 11:45:27 INFO Running task: 66_0...
+2023-12-12 11:45:27 INFO Test Failed!
+2023-12-12 11:45:27 INFO run_output: b'2 2\n143 143\n1614380127 149876695044291679\nTestcase No.3 Failed!\n-167237517 245084191090813043\nTestcase No.4 Failed!\n1810315984 707704350405245648\nTestcase No.5 Failed!\nPassed 2 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:27 INFO Running task: 67_0...
+2023-12-12 11:45:29 INFO Test Passed!
+
+
+2023-12-12 11:45:29 INFO Running task: 68_0...
+2023-12-12 11:45:30 INFO Test Passed!
+
+
+2023-12-12 11:45:30 INFO Running task: 69_0...
+2023-12-12 11:45:31 INFO Test Passed!
+
+
+2023-12-12 11:45:31 INFO Running task: 70_0...
+2023-12-12 11:45:32 INFO Test Passed!
+
+
+2023-12-12 11:45:32 INFO Running task: 71_0...
+2023-12-12 11:45:33 INFO Test Passed!
+
+
+2023-12-12 11:45:33 INFO Running task: 72_0...
+2023-12-12 11:45:34 INFO Test Passed!
+
+
+2023-12-12 11:45:34 INFO Running task: 73_0...
+2023-12-12 11:45:35 INFO Test Passed!
+
+
+2023-12-12 11:45:35 INFO Running task: 74_0...
+2023-12-12 11:45:36 INFO Test Passed!
+
+
+2023-12-12 11:45:36 INFO Running task: 75_0...
+2023-12-12 11:45:37 INFO Test Passed!
+
+
+2023-12-12 11:45:37 INFO Running task: 76_0...
+2023-12-12 11:45:38 INFO Test Passed!
+
+
+2023-12-12 11:45:38 INFO Running task: 77_0...
+2023-12-12 11:45:39 INFO Test Passed!
+
+
+2023-12-12 11:45:39 INFO Running task: 78_0...
+2023-12-12 11:45:40 INFO Test Failed!
+2023-12-12 11:45:40 INFO run_output: b'4 4\n11 11\n11 11\n100000 100000\n99999 50000\nTestcase No.5 Failed!\nPassed 4 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:40 INFO Running task: 79_0...
+2023-12-12 11:45:41 INFO Test Passed!
+
+
+2023-12-12 11:45:41 INFO Running task: 80_0...
+2023-12-12 11:45:42 INFO Test Passed!
+
+
+2023-12-12 11:45:42 INFO Running task: 81_0...
+2023-12-12 11:45:43 INFO Compilation Failed!
+2023-12-12 11:45:43 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:229: error: illegal initializer for int\n            {{0, -1}, {-1, -1}, {-1, 0}},\n             ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:229: error: illegal initializer for int\n            {{0, -1}, {-1, -1}, {-1, 0}},\n                      ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:229: error: illegal initializer for int\n            {{0, -1}, {-1, -1}, {-1, 0}},\n                                ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:230: error: illegal initializer for int\n            {{0, 1}, {-1, 0}, {-1, 1}},\n             ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:230: error: illegal initializer for int\n            {{0, 1}, {-1, 0}, {-1, 1}},\n                     ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:230: error: illegal initializer for int\n            {{0, 1}, {-1, 0}, {-1, 1}},\n                              ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:231: error: illegal initializer for int\n            {{0, -1}, {1, 0}, {1, -1}},\n             ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:231: error: illegal initializer for int\n            {{0, -1}, {1, 0}, {1, -1}},\n                      ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:231: error: illegal initializer for int\n            {{0, -1}, {1, 0}, {1, -1}},\n                              ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:232: error: illegal initializer for int\n            {{0, 1}, {1, 0}, {1, 1}}\n             ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:232: error: illegal initializer for int\n            {{0, 1}, {1, 0}, {1, 1}}\n                     ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:232: error: illegal initializer for int\n            {{0, 1}, {1, 0}, {1, 1}}\n                             ^\n/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:239: error: incompatible types: int cannot be converted to int[]\n                for (int[] direction : a) {\n                                       ^\n13 errors\nerror: compilation failed\n'
+
+
+2023-12-12 11:45:43 INFO Running task: 82_0...
+2023-12-12 11:45:43 INFO Test Failed!
+2023-12-12 11:45:43 INFO run_output: b'-2147483647 2\nTestcase No.1 Failed!\n3 3\n-1 -1\n-2147483646 4\nTestcase No.4 Failed!\n-1 -1\nPassed 3 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:43 INFO Running task: 83_0...
+2023-12-12 11:45:44 INFO Test Passed!
+
+
+2023-12-12 11:45:44 INFO Running task: 84_0...
+2023-12-12 11:45:45 INFO Test Passed!
+
+
+2023-12-12 11:45:45 INFO Running task: 85_0...
+2023-12-12 11:45:46 INFO Test Passed!
+
+
+2023-12-12 11:45:46 INFO Running task: 86_0...
+2023-12-12 11:45:47 INFO Test Passed!
+
+
+2023-12-12 11:45:47 INFO Running task: 87_0...
+2023-12-12 11:45:48 INFO Compilation Failed!
+2023-12-12 11:45:48 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java:225: error: method toArray in interface IntStream cannot be applied to given types;\n        Integer[] queryIndices = Arrays.stream(queries).boxed().mapToInt(i -> i).toArray(Integer[]::new);\n                                                                                ^\n  required: no arguments\n  found:    Integer[]::new\n  reason: actual and formal argument lists differ in length\n1 error\nerror: compilation failed\n'
+
+
+2023-12-12 11:45:48 INFO Running task: 88_0...
+2023-12-12 11:45:49 INFO Test Failed!
+2023-12-12 11:45:49 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/wenxin/python_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\nfalse true\nTestcase No.1 Failed!\ntrue true\nfalse false\nfalse false\ntrue true\nPassed 4 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:49 INFO Running task: 89_0...
+2023-12-12 11:45:50 INFO Test Passed!
+
+
+2023-12-12 11:45:50 INFO Running task: 90_0...
+2023-12-12 11:45:51 INFO Test Passed!
+
+
+2023-12-12 11:45:51 INFO Running task: 91_0...
+2023-12-12 11:45:52 INFO Test Failed!
+2023-12-12 11:45:52 INFO run_output: b'0 3\nTestcase No.1 Failed!\n0 1\nTestcase No.2 Failed!\n0 0\n0 2\nTestcase No.4 Failed!\n0 1\nTestcase No.5 Failed!\nPassed 1 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-12 11:45:52 INFO Running task: 92_0...
+2023-12-12 11:45:53 INFO Test Passed!
+
+
+2023-12-12 11:45:53 INFO Running task: 93_0...
+2023-12-12 11:45:54 INFO Test Passed!
+
+
+2023-12-12 11:45:54 INFO Running task: 94_0...
+2023-12-12 11:45:54 INFO Test Passed!
+
+
+2023-12-12 11:45:54 INFO Running task: 95_0...
+2023-12-12 11:45:55 INFO Test Passed!
+
+
+2023-12-12 11:45:55 INFO Running task: 96_0...
+2023-12-12 11:45:56 INFO Test Passed!
+
+
+2023-12-12 11:45:56 INFO Running task: 97_0...
+2023-12-12 11:45:57 INFO Test Passed!
+
+
+2023-12-12 11:45:57 INFO Running task: 98_0...
+2023-12-12 11:45:58 INFO Test Passed!
+
+
+2023-12-12 11:45:58 INFO Running task: 99_0...
+2023-12-12 11:45:59 INFO Test Passed!
+
+
+2023-12-12 11:45:59 INFO Running task: 100_0...
+2023-12-12 11:46:00 INFO Test Passed!
+
+
+2023-12-12 11:46:00 INFO [[1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [2], [1], [1], [3], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [2], [1], [1], [2], [1], [2], [4], [1], [4], [2], [1], [1], [1], [1], [1], [1], [4], [1], [1], [2], [1], [4], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [4], [1], [1], [2], [4], [1], [1], [1], [1], [2], [4], [1], [1], [4], [1], [1], [1], [1], [1], [1], [1], [1], [1]]

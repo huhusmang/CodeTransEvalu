@@ -1,0 +1,1012 @@
+2023-12-07 14:26:04 INFO Running task: 1_0...
+2023-12-07 14:26:05 INFO Test Passed!
+
+
+2023-12-07 14:26:05 INFO Running task: 2_0...
+2023-12-07 14:26:06 INFO Test Passed!
+
+
+2023-12-07 14:26:06 INFO Running task: 3_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:07 INFO Test Passed!
+
+
+2023-12-07 14:26:07 INFO Running task: 4_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:222: error: bad operand types for binary operator '+'
+        ans += s.charAt(i) != s.charAt(i + 1);
+            ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-07 14:26:08 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:26:08 INFO Compilation Failed!
+2023-12-07 14:26:08 INFO run_output: b''
+
+
+2023-12-07 14:26:08 INFO Running task: 5_0...
+2023-12-07 14:26:08 INFO Test Passed!
+
+
+2023-12-07 14:26:08 INFO Running task: 6_0...
+2023-12-07 14:26:09 INFO Test Passed!
+
+
+2023-12-07 14:26:09 INFO Running task: 7_0...
+2023-12-07 14:26:10 INFO Test Passed!
+
+
+2023-12-07 14:26:10 INFO Running task: 8_0...
+2023-12-07 14:26:11 INFO Test Passed!
+
+
+2023-12-07 14:26:11 INFO Running task: 9_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:220: error: cannot find symbol
+    if (count(s.toCharArray(), '1') < k) {
+        ^
+  symbol:   method count(char[],char)
+  location: class Test
+1 error
+error: compilation failed
+2023-12-07 14:26:12 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:26:12 INFO Compilation Failed!
+2023-12-07 14:26:12 INFO run_output: b''
+
+
+2023-12-07 14:26:12 INFO Running task: 10_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:222: error: bad operand types for binary operator '+'
+        t += s.charAt(i - 1) >= s.charAt(i);
+          ^
+  first type:  int
+  second type: boolean
+1 error
+error: compilation failed
+2023-12-07 14:26:13 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:26:13 INFO Compilation Failed!
+2023-12-07 14:26:13 INFO run_output: b''
+
+
+2023-12-07 14:26:13 INFO Running task: 11_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:14 INFO Test Passed!
+
+
+2023-12-07 14:26:14 INFO Running task: 12_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:228)
+	at Test.start(test.java:270)
+	at Test.main(test.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:228)
+	at Test.start(test.java:270)
+	at Test.main(test.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:228)
+	at Test.start(test.java:270)
+	at Test.main(test.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 14:26:15 INFO Test Failed!
+2023-12-07 14:26:15 INFO run_output: b'[1,2,1] [1,2,1]\n[75,96,90,79,51,49,37,56,49,59,4,39,84,82,83,98,19,5,11,58,77,64,89,45,24,3,25,43,17,68,50,72,97,26,11,96,3,61,10,92,78,92,46,79,79,49,28,53,43,1] [75,96,90,79,51,49,37,56,49,59,4,39,84,82,83,98,19,5,11,58,77,64,89,45,24,3,25,43,17,68,50,72,97,26,11,96,3,61,10,92,78,92,46,79,79,49,28,53,43,1]\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:26:15 INFO Running task: 13_0...
+2023-12-07 14:26:15 INFO Test Passed!
+
+
+2023-12-07 14:26:15 INFO Running task: 14_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:17 INFO Test Passed!
+
+
+2023-12-07 14:26:17 INFO Running task: 15_0...
+2023-12-07 14:26:17 INFO Test Passed!
+
+
+2023-12-07 14:26:17 INFO Running task: 16_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:234: error: incompatible types: possible lossy conversion from long to int
+    return ans == Integer.MAX_VALUE ? -1 : ans + target / total * n;
+                                    ^
+1 error
+error: compilation failed
+2023-12-07 14:26:18 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:26:18 INFO Compilation Failed!
+2023-12-07 14:26:18 INFO run_output: b''
+
+
+2023-12-07 14:26:18 INFO Running task: 17_0...
+2023-12-07 14:26:19 INFO Test Passed!
+
+
+2023-12-07 14:26:19 INFO Running task: 18_0...
+2023-12-07 14:26:20 INFO Test Passed!
+
+
+2023-12-07 14:26:20 INFO Running task: 19_0...
+2023-12-07 14:26:21 INFO Test Passed!
+
+
+2023-12-07 14:26:21 INFO Running task: 20_0...
+2023-12-07 14:26:22 INFO Test Passed!
+
+
+2023-12-07 14:26:22 INFO Running task: 21_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 5
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 50
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 50
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:224)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 14:26:23 INFO Test Failed!
+2023-12-07 14:26:23 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:26:23 INFO Running task: 22_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:221: error: no suitable method found for min(int[])
+    int mx = Math.min(stock.stream().mapToInt(Integer::intValue).toArray())[0] + budget;
+                 ^
+    method Math.min(int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(long,long) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    method Math.min(double,double) is not applicable
+      (actual and formal argument lists differ in length)
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:238: error: unexpected type
+            (check.test((long) mid) ? left : right) = mid;
+                                    ^
+  required: variable
+  found:    value
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+error: compilation failed
+2023-12-07 14:26:23 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:26:23 INFO Compilation Failed!
+2023-12-07 14:26:23 INFO run_output: b''
+
+
+2023-12-07 14:26:23 INFO Running task: 23_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:24 INFO Test Passed!
+
+
+2023-12-07 14:26:24 INFO Running task: 24_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:25 INFO Test Passed!
+
+
+2023-12-07 14:26:25 INFO Running task: 25_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:26 INFO Test Passed!
+
+
+2023-12-07 14:26:26 INFO Running task: 26_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:27 INFO Test Passed!
+
+
+2023-12-07 14:26:27 INFO Running task: 27_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:28 INFO Test Passed!
+
+
+2023-12-07 14:26:28 INFO Running task: 28_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:29 INFO Test Passed!
+
+
+2023-12-07 14:26:29 INFO Running task: 29_0...
+2023-12-07 14:26:30 INFO Test Passed!
+
+
+2023-12-07 14:26:30 INFO Running task: 30_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:31 INFO Test Passed!
+
+
+2023-12-07 14:26:31 INFO Running task: 31_0...
+2023-12-07 14:26:32 INFO Test Failed!
+2023-12-07 14:26:32 INFO run_output: b'2 2\n3 3\n2 1\nTestcase No.3 Failed!\n19 19\n100 100\n4 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:26:32 INFO Running task: 32_0...
+2023-12-07 14:26:33 INFO Test Passed!
+
+
+2023-12-07 14:26:33 INFO Running task: 33_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:33 INFO Test Passed!
+
+
+2023-12-07 14:26:33 INFO Running task: 34_0...
+2023-12-07 14:26:34 INFO Test Failed!
+2023-12-07 14:26:34 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse true\nTestcase No.3 Failed!\nfalse true\nTestcase No.4 Failed!\nfalse false\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:26:34 INFO Running task: 35_0...
+2023-12-07 14:26:35 INFO Test Failed!
+2023-12-07 14:26:35 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse false\nfalse true\nTestcase No.4 Failed!\nfalse true\nTestcase No.5 Failed!\n2 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:26:35 INFO Running task: 36_0...
+2023-12-07 14:26:36 INFO Test Passed!
+
+
+2023-12-07 14:26:36 INFO Running task: 37_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:278)
+	at Test.main(test.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:278)
+	at Test.main(test.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:278)
+	at Test.main(test.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:278)
+	at Test.main(test.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.IndexOutOfBoundsException: Index 11294 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:278)
+	at Test.main(test.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 14:26:37 INFO Test Failed!
+2023-12-07 14:26:37 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:26:37 INFO Running task: 38_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:38 INFO Test Passed!
+
+
+2023-12-07 14:26:38 INFO Running task: 39_0...
+2023-12-07 14:26:38 INFO Test Passed!
+
+
+2023-12-07 14:26:38 INFO Running task: 40_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:39 INFO Test Passed!
+
+
+2023-12-07 14:26:39 INFO Running task: 41_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:40 INFO Test Passed!
+
+
+2023-12-07 14:26:40 INFO Running task: 42_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.TreeSet.lower(Object)" is null
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:269)
+	at Test.main(test.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 14:26:41 INFO Test Failed!
+2023-12-07 14:26:41 INFO run_output: b'-3 3\nTestcase No.3 Failed!\n0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:26:41 INFO Running task: 43_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:230: error: invalid method declaration; return type required
+public static ListNode(int val, ListNode next) {
+              ^
+1 error
+error: compilation failed
+2023-12-07 14:26:42 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:26:42 INFO Compilation Failed!
+2023-12-07 14:26:42 INFO run_output: b''
+
+
+2023-12-07 14:26:42 INFO Running task: 44_0...
+2023-12-07 14:26:42 INFO Test Passed!
+
+
+2023-12-07 14:26:42 INFO Running task: 45_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:227: error: no suitable constructor found for String(Object[],int,int)
+    return tail ? new String(q.toArray(), 0, q.size()) : new StringBuilder(q).reverse().toString();
+                  ^
+    constructor String.String() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(char[]) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(char[],int,int) is not applicable
+      (argument mismatch; Object[] cannot be converted to char[])
+    constructor String.String(int[],int,int) is not applicable
+      (argument mismatch; Object[] cannot be converted to int[])
+    constructor String.String(byte[],int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int,Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],Charset) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],int,int) is not applicable
+      (argument mismatch; Object[] cannot be converted to byte[])
+    constructor String.String(byte[]) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(StringBuffer) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(StringBuilder) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(char[],int,int,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(AbstractStringBuilder,Void) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor String.String(byte[],byte) is not applicable
+      (actual and formal argument lists differ in length)
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:227: error: no suitable constructor found for StringBuilder(Deque<Character>)
+    return tail ? new String(q.toArray(), 0, q.size()) : new StringBuilder(q).reverse().toString();
+                                                         ^
+    constructor StringBuilder.StringBuilder() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor StringBuilder.StringBuilder(int) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to int)
+    constructor StringBuilder.StringBuilder(String) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to String)
+    constructor StringBuilder.StringBuilder(CharSequence) is not applicable
+      (argument mismatch; Deque<Character> cannot be converted to CharSequence)
+2 errors
+error: compilation failed
+2023-12-07 14:26:43 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:26:43 INFO Compilation Failed!
+2023-12-07 14:26:43 INFO run_output: b''
+
+
+2023-12-07 14:26:43 INFO Running task: 46_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:44 INFO Test Passed!
+
+
+2023-12-07 14:26:44 INFO Running task: 47_0...
+2023-12-07 14:26:45 INFO Test Passed!
+
+
+2023-12-07 14:26:45 INFO Running task: 48_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:46 INFO Test Passed!
+
+
+2023-12-07 14:26:46 INFO Running task: 49_0...
+2023-12-07 14:26:47 INFO Test Passed!
+
+
+2023-12-07 14:26:47 INFO Running task: 50_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:48 INFO Test Passed!
+
+
+2023-12-07 14:26:48 INFO Running task: 51_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:48 INFO Test Passed!
+
+
+2023-12-07 14:26:48 INFO Running task: 52_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:49 INFO Test Passed!
+
+
+2023-12-07 14:26:49 INFO Running task: 53_0...
+2023-12-07 14:26:50 INFO Test Passed!
+
+
+2023-12-07 14:26:50 INFO Running task: 54_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:51 INFO Test Passed!
+
+
+2023-12-07 14:26:51 INFO Running task: 55_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:53 INFO Test Passed!
+
+
+2023-12-07 14:26:53 INFO Running task: 56_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:54 INFO Test Passed!
+
+
+2023-12-07 14:26:54 INFO Running task: 57_0...
+2023-12-07 14:26:55 INFO Test Passed!
+
+
+2023-12-07 14:26:55 INFO Running task: 58_0...
+2023-12-07 14:26:56 INFO Test Passed!
+
+
+2023-12-07 14:26:56 INFO Running task: 59_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:58 INFO Test Passed!
+
+
+2023-12-07 14:26:58 INFO Running task: 60_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:26:59 INFO Test Passed!
+
+
+2023-12-07 14:26:59 INFO Running task: 61_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:225: error: cannot find symbol
+            Long b = s.ceiling(sum);
+                      ^
+  symbol:   method ceiling(long)
+  location: variable s of type Set<Long>
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+error: compilation failed
+2023-12-07 14:27:00 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:27:00 INFO Compilation Failed!
+2023-12-07 14:27:00 INFO run_output: b''
+
+
+2023-12-07 14:27:00 INFO Running task: 62_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:01 INFO Test Passed!
+
+
+2023-12-07 14:27:01 INFO Running task: 63_0...
+2023-12-07 14:27:01 INFO Test Passed!
+
+
+2023-12-07 14:27:01 INFO Running task: 64_0...
+2023-12-07 14:27:02 INFO Test Passed!
+
+
+2023-12-07 14:27:02 INFO Running task: 65_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:03 INFO Test Passed!
+
+
+2023-12-07 14:27:03 INFO Running task: 66_0...
+2023-12-07 14:27:04 INFO Test Passed!
+
+
+2023-12-07 14:27:04 INFO Running task: 67_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:05 INFO Test Passed!
+
+
+2023-12-07 14:27:05 INFO Running task: 68_0...
+2023-12-07 14:27:06 INFO Test Passed!
+
+
+2023-12-07 14:27:06 INFO Running task: 69_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:08 INFO Test Passed!
+
+
+2023-12-07 14:27:08 INFO Running task: 70_0...
+2023-12-07 14:27:09 INFO Test Passed!
+
+
+2023-12-07 14:27:09 INFO Running task: 71_0...
+2023-12-07 14:27:10 INFO Test Passed!
+
+
+2023-12-07 14:27:10 INFO Running task: 72_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:11 INFO Test Passed!
+
+
+2023-12-07 14:27:11 INFO Running task: 73_0...
+2023-12-07 14:27:12 INFO Test Passed!
+
+
+2023-12-07 14:27:12 INFO Running task: 74_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:13 INFO Test Passed!
+
+
+2023-12-07 14:27:13 INFO Running task: 75_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:14 INFO Test Passed!
+
+
+2023-12-07 14:27:14 INFO Running task: 76_0...
+2023-12-07 14:27:15 INFO Test Passed!
+
+
+2023-12-07 14:27:15 INFO Running task: 77_0...
+2023-12-07 14:27:16 INFO Test Passed!
+
+
+2023-12-07 14:27:16 INFO Running task: 78_0...
+2023-12-07 14:27:17 INFO Test Passed!
+
+
+2023-12-07 14:27:17 INFO Running task: 79_0...
+2023-12-07 14:27:17 INFO Test Passed!
+
+
+2023-12-07 14:27:17 INFO Running task: 80_0...
+2023-12-07 14:27:18 INFO Test Passed!
+
+
+2023-12-07 14:27:18 INFO Running task: 81_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:252: error: invalid method declaration; return type required
+public static Pair(K key, V value) {
+              ^
+1 error
+error: compilation failed
+2023-12-07 14:27:19 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:27:19 INFO Compilation Failed!
+2023-12-07 14:27:19 INFO run_output: b''
+
+
+2023-12-07 14:27:19 INFO Running task: 82_0...
+2023-12-07 14:27:20 INFO Test Failed!
+2023-12-07 14:27:20 INFO run_output: b'-2147483647 2\nTestcase No.1 Failed!\n3 3\n-1 -1\n-2147483646 4\nTestcase No.4 Failed!\n-1 -1\n3 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:27:20 INFO Running task: 83_0...
+2023-12-07 14:27:20 INFO Test Passed!
+
+
+2023-12-07 14:27:20 INFO Running task: 84_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:21 INFO Test Passed!
+
+
+2023-12-07 14:27:21 INFO Running task: 85_0...
+2023-12-07 14:27:22 INFO Test Passed!
+
+
+2023-12-07 14:27:22 INFO Running task: 86_0...
+2023-12-07 14:27:23 INFO Test Passed!
+
+
+2023-12-07 14:27:23 INFO Running task: 87_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:225: error: no suitable method found for sort(int[],Comparator<Object>)
+    Arrays.sort(id, Comparator.comparingInt(i -> queries[i]));
+          ^
+    method Arrays.sort(int[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(int[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(long[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(long[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(short[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(short[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(char[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(char[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(byte[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(byte[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(float[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(float[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(double[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(double[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(Object[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.sort(Object[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable
+      (inference variable T#1 has incompatible bounds
+        equality constraints: int
+        lower bounds: Object)
+    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)
+    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:225: error: incompatible types: Object cannot be converted to int
+    Arrays.sort(id, Comparator.comparingInt(i -> queries[i]));
+                                                         ^
+2 errors
+error: compilation failed
+2023-12-07 14:27:24 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:27:24 INFO Compilation Failed!
+2023-12-07 14:27:24 INFO run_output: b''
+
+
+2023-12-07 14:27:24 INFO Running task: 88_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:25 INFO Test Passed!
+
+
+2023-12-07 14:27:25 INFO Running task: 89_0...
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 9
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 13
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 16
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 50
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 50
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at Test.testfunc(test.java:226)
+	at Test.start(test.java:272)
+	at Test.main(test.java:293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+2023-12-07 14:27:26 INFO Test Failed!
+2023-12-07 14:27:26 INFO run_output: b'0 / 5 passed!\nTest Failed!\n'
+
+
+2023-12-07 14:27:26 INFO Running task: 90_0...
+2023-12-07 14:27:27 INFO Test Passed!
+
+
+2023-12-07 14:27:27 INFO Running task: 91_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:235: error: method dfs in class Test cannot be applied to given types;
+                dfs(i, vis, g, v, e);
+                ^
+  required: int,boolean[],List<List<Integer>>,int[],int[]
+  found:    int,boolean[],List<List<Integer>>,int,int
+  reason: argument mismatch; int cannot be converted to int[]
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:236: error: bad operand types for binary operator '+'
+                ans += e == v * (v - 1);
+                    ^
+  first type:  int
+  second type: boolean
+2 errors
+error: compilation failed
+2023-12-07 14:27:27 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:27:27 INFO Compilation Failed!
+2023-12-07 14:27:27 INFO run_output: b''
+
+
+2023-12-07 14:27:27 INFO Running task: 92_0...
+2023-12-07 14:27:28 INFO Test Passed!
+
+
+2023-12-07 14:27:28 INFO Running task: 93_0...
+2023-12-07 14:27:29 INFO Test Passed!
+
+
+2023-12-07 14:27:29 INFO Running task: 94_0...
+2023-12-07 14:27:30 INFO Test Passed!
+
+
+2023-12-07 14:27:30 INFO Running task: 95_0...
+Note: /home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2023-12-07 14:27:31 INFO Test Passed!
+
+
+2023-12-07 14:27:31 INFO Running task: 96_0...
+2023-12-07 14:27:32 INFO Test Passed!
+
+
+2023-12-07 14:27:32 INFO Running task: 97_0...
+2023-12-07 14:27:33 INFO Test Passed!
+
+
+2023-12-07 14:27:33 INFO Running task: 98_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java:225: error: invalid method declaration; return type required
+public static TreeNode(int val) {
+              ^
+1 error
+error: compilation failed
+2023-12-07 14:27:33 INFO Command '['java', '/home/ubuntu/test_codellm/unit_tests/qwen/c++_java/test.java']' returned non-zero exit status 1.
+2023-12-07 14:27:33 INFO Compilation Failed!
+2023-12-07 14:27:33 INFO run_output: b''
+
+
+2023-12-07 14:27:33 INFO Running task: 99_0...
+2023-12-07 14:27:34 INFO Test Passed!
+
+
+2023-12-07 14:27:34 INFO Running task: 100_0...
+2023-12-07 14:27:35 INFO Test Passed!
+
+
+2023-12-07 14:27:35 INFO [[1], [1], [1], [3], [1], [1], [1], [1], [3], [3], [1], [2], [1], [1], [1], [3], [1], [1], [1], [1], [2], [3], [1], [1], [1], [1], [1], [1], [1], [1], [2], [1], [1], [2], [2], [1], [2], [1], [1], [1], [1], [2], [3], [1], [3], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [3], [2], [1], [1], [1], [1], [3], [1], [2], [1], [3], [1], [1], [1], [1], [1], [1], [3], [1], [1]]

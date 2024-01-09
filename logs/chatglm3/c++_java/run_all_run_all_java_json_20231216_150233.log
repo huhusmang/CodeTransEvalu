@@ -1,0 +1,438 @@
+2023-12-16 15:02:33 INFO Running task: 1_0...
+2023-12-16 15:02:33 INFO Test Passed!
+
+
+2023-12-16 15:02:33 INFO Running task: 2_0...
+2023-12-16 15:02:34 INFO Test Passed!
+
+
+2023-12-16 15:02:34 INFO Running task: 3_0...
+2023-12-16 15:02:35 INFO Test Passed!
+
+
+2023-12-16 15:02:35 INFO Running task: 4_0...
+2023-12-16 15:02:36 INFO Test Passed!
+
+
+2023-12-16 15:02:36 INFO Running task: 5_0...
+2023-12-16 15:02:36 INFO Compilation Failed!
+2023-12-16 15:02:36 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:224: error: ';' expected\n    int k = minElement(cnt.entrySet(), (a, b) -> a.getValue() < b.getValue())->getValue();\n                                                                             ^\n1 error\nerror: compilation failed\n"
+
+
+2023-12-16 15:02:36 INFO Running task: 6_0...
+2023-12-16 15:02:37 INFO Test Passed!
+
+
+2023-12-16 15:02:37 INFO Running task: 7_0...
+2023-12-16 15:02:38 INFO Compilation Failed!
+2023-12-16 15:02:38 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: not a statement\n        long long suf = 1;\n        ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: ';' expected\n        long long suf = 1;\n            ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:230: error: not a statement\n        long long pre = 1;\n        ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:230: error: ';' expected\n        long long pre = 1;\n            ^\n4 errors\nerror: compilation failed\n"
+
+
+2023-12-16 15:02:38 INFO Running task: 8_0...
+2023-12-16 15:02:38 INFO Test Passed!
+
+
+2023-12-16 15:02:38 INFO Running task: 9_0...
+2023-12-16 15:02:39 INFO Runtime Failed!
+2023-12-16 15:02:39 INFO run_output: b'"1" "11001"\nTestcase No.1 Failed!\n"" "11"\nTestcase No.2 Failed!\n"" ""\njava.lang.StringIndexOutOfBoundsException: begin 32, end 30, length 100\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)\n\tat java.base/java.lang.String.substring(String.java:2709)\n\tat Test.testfunc(test.java:231)\n\tat Test.start(test.java:288)\n\tat Test.main(test.java:309)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\n"11100100011100111001101000010100111010000001111110111000110001101011101001010110110110000" "1101110010001110011100110100001010011101000000111111011100011000110101110100101011011011000011"\nTestcase No.5 Failed!\nPassed 1 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:02:39 INFO Running task: 10_0...
+2023-12-16 15:02:40 INFO Test Passed!
+
+
+2023-12-16 15:02:40 INFO Running task: 11_0...
+2023-12-16 15:02:41 INFO Compilation Failed!
+2023-12-16 15:02:41 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:220: error: no suitable method found for sort(List<Integer>)\n        Arrays.sort(usageLimits);\n              ^\n    method Arrays.sort(int[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to int[])\n    method Arrays.sort(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to long[])\n    method Arrays.sort(long[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to short[])\n    method Arrays.sort(short[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to char[])\n    method Arrays.sort(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to byte[])\n    method Arrays.sort(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to float[])\n    method Arrays.sort(float[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to double[])\n    method Arrays.sort(double[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to Object[])\n    method Arrays.sort(Object[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable\n      (cannot infer type-variable(s) T#1\n        (actual and formal argument lists differ in length))\n    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)\n    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:02:41 INFO Running task: 12_0...
+2023-12-16 15:02:42 INFO Test Passed!
+
+
+2023-12-16 15:02:42 INFO Running task: 13_0...
+2023-12-16 15:02:43 INFO Test Passed!
+
+
+2023-12-16 15:02:43 INFO Running task: 14_0...
+2023-12-16 15:02:43 INFO Compilation Failed!
+2023-12-16 15:02:43 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:220: error: no suitable method found for sort(List<Integer>)\n        Arrays.sort(processorTime);\n              ^\n    method Arrays.sort(int[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to int[])\n    method Arrays.sort(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to long[])\n    method Arrays.sort(long[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to short[])\n    method Arrays.sort(short[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to char[])\n    method Arrays.sort(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to byte[])\n    method Arrays.sort(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to float[])\n    method Arrays.sort(float[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to double[])\n    method Arrays.sort(double[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to Object[])\n    method Arrays.sort(Object[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable\n      (cannot infer type-variable(s) T#1\n        (actual and formal argument lists differ in length))\n    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)\n    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:221: error: no suitable method found for sort(List<Integer>,Integer::compareTo)\n        Arrays.sort(tasks, Integer::compareTo);\n              ^\n    method Arrays.sort(int[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable\n      (cannot infer type-variable(s) T#1\n        (argument mismatch; List<Integer> cannot be converted to T#1[]))\n    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)\n    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-16 15:02:43 INFO Running task: 15_0...
+2023-12-16 15:02:44 INFO Test Passed!
+
+
+2023-12-16 15:02:44 INFO Running task: 16_0...
+2023-12-16 15:02:45 INFO Compilation Failed!
+2023-12-16 15:02:45 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:237: error: incompatible types: possible lossy conversion from long to int\n    return ans == Integer.MAX_VALUE ? -1 : ans + target / total * n;\n                                    ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:02:45 INFO Running task: 17_0...
+2023-12-16 15:02:46 INFO Test Passed!
+
+
+2023-12-16 15:02:46 INFO Running task: 18_0...
+2023-12-16 15:02:47 INFO Test Passed!
+
+
+2023-12-16 15:02:47 INFO Running task: 19_0...
+2023-12-16 15:02:48 INFO Test Passed!
+
+
+2023-12-16 15:02:48 INFO Running task: 20_0...
+2023-12-16 15:02:49 INFO Test Passed!
+
+
+2023-12-16 15:02:49 INFO Running task: 21_0...
+2023-12-16 15:02:50 INFO Test Passed!
+
+
+2023-12-16 15:02:50 INFO Running task: 22_0...
+2023-12-16 15:02:50 INFO Compilation Failed!
+2023-12-16 15:02:50 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: ';' expected\n            boolean check(long num) {\n                         ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: ';' expected\n            boolean check(long num) {\n                                  ^\n2 errors\nerror: compilation failed\n"
+
+
+2023-12-16 15:02:50 INFO Running task: 23_0...
+2023-12-16 15:02:51 INFO Compilation Failed!
+2023-12-16 15:02:51 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:220: error: no suitable method found for sort(List<Integer>)\n        Arrays.sort(nums);\n              ^\n    method Arrays.sort(int[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to int[])\n    method Arrays.sort(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to long[])\n    method Arrays.sort(long[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to short[])\n    method Arrays.sort(short[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to char[])\n    method Arrays.sort(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to byte[])\n    method Arrays.sort(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to float[])\n    method Arrays.sort(float[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to double[])\n    method Arrays.sort(double[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to Object[])\n    method Arrays.sort(Object[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable\n      (cannot infer type-variable(s) T#1\n        (actual and formal argument lists differ in length))\n    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)\n    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:02:51 INFO Running task: 24_0...
+2023-12-16 15:02:52 INFO Test Passed!
+
+
+2023-12-16 15:02:52 INFO Running task: 25_0...
+2023-12-16 15:02:53 INFO Test Passed!
+
+
+2023-12-16 15:02:53 INFO Running task: 26_0...
+2023-12-16 15:02:53 INFO Compilation Failed!
+2023-12-16 15:02:53 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:219: error: <identifier> expected\npublic static int testfunc(List<Integer>& nums) {\n                                        ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:02:53 INFO Running task: 27_0...
+2023-12-16 15:02:54 INFO Test Passed!
+
+
+2023-12-16 15:02:54 INFO Running task: 28_0...
+2023-12-16 15:02:55 INFO Test Passed!
+
+
+2023-12-16 15:02:55 INFO Running task: 29_0...
+2023-12-16 15:02:56 INFO Test Passed!
+
+
+2023-12-16 15:02:56 INFO Running task: 30_0...
+2023-12-16 15:02:57 INFO Test Passed!
+
+
+2023-12-16 15:02:57 INFO Running task: 31_0...
+2023-12-16 15:02:58 INFO Test Passed!
+
+
+2023-12-16 15:02:58 INFO Running task: 32_0...
+2023-12-16 15:02:59 INFO Test Passed!
+
+
+2023-12-16 15:02:59 INFO Running task: 33_0...
+2023-12-16 15:02:59 INFO Compilation Failed!
+2023-12-16 15:02:59 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:234: error: unexpected type\n        if (--cnt.getOrDefault(out, 0) == 0)\n                              ^\n  required: variable\n  found:    value\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:02:59 INFO Running task: 34_0...
+2023-12-16 15:03:00 INFO Test Failed!
+2023-12-16 15:03:00 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse true\nTestcase No.3 Failed!\nfalse true\nTestcase No.4 Failed!\nfalse false\nPassed 2 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:03:00 INFO Running task: 35_0...
+2023-12-16 15:03:01 INFO Test Failed!
+2023-12-16 15:03:01 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse false\nfalse true\nTestcase No.4 Failed!\nfalse true\nTestcase No.5 Failed!\nPassed 2 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:03:01 INFO Running task: 36_0...
+2023-12-16 15:03:02 INFO Test Passed!
+
+
+2023-12-16 15:03:02 INFO Running task: 37_0...
+2023-12-16 15:03:03 INFO Compilation Failed!
+2023-12-16 15:03:03 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: cannot find symbol\n            pos.getOrDefault(nums.get(i), new ArrayList<>()).add(i);\n               ^\n  symbol:   method getOrDefault(Integer,ArrayList<Object>)\n  location: variable pos of type List<List<Integer>>\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:03 INFO Running task: 38_0...
+2023-12-16 15:03:04 INFO Test Passed!
+
+
+2023-12-16 15:03:04 INFO Running task: 39_0...
+2023-12-16 15:03:05 INFO Test Passed!
+
+
+2023-12-16 15:03:05 INFO Running task: 40_0...
+2023-12-16 15:03:05 INFO Test Passed!
+
+
+2023-12-16 15:03:05 INFO Running task: 41_0...
+2023-12-16 15:03:06 INFO Compilation Failed!
+2023-12-16 15:03:06 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:220: error: no suitable method found for sort(List<Integer>)\n    Arrays.sort(nums);\n          ^\n    method Arrays.sort(int[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to int[])\n    method Arrays.sort(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to long[])\n    method Arrays.sort(long[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to short[])\n    method Arrays.sort(short[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to char[])\n    method Arrays.sort(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to byte[])\n    method Arrays.sort(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to float[])\n    method Arrays.sort(float[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to double[])\n    method Arrays.sort(double[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[]) is not applicable\n      (argument mismatch; List<Integer> cannot be converted to Object[])\n    method Arrays.sort(Object[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable\n      (cannot infer type-variable(s) T#1\n        (actual and formal argument lists differ in length))\n    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)\n    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:06 INFO Running task: 42_0...
+2023-12-16 15:03:07 INFO Compilation Failed!
+2023-12-16 15:03:07 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: cannot find symbol\n            Integer it = s.lower_bound(y);\n                          ^\n  symbol:   method lower_bound(int)\n  location: variable s of type Set<Integer>\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:07 INFO Running task: 43_0...
+2023-12-16 15:03:08 INFO Test Passed!
+
+
+2023-12-16 15:03:08 INFO Running task: 44_0...
+2023-12-16 15:03:09 INFO Test Passed!
+
+
+2023-12-16 15:03:09 INFO Running task: 45_0...
+2023-12-16 15:03:09 INFO Compilation Failed!
+2023-12-16 15:03:09 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:231: error: illegal start of expression\n        return tail ? new String(q.toArray()) : new String(q.toArray()[::-1]);\n                                                                       ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:231: error: <identifier> expected\n        return tail ? new String(q.toArray()) : new String(q.toArray()[::-1]);\n                                                                         ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:231: error: ')' expected\n        return tail ? new String(q.toArray()) : new String(q.toArray()[::-1]);\n                                                                           ^\n3 errors\nerror: compilation failed\n"
+
+
+2023-12-16 15:03:09 INFO Running task: 46_0...
+2023-12-16 15:03:10 INFO Test Passed!
+
+
+2023-12-16 15:03:10 INFO Running task: 47_0...
+2023-12-16 15:03:11 INFO Test Passed!
+
+
+2023-12-16 15:03:11 INFO Running task: 48_0...
+2023-12-16 15:03:12 INFO Test Passed!
+
+
+2023-12-16 15:03:12 INFO Running task: 49_0...
+2023-12-16 15:03:13 INFO Test Passed!
+
+
+2023-12-16 15:03:13 INFO Running task: 50_0...
+2023-12-16 15:03:14 INFO Test Failed!
+2023-12-16 15:03:14 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n["one","two","three","one","two","three","one","two","three"] ["one","two","three","four","five","six"]\nTestcase No.1 Failed!\n["easy","easy"] ["easy","problem"]\nTestcase No.2 Failed!\n["one","two","three","one","two","three","one","two","three"] ["one","two","three","four","five","six"]\nTestcase No.3 Failed!\n["one","two","three","one","two","three","one","two","three"] ["one","two","three","four","five","six"]\nTestcase No.4 Failed!\n["easy","easy"] ["easy","problem"]\nTestcase No.5 Failed!\nPassed 0 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:03:14 INFO Running task: 51_0...
+2023-12-16 15:03:14 INFO Test Passed!
+
+
+2023-12-16 15:03:14 INFO Running task: 52_0...
+2023-12-16 15:03:15 INFO Runtime Failed!
+2023-12-16 15:03:15 INFO run_output: b'Note: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:267)\n\tat Test.main(test.java:288)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:267)\n\tat Test.main(test.java:288)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:267)\n\tat Test.main(test.java:288)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:267)\n\tat Test.main(test.java:288)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:267)\n\tat Test.main(test.java:288)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\nPassed 0 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:03:15 INFO Running task: 53_0...
+2023-12-16 15:03:16 INFO Test Passed!
+
+
+2023-12-16 15:03:16 INFO Running task: 54_0...
+2023-12-16 15:03:17 INFO Test Passed!
+
+
+2023-12-16 15:03:17 INFO Running task: 55_0...
+2023-12-16 15:03:18 INFO Compilation Failed!
+2023-12-16 15:03:18 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: incompatible types: List<Integer> cannot be converted to int\n            int rank = bsearch(rank_nums, score);\n                              ^\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:18 INFO Running task: 56_0...
+2023-12-16 15:03:19 INFO Test Passed!
+
+
+2023-12-16 15:03:19 INFO Running task: 57_0...
+2023-12-16 15:03:20 INFO Compilation Failed!
+2023-12-16 15:03:20 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: cannot find symbol\n        delete llist;\n        ^\n  symbol:   class delete\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: variable llist is already defined in method testfunc(ListNode,int)\n        delete llist;\n               ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:237: error: cannot find symbol\n    delete nodeToDelete;\n    ^\n  symbol:   class delete\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:237: error: variable nodeToDelete is already defined in method testfunc(ListNode,int)\n    delete nodeToDelete;\n           ^\n4 errors\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:20 INFO Running task: 58_0...
+2023-12-16 15:03:21 INFO Compilation Failed!
+2023-12-16 15:03:21 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:221: error: incompatible types: int cannot be converted to boolean\n        return root.val;\n                   ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:21 INFO Running task: 59_0...
+2023-12-16 15:03:23 INFO Test Passed!
+
+
+2023-12-16 15:03:23 INFO Running task: 60_0...
+2023-12-16 15:03:24 INFO Test Passed!
+
+
+2023-12-16 15:03:24 INFO Running task: 61_0...
+2023-12-16 15:03:24 INFO Compilation Failed!
+2023-12-16 15:03:24 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:228: error: cannot find symbol\n            Long b = s.ceiling(sum);\n                      ^\n  symbol:   method ceiling(long)\n  location: variable s of type Set<Long>\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:24 INFO Running task: 62_0...
+2023-12-16 15:03:25 INFO Test Passed!
+
+
+2023-12-16 15:03:25 INFO Running task: 63_0...
+2023-12-16 15:03:26 INFO Test Passed!
+
+
+2023-12-16 15:03:26 INFO Running task: 64_0...
+2023-12-16 15:03:27 INFO Compilation Failed!
+2023-12-16 15:03:27 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:222: error: method offer in interface Deque<E> cannot be applied to given types;\n        for (int i = 0; i < 10; ++i) q.offer(i);\n                                      ^\n  required: Long\n  found:    int\n  reason: argument mismatch; int cannot be converted to Long\n  where E is a type-variable:\n    E extends Object declared in interface Deque\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:27 INFO Running task: 65_0...
+2023-12-16 15:03:28 INFO Compilation Failed!
+2023-12-16 15:03:28 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:221: error: cannot find symbol\n            for (int j = 1; j < grid.get(k).size() - 1; ++j) {\n                                           ^\n  symbol:   method size()\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:222: error: cannot find symbol\n                if (grid.get(k).get(j - 1) < grid.get(k).get(j) && grid.get(k).get(j) > grid.get(k).get(j + 1) &&\n                               ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:222: error: cannot find symbol\n                if (grid.get(k).get(j - 1) < grid.get(k).get(j) && grid.get(k).get(j) > grid.get(k).get(j + 1) &&\n                                                        ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:222: error: cannot find symbol\n                if (grid.get(k).get(j - 1) < grid.get(k).get(j) && grid.get(k).get(j) > grid.get(k).get(j + 1) &&\n                                                                              ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:222: error: cannot find symbol\n                if (grid.get(k).get(j - 1) < grid.get(k).get(j) && grid.get(k).get(j) > grid.get(k).get(j + 1) &&\n                                                                                                   ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: cannot find symbol\n                    grid.get(k + 1).get(j) < grid.get(k).get(j) && grid.get(k - 1).get(j) < grid.get(k).get(j)) {\n                                   ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: cannot find symbol\n                    grid.get(k + 1).get(j) < grid.get(k).get(j) && grid.get(k - 1).get(j) < grid.get(k).get(j)) {\n                                                        ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: cannot find symbol\n                    grid.get(k + 1).get(j) < grid.get(k).get(j) && grid.get(k - 1).get(j) < grid.get(k).get(j)) {\n                                                                                  ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: cannot find symbol\n                    grid.get(k + 1).get(j) < grid.get(k).get(j) && grid.get(k - 1).get(j) < grid.get(k).get(j)) {\n                                                                                                       ^\n  symbol:   method get(int)\n  location: class String\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:224: error: cannot find symbol\n                    grid.get(k).set(j, 'X');\n                               ^\n  symbol:   method set(int,char)\n  location: class String\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n10 errors\nerror: compilation failed\n"
+
+
+2023-12-16 15:03:28 INFO Running task: 66_0...
+2023-12-16 15:03:29 INFO Test Passed!
+
+
+2023-12-16 15:03:29 INFO Running task: 67_0...
+2023-12-16 15:03:29 INFO Compilation Failed!
+2023-12-16 15:03:29 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:221: error: cannot find symbol\n    IntStream.range(0, price.size())\n    ^\n  symbol:   variable IntStream\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: cannot find symbol\n    IntStream.range(0, price.size() - 1)\n    ^\n  symbol:   variable IntStream\n  location: class Test\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:29 INFO Running task: 68_0...
+2023-12-16 15:03:30 INFO Test Passed!
+
+
+2023-12-16 15:03:30 INFO Running task: 69_0...
+2023-12-16 15:03:32 INFO Test Passed!
+
+
+2023-12-16 15:03:32 INFO Running task: 70_0...
+2023-12-16 15:03:33 INFO Compilation Failed!
+2023-12-16 15:03:33 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:221: error: cannot find symbol\n            return hours.get(h - 1) + " o\' clock";\n                   ^\n  symbol:   variable hours\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: cannot find symbol\n            return "quarter past " + hours.get(h - 1);\n                                     ^\n  symbol:   variable hours\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: cannot find symbol\n            return "half past " + hours.get(h - 1);\n                                  ^\n  symbol:   variable hours\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:227: error: cannot find symbol\n            return "quarter to " + hours.get(h % 12);\n                                   ^\n  symbol:   variable hours\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:229: error: cannot find symbol\n            return minutes.get(m - 1) + " minute past " + hours.get(h - 1);\n                   ^\n  symbol:   variable minutes\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:229: error: cannot find symbol\n            return minutes.get(m - 1) + " minute past " + hours.get(h - 1);\n                                                          ^\n  symbol:   variable hours\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:231: error: cannot find symbol\n            return minutes.get(m - 1) + " minutes past " + hours.get(h - 1);\n                   ^\n  symbol:   variable minutes\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:231: error: cannot find symbol\n            return minutes.get(m - 1) + " minutes past " + hours.get(h - 1);\n                                                           ^\n  symbol:   variable hours\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:233: error: cannot find symbol\n            return minutes.get(60 - m - 1) + " minutes to " + hours.get(h % 12);\n                   ^\n  symbol:   variable minutes\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:233: error: cannot find symbol\n            return minutes.get(60 - m - 1) + " minutes to " + hours.get(h % 12);\n                                                              ^\n  symbol:   variable hours\n  location: class Test\n10 errors\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:33 INFO Running task: 71_0...
+2023-12-16 15:03:34 INFO Compilation Failed!
+2023-12-16 15:03:34 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: cannot find symbol\n            g.computeIfAbsent(x, k -> new ArrayList<>()).add(y);\n             ^\n  symbol:   method computeIfAbsent(int,(k)->new A[...]t<>())\n  location: variable g of type List<List<Integer>>\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:226: error: cannot find symbol\n            g.computeIfAbsent(y, k -> new ArrayList<>()).add(x);\n             ^\n  symbol:   method computeIfAbsent(int,(k)->new A[...]t<>())\n  location: variable g of type List<List<Integer>>\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:34 INFO Running task: 72_0...
+2023-12-16 15:03:35 INFO Test Passed!
+
+
+2023-12-16 15:03:35 INFO Running task: 73_0...
+2023-12-16 15:03:35 INFO Test Passed!
+
+
+2023-12-16 15:03:35 INFO Running task: 74_0...
+2023-12-16 15:03:36 INFO Test Passed!
+
+
+2023-12-16 15:03:36 INFO Running task: 75_0...
+2023-12-16 15:03:37 INFO Compilation Failed!
+2023-12-16 15:03:37 INFO run_output: b"/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:219: error: <identifier> expected\npublic static int testfunc(List<Integer>& prices, int k) {\n                                        ^\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:219: error: ';' expected\npublic static int testfunc(List<Integer>& prices, int k) {\n                                                       ^\n2 errors\nerror: compilation failed\n"
+
+
+2023-12-16 15:03:37 INFO Running task: 76_0...
+2023-12-16 15:03:38 INFO Test Passed!
+
+
+2023-12-16 15:03:38 INFO Running task: 77_0...
+2023-12-16 15:03:39 INFO Test Passed!
+
+
+2023-12-16 15:03:39 INFO Running task: 78_0...
+2023-12-16 15:03:40 INFO Test Passed!
+
+
+2023-12-16 15:03:40 INFO Running task: 79_0...
+2023-12-16 15:03:41 INFO Test Passed!
+
+
+2023-12-16 15:03:41 INFO Running task: 80_0...
+2023-12-16 15:03:42 INFO Test Passed!
+
+
+2023-12-16 15:03:42 INFO Running task: 81_0...
+2023-12-16 15:03:42 INFO Compilation Failed!
+2023-12-16 15:03:42 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:241: error: incompatible types: int cannot be converted to int[]\n                for (int[] dir : a) {\n                                 ^\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:42 INFO Running task: 82_0...
+2023-12-16 15:03:43 INFO Test Failed!
+2023-12-16 15:03:43 INFO run_output: b'0 2\nTestcase No.1 Failed!\n0 3\nTestcase No.2 Failed!\n-1 -1\n0 4\nTestcase No.4 Failed!\n-1 -1\nPassed 2 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:03:43 INFO Running task: 83_0...
+2023-12-16 15:03:44 INFO Test Passed!
+
+
+2023-12-16 15:03:44 INFO Running task: 84_0...
+2023-12-16 15:03:45 INFO Test Passed!
+
+
+2023-12-16 15:03:45 INFO Running task: 85_0...
+2023-12-16 15:03:46 INFO Test Passed!
+
+
+2023-12-16 15:03:46 INFO Running task: 86_0...
+2023-12-16 15:03:46 INFO Compilation Failed!
+2023-12-16 15:03:46 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: cannot find symbol\n            if (cnt[y] != 0 && gcd(x % 10, y) == 1)\n                               ^\n  symbol:   method gcd(int,int)\n  location: class Test\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:46 INFO Running task: 87_0...
+2023-12-16 15:03:47 INFO Compilation Failed!
+2023-12-16 15:03:47 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:225: error: cannot find symbol\n        IntStream.range(0, nq).forEach(i -> id[i] = i);\n        ^\n  symbol:   variable IntStream\n  location: class Test\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:226: error: no suitable method found for sort(int[],Comparator<Object>)\n        Arrays.sort(id, Comparator.comparingInt(i -> queries[i]));\n              ^\n    method Arrays.sort(int[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(int[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(long[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(short[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(char[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(byte[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(float[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(double[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[]) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.sort(Object[],int,int) is not applicable\n      (actual and formal argument lists differ in length)\n    method Arrays.<T#1>sort(T#1[],Comparator<? super T#1>) is not applicable\n      (inference variable T#1 has incompatible bounds\n        equality constraints: int\n        lower bounds: Object)\n    method Arrays.<T#2>sort(T#2[],int,int,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in method <T#1>sort(T#1[],Comparator<? super T#1>)\n    T#2 extends Object declared in method <T#2>sort(T#2[],int,int,Comparator<? super T#2>)\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:226: error: incompatible types: Object cannot be converted to int\n        Arrays.sort(id, Comparator.comparingInt(i -> queries[i]));\n                                                             ^\n3 errors\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:47 INFO Running task: 88_0...
+2023-12-16 15:03:49 INFO Test Passed!
+
+
+2023-12-16 15:03:49 INFO Running task: 89_0...
+2023-12-16 15:03:49 INFO Runtime Failed!
+2023-12-16 15:03:49 INFO run_output: b'java.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 9\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)\n\tat java.base/java.lang.String.substring(String.java:2709)\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:272)\n\tat Test.main(test.java:293)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 13\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)\n\tat java.base/java.lang.String.substring(String.java:2709)\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:272)\n\tat Test.main(test.java:293)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 16\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)\n\tat java.base/java.lang.String.substring(String.java:2709)\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:272)\n\tat Test.main(test.java:293)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 50\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)\n\tat java.base/java.lang.String.substring(String.java:2709)\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:272)\n\tat Test.main(test.java:293)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\njava.lang.StringIndexOutOfBoundsException: begin 2, end 1, length 50\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)\n\tat java.base/java.lang.String.substring(String.java:2709)\n\tat Test.testfunc(test.java:226)\n\tat Test.start(test.java:272)\n\tat Test.main(test.java:293)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)\n\tat jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)\nPassed 0 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:03:49 INFO Running task: 90_0...
+2023-12-16 15:03:50 INFO Test Passed!
+
+
+2023-12-16 15:03:50 INFO Running task: 91_0...
+2023-12-16 15:03:51 INFO Test Failed!
+2023-12-16 15:03:51 INFO run_output: b'3 3\n2 1\nTestcase No.2 Failed!\n2 0\nTestcase No.3 Failed!\n5 2\nTestcase No.4 Failed!\n2 1\nTestcase No.5 Failed!\nPassed 1 / 5 testcases!\nTest Failed!\n'
+
+
+2023-12-16 15:03:51 INFO Running task: 92_0...
+2023-12-16 15:03:52 INFO Compilation Failed!
+2023-12-16 15:03:52 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:240: error: cannot find symbol\n        for (int[] dir : DIRECTIONS) {\n                         ^\n  symbol:   variable DIRECTIONS\n  location: class Test\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:52 INFO Running task: 93_0...
+2023-12-16 15:03:53 INFO Test Passed!
+
+
+2023-12-16 15:03:53 INFO Running task: 94_0...
+2023-12-16 15:03:54 INFO Test Passed!
+
+
+2023-12-16 15:03:54 INFO Running task: 95_0...
+2023-12-16 15:03:55 INFO Compilation Failed!
+2023-12-16 15:03:55 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:222: error: method inorder in class Test cannot be applied to given types;\n    inorder(root1, nums1);\n    ^\n  required: TreeNode,TreeNode\n  found:    TreeNode,List<Integer>\n  reason: argument mismatch; List<Integer> cannot be converted to TreeNode\n/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:223: error: method inorder in class Test cannot be applied to given types;\n    inorder(root2, nums2);\n    ^\n  required: TreeNode,TreeNode\n  found:    TreeNode,List<Integer>\n  reason: argument mismatch; List<Integer> cannot be converted to TreeNode\nNote: /home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:55 INFO Running task: 96_0...
+2023-12-16 15:03:55 INFO Compilation Failed!
+2023-12-16 15:03:55 INFO run_output: b'/home/ubuntu/test_codellm/unit_tests/chatglm3/c++_java/test.java:227: error: cannot find symbol\n            level = sums.indexOf(sum);\n                        ^\n  symbol:   method indexOf(int)\n  location: variable sums of type int[]\n1 error\nerror: compilation failed\n'
+
+
+2023-12-16 15:03:55 INFO Running task: 97_0...
+2023-12-16 15:03:56 INFO Test Passed!
+
+
+2023-12-16 15:03:56 INFO Running task: 98_0...
+2023-12-16 15:03:57 INFO Test Passed!
+
+
+2023-12-16 15:03:57 INFO Running task: 99_0...
+2023-12-16 15:03:58 INFO Test Passed!
+
+
+2023-12-16 15:03:58 INFO Running task: 100_0...
+2023-12-16 15:03:59 INFO Test Passed!
+
+
+2023-12-16 15:03:59 INFO [[1], [1], [1], [1], [2], [1], [2], [1], [3], [1], [2], [1], [1], [2], [1], [2], [1], [1], [1], [1], [1], [2], [2], [1], [1], [2], [1], [1], [1], [1], [1], [1], [2], [4], [4], [1], [2], [1], [1], [1], [2], [2], [1], [1], [2], [1], [1], [1], [1], [4], [1], [3], [1], [1], [2], [1], [2], [2], [1], [1], [2], [1], [1], [2], [2], [1], [2], [1], [1], [2], [2], [1], [1], [1], [2], [1], [1], [1], [1], [1], [2], [4], [1], [1], [1], [2], [2], [1], [3], [1], [4], [2], [1], [1], [2], [2], [1], [1], [1], [1]]

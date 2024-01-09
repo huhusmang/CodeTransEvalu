@@ -1,0 +1,54 @@
+[ERROR] [12-11 22:36:06] logging.py:86 [t:140682349862912]: api request failed with error code: 17, err msg: Open api daily request limit reached
+Task_id: 1_0    done
+Task_id: 2_0    done
+Task_id: 3_0    done
+Task_id: 4_0    done
+Task_id: 5_0    done
+Task_id: 6_0    done
+Task_id: 7_0    done
+Task_id: 8_0    done
+Task_id: 9_0    done
+Task_id: 10_0    done
+Task_id: 11_0    done
+Task_id: 12_0    done
+Task_id: 13_0    done
+Task_id: 14_0    done
+Task_id: 15_0    done
+Task_id: 16_0    done
+Task_id: 17_0    done
+Task_id: 18_0    done
+Task_id: 19_0    done
+Task_id: 20_0    done
+Task_id: 21_0    done
+Task_id: 22_0    done
+Task_id: 23_0    done
+Task_id: 24_0    done
+Task_id: 25_0    done
+Task_id: 26_0    done
+Task_id: 27_0    done
+Traceback (most recent call last):
+  File "/home/ubuntu/test_codellm/gen_prediction.py", line 210, in <module>
+    main(
+  File "/home/ubuntu/test_codellm/gen_prediction.py", line 116, in main
+    raw_prediction = model.chat(prompt, temperature=0.1)
+  File "/home/ubuntu/test_codellm/models/Wenxin.py", line 79, in chat
+    resp = chat_comp.do(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/llm/chat_completion.py", line 265, in do
+    return self._do(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/llm/base.py", line 100, in _do
+    resp = self._client.llm(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/api_requestor.py", line 394, in llm
+    return self._with_retry(retry_config, _helper)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/api_requestor.py", line 267, in _with_retry
+    return func(*args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/api_requestor.py", line 331, in retry_wrapper
+    return func(*args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/api_requestor.py", line 392, in _helper
+    return self._request(req, data_postprocess=data_postprocess)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/api_requestor.py", line 104, in _request
+    return data_postprocess(self._parse_response(body, response))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/api_requestor.py", line 194, in _parse_response
+    self._check_error(body)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/qianfan/resources/api_requestor.py", line 233, in _check_error
+    raise errors.APIError(error_code, err_msg)
+qianfan.errors.APIError: api return error, code: 17, msg: Open api daily request limit reached

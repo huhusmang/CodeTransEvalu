@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/test_codellm/run_all_cpp_json.py", line 183, in <module>
+    results = run_tests(
+  File "/home/ubuntu/test_codellm/run_all_cpp_json.py", line 45, in run_tests
+    answer_json = load_json(answer_json_path)
+  File "/home/ubuntu/test_codellm/run_all_cpp_json.py", line 23, in load_json
+    with open(json_file_path, "r", encoding="utf-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/test_codellm/result/wenxin/java_c++/prediction.json'

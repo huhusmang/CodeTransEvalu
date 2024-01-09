@@ -1,0 +1,689 @@
+2023-12-06 20:45:18 INFO Running task: 1_0...
+2023-12-06 20:45:20 INFO Test Passed!
+
+
+2023-12-06 20:45:20 INFO Running task: 2_0...
+2023-12-06 20:45:22 INFO Test Passed!
+
+
+2023-12-06 20:45:22 INFO Running task: 3_0...
+2023-12-06 20:45:23 INFO Test Passed!
+
+
+2023-12-06 20:45:23 INFO Running task: 4_0...
+2023-12-06 20:45:25 INFO Test Passed!
+
+
+2023-12-06 20:45:25 INFO Running task: 5_0...
+2023-12-06 20:45:27 INFO Test Passed!
+
+
+2023-12-06 20:45:27 INFO Running task: 6_0...
+2023-12-06 20:45:29 INFO Test Passed!
+
+
+2023-12-06 20:45:29 INFO Running task: 7_0...
+2023-12-06 20:45:30 INFO Test Passed!
+
+
+2023-12-06 20:45:30 INFO Running task: 8_0...
+2023-12-06 20:45:32 INFO Test Passed!
+
+
+2023-12-06 20:45:32 INFO Running task: 9_0...
+2023-12-06 20:45:34 INFO Test Passed!
+
+
+2023-12-06 20:45:34 INFO Running task: 10_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘int Test::testfunc(std::string)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:322:27: error: conversion from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to non-scalar type ‘std::vector<char>’ requested
+  322 |     std::vector<char> s = word;
+      |                           ^~~~
+2023-12-06 20:45:35 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:45:35 INFO Compilation Failed!
+2023-12-06 20:45:35 INFO run_output: b''
+
+
+2023-12-06 20:45:35 INFO Running task: 11_0...
+2023-12-06 20:45:37 INFO Test Passed!
+
+
+2023-12-06 20:45:37 INFO Running task: 12_0...
+2023-12-06 20:45:38 INFO Test Passed!
+
+
+2023-12-06 20:45:38 INFO Running task: 13_0...
+2023-12-06 20:45:40 INFO Test Passed!
+
+
+2023-12-06 20:45:40 INFO Running task: 14_0...
+2023-12-06 20:45:42 INFO Test Passed!
+
+
+2023-12-06 20:45:42 INFO Running task: 15_0...
+2023-12-06 20:45:44 INFO Test Passed!
+
+
+2023-12-06 20:45:44 INFO Running task: 16_0...
+2023-12-06 20:45:46 INFO Test Passed!
+
+
+2023-12-06 20:45:46 INFO Running task: 17_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘long long int Test::testfunc(std::vector<int>&)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:29: error: ‘_cast’ was not declared in this scope
+  330 |         ans = std::max(ans, _cast<long long>(preMax - nums[j]) * sufMax[j + 1]);
+      |                             ^~~~~~~~~~~~~~~~
+2023-12-06 20:45:47 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:45:47 INFO Compilation Failed!
+2023-12-06 20:45:47 INFO run_output: b''
+
+
+2023-12-06 20:45:47 INFO Running task: 18_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘long long int Test::testfunc(std::vector<int>&)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:29: error: ‘_cast’ was not declared in this scope
+  330 |         ans = std::max(ans, _cast<long long>(preMax - nums[j]) * sufMax[j + 1]);
+      |                             ^~~~~~~~~~~~~~~~
+2023-12-06 20:45:48 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:45:48 INFO Compilation Failed!
+2023-12-06 20:45:48 INFO run_output: b''
+
+
+2023-12-06 20:45:48 INFO Running task: 19_0...
+2023-12-06 20:45:50 INFO Test Passed!
+
+
+2023-12-06 20:45:50 INFO Running task: 20_0...
+2023-12-06 20:45:51 INFO Test Passed!
+
+
+2023-12-06 20:45:51 INFO Running task: 21_0...
+2023-12-06 20:45:53 INFO Test Passed!
+
+
+2023-12-06 20:45:53 INFO Running task: 22_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘int Test::testfunc(int, int, int, std::vector<std::vector<int> >, std::vector<int>, std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:323:17: error: no matching function for call to ‘min(__gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type&)’
+  323 |     int mx = min(stock[0]) + budget;
+      |              ~~~^~~~~~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:230:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)’
+  230 |     min(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:230:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:323:17: note:   candidate expects 2 arguments, 1 provided
+  323 |     int mx = min(stock[0]) + budget;
+      |              ~~~^~~~~~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:278:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)’
+  278 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:278:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:323:17: note:   candidate expects 3 arguments, 1 provided
+  323 |     int mx = min(stock[0]) + budget;
+      |              ~~~^~~~~~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3449:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)’
+ 3449 |     min(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3449:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:323:17: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+  323 |     int mx = min(stock[0]) + budget;
+      |              ~~~^~~~~~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3455:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)’
+ 3455 |     min(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3455:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:323:17: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+  323 |     int mx = min(stock[0]) + budget;
+      |              ~~~^~~~~~~~~~
+2023-12-06 20:45:54 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:45:54 INFO Compilation Failed!
+2023-12-06 20:45:54 INFO run_output: b''
+
+
+2023-12-06 20:45:54 INFO Running task: 23_0...
+2023-12-06 20:45:56 INFO Test Passed!
+
+
+2023-12-06 20:45:56 INFO Running task: 24_0...
+2023-12-06 20:45:58 INFO Test Passed!
+
+
+2023-12-06 20:45:58 INFO Running task: 25_0...
+2023-12-06 20:46:00 INFO Test Failed!
+2023-12-06 20:46:00 INFO run_output: b'2 2\n0 10\nTestcase No.2 Failed!\n3 5\nTestcase No.3 Failed!\n0 1249975000\nTestcase No.4 Failed!\n0 33230\nTestcase No.5 Failed!\nPassed 1/5 tests\nTest Failed!\n'
+
+
+2023-12-06 20:46:00 INFO Running task: 26_0...
+2023-12-06 20:46:02 INFO Test Passed!
+
+
+2023-12-06 20:46:02 INFO Running task: 27_0...
+2023-12-06 20:46:03 INFO Test Passed!
+
+
+2023-12-06 20:46:03 INFO Running task: 28_0...
+2023-12-06 20:46:05 INFO Test Passed!
+
+
+2023-12-06 20:46:05 INFO Running task: 29_0...
+2023-12-06 20:46:07 INFO Test Passed!
+
+
+2023-12-06 20:46:07 INFO Running task: 30_0...
+2023-12-06 20:46:09 INFO Test Passed!
+
+
+2023-12-06 20:46:09 INFO Running task: 31_0...
+2023-12-06 20:46:10 INFO Test Passed!
+
+
+2023-12-06 20:46:10 INFO Running task: 32_0...
+2023-12-06 20:46:12 INFO Test Passed!
+
+
+2023-12-06 20:46:12 INFO Running task: 33_0...
+2023-12-06 20:46:14 INFO Test Passed!
+
+
+2023-12-06 20:46:14 INFO Running task: 34_0...
+2023-12-06 20:46:15 INFO Test Failed!
+2023-12-06 20:46:15 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse true\nTestcase No.3 Failed!\nfalse true\nTestcase No.4 Failed!\nfalse false\nPassed 2/5 tests\nTest Failed!\n'
+
+
+2023-12-06 20:46:15 INFO Running task: 35_0...
+2023-12-06 20:46:17 INFO Test Failed!
+2023-12-06 20:46:17 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse false\nfalse true\nTestcase No.4 Failed!\nfalse true\nTestcase No.5 Failed!\nPassed 2/5 tests\nTest Failed!\n'
+
+
+2023-12-06 20:46:17 INFO Running task: 36_0...
+2023-12-06 20:46:19 INFO Test Passed!
+
+
+2023-12-06 20:46:19 INFO Running task: 37_0...
+2023-12-06 20:46:21 INFO Test Passed!
+
+
+2023-12-06 20:46:21 INFO Running task: 38_0...
+2023-12-06 20:46:22 INFO Test Passed!
+
+
+2023-12-06 20:46:22 INFO Running task: 39_0...
+2023-12-06 20:46:24 INFO Test Passed!
+
+
+2023-12-06 20:46:24 INFO Running task: 40_0...
+2023-12-06 20:46:26 INFO Test Passed!
+
+
+2023-12-06 20:46:26 INFO Running task: 41_0...
+2023-12-06 20:46:27 INFO Test Passed!
+
+
+2023-12-06 20:46:27 INFO Running task: 42_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>&, int)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:46: error: no match for ‘operator-’ (operand types are ‘std::multiset<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’} and ‘std::multiset<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’})
+  330 |         ans = min(ans, min({s.upper_bound(y) - s.find(y), y - *s.lower_bound(y)}));
+      |                             ~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+      |                                          |           |
+      |                                          |           _Rb_tree_const_iterator<[...]>
+      |                                          _Rb_tree_const_iterator<[...]>
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:560:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)’
+  560 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:560:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:56: note:   ‘std::multiset<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+  330 |         ans = min(ans, min({s.upper_bound(y) - s.find(y), y - *s.lower_bound(y)}));
+      |                                                        ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:1639:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1639 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1639:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:56: note:   ‘std::multiset<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’} is not derived from ‘const std::move_iterator<_IteratorL>’
+  330 |         ans = min(ans, min({s.upper_bound(y) - s.find(y), y - *s.lower_bound(y)}));
+      |                                                        ^
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:27: error: no matching function for call to ‘min(<brace-enclosed initializer list>)’
+  330 |         ans = min(ans, min({s.upper_bound(y) - s.find(y), y - *s.lower_bound(y)}));
+      |                        ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:230:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)’
+  230 |     min(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:230:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:27: note:   candidate expects 2 arguments, 1 provided
+  330 |         ans = min(ans, min({s.upper_bound(y) - s.find(y), y - *s.lower_bound(y)}));
+      |                        ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:278:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)’
+  278 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:278:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:330:27: note:   candidate expects 3 arguments, 1 provided
+  330 |         ans = min(ans, min({s.upper_bound(y) - s.find(y), y - *s.lower_bound(y)}));
+      |                        ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3449:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)’
+ 3449 |     min(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3449:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/bits/stl_algo.h:3455:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)’
+ 3455 |     min(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3455:5: note:   template argument deduction/substitution failed:
+2023-12-06 20:46:28 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:46:28 INFO Compilation Failed!
+2023-12-06 20:46:28 INFO run_output: b''
+
+
+2023-12-06 20:46:28 INFO Running task: 43_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:332:14: error: expected unqualified-id before ‘int’
+  332 |     ListNode(int x) : val(x), next(nullptr) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:332:14: error: expected ‘)’ before ‘int’
+  332 |     ListNode(int x) : val(x), next(nullptr) {}
+      |             ~^~~
+      |              )
+2023-12-06 20:46:30 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:46:30 INFO Compilation Failed!
+2023-12-06 20:46:30 INFO run_output: b''
+
+
+2023-12-06 20:46:30 INFO Running task: 44_0...
+2023-12-06 20:46:31 INFO Test Passed!
+
+
+2023-12-06 20:46:31 INFO Running task: 45_0...
+2023-12-06 20:46:33 INFO Test Passed!
+
+
+2023-12-06 20:46:33 INFO Running task: 46_0...
+2023-12-06 20:46:35 INFO Test Passed!
+
+
+2023-12-06 20:46:35 INFO Running task: 47_0...
+2023-12-06 20:46:36 INFO Test Passed!
+
+
+2023-12-06 20:46:36 INFO Running task: 48_0...
+2023-12-06 20:46:38 INFO Test Passed!
+
+
+2023-12-06 20:46:38 INFO Running task: 49_0...
+2023-12-06 20:46:40 INFO Test Passed!
+
+
+2023-12-06 20:46:40 INFO Running task: 50_0...
+2023-12-06 20:46:42 INFO Test Passed!
+
+
+2023-12-06 20:46:42 INFO Running task: 51_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘void Test::Start()’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:364:45: error: no match for ‘operator=’ (operand types are ‘std::vector<long int>’ and ‘std::vector<long long int>’)
+  364 |                 return_data = testfunc(data1);
+      |                                             ^
+In file included from /usr/include/c++/11/vector:72,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:2:
+/usr/include/c++/11/bits/vector.tcc:198:5: note: candidate: ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = long int; _Alloc = std::allocator<long int>]’
+  198 |     vector<_Tp, _Alloc>::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/vector.tcc:199:42: note:   no known conversion for argument 1 from ‘std::vector<long long int>’ to ‘const std::vector<long int>&’
+  199 |     operator=(const vector<_Tp, _Alloc>& __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/11/vector:67,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:2:
+/usr/include/c++/11/bits/stl_vector.h:709:7: note: candidate: ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = long int; _Alloc = std::allocator<long int>]’
+  709 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:709:26: note:   no known conversion for argument 1 from ‘std::vector<long long int>’ to ‘std::vector<long int>&&’
+  709 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/11/bits/stl_vector.h:730:7: note: candidate: ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = long int; _Alloc = std::allocator<long int>]’
+  730 |       operator=(initializer_list<value_type> __l)
+      |       ^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:730:46: note:   no known conversion for argument 1 from ‘std::vector<long long int>’ to ‘std::initializer_list<long int>’
+  730 |       operator=(initializer_list<value_type> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+2023-12-06 20:46:43 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:46:43 INFO Compilation Failed!
+2023-12-06 20:46:43 INFO run_output: b''
+
+
+2023-12-06 20:46:43 INFO Running task: 52_0...
+2023-12-06 20:46:44 INFO Test Passed!
+
+
+2023-12-06 20:46:44 INFO Running task: 53_0...
+2023-12-06 20:46:46 INFO Test Passed!
+
+
+2023-12-06 20:46:46 INFO Running task: 54_0...
+2023-12-06 20:46:48 INFO Test Passed!
+
+
+2023-12-06 20:46:48 INFO Running task: 55_0...
+2023-12-06 20:46:53 INFO Test Passed!
+
+
+2023-12-06 20:46:53 INFO Running task: 56_0...
+2023-12-06 20:46:57 INFO Test Passed!
+
+
+2023-12-06 20:46:57 INFO Running task: 57_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:340:14: error: expected unqualified-id before ‘int’
+  340 |     ListNode(int x) : val(x), next(nullptr) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:340:14: error: expected ‘)’ before ‘int’
+  340 |     ListNode(int x) : val(x), next(nullptr) {}
+      |             ~^~~
+      |              )
+2023-12-06 20:46:58 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:46:58 INFO Compilation Failed!
+2023-12-06 20:46:58 INFO run_output: b''
+
+
+2023-12-06 20:46:58 INFO Running task: 58_0...
+2023-12-06 20:47:00 INFO Test Passed!
+
+
+2023-12-06 20:47:00 INFO Running task: 59_0...
+2023-12-06 20:47:03 INFO Test Passed!
+
+
+2023-12-06 20:47:03 INFO Running task: 60_0...
+2023-12-06 20:47:05 INFO Test Failed!
+2023-12-06 20:47:05 INFO run_output: b'[206,205,204] [204,205,206]\nTestcase No.1 Failed!\n[12,8,10,3,7] [3,7,8,10,12]\nTestcase No.2 Failed!\n[3714,3677,3684,3674,3695,3685,3720,3670] [3670,3674,3677,3684,3685,3695,3714,3720]\nTestcase No.3 Failed!\n[8609,8587] [8587,8609]\nTestcase No.4 Failed!\n[2479,2518,2517,2489,2458,2442,2444,2515,2457,2473,2466,2438,2447,2451,2510,2483,2488,2437] [2437,2438,2442,2444,2447,2451,2457,2458,2466,2473,2479,2483,2488,2489,2510,2515,2517,2518]\nTestcase No.5 Failed!\nPassed 0/5 tests\nTest Failed!\n'
+
+
+2023-12-06 20:47:05 INFO Running task: 61_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘long int Test::testfunc(std::vector<long long int>, long long int)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:331:30: error: no matching function for call to ‘max(long int&, long long int&)’
+  331 |             maxSum = std::max(maxSum, possibleMax);
+      |                      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)’
+  254 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:331:30: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long int’ and ‘long long int’)
+  331 |             maxSum = std::max(maxSum, possibleMax);
+      |                      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)’
+  300 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:331:30: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long int’ and ‘long long int’)
+  331 |             maxSum = std::max(maxSum, possibleMax);
+      |                      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)’
+ 3461 |     max(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:331:30: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘long int’
+  331 |             maxSum = std::max(maxSum, possibleMax);
+      |                      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/string:52,
+                 from /home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)’
+ 3467 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:331:30: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘long int’
+  331 |             maxSum = std::max(maxSum, possibleMax);
+      |                      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘void Test::Start()’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:376:40: error: cannot convert ‘vector<long int>’ to ‘vector<long long int>’
+  376 |                 return_data = testfunc(data1, data2);
+      |                                        ^~~~~
+      |                                        |
+      |                                        vector<long int>
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:321:38: note:   initializing argument 1 of ‘long int Test::testfunc(std::vector<long long int>, long long int)’
+  321 | long testfunc(std::vector<long long> a, long long m) {
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^
+2023-12-06 20:47:06 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:47:06 INFO Compilation Failed!
+2023-12-06 20:47:06 INFO run_output: b''
+
+
+2023-12-06 20:47:06 INFO Running task: 62_0...
+2023-12-06 20:47:08 INFO Test Passed!
+
+
+2023-12-06 20:47:08 INFO Running task: 63_0...
+2023-12-06 20:47:09 INFO Test Passed!
+
+
+2023-12-06 20:47:09 INFO Running task: 64_0...
+2023-12-06 20:47:11 INFO Test Passed!
+
+
+2023-12-06 20:47:11 INFO Running task: 65_0...
+2023-12-06 20:47:13 INFO Test Passed!
+
+
+2023-12-06 20:47:13 INFO Running task: 66_0...
+2023-12-06 20:47:14 INFO Test Passed!
+
+
+2023-12-06 20:47:14 INFO Running task: 67_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<long int>)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:332:12: error: ‘_cast’ was not declared in this scope
+  332 |     return _cast<int>(min);
+      |            ^~~~~~~~~~
+2023-12-06 20:47:16 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:47:16 INFO Compilation Failed!
+2023-12-06 20:47:16 INFO run_output: b''
+
+
+2023-12-06 20:47:16 INFO Running task: 68_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘std::string Test::testfunc(int)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:329:37: error: invalid operands of types ‘const char [3]’ and ‘const char [5]’ to binary ‘operator+’
+  329 |     return (leapYear ? "12" : "13") + ".09." + std::to_string(year);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~
+      |                      |                |
+      |                      const char [3]   const char [5]
+2023-12-06 20:47:17 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:47:17 INFO Compilation Failed!
+2023-12-06 20:47:17 INFO run_output: b''
+
+
+2023-12-06 20:47:17 INFO Running task: 69_0...
+2023-12-06 20:47:21 INFO Test Passed!
+
+
+2023-12-06 20:47:21 INFO Running task: 70_0...
+2023-12-06 20:47:22 INFO Test Passed!
+
+
+2023-12-06 20:47:22 INFO Running task: 71_0...
+2023-12-06 20:47:24 INFO Test Passed!
+
+
+2023-12-06 20:47:24 INFO Running task: 72_0...
+2023-12-06 20:47:26 INFO Test Passed!
+
+
+2023-12-06 20:47:26 INFO Running task: 73_0...
+2023-12-06 20:47:28 INFO Test Passed!
+
+
+2023-12-06 20:47:28 INFO Running task: 74_0...
+2023-12-06 20:47:29 INFO Test Failed!
+2023-12-06 20:47:29 INFO run_output: b'[3,4] [3,4,6,12]\nTestcase No.1 Failed!\n[1,2] [1,2,4]\nTestcase No.2 Failed!\n[7] [7,14]\nTestcase No.3 Failed!\n[1232,2464,3696,4928,7392,8624,9856,13552,14784,17248,25872,27104,29568,34496,40656,51744,54208,60368,68992,81312,94864,103488,108416,120736,162624,181104,189728,206976,241472,284592,325248,362208,379456,482944,569184,664048,724416,758912,1138368,1328096,1448832,1992144,2276736,2656192,3984288,5312384,7968576] [1232,2464,3696,4928,7392,8624,9856,13552,14784,17248,25872,27104,29568,34496,40656,51744,54208,60368,68992,81312,94864,103488,108416,120736,162624,181104,189728,206976,241472,284592,325248,362208,379456,482944,569184,664048,724416,758912,1138368,1328096,1448832,1992144,2276736,2656192,3984288,5312384,7968576,15937152]\nTestcase No.4 Failed!\n[10000,20000,40000,50000,80000,100000,160000,200000,250000,320000,400000,500000,800000,1000000,1250000,1600000,2000000,2500000,4000000,5000000,6250000,8000000,10000000,12500000,20000000,25000000,31250000,40000000,50000000,62500000,100000000,125000000,200000000,250000000,500000000] [10000,20000,40000,50000,80000,100000,160000,200000,250000,320000,400000,500000,800000,1000000,1250000,1600000,2000000,2500000,4000000,5000000,6250000,8000000,10000000,12500000,20000000,25000000,31250000,40000000,50000000,62500000,100000000,125000000,200000000,250000000,500000000,1000000000]\nTestcase No.5 Failed!\nPassed 0/5 tests\nTest Failed!\n'
+
+
+2023-12-06 20:47:29 INFO Running task: 75_0...
+2023-12-06 20:47:31 INFO Test Passed!
+
+
+2023-12-06 20:47:31 INFO Running task: 76_0...
+2023-12-06 20:47:33 INFO Test Passed!
+
+
+2023-12-06 20:47:33 INFO Running task: 77_0...
+2023-12-06 20:47:35 INFO Test Passed!
+
+
+2023-12-06 20:47:35 INFO Running task: 78_0...
+2023-12-06 20:47:37 INFO Test Passed!
+
+
+2023-12-06 20:47:37 INFO Running task: 79_0...
+2023-12-06 20:47:39 INFO Test Passed!
+
+
+2023-12-06 20:47:39 INFO Running task: 80_0...
+2023-12-06 20:47:40 INFO Test Passed!
+
+
+2023-12-06 20:47:40 INFO Running task: 81_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘std::vector<long long int> Test::testfunc(int, int, std::vector<std::vector<int> >)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:323:21: error: ‘_cast’ was not declared in this scope
+  323 |     long long sum = _cast<long long>(m - 1) * (n - 1);
+      |                     ^~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:327:25: error: expected primary-expression before ‘long’
+  327 |         st.insert(_cast<long long>(coordinates[i][0]) * n + coordinates[i][1]);
+      |                         ^~~~
+2023-12-06 20:47:41 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:47:41 INFO Compilation Failed!
+2023-12-06 20:47:41 INFO run_output: b''
+
+
+2023-12-06 20:47:41 INFO Running task: 82_0...
+2023-12-06 20:47:43 INFO Test Passed!
+
+
+2023-12-06 20:47:43 INFO Running task: 83_0...
+2023-12-06 20:47:45 INFO Test Passed!
+
+
+2023-12-06 20:47:45 INFO Running task: 84_0...
+2023-12-06 20:47:46 INFO Test Passed!
+
+
+2023-12-06 20:47:46 INFO Running task: 85_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<std::__cxx11::basic_string<char> >)’:
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:328:55: error: ‘_cast’ was not declared in this scope
+  328 |         res = std::max(res, isDigits ? std::stoi(s) : _cast<int>(s.length()));
+      |                                                       ^~~~~~~~~~
+2023-12-06 20:47:47 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:47:47 INFO Compilation Failed!
+2023-12-06 20:47:47 INFO run_output: b''
+
+
+2023-12-06 20:47:47 INFO Running task: 86_0...
+2023-12-06 20:47:49 INFO Test Passed!
+
+
+2023-12-06 20:47:49 INFO Running task: 87_0...
+2023-12-06 20:47:52 INFO Command '['/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' died with <Signals.SIGSEGV: 11>.
+2023-12-06 20:47:52 INFO Compilation Failed!
+2023-12-06 20:47:52 INFO run_output: b'[1,1] [1,2]\nTestcase No.1 Failed!\n[1,1] [0,1]\nTestcase No.2 Failed!\n'
+
+
+2023-12-06 20:47:52 INFO Running task: 88_0...
+2023-12-06 20:47:54 INFO Test Passed!
+
+
+2023-12-06 20:47:54 INFO Running task: 89_0...
+2023-12-06 20:47:56 INFO Test Passed!
+
+
+2023-12-06 20:47:56 INFO Running task: 90_0...
+2023-12-06 20:47:58 INFO Test Passed!
+
+
+2023-12-06 20:47:58 INFO Running task: 91_0...
+2023-12-06 20:48:00 INFO Test Passed!
+
+
+2023-12-06 20:48:00 INFO Running task: 92_0...
+2023-12-06 20:48:02 INFO Test Passed!
+
+
+2023-12-06 20:48:02 INFO Running task: 93_0...
+2023-12-06 20:48:03 INFO Test Passed!
+
+
+2023-12-06 20:48:03 INFO Running task: 94_0...
+2023-12-06 20:48:05 INFO Test Passed!
+
+
+2023-12-06 20:48:05 INFO Running task: 95_0...
+2023-12-06 20:48:07 INFO Test Passed!
+
+
+2023-12-06 20:48:07 INFO Running task: 96_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:327:14: error: expected unqualified-id before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:327:14: error: expected ‘)’ before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-06 20:48:08 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:48:08 INFO Compilation Failed!
+2023-12-06 20:48:08 INFO run_output: b''
+
+
+2023-12-06 20:48:08 INFO Running task: 97_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:325:14: error: expected unqualified-id before ‘int’
+  325 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:325:14: error: expected ‘)’ before ‘int’
+  325 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-06 20:48:09 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:48:09 INFO Compilation Failed!
+2023-12-06 20:48:09 INFO run_output: b''
+
+
+2023-12-06 20:48:09 INFO Running task: 98_0...
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:327:14: error: expected unqualified-id before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp:327:14: error: expected ‘)’ before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-06 20:48:10 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/spark/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-06 20:48:10 INFO Compilation Failed!
+2023-12-06 20:48:10 INFO run_output: b''
+
+
+2023-12-06 20:48:10 INFO Running task: 99_0...
+2023-12-06 20:48:12 INFO Test Passed!
+
+
+2023-12-06 20:48:12 INFO Running task: 100_0...
+2023-12-06 20:48:14 INFO Test Passed!
+
+
+2023-12-06 20:48:14 INFO [[1], [1], [1], [1], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [1], [3], [3], [1], [1], [1], [3], [1], [1], [2], [1], [1], [1], [1], [1], [1], [1], [1], [2], [2], [1], [1], [1], [1], [1], [1], [3], [3], [1], [1], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [3], [1], [1], [2], [3], [1], [1], [1], [1], [1], [3], [3], [1], [1], [1], [1], [1], [2], [1], [1], [1], [1], [1], [1], [3], [1], [1], [1], [3], [1], [3], [1], [1], [1], [1], [1], [1], [1], [1], [3], [3], [3], [1], [1]]

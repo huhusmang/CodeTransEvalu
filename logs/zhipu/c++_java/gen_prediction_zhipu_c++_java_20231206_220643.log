@@ -1,0 +1,200 @@
+{'findKOr': 3}
+Task_id: 1_0    done
+{'minSum': 0}
+Task_id: 2_0    done
+{'lengthOfLongestSubsequence': 3}
+Task_id: 3_0    done
+{'minChanges': 0}
+Task_id: 4_0    done
+{'main': 4, 'minGroupsForValidAssignment': 9}
+Task_id: 5_0    done
+{'main': 4, 'minimumSum': 9}
+Task_id: 6_0    done
+{'main': 4, 'constructProductMatrix': 8}
+Task_id: 7_0    done
+{'main': 1, 'maximumOddBinaryNumber': 6, 'count': 11, 'string': 21}
+Task_id: 8_0    done
+{'main': 3, 'shortestBeautifulSubstring': 9, 'count': 30}
+Task_id: 9_0    done
+{'addMinimum': 0}
+Task_id: 10_0    done
+{'main': 4, 'maxIncreasingGroups': 13}
+Task_id: 11_0    done
+{'main': 4, 'lastVisitedIntegers': 8}
+Task_id: 12_0    done
+{'minOperations': 0}
+Task_id: 13_0    done
+{'minProcessingTime': 3}
+Task_id: 14_0    done
+{'differenceOfSums': 0}
+Task_id: 15_0    done
+{'minSizeSubarray': 2}
+Task_id: 16_0    done
+{'maximumTripletValue': 0}
+Task_id: 17_0    done
+{'maximumTripletValue': 0}
+Task_id: 18_0    done
+{'maxSubarrays': 2}
+Task_id: 19_0    done
+{'minOperations': 3}
+Task_id: 20_0    done
+{'minOperations': 2}
+Task_id: 21_0    done
+{'maxNumberOfAlloys': 2}
+Task_id: 22_0    done
+{'countWays': 4}
+Task_id: 23_0    done
+{'sumIndicesWithKSetBits': 2}
+Task_id: 24_0    done
+{'countPairs': 4}
+Task_id: 25_0    done
+{'minimumRightShifts': 2}
+Task_id: 26_0    done
+{'minLengthAfterRemovals': 3}
+Task_id: 27_0    done
+{'numberOfPoints': 3}
+Task_id: 28_0    done
+{'isReachableAtTime': 3}
+Task_id: 29_0    done
+{'main': 5, 'countInterestingSubarrays': 9}
+Task_id: 30_0    done
+{'minimumOperations': 0, 'f': 6}
+Task_id: 31_0    done
+{'countSymmetricIntegers': 0}
+Task_id: 32_0    done
+{'maxSum': 0}
+Task_id: 33_0    done
+{'checkStrings': 4}
+Task_id: 34_0    done
+{'canBeEqual': 4}
+Task_id: 35_0    done
+{'furthestDistanceFromOrigin': 0}
+Task_id: 36_0    done
+{'longestEqualSubarray': 3}
+Task_id: 37_0    done
+{'isAcronym': 3}
+Task_id: 38_0    done
+{'minimumSum': 0}
+Task_id: 39_0    done
+{'main': 5, 'minimumOperations': 10, 'upperBound': 23}
+Task_id: 40_0    done
+{'main': 4, 'countPairs': 14}
+Task_id: 41_0    done
+{'main': 6, 'minAbsoluteDifference': 10}
+Task_id: 42_0    done
+{'doubleIt': 10}
+Task_id: 43_0    done
+{'maxSum': 4}
+Task_id: 44_0    done
+{'main': 4, 'finalString': 10}
+Task_id: 45_0    done
+{'canSplitArray': 2}
+Task_id: 46_0    done
+{'longestAlternatingSubarray': 0}
+Task_id: 47_0    done
+{'main': 6, 'minimumSeconds': 10}
+Task_id: 48_0    done
+{'numberOfEmployeesWhoMetTarget': 0}
+Task_id: 49_0    done
+{'main': 4, 'splitWordsBySeparator': 8}
+Task_id: 50_0    done
+{'main': 4, 'miniMaxSum': 8}
+Task_id: 51_0    done
+{'main': 6, 'pickingNumbers': 20}
+Task_id: 52_0    done
+{'summingSeries': 0}
+Task_id: 53_0    done
+{'main': 4, 'matchingStrings': 8}
+Task_id: 54_0    done
+{'main': 7, 'bsearch': 11, 'climbingLeaderboard': 28}
+Task_id: 55_0    done
+{'arrayManipulation': 5}
+Task_id: 56_0    done
+{'deleteNode': 10}
+Task_id: 57_0    done
+{'evaluateTree': 0}
+Task_id: 58_0    done
+{'main': 5, 'andXorOr': 14}
+Task_id: 59_0    done
+{'main': 6, 'missingNumbers': 10}
+Task_id: 60_0    done
+{'main': 5, 'maximumSum': 9}
+Task_id: 61_0    done
+{'main': 4, 'formingMagicSquare': 8}
+Task_id: 62_0    done
+{'main': 2, 'isFibo': 7}
+Task_id: 63_0    done
+{'main': 6, 'solve': 13, 'uToString': 47}
+Task_id: 64_0    done
+{'processGrid': 4}
+Task_id: 65_0    done
+{'main': 1, 'solve': 8}
+Task_id: 66_0    done
+{'main': 7, 'minimumLoss': 16}
+Task_id: 67_0    done
+{'dayOfProgrammer': 1}
+Task_id: 68_0    done
+{'acmTeam': 4}
+Task_id: 69_0    done
+{'main': 5, 'timeInWords': 11}
+Task_id: 70_0    done
+{'collectTheCoins': 2}
+Task_id: 71_0    done
+{'matrixRotation': 5}
+Task_id: 72_0    done
+{'divisorSubstrings': 0}
+Task_id: 73_0    done
+{'main': 4, 'solve': 16}
+Task_id: 74_0    done
+{'main': 5, 'maximumToys': 11}
+Task_id: 75_0    done
+{'main': 3, 'sumOfSquares': 8}
+Task_id: 76_0    done
+{'main': 5, 'checkArray': 11}
+Task_id: 77_0    done
+{'maxNonDecreasingLength': 2}
+Task_id: 78_0    done
+{'maximumJumps': 3}
+Task_id: 79_0    done
+{'theMaximumAchievableX': 0}
+Task_id: 80_0    done
+{'main': 3, 'countBlackBlocks': 11}
+Task_id: 81_0    done
+{'main': 4, 'minimumBeautifulSubstrings': 9}
+Task_id: 82_0    done
+{'gcdAndLcm': 0, 'gcd': 11, 'lcm': 25}
+Task_id: 83_0    done
+{'findFirstPairExceedingSum': 3}
+Task_id: 84_0    done
+{'maximumValue': 2}
+Task_id: 85_0    done
+{'countBeautifulPairs': 3}
+Task_id: 86_0    done
+{'countServers': 3}
+Task_id: 87_0    done
+{'main': 3, 'isPossible': 14}
+Task_id: 88_0    done
+{'main': 5, 'minExtraChar': 9}
+Task_id: 89_0    done
+{'maximumPoints': 3, 'dfs': 16, 'main': 37}
+Task_id: 90_0    done
+{'countCompleteComponents': 2, 'dfs': 22}
+Task_id: 91_0    done
+{'reach': 3, 'isPossibleToCutPath': 24}
+Task_id: 92_0    done
+{'validPath': 3, 'dfs': 23, 'main': 38}
+Task_id: 93_0    done
+{'main': 3, 'dfs': 7, 'isSubPath': 20}
+Task_id: 94_0    done
+{'inorder': 13, 'getAllElements': 22}
+Task_id: 95_0    done
+{'maxLevelSum': 10, 'dfs': 16}
+Task_id: 96_0    done
+{'dfs': 15, 'sumRootToLeaf': 26}
+Task_id: 97_0    done
+{'isCousins': 13, 'dfs': 19}
+Task_id: 98_0    done
+{'longestSquareStreak': 3}
+Task_id: 99_0    done
+{'appendCharacters': 0}
+Task_id: 100_0    done

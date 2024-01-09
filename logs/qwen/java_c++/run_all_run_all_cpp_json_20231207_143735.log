@@ -1,0 +1,1093 @@
+2023-12-07 14:37:36 INFO Running task: 1_0...
+2023-12-07 14:37:37 INFO Test Passed!
+
+
+2023-12-07 14:37:37 INFO Running task: 2_0...
+2023-12-07 14:37:39 INFO Test Passed!
+
+
+2023-12-07 14:37:39 INFO Running task: 3_0...
+2023-12-07 14:37:40 INFO Test Passed!
+
+
+2023-12-07 14:37:41 INFO Running task: 4_0...
+2023-12-07 14:37:42 INFO Test Passed!
+
+
+2023-12-07 14:37:42 INFO Running task: 5_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:327:22: error: ‘class std::unordered_map<int, int>’ has no member named ‘values’
+  327 |     for (int c : cnt.values()) {
+      |                      ^~~~~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:332:26: error: ‘class std::unordered_map<int, int>’ has no member named ‘values’
+  332 |         for (int c : cnt.values()) {
+      |                          ^~~~~~
+2023-12-07 14:37:43 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:37:43 INFO Compilation Failed!
+2023-12-07 14:37:43 INFO run_output: b''
+
+
+2023-12-07 14:37:43 INFO Running task: 6_0...
+2023-12-07 14:37:45 INFO Test Passed!
+
+
+2023-12-07 14:37:45 INFO Running task: 7_0...
+2023-12-07 14:37:47 INFO Test Passed!
+
+
+2023-12-07 14:37:47 INFO Running task: 8_0...
+2023-12-07 14:37:48 INFO Test Passed!
+
+
+2023-12-07 14:37:48 INFO Running task: 9_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘std::string Test::testfunc(std::string, int)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:36: error: no match for ‘operator<’ (operand types are ‘std::__cxx11::basic_string<char>’ and ‘int’)
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~
+      |                  |                   |
+      |                  |                   int
+      |                  std::__cxx11::basic_string<char>
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:537:5: note: candidate: ‘template<class _IteratorL, class _IteratorR>  requires  three_way_comparable_with<_IteratorR, _IteratorL, std::partial_ordering> constexpr std::compare_three_way_result_t<_IteratorL, _IteratorR> std::operator<=>(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)’ (reversed)
+  537 |     operator<=>(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:537:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::reverse_iterator<_IteratorL>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:1544:5: note: candidate: ‘template<class _IteratorL, class _IteratorR>  requires  three_way_comparable_with<_IteratorR, _IteratorL, std::partial_ordering> constexpr std::compare_three_way_result_t<_IteratorL, _IteratorR> std::operator<=>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’ (reversed)
+ 1544 |     operator<=>(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1544:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/string_view:556:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)’ (reversed)
+  556 |     operator<=>(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:556:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:6276:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’ (reversed)
+ 6276 |     operator<=>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6276:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/functional:54,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:6:
+/usr/include/c++/11/tuple:1561:5: note: candidate: ‘template<class ... _Tps, class ... _Ups> constexpr std::common_comparison_category_t<decltype (std::__detail::__synth3way(declval<_Tps&>(), declval<_Ups&>()))...> std::operator<=>(const std::tuple<_Tps ...>&, const std::tuple<_Types ...>&)’ (reversed)
+ 1561 |     operator<=>(const tuple<_Tps...>& __t, const tuple<_Ups...>& __u)
+      |     ^~~~~~~~
+/usr/include/c++/11/tuple:1561:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::tuple<_Tps ...>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/ranges:44,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:16:
+/usr/include/c++/11/optional:1096:5: note: candidate: ‘template<class _Tp, class _Up>  requires  three_way_comparable_with<_Up, _Tp, std::partial_ordering> constexpr std::compare_three_way_result_t<_IteratorL, _IteratorR> std::operator<=>(const std::optional<_Tp>&, const std::optional<_Up>&)’ (reversed)
+ 1096 |     operator<=>(const optional<_Tp>& __x, const optional<_Up>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1096:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::optional<_Tp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/ranges:44,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:16:
+/usr/include/c++/11/optional:1111:5: note: candidate: ‘template<class _Tp> constexpr std::strong_ordering std::operator<=>(const std::optional<_Tp>&, std::nullopt_t)’ (reversed)
+ 1111 |     operator<=>(const optional<_Tp>& __x, nullopt_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1111:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::optional<_Tp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/ranges:44,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:16:
+/usr/include/c++/11/optional:1253:5: note: candidate: ‘template<class _Tp, class _Up>  requires !(__is_optional_v<_Up>) && (three_way_comparable_with<_Tp, _Up, std::partial_ordering>) constexpr std::compare_three_way_result_t<_IteratorL, _IteratorR> std::operator<=>(const std::optional<_Tp>&, const _Up&)’ (reversed)
+ 1253 |     operator<=>(const optional<_Tp>& __x, const _Up& __v)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1253:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::optional<_Tp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/bits/fs_path.h:37,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/unique_ptr.h:895:5: note: candidate: ‘template<class _Tp, class _Dp, class _Up, class _Ep>  requires  three_way_comparable_with<typename std::unique_ptr<_Tp, _Dp>::pointer, typename std::unique_ptr<_Up, _Ep>::pointer, std::partial_ordering> std::compare_three_way_result_t<typename std::unique_ptr<_Tp, _Dp>::pointer, typename std::unique_ptr<_Up, _Ep>::pointer> std::operator<=>(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)’ (reversed)
+  895 |     operator<=>(const unique_ptr<_Tp, _Dp>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:895:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/bits/fs_path.h:37,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/unique_ptr.h:903:5: note: candidate: ‘template<class _Tp, class _Dp>  requires  three_way_comparable<typename std::unique_ptr<_Tp, _Dp>::pointer, std::partial_ordering> std::compare_three_way_result_t<typename std::unique_ptr<_Tp, _Dp>::pointer> std::operator<=>(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)’ (reversed)
+  903 |     operator<=>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:903:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/bits/fs_path.h:46,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/shared_ptr_base.h:1422:5: note: candidate: ‘template<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> std::strong_ordering std::operator<=>(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)’ (reversed)
+ 1422 |     operator<=>(const __shared_ptr<_Tp, _Lp>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1422:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::__shared_ptr<_Tp1, _Lp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/bits/fs_path.h:46,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/shared_ptr_base.h:1428:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> std::strong_ordering std::operator<=>(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)’ (reversed)
+ 1428 |     operator<=>(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1428:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::__shared_ptr<_Tp, _Lp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/fs_path.h:46,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/shared_ptr.h:449:5: note: candidate: ‘template<class _Tp, class _Up> std::strong_ordering std::operator<=>(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)’ (reversed)
+  449 |     operator<=>(const shared_ptr<_Tp>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:449:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::shared_ptr<_Tp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/fs_path.h:46,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/shared_ptr.h:455:5: note: candidate: ‘template<class _Tp> std::strong_ordering std::operator<=>(const std::shared_ptr<_Tp>&, std::nullptr_t)’ (reversed)
+  455 |     operator<=>(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:455:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::shared_ptr<_Tp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:1112:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> constexpr std::__detail::__synth3way_t<_IteratorR, _IteratorL> __gnu_cxx::operator<=>(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’ (reversed)
+ 1112 |     operator<=>(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1112:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_pair.h:473:5: note: candidate: ‘template<class _T1, class _T2> constexpr std::common_comparison_category_t<decltype (std::__detail::__synth3way(declval<_T1&>(), declval<_T1&>())), decltype (std::__detail::__synth3way(declval<_T2&>(), declval<_T2&>()))> std::operator<=>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’ (rewritten)
+  473 |     operator<=>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_pair.h:473:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::pair<_T1, _T2>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/string_view:549:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’ (rewritten)
+  549 |     operator<=>(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:549:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/basic_string.h:6262:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’ (rewritten)
+ 6262 |     operator<=>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6262:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/vector:67,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:2:
+/usr/include/c++/11/bits/stl_vector.h:1910:5: note: candidate: ‘template<class _Tp, class _Alloc> std::__detail::__synth3way_t<_T1> std::operator<=>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’ (rewritten)
+ 1910 |     operator<=>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1910:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:4:
+/usr/include/c++/11/variant:1237:5: note: candidate: ‘template<class ... _Types>  requires (three_way_comparable<_Types, std::partial_ordering> && ...) constexpr std::common_comparison_category_t<typename std::__detail::__cmp3way_res_impl<_Types, _Types>::type ...> std::operator<=>(const std::variant<_Types ...>&, const std::variant<_Types ...>&)’ (rewritten)
+ 1237 |     operator<=>(const variant<_Types...>& __v, const variant<_Types...>& __w)
+      |     ^~~~~~~~
+/usr/include/c++/11/variant:1237:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::variant<_Types ...>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/tuple:39,
+                 from /usr/include/c++/11/functional:54,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:6:
+/usr/include/c++/11/array:282:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> constexpr std::__detail::__synth3way_t<_T1> std::operator<=>(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’ (rewritten)
+  282 |     operator<=>(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+      |     ^~~~~~~~
+/usr/include/c++/11/array:282:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::array<_Tp, _Nm>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/set:61,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:11:
+/usr/include/c++/11/bits/stl_set.h:1006:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> std::__detail::__synth3way_t<_T1> std::operator<=>(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)’ (rewritten)
+ 1006 |     operator<=>(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_set.h:1006:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::set<_Key, _Compare, _Allocator>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/set:62,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:11:
+/usr/include/c++/11/bits/stl_multiset.h:992:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> std::__detail::__synth3way_t<_T1> std::operator<=>(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)’ (rewritten)
+  992 |     operator<=>(const multiset<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_multiset.h:992:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::multiset<_Key, _Compare, _Allocator>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/map:61,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:13:
+/usr/include/c++/11/bits/stl_map.h:1484:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> std::__detail::__synth3way_t<std::pair<const _Key, _Tp> > std::operator<=>(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)’ (rewritten)
+ 1484 |     operator<=>(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_map.h:1484:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Allocator>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/map:62,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:13:
+/usr/include/c++/11/bits/stl_multimap.h:1149:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> std::__detail::__synth3way_t<std::pair<const _Key, _Tp> > std::operator<=>(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)’ (rewritten)
+ 1149 |     operator<=>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_multimap.h:1149:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Allocator>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/deque:67,
+                 from /usr/include/c++/11/queue:60,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:18:
+/usr/include/c++/11/bits/stl_deque.h:2264:5: note: candidate: ‘template<class _Tp, class _Alloc> std::__detail::__synth3way_t<_T1> std::operator<=>(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)’ (rewritten)
+ 2264 |     operator<=>(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_deque.h:2264:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/queue:64,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:18:
+/usr/include/c++/11/bits/stl_queue.h:392:5: note: candidate: ‘template<class _Tp, class _Seq>  requires  three_way_comparable<_Seq, std::partial_ordering> std::compare_three_way_result_t<_Seq> std::operator<=>(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)’ (rewritten)
+  392 |     operator<=>(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_queue.h:392:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::queue<_Tp, _Seq>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/stack:61,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:22:
+/usr/include/c++/11/bits/stl_stack.h:367:5: note: candidate: ‘template<class _Tp, class _Seq>  requires  three_way_comparable<_Seq, std::partial_ordering> std::compare_three_way_result_t<_Seq> std::operator<=>(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)’ (rewritten)
+  367 |     operator<=>(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_stack.h:367:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::stack<_Tp, _Seq>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/list:63,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:23:
+/usr/include/c++/11/bits/stl_list.h:2030:5: note: candidate: ‘template<class _Tp, class _Alloc> std::__detail::__synth3way_t<_T1> std::operator<=>(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’ (rewritten)
+ 2030 |     operator<=>(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_list.h:2030:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/ios_base.h:46,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/istream:38,
+                 from /usr/include/c++/11/sstream:38,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:3:
+/usr/include/c++/11/system_error:261:3: note: candidate: ‘std::strong_ordering std::operator<=>(const std::error_code&, const std::error_code&)’ (rewritten)
+  261 |   operator<=>(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/11/system_error:261:33: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const std::error_code&’
+  261 |   operator<=>(const error_code& __lhs, const error_code& __rhs) noexcept
+      |               ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/system_error:387:3: note: candidate: ‘std::strong_ordering std::operator<=>(const std::error_condition&, const std::error_condition&)’ (rewritten)
+  387 |   operator<=>(const error_condition& __lhs,
+      |   ^~~~~~~~
+/usr/include/c++/11/system_error:387:38: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const std::error_condition&’
+  387 |   operator<=>(const error_condition& __lhs,
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:4:
+/usr/include/c++/11/variant:1260:3: note: candidate: ‘constexpr std::strong_ordering std::operator<=>(std::monostate, std::monostate)’ (rewritten)
+ 1260 |   operator<=>(monostate, monostate) noexcept { return strong_ordering::equal; }
+      |   ^~~~~~~~
+/usr/include/c++/11/variant:1260:15: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::monostate’
+ 1260 |   operator<=>(monostate, monostate) noexcept { return strong_ordering::equal; }
+      |               ^~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:508:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&) requires requires{{std::operator<::__x->base() > std::operator<::__y->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’
+  508 |     operator<(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:508:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::reverse_iterator<_IteratorL>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:1557:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&) requires requires{{std::operator<::__x->base() < std::operator<::__y->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’
+ 1557 |     operator<(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1557:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:4:
+/usr/include/c++/11/variant:1221:3: note: candidate: ‘template<class ... _Types> constexpr bool std::operator<(const std::variant<_Types ...>&, const std::variant<_Types ...>&)’
+ 1221 |   _VARIANT_RELATION_FUNCTION_TEMPLATE(<, less)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/variant:1221:3: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::variant<_Types ...>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/ranges:44,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:16:
+/usr/include/c++/11/optional:1063:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)’
+ 1063 |     operator<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1063:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::optional<_Tp>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/ranges:44,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:16:
+/usr/include/c++/11/optional:1197:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const _Up&)’
+ 1197 |     operator<(const optional<_Tp>& __lhs, const _Up& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1197:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::optional<_Tp>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/ranges:44,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:16:
+/usr/include/c++/11/optional:1203:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_lt_t<_Up, _Tp> std::operator<(const _Up&, const std::optional<_Tp>&)’
+ 1203 |     operator<(const _Up& __lhs, const optional<_Tp>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1203:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::optional<_Tp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/queue:64,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:18:
+/usr/include/c++/11/bits/stl_queue.h:362:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)’
+  362 |     operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_queue.h:362:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::queue<_Tp, _Seq>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/bits/fs_path.h:37,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/unique_ptr.h:795:5: note: candidate: ‘template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)’
+  795 |     operator<(const unique_ptr<_Tp, _Dp>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:795:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/bits/fs_path.h:37,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/unique_ptr.h:807:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)’
+  807 |     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:807:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/bits/fs_path.h:37,
+                 from /usr/include/c++/11/filesystem:45,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:21:
+/usr/include/c++/11/bits/unique_ptr.h:816:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)’
+  816 |     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:816:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘int’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+In file included from /usr/include/c++/11/stack:61,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:22:
+/usr/include/c++/11/bits/stl_stack.h:337:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator<(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)’
+  337 |     operator<(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_stack.h:337:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:38: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const std::stack<_Tp, _Seq>’
+  322 |     if (S.replace(0, S.size(), "") < k) {
+      |                                      ^
+2023-12-07 14:37:49 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:37:49 INFO Compilation Failed!
+2023-12-07 14:37:49 INFO run_output: b''
+
+
+2023-12-07 14:37:50 INFO Running task: 10_0...
+2023-12-07 14:37:51 INFO Test Passed!
+
+
+2023-12-07 14:37:51 INFO Running task: 11_0...
+2023-12-07 14:37:53 INFO Test Passed!
+
+
+2023-12-07 14:37:53 INFO Running task: 12_0...
+2023-12-07 14:37:55 INFO Test Failed!
+2023-12-07 14:37:55 INFO run_output: b'[2,2,2] [2,1,-1]\nTestcase No.1 Failed!\n[1,2,2] [1,2,1]\nTestcase No.2 Failed!\n[-1,-1,68,68,23] [-1,-1,68,-1,23]\nTestcase No.3 Failed!\n[75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75] [75,96,90,79,51,49,37,56,49,59,4,39,84,82,83,98,19,5,11,58,77,64,89,45,24,3,25,43,17,68,50,72,97,26,11,96,3,61,10,92,78,92,46,79,79,49,28,53,43,1]\nTestcase No.4 Failed!\n[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1] [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]\nPassed 1/5 tests\nTest Failed!\n'
+
+
+2023-12-07 14:37:55 INFO Running task: 13_0...
+2023-12-07 14:37:56 INFO Test Passed!
+
+
+2023-12-07 14:37:56 INFO Running task: 14_0...
+2023-12-07 14:37:58 INFO Test Passed!
+
+
+2023-12-07 14:37:59 INFO Running task: 15_0...
+2023-12-07 14:38:00 INFO Test Passed!
+
+
+2023-12-07 14:38:00 INFO Running task: 16_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>, int)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:337:40: error: ‘_cast’ was not declared in this scope
+  337 |     return ans == INT_MAX ? -1 : ans + _cast<int>(target / total) * n;
+      |                                        ^~~~~~~~~~
+2023-12-07 14:38:01 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:38:01 INFO Compilation Failed!
+2023-12-07 14:38:01 INFO run_output: b''
+
+
+2023-12-07 14:38:01 INFO Running task: 17_0...
+2023-12-07 14:38:03 INFO Test Passed!
+
+
+2023-12-07 14:38:03 INFO Running task: 18_0...
+2023-12-07 14:38:05 INFO Test Passed!
+
+
+2023-12-07 14:38:05 INFO Running task: 19_0...
+2023-12-07 14:38:07 INFO Test Passed!
+
+
+2023-12-07 14:38:07 INFO Running task: 20_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:327:22: error: ‘class std::unordered_map<int, int>’ has no member named ‘values’
+  327 |     for (int c : cnt.values()) {
+      |                      ^~~~~~
+2023-12-07 14:38:08 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:38:08 INFO Compilation Failed!
+2023-12-07 14:38:08 INFO run_output: b''
+
+
+2023-12-07 14:38:08 INFO Running task: 21_0...
+2023-12-07 14:38:09 INFO Test Failed!
+2023-12-07 14:38:09 INFO run_output: b'6 4\nTestcase No.1 Failed!\n6 5\nTestcase No.2 Failed!\n6 4\nTestcase No.3 Failed!\n51 49\nTestcase No.4 Failed!\n51 45\nTestcase No.5 Failed!\nPassed 0/5 tests\nTest Failed!\n'
+
+
+2023-12-07 14:38:09 INFO Running task: 22_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(int, int, int, std::vector<std::vector<int> >&, std::vector<int>&, std::vector<int>&)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:331:32: error: ‘_cast’ was not declared in this scope
+  331 |                 if (stock[i] < _cast<long long>(com[i]) * mid) {
+      |                                ^~~~~~~~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:332:37: error: expected primary-expression before ‘long’
+  332 |                     money += (_cast<long long>(com[i]) * mid - stock[i]) * cost[i];
+      |                                     ^~~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:332:37: error: expected ‘)’ before ‘long’
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:332:30: note: to match this ‘(’
+  332 |                     money += (_cast<long long>(com[i]) * mid - stock[i]) * cost[i];
+      |                              ^
+2023-12-07 14:38:11 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:38:11 INFO Compilation Failed!
+2023-12-07 14:38:11 INFO run_output: b''
+
+
+2023-12-07 14:38:11 INFO Running task: 23_0...
+2023-12-07 14:38:12 INFO Test Passed!
+
+
+2023-12-07 14:38:12 INFO Running task: 24_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>, int)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:324:18: error: ‘bitset’ is not a member of ‘std’
+  324 |         if (std::bitset<32>(i).count() == k) {
+      |                  ^~~~~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:24:1: note: ‘std::bitset’ is defined in header ‘<bitset>’; did you forget to ‘#include <bitset>’?
+   23 | #include <list>
+  +++ |+#include <bitset>
+   24 | 
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:324:32: error: request for member ‘count’ in ‘i’, which is of non-class type ‘int’
+  324 |         if (std::bitset<32>(i).count() == k) {
+      |                                ^~~~~
+2023-12-07 14:38:14 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:38:14 INFO Compilation Failed!
+2023-12-07 14:38:14 INFO run_output: b''
+
+
+2023-12-07 14:38:14 INFO Running task: 25_0...
+2023-12-07 14:38:16 INFO Test Passed!
+
+
+2023-12-07 14:38:16 INFO Running task: 26_0...
+2023-12-07 14:38:17 INFO Test Passed!
+
+
+2023-12-07 14:38:17 INFO Running task: 27_0...
+2023-12-07 14:38:19 INFO Test Passed!
+
+
+2023-12-07 14:38:19 INFO Running task: 28_0...
+2023-12-07 14:38:21 INFO Test Passed!
+
+
+2023-12-07 14:38:21 INFO Running task: 29_0...
+2023-12-07 14:38:22 INFO Test Passed!
+
+
+2023-12-07 14:38:22 INFO Running task: 30_0...
+2023-12-07 14:38:24 INFO Test Passed!
+
+
+2023-12-07 14:38:24 INFO Running task: 31_0...
+2023-12-07 14:38:26 INFO Test Passed!
+
+
+2023-12-07 14:38:26 INFO Running task: 32_0...
+2023-12-07 14:38:27 INFO Test Passed!
+
+
+2023-12-07 14:38:27 INFO Running task: 33_0...
+2023-12-07 14:38:29 INFO Command '['/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' died with <Signals.SIGSEGV: 11>.
+2023-12-07 14:38:29 INFO Compilation Failed!
+2023-12-07 14:38:29 INFO run_output: b'18 18\n21890 23\nTestcase No.2 Failed!\n21875 0\nTestcase No.3 Failed!\n19999800010000 19999800010000\n'
+
+
+2023-12-07 14:38:29 INFO Running task: 34_0...
+2023-12-07 14:38:31 INFO Test Failed!
+2023-12-07 14:38:31 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse true\nTestcase No.3 Failed!\nfalse true\nTestcase No.4 Failed!\nfalse false\nPassed 2/5 tests\nTest Failed!\n'
+
+
+2023-12-07 14:38:31 INFO Running task: 35_0...
+2023-12-07 14:38:33 INFO Test Failed!
+2023-12-07 14:38:33 INFO run_output: b'false true\nTestcase No.1 Failed!\nfalse false\nfalse false\nfalse true\nTestcase No.4 Failed!\nfalse true\nTestcase No.5 Failed!\nPassed 2/5 tests\nTest Failed!\n'
+
+
+2023-12-07 14:38:33 INFO Running task: 36_0...
+2023-12-07 14:38:34 INFO Test Passed!
+
+
+2023-12-07 14:38:34 INFO Running task: 37_0...
+2023-12-07 14:38:36 INFO Test Passed!
+
+
+2023-12-07 14:38:36 INFO Running task: 38_0...
+2023-12-07 14:38:38 INFO Test Passed!
+
+
+2023-12-07 14:38:38 INFO Running task: 39_0...
+2023-12-07 14:38:39 INFO Test Passed!
+
+
+2023-12-07 14:38:39 INFO Running task: 40_0...
+2023-12-07 14:38:41 INFO Test Passed!
+
+
+2023-12-07 14:38:41 INFO Running task: 41_0...
+2023-12-07 14:38:43 INFO Test Passed!
+
+
+2023-12-07 14:38:43 INFO Running task: 42_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<int>&, int)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:330:55: error: no match for ‘operator-’ (operand types are ‘std::set<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’} and ‘std::set<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’})
+  330 |         ans = std::min(ans, std::min(s.upper_bound(y) - s.begin() - 1, y - *(--s.lower_bound(y))));
+      |                                      ~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+      |                                                   |            |
+      |                                                   |            _Rb_tree_const_iterator<[...]>
+      |                                                   _Rb_tree_const_iterator<[...]>
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:560:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)’
+  560 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:560:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:330:65: note:   ‘std::set<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+  330 |         ans = std::min(ans, std::min(s.upper_bound(y) - s.begin() - 1, y - *(--s.lower_bound(y))));
+      |                                                                 ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:1:
+/usr/include/c++/11/bits/stl_iterator.h:1639:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1639 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1639:5: note:   template argument deduction/substitution failed:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:330:65: note:   ‘std::set<int>::iterator’ {aka ‘std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::const_iterator’} is not derived from ‘const std::move_iterator<_IteratorL>’
+  330 |         ans = std::min(ans, std::min(s.upper_bound(y) - s.begin() - 1, y - *(--s.lower_bound(y))));
+      |                                                                 ^
+2023-12-07 14:38:44 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:38:44 INFO Compilation Failed!
+2023-12-07 14:38:44 INFO run_output: b''
+
+
+2023-12-07 14:38:44 INFO Running task: 43_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:332:14: error: expected unqualified-id before ‘int’
+  332 |     ListNode(int x) : val(x), next(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:332:14: error: expected ‘)’ before ‘int’
+  332 |     ListNode(int x) : val(x), next(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-07 14:38:45 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:38:45 INFO Compilation Failed!
+2023-12-07 14:38:45 INFO run_output: b''
+
+
+2023-12-07 14:38:45 INFO Running task: 44_0...
+2023-12-07 14:38:47 INFO Test Passed!
+
+
+2023-12-07 14:38:47 INFO Running task: 45_0...
+2023-12-07 14:38:48 INFO Test Passed!
+
+
+2023-12-07 14:38:48 INFO Running task: 46_0...
+2023-12-07 14:38:50 INFO Test Passed!
+
+
+2023-12-07 14:38:50 INFO Running task: 47_0...
+2023-12-07 14:38:52 INFO Test Passed!
+
+
+2023-12-07 14:38:52 INFO Running task: 48_0...
+2023-12-07 14:38:54 INFO Test Passed!
+
+
+2023-12-07 14:38:54 INFO Running task: 49_0...
+2023-12-07 14:38:55 INFO Test Passed!
+
+
+2023-12-07 14:38:55 INFO Running task: 50_0...
+2023-12-07 14:38:57 INFO Test Passed!
+
+
+2023-12-07 14:38:57 INFO Running task: 51_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘std::vector<int> Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:13: error: ‘_cast’ was not declared in this scope
+  325 |     return {_cast<int>(sum - max), _cast<int>(sum - min)};
+      |             ^~~~~~~~~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:42: error: expected primary-expression before ‘int’
+  325 |     return {_cast<int>(sum - max), _cast<int>(sum - min)};
+      |                                          ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:42: error: expected ‘}’ before ‘int’
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:12: note: to match this ‘{’
+  325 |     return {_cast<int>(sum - max), _cast<int>(sum - min)};
+      |            ^
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:42: error: could not convert ‘{<expression error>, <expression error>}’ from ‘<brace-enclosed initializer list>’ to ‘std::vector<int>’
+  325 |     return {_cast<int>(sum - max), _cast<int>(sum - min)};
+      |                                          ^~~
+      |                                          |
+      |                                          <brace-enclosed initializer list>
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:42: error: expected ‘;’ before ‘int’
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:45: error: expected unqualified-id before ‘>’ token
+  325 |     return {_cast<int>(sum - max), _cast<int>(sum - min)};
+      |                                             ^
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘void Test::Start()’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:364:45: error: no match for ‘operator=’ (operand types are ‘std::vector<long int>’ and ‘std::vector<int>’)
+  364 |                 return_data = testfunc(data1);
+      |                                             ^
+In file included from /usr/include/c++/11/vector:72,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:2:
+/usr/include/c++/11/bits/vector.tcc:198:5: note: candidate: ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = long int; _Alloc = std::allocator<long int>]’
+  198 |     vector<_Tp, _Alloc>::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/vector.tcc:199:42: note:   no known conversion for argument 1 from ‘std::vector<int>’ to ‘const std::vector<long int>&’
+  199 |     operator=(const vector<_Tp, _Alloc>& __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/11/vector:67,
+                 from /home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:2:
+/usr/include/c++/11/bits/stl_vector.h:709:7: note: candidate: ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = long int; _Alloc = std::allocator<long int>]’
+  709 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:709:26: note:   no known conversion for argument 1 from ‘std::vector<int>’ to ‘std::vector<long int>&&’
+  709 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/11/bits/stl_vector.h:730:7: note: candidate: ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = long int; _Alloc = std::allocator<long int>]’
+  730 |       operator=(initializer_list<value_type> __l)
+      |       ^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:730:46: note:   no known conversion for argument 1 from ‘std::vector<int>’ to ‘std::initializer_list<long int>’
+  730 |       operator=(initializer_list<value_type> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+2023-12-07 14:38:58 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:38:58 INFO Compilation Failed!
+2023-12-07 14:38:58 INFO run_output: b''
+
+
+2023-12-07 14:38:58 INFO Running task: 52_0...
+2023-12-07 14:39:00 INFO Test Passed!
+
+
+2023-12-07 14:39:00 INFO Running task: 53_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(long long int)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:322:12: error: ‘_cast’ was not declared in this scope
+  322 |     return _cast<int>((n % 1000000007) * (n % 1000000007) % 1000000007);
+      |            ^~~~~~~~~~
+2023-12-07 14:39:01 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:01 INFO Compilation Failed!
+2023-12-07 14:39:01 INFO run_output: b''
+
+
+2023-12-07 14:39:01 INFO Running task: 54_0...
+2023-12-07 14:39:03 INFO Test Passed!
+
+
+2023-12-07 14:39:03 INFO Running task: 55_0...
+2023-12-07 14:39:05 INFO Test Passed!
+
+
+2023-12-07 14:39:05 INFO Running task: 56_0...
+2023-12-07 14:39:08 INFO Command '['/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' died with <Signals.SIGSEGV: 11>.
+2023-12-07 14:39:08 INFO Compilation Failed!
+2023-12-07 14:39:08 INFO run_output: b'1315116726160987 10\nTestcase No.1 Failed!\n1315116726163667 31\nTestcase No.2 Failed!\n'
+
+
+2023-12-07 14:39:08 INFO Running task: 57_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:340:14: error: expected unqualified-id before ‘int’
+  340 |     ListNode(int x) : val(x), next(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:340:14: error: expected ‘)’ before ‘int’
+  340 |     ListNode(int x) : val(x), next(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-07 14:39:09 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:09 INFO Compilation Failed!
+2023-12-07 14:39:09 INFO run_output: b''
+
+
+2023-12-07 14:39:09 INFO Running task: 58_0...
+2023-12-07 14:39:10 INFO Test Passed!
+
+
+2023-12-07 14:39:10 INFO Running task: 59_0...
+2023-12-07 14:39:13 INFO Test Passed!
+
+
+2023-12-07 14:39:13 INFO Running task: 60_0...
+2023-12-07 14:39:15 INFO Test Failed!
+2023-12-07 14:39:15 INFO run_output: b'[206,205,204,203] [204,205,206]\nTestcase No.1 Failed!\n[12,8,10,3,7,4,11] [3,7,8,10,12]\nTestcase No.2 Failed!\n[3663,3740,3699,3672,3712,3735,3733,3658,3714,3661,3730,3664,3734,3729,3659,3691,3662,3666,3744,3736,3708,3677,3739,3692,3703,3665,3655,3667,3684,3737,3709,3742,3648,3706,3686,3743,3701,3649,3726,3678,3707,3694,3687,3669,3728,3717,3688,3711,3652,3704,3645,3721,3732,3673,3674,3700,3731,3702,3676,3689,3718,3693,3683,3654,3713,3695,3724,3715,3656,3657,3716,3685,3697,3668,3727,3653,3682,3741,3646,3705,3719,3660,3720,3722,3675,3698,3690,3650,3651,3710,3696,3725,3671,3670,3681,3680,3738,3679,3723,3647] [3670,3674,3677,3684,3685,3695,3714,3720]\nTestcase No.3 Failed!\n] [8587,8609]\nTestcase No.4 Failed!\n] [2437,2438,2442,2444,2447,2451,2457,2458,2466,2473,2479,2483,2488,2489,2510,2515,2517,2518]\nTestcase No.5 Failed!\nPassed 0/5 tests\nTest Failed!\n'
+
+
+2023-12-07 14:39:15 INFO Running task: 61_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘void Test::Start()’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:376:40: error: cannot convert ‘vector<long int>’ to ‘vector<long long int>’
+  376 |                 return_data = testfunc(data1, data2);
+      |                                        ^~~~~
+      |                                        |
+      |                                        vector<long int>
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:321:43: note:   initializing argument 1 of ‘long long int Test::testfunc(std::vector<long long int>, long long int)’
+  321 | long long testfunc(std::vector<long long> a, long long m) {
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^
+2023-12-07 14:39:16 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:16 INFO Compilation Failed!
+2023-12-07 14:39:16 INFO run_output: b''
+
+
+2023-12-07 14:39:16 INFO Running task: 62_0...
+2023-12-07 14:39:18 INFO Test Passed!
+
+
+2023-12-07 14:39:18 INFO Running task: 63_0...
+2023-12-07 14:39:20 INFO Test Passed!
+
+
+2023-12-07 14:39:20 INFO Running task: 64_0...
+2023-12-07 14:39:21 INFO Test Passed!
+
+
+2023-12-07 14:39:21 INFO Running task: 65_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘std::vector<std::__cxx11::basic_string<char> > Test::testfunc(std::vector<std::__cxx11::basic_string<char> >)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:327:33: error: request for member ‘length’ in ‘row’, which is of non-class type ‘char [<anonymous>]’
+  327 |         for (int j = 1; j < row.length - 1; j++) {
+      |                                 ^~~~~~
+2023-12-07 14:39:22 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:22 INFO Compilation Failed!
+2023-12-07 14:39:22 INFO run_output: b''
+
+
+2023-12-07 14:39:22 INFO Running task: 66_0...
+2023-12-07 14:39:24 INFO Test Passed!
+
+
+2023-12-07 14:39:24 INFO Running task: 67_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘int Test::testfunc(std::vector<long int>)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:334:12: error: ‘_cast’ was not declared in this scope
+  334 |     return _cast<int>(min);
+      |            ^~~~~~~~~~
+2023-12-07 14:39:25 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:25 INFO Compilation Failed!
+2023-12-07 14:39:25 INFO run_output: b''
+
+
+2023-12-07 14:39:25 INFO Running task: 68_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘std::string Test::testfunc(int)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:329:37: error: invalid operands of types ‘const char [3]’ and ‘const char [5]’ to binary ‘operator+’
+  329 |     return (leapYear ? "12" : "13") + ".09." + std::to_string(year);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~
+      |                      |                |
+      |                      const char [3]   const char [5]
+2023-12-07 14:39:26 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:26 INFO Compilation Failed!
+2023-12-07 14:39:26 INFO run_output: b''
+
+
+2023-12-07 14:39:26 INFO Running task: 69_0...
+2023-12-07 14:39:30 INFO Test Passed!
+
+
+2023-12-07 14:39:30 INFO Running task: 70_0...
+2023-12-07 14:39:32 INFO Test Passed!
+
+
+2023-12-07 14:39:32 INFO Running task: 71_0...
+2023-12-07 14:39:34 INFO Test Passed!
+
+
+2023-12-07 14:39:34 INFO Running task: 72_0...
+2023-12-07 14:39:36 INFO Test Passed!
+
+
+2023-12-07 14:39:36 INFO Running task: 73_0...
+2023-12-07 14:39:37 INFO Test Passed!
+
+
+2023-12-07 14:39:37 INFO Running task: 74_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘std::vector<int> Test::testfunc(std::vector<int>)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:328:29: error: request for member ‘size’ in ‘cum’, which is of non-class type ‘int [<anonymous>]’
+  328 |     for (int i = 0; i < cum.size()/2; i++) {
+      |                             ^~~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:329:20: error: request for member ‘size’ in ‘cum’, which is of non-class type ‘int [<anonymous>]’
+  329 |         if(cum[cum.size()-1]%cum[i] == 0) {
+      |                    ^~~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:331:39: error: request for member ‘size’ in ‘cum’, which is of non-class type ‘int [<anonymous>]’
+  331 |             for (int j = i+1; j < cum.size(); j++) {
+      |                                       ^~~~
+2023-12-07 14:39:38 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:38 INFO Compilation Failed!
+2023-12-07 14:39:38 INFO run_output: b''
+
+
+2023-12-07 14:39:38 INFO Running task: 75_0...
+2023-12-07 14:39:40 INFO Test Passed!
+
+
+2023-12-07 14:39:40 INFO Running task: 76_0...
+2023-12-07 14:39:42 INFO Test Passed!
+
+
+2023-12-07 14:39:42 INFO Running task: 77_0...
+2023-12-07 14:39:44 INFO Test Passed!
+
+
+2023-12-07 14:39:44 INFO Running task: 78_0...
+2023-12-07 14:39:46 INFO Test Passed!
+
+
+2023-12-07 14:39:46 INFO Running task: 79_0...
+2023-12-07 14:39:47 INFO Test Passed!
+
+
+2023-12-07 14:39:47 INFO Running task: 80_0...
+2023-12-07 14:39:49 INFO Test Passed!
+
+
+2023-12-07 14:39:49 INFO Running task: 81_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp: In member function ‘std::vector<long long int> Test::testfunc(int, int, std::vector<std::vector<int> >&)’:
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:328:179: error: too many initializers for ‘std::array<std::array<int, 2>, 3>’
+  328 |     std::array<std::array<std::array<int, 2>, 3>, 4> arr = {{{{0, -1}, {-1, -1}, {-1, 0}}}, {{{0, 1}, {-1, 0}, {-1, 1}}}, {{{0, -1}, {1, 0}, {1, -1}}}, {{{0, 1}, {1, 0}, {1, 1}}}};
+      |                                                                                                                                                                                   ^
+2023-12-07 14:39:50 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:39:50 INFO Compilation Failed!
+2023-12-07 14:39:50 INFO run_output: b''
+
+
+2023-12-07 14:39:50 INFO Running task: 82_0...
+2023-12-07 14:39:52 INFO Test Passed!
+
+
+2023-12-07 14:39:52 INFO Running task: 83_0...
+2023-12-07 14:39:53 INFO Test Passed!
+
+
+2023-12-07 14:39:53 INFO Running task: 84_0...
+2023-12-07 14:39:55 INFO Test Passed!
+
+
+2023-12-07 14:39:55 INFO Running task: 85_0...
+2023-12-07 14:39:57 INFO Test Passed!
+
+
+2023-12-07 14:39:57 INFO Running task: 86_0...
+2023-12-07 14:39:59 INFO Test Passed!
+
+
+2023-12-07 14:39:59 INFO Running task: 87_0...
+2023-12-07 14:40:02 INFO Test Passed!
+
+
+2023-12-07 14:40:02 INFO Running task: 88_0...
+2023-12-07 14:40:04 INFO Test Passed!
+
+
+2023-12-07 14:40:04 INFO Running task: 89_0...
+2023-12-07 14:40:06 INFO Test Passed!
+
+
+2023-12-07 14:40:06 INFO Running task: 90_0...
+2023-12-07 14:40:08 INFO Test Passed!
+
+
+2023-12-07 14:40:08 INFO Running task: 91_0...
+2023-12-07 14:40:10 INFO Test Passed!
+
+
+2023-12-07 14:40:10 INFO Running task: 92_0...
+2023-12-07 14:40:11 INFO Test Passed!
+
+
+2023-12-07 14:40:11 INFO Running task: 93_0...
+2023-12-07 14:40:13 INFO Test Passed!
+
+
+2023-12-07 14:40:13 INFO Running task: 94_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:326:14: error: expected unqualified-id before ‘int’
+  326 |     ListNode(int x) : val(x), next(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:326:14: error: expected ‘)’ before ‘int’
+  326 |     ListNode(int x) : val(x), next(NULL) {}
+      |             ~^~~
+      |              )
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:328:14: error: expected unqualified-id before ‘int’
+  328 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:328:14: error: expected ‘)’ before ‘int’
+  328 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-07 14:40:15 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:40:15 INFO Compilation Failed!
+2023-12-07 14:40:15 INFO run_output: b''
+
+
+2023-12-07 14:40:15 INFO Running task: 95_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:345:14: error: expected unqualified-id before ‘int’
+  345 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:345:14: error: expected ‘)’ before ‘int’
+  345 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-07 14:40:16 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:40:16 INFO Compilation Failed!
+2023-12-07 14:40:16 INFO run_output: b''
+
+
+2023-12-07 14:40:16 INFO Running task: 96_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:327:14: error: expected unqualified-id before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:327:14: error: expected ‘)’ before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-07 14:40:17 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:40:17 INFO Compilation Failed!
+2023-12-07 14:40:17 INFO run_output: b''
+
+
+2023-12-07 14:40:17 INFO Running task: 97_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:14: error: expected unqualified-id before ‘int’
+  325 |     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:325:14: error: expected ‘)’ before ‘int’
+  325 |     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      |             ~^~~
+      |              )
+2023-12-07 14:40:18 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:40:18 INFO Compilation Failed!
+2023-12-07 14:40:18 INFO run_output: b''
+
+
+2023-12-07 14:40:18 INFO Running task: 98_0...
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:327:14: error: expected unqualified-id before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |              ^~~
+/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp:327:14: error: expected ‘)’ before ‘int’
+  327 |     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+      |             ~^~~
+      |              )
+2023-12-07 14:40:19 INFO Command '['g++', '-O0', '-std=c++20', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/test.cpp', '-o', '/home/ubuntu/test_codellm/unit_tests/qwen/java_c++/out.o']' returned non-zero exit status 1.
+2023-12-07 14:40:19 INFO Compilation Failed!
+2023-12-07 14:40:19 INFO run_output: b''
+
+
+2023-12-07 14:40:19 INFO Running task: 99_0...
+2023-12-07 14:40:21 INFO Test Passed!
+
+
+2023-12-07 14:40:21 INFO Running task: 100_0...
+2023-12-07 14:40:23 INFO Test Passed!
+
+
+2023-12-07 14:40:23 INFO [[1], [1], [1], [1], [3], [1], [1], [1], [3], [1], [1], [2], [1], [1], [1], [3], [1], [1], [1], [3], [2], [3], [1], [3], [1], [1], [1], [1], [1], [1], [1], [1], [3], [2], [2], [1], [1], [1], [1], [1], [1], [3], [3], [1], [1], [1], [1], [1], [1], [1], [3], [1], [3], [1], [1], [3], [3], [1], [1], [2], [3], [1], [1], [1], [3], [1], [3], [3], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [1], [3], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [1], [3], [3], [3], [3], [3], [1], [1]]
