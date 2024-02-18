@@ -200,7 +200,7 @@ class Test {
             case "String[]":
                 return data.replaceAll("[\\[\\]'\"\\s]", "").split(",");
             case "List<String>":
-                return Arrays.asList(data.replaceAll("[\\[\\]'\"\\s]", "").split(","));
+                return Arrays.asList(data.replaceAll("[\\[\\]'\"]", "").replaceAll(",\\s",",").split(","));
             case "ListNode":
                 return createLinkedList(data);
             case "TreeNode":
